@@ -49,9 +49,6 @@ export class DbProject extends Entity
     extra: ProjectExtra;
 
     @Column
-    featured: boolean;
-
-    @Column
     displayOrder: number;
     
     // Static

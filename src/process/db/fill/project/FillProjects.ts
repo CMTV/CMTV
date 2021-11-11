@@ -48,7 +48,6 @@ export class FillProjects extends ProjectsProcess
                 project.blocks =    this.getBlocks(projectId);
                 project.extra =     dataProject.extra;
 
-                project.featured =  this.featuredIds.includes(projectId);
                 project.displayOrder = this.getDisplayOrder(projectId);
 
             projects.push(project);

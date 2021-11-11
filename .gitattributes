@@ -1,0 +1,6 @@
+# Vendor
+site/vendor/* linguist-vendored
+site/fonts/* linguist-vendored
+
+# Doc data
+data/* linguist-documentation

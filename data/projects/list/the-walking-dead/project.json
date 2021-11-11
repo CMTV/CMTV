@@ -1,0 +1,28 @@
+{
+    "title":    "The Walking Dead",
+    "desc":     "Принимай решения и живи с последствиями в мире зомби апокалипсиса.",
+    "type":     "in",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Пройдена"
+    },
+
+    "start": "26.10.2021",
+    "end": "7.11.2021",
+
+    "action":
+    {
+        "icon":     "fa-brands fa-steam",
+        "text":     "Steam",
+        "link":     "https://store.steampowered.com/app/1449690/The_Walking_Dead_The_Telltale_Definitive_Series/",
+        "colors":   "steam"
+    },
+
+    "tags":
+    [
+        "action:отдых",
+        "form:игра"
+    ]
+}

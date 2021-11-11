@@ -1,0 +1,114 @@
+{
+    "$schema": "http://json-schema.org/schema",
+
+    "title": "Ежедневные отчеты",
+    "description": "Учет потраченных за день часов и изменения в счетчиках в пределах одного года.",
+
+    "type": "object",
+    "patternProperties":
+    {
+        "^[\\d]{1,2}\\.[\\d]{1,2}$":
+        {
+            "description": "День и месяц",
+            "type": "object",
+            "properties":
+            {
+                "time":
+                {
+                    "description": "Отчеты по времени",
+                    "type": "array",
+                    "items": 
+                    {
+                        "type": "object",
+                        "properties":
+                        {
+                            "duration":
+                            {
+                                "description": "Длительность работы а часах.",
+                                "type": ["number", "string"]
+                            },
+                            "project":
+                            {
+                                "description": "ID проекта, в учет которого пойдет указанное время.",
+                                "type": "string"
+                            },
+                            "goals":
+                            {
+                                "description": "ID целей, в учет которых пойдет указанное время",
+                                "type": "array",
+                                "items": { "type": "string" }
+                            },
+                            "tags":
+                            {
+                                "description": "Теги, в учет которых пойдет указанное время. Можно исключать теги целей с префиксом `!`.",
+                                "type": "array",
+                                "items": { "type": "string" }
+                            }
+                        },
+                        "required": [
+                            "duration"
+                        ],
+                        "additionalProperties": false
+                    }
+                },
+
+                "checks":
+                {
+                    "description": "Отметки целей за день",
+                    "type": "array",
+                    "items":
+                    {
+                        "description":  "project_id : goal_name",
+                        "type":         "string"
+                    }
+                },
+
+                "counters":
+                {
+                    "description": "Обновления по глобальным счетчикам",
+                    "type": "array",
+                    "items":
+                    {
+                        "type": "object",
+                        "properties":
+                        {
+                            "counter":  { "type": "string", "description": "ID счетчика" },
+                            "value":    { "type": "number", "description": "Добавочное значение" },
+                            "project":  { "type": "string", "description": "ID прикрепленного проекта" },
+                            "desc":     { "type": "string", "description": "Описание значения счетчика, если прикрепленного проекта нет" }
+                        },
+                        "required": [
+                            "counter"
+                        ],
+                        "oneOf": [
+                            { "required": ["project"] },
+                            { "required": ["desc"] }
+                        ],
+                        "additionalProperties": false
+                    }
+                },
+
+                "events":
+                {
+                    "description": "Важные события, которые достойны упоминания в конце года, но не относятся к проектам",
+                    "type": "array",
+                    "items":
+                    {
+                        "type": "object",
+                        "properties":
+                        {
+                            "title":    { "type": "string", "description": "Название события"},
+                            "desc":     { "type": "string", "description": "Описание события в несколько предложений."}
+                        },
+                        "required": [
+                            "title"
+                        ],
+                        "additionalProperties": false
+                    }
+                }
+            },
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}

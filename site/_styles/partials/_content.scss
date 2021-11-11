@@ -1,0 +1,85 @@
+@use 'defs/color';
+@use 'defs/size';
+@use 'defs/bp';
+
+@use 'partials/hover';
+
+%CONTENT
+{
+    font-size: 102%;
+    line-height: 1.5;
+    //@include bp.max(mini) { font-size: 97%; }
+
+    $contentGap: 20px; // size.$gapStruct
+
+    > *             { margin-bottom: $contentGap; }
+    > :last-child   { margin-bottom: 0; }
+
+    > h2
+    {
+        font-size: 112.5%;
+        font-weight: 600;
+        text-align: left;
+
+        margin-top: 1.5 * $contentGap;
+        margin-bottom: .5 * $contentGap;
+
+        //padding-bottom: 5px;
+        //border-bottom: 1px solid var(--c_border);
+    }
+
+    > hr
+    {
+        height: 0;
+        background: transparent;
+        border-bottom: 1px solid var(--c_border);
+    }
+
+    strong { font-weight: 600; }
+
+    p > a
+    {
+        text-decoration-color: var(--c_text-shade-2);
+        @extend %underline;
+    }
+
+    p > img, p > a > img 
+    {
+        display: block;
+        margin: auto;
+        
+        max-width: 100%;
+        height: auto;
+
+        @for $i from 1 through 9 { &.w#{$i} { width: 10% * $i; } }
+
+        @include bp.max(mini)
+        {
+            width: auto !important;
+            &[src$=".svg"] { width: 100% !important; }
+        }
+    }
+
+    li
+    {
+        &::marker { color: var(--c_text-shade-1); }
+        &::before { content: ""; margin-left: -5px; }
+    }
+
+    [data-pswp-gallery]
+    {
+        border: 1px dashed var(--c_border);
+        border-left: none;
+        border-right: none;
+
+        margin-left: -1 * size.$gap;
+        margin-right: -1 * size.$gap;
+    }
+
+    //
+    //
+    //
+
+    > :first-child  { border-top: none; margin-top: -1 * size.$gap; padding-top: size.$gap; }
+    > :last-child   { border-bottom: none; }
+}

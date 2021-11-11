@@ -1,0 +1,19 @@
+{
+    "task":
+    {
+        "icon":     "fas fa-square-root-alt",
+        "title":    "Задачи"
+    },
+
+    "book":
+    {
+        "icon":     "fas fa-book",
+        "title":    "Книги"
+    },
+
+    "game":
+    {
+        "icon":     "fa-solid fa-gamepad",
+        "title":    "Игры"
+    }
+}

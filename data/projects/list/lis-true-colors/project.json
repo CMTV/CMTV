@@ -1,0 +1,28 @@
+{
+    "title":    "Life is Strange: True Colors",
+    "desc":     "Неплохие приключения юной эмпатки в уединенном городке в горах.",
+    "type":     "in",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Пройдена"
+    },
+
+    "start":    "18.10.2021",
+    "end":      "23.10.2021",
+
+    "action":
+    {
+        "icon":     "fa-brands fa-steam",
+        "text":     "Steam",
+        "link":     "https://store.steampowered.com/app/936790/Life_is_Strange_True_Colors/",
+        "colors":   "steam"
+    },
+
+    "tags":
+    [
+        "action:отдых",
+        "form:игра"
+    ]
+}

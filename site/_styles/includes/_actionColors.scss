@@ -1,0 +1,16 @@
+@mixin actionTheme($name, $colors...)
+{
+    .actionContainer
+    {
+        > .actionBtn > .bg.#{$name}
+        {
+            background: linear-gradient(45deg, $colors);
+        }
+    }
+}
+
+//
+//
+//
+
+@include actionTheme('steam', #47A5FF, #2F7EDF);

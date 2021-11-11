@@ -1,0 +1,46 @@
+{
+    "facts":
+    {
+        "alias":
+        {
+            "label":    "Псевдоним",
+            "data":     "CMTV"
+        },
+
+        "from":
+        {
+            "label":    "Откуда",
+            "data":     "Россия"
+        },
+
+        "location":
+        {
+            "label":    "Живу",
+            "data":     "Балашиха"
+        }
+    },
+
+    "social":
+    {
+        "vk":
+        {
+            "label":    "ВКонтакте",
+            "icon":     "fa-brands fa-vk",
+            "link":     "https://vk.com/math.head"
+        },
+
+        "youtube":
+        {
+            "label":    "YouTube",
+            "icon":     "fa-brands fa-youtube",
+            "link":     "https://www.youtube.com/c/CMTV_official"
+        },
+
+        "steam":
+        {
+            "label":    "Steam",
+            "icon":     "fa-brands fa-steam",
+            "link":     "https://steamcommunity.com/id/cmtv_official/"
+        }
+    }
+}

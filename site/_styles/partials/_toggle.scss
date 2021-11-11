@@ -1,0 +1,15 @@
+%toggledOff
+{
+    height: 0;
+    overflow: hidden;
+    pointer-events: none;
+    touch-action: none;
+}
+
+%toggle
+{
+    &:not([data-toggled])
+    {
+        @extend %toggledOff;
+    }
+}

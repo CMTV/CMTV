@@ -1,0 +1,206 @@
+@use 'defs/size';
+@use 'defs/color';
+@use 'defs/bp';
+
+@use 'partials/util';
+
+//
+// Базовые правила по расположению и ширине любого контента на сайте
+//
+
+%blockLogic
+{
+    width: size.$content;
+    margin: 0 auto;
+
+    @include bp.max(stretch)
+    {
+        width: calc(100% - (2 * #{size.$gap}));
+    }
+
+    @include bp.max(mini)
+    {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+//
+// Базовый дизайн структурного элемента сайта
+//
+
+%blockDeco
+{
+    background: var(--c_bg);
+    border: 1px solid var(--c_border);
+    border-radius: size.$borderRadius;
+    box-shadow: 0 1px 3px 1px var(--c_shadow);
+
+    @include color.themeDark
+    {
+        box-shadow: 0 0 2px 1px var(--c_shadow);
+    }
+
+    @include bp.max(mini)
+    {
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+    }
+}
+
+//
+// Базовый блок для верстки
+//
+
+%block
+{
+    @extend %blockLogic, %blockDeco;   
+}
+
+%blockSection
+{
+    padding: size.$gap;
+}
+
+%blockSep
+{
+    height: 45px;
+    padding: 0 size.$gap;
+
+    display: flex;
+    align-items: center;
+
+    background: var(--c_bg-shade-1);
+    border-bottom: 1px solid var(--c_border);
+
+    font-size: 97%;
+    font-weight: 600;
+    color: var(--c_text-shade-1);
+}
+
+//
+// Типовые шапки блоков
+//
+
+%blockDlHeader
+{
+    @extend %blockSection;
+
+    display: flex;
+    align-items: center;
+    gap: size.$gapBig;
+}
+
+%blockDlHeaderList
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    column-gap: size.$gapBig;
+    row-gap:    size.$gap;
+
+    > *
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        line-height: 1;
+
+        > i { display: none; }
+
+        > .label
+        {
+            font-size: 95%;
+            color: var(--c_text-shade-1);
+        }
+
+        > .value
+        {
+            font-size: 110%;
+            font-weight: 600;
+        }
+    }
+
+    @include bp.max(mini)
+    {
+        flex-direction: column;
+        align-items: flex-start;
+
+        > *
+        {
+            flex-direction: row;
+            align-items: center;
+            gap: size.$gapSmall;
+
+            > i
+            {
+                display: block;
+                color: var(--c_text-shade-1);
+            }
+
+            > .label { display: none; }
+        }
+    }
+}
+
+%blockPlainHeader
+{
+    @extend %blockSection;
+
+    display: flex;
+    align-items: center;
+    gap: size.$gap;
+
+    font-size: 115%;
+    font-weight: 600;
+    line-height: 1;
+
+    height: 50px;
+
+    > i { color: var(--c_text-shade-1); }
+}
+
+//
+// Кнопка действия в блоке
+//
+
+%blockButton
+{
+    @include util.size(50px);
+    @include util.flexCC;
+
+    cursor: pointer;
+
+    font-size: 18px;
+    color: var(--c_text-shade-1);
+    text-decoration: none;
+    
+    background: var(--c_bg-shade-3);
+    border-radius: size.$borderRadius;
+
+    @include util.transition(background-color, color);
+
+    &:hover
+    {
+        background-color: var(--c_bg-shade-4);
+        color: var(--c_text);
+    }
+}
+
+//
+// Декоративные элементы блока
+//
+
+%blockTitle
+{
+    font-size: 120%;
+    font-weight: 600;
+
+    @include bp.max(mini)
+    {
+        font-size: 105%;
+    }
+}

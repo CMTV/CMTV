@@ -1,0 +1,41 @@
+extends /templates/default
+
+block main
+
+    .search
+        .main
+            i.searchIcon.fa-solid.fa-magnifying-glass
+            input(placeholder="Название проекта...", autofocus)
+            i.filterBtn.fa-solid.fa-tags(title="Теги")
+        .filter
+            .emptyFilter Выберите теги...
+        .tags
+            .tagTypes
+                .tagType(data-type="area", data-toggled)
+                    i.fa-fw.fa-solid.fa-signs-post
+                    span Область
+                .tagType(data-type="action")
+                    i.fa-fw.fa-solid.fa-hand-fist
+                    span Действие
+                .tagType(data-type="form")
+                    i.fa-fw.fa-solid.fa-vector-square
+                    span Форма
+                .tagType(data-type="other")
+                    i.fa-fw.fa-solid.fa-ellipsis
+                    span Остальные
+
+            .tagLists
+                each tagType in Object.keys(tagMap)
+                    .tagList(data-type= tagType, data-toggled= (tagType === 'area' ? '' : null))
+                        each tag in tagMap[tagType]
+                            .tag(data-id= tag.id, title= tag.desc)= tag.id
+
+    .searchFailed
+        i.fa-regular.fa-face-sad-cry
+        .label Ничего не найдено!
+
+    .searchResults
+
+    .searching._showing
+        img(src="/site/graphics/searching.svg")
+        .label Поиск проектов...

@@ -1,0 +1,25 @@
+{
+    "title":    "Counter Strike: GO",
+    "desc":     "Бессмертный соревновательный шутер, в который можно играть бесконечно.",
+    "type":     "in",
+
+    "status":
+    {
+        "type": "do",
+        "label": "Играю"
+    },
+
+    "action":
+    {
+        "icon":     "fa-brands fa-steam",
+        "text":     "Steam",
+        "link":     "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/",
+        "colors":   "steam"
+    },
+
+    "tags":
+    [
+        "action:отдых",
+        "form:игра"
+    ]
+}

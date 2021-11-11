@@ -1,0 +1,23 @@
+{
+    "$schema": "http://json-schema.org/schema",
+
+    "title": "Теги",
+    "description": "Список тегов",
+
+    "type": "object",
+    "patternProperties":
+    {
+        "^[a-zА-я]+$":
+        {
+            "description": "Уникальный идентификатор тега",
+            "type": "object",
+            "properties":
+            {
+                "title":    { "type": "string", "description": "Красивое название тега" },
+                "desc":     { "type": "string", "description": "Описание тега" }
+            },
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}

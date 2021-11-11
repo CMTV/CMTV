@@ -1,0 +1,15 @@
+@use 'defs/size';
+
+%tag
+{
+    &[title] { cursor: help; }
+
+    color: var(--c_text-shade-1);
+    font-size: 87%;
+    line-height: 1;
+
+    background: var(--c_bg-shade-2);
+    border-radius: size.$borderRadius;
+
+    padding: 7.5px size.$gap;
+}

@@ -1,0 +1,449 @@
+{
+    "18.09":
+    {
+        "events": [{ "title": "Умер Симба", "desc": "Мой самый любимый и ласковый рыжий котик." }]
+    },
+
+    "16.10":
+    {
+        "time":
+        [
+            {
+                "duration": 1.1,
+                "project":  "pathfinder-wotr",
+                "goals":    ["steam-review"]
+            }
+        ],
+
+        "counters":
+        [
+            {
+                "counter":  "game",
+                "value":    1,
+                "project":  "pathfinder-wotr"
+            }
+        ]
+    },
+
+    "21.10":
+    {
+        "checks": ["weight-loss : diet"]
+    },
+
+    "22.10":
+    {
+        "checks": ["weight-loss : diet"]
+    },
+
+    "23.10":
+    {
+        "counters": [{ "counter": "game", "value": 1, "project": "lis-true-colors" }],
+
+        "checks": ["weight-loss : diet"]
+    },
+
+    "24.10":
+    {
+        "time":
+        [
+            {
+                "duration": 1.5,
+                "project":  "radkopeter",
+                "goals":    ["fill"]
+            }
+        ],
+
+        "checks": ["weight-loss : diet"]
+    },
+
+    "25.10":
+    {
+        "time":
+        [
+            {
+                "duration": 6,
+                "project":  "radkopeter",
+                "goals":    ["v2.0"]
+            },
+
+            {
+                "project":  "radkopeter",
+                "goals":    ["fill"],
+                "duration": 1
+            },
+
+            {
+                "duration": 1,
+                "project":  "combinatorics-book",
+                "goals":    ["notes"]
+            }
+        ],
+
+        "checks": ["weight-loss : diet"]
+    },
+
+    "26.10":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": ["v2.0"],
+                "duration": 6
+            },
+
+            {
+                "project": "radkopeter",
+                "goals": ["fill"],
+                "duration": 1.5
+            },
+
+            {
+                "project": "combinatorics-book",
+                "goals": ["notes"],
+                "duration": 1.5
+            },
+
+            {
+                "project": "the-walking-dead",
+                "goals": ["playthrough"],
+                "duration": 2.15
+            }
+        ],
+
+        "checks": ["weight-loss : diet"]
+    },
+
+    "27.10":
+    {
+        "time":
+        [
+            {
+                "project":  "radkopeter",
+                "goals":    ["v2.0"],
+                "duration": 6
+            },
+            {
+                "project":  "radkopeter",
+                "goals":    ["fill"],
+                "duration": 1.15
+            },
+            {
+                "project":  "combinatorics-book",
+                "goals":    ["notes"],
+                "duration": 1
+            },
+            {
+                "project":  "the-walking-dead",
+                "goals":    ["playthrough"],
+                "duration": 2.5
+            }
+        ],
+        "counters": [{ "counter": "game", "value": 3, "desc": "Мое описание. Дюна фильм!" }],
+        "checks": ["weight-loss : diet"]
+    },
+
+    "28.10":
+    {
+        "time":
+        [
+            {
+                "project":  "radkopeter",
+                "goals":    ["v2.0"],
+                "duration": 7.5
+            },
+            {
+                "project":  "combinatorics-book",
+                "goals":    ["notes"],
+                "duration": 1
+            },
+            {
+                "project":  "the-walking-dead",
+                "goals":    ["playthrough"],
+                "duration": 5
+            }
+        ],
+        "checks": ["weight-loss : diet"]
+    },
+
+    "29.10":
+    {
+        "time":
+        [
+            {
+                "project":  "radkopeter",
+                "goals":    ["v2.0"],
+                "duration": 6
+            },
+            {
+                "project":  "combinatorics-book",
+                "goals":    ["notes"],
+                "duration": 1
+            },
+            {
+                "project":  "the-walking-dead",
+                "goals":    ["playthrough"],
+                "duration": 5
+            }
+        ],
+        "checks": ["weight-loss : diet"]
+    },
+
+    "30.10":
+    {
+        "time":
+        [
+            {
+                "project":  "radkopeter",
+                "goals":    ["v2.0"],
+                "duration": "6:30"
+            },
+            {
+                "project":  "combinatorics-book",
+                "goals":    ["notes"],
+                "duration": "0:40"
+            },
+            {
+                "project":  "the-walking-dead",
+                "goals":    ["playthrough"],
+                "duration": 5
+            }
+        ],
+        "checks": ["weight-loss : diet"]
+    },
+
+    "31.10":
+    {
+        "time":
+        [
+            {
+                "project":  "radkopeter",
+                "goals":    ["v2.0"],
+                "duration": 5
+            },
+            {
+                "project":  "radkopeter",
+                "goals":    ["fill"],
+                "duration": 1
+            },
+            {
+                "project":  "combinatorics-book",
+                "goals":    ["notes"],
+                "duration": "0:20"
+            },
+            {
+                "project":  "the-walking-dead",
+                "goals":    ["playthrough"],
+                "duration": 4
+            }
+        ],
+        "checks": ["weight-loss : diet"]
+    },
+
+    "1.11":
+    {
+        "time":
+        [
+            {
+                "project":  "radkopeter",
+                "goals":    ["v2.0"],
+                "duration": 6
+            },
+            {
+                "project":  "the-walking-dead",
+                "goals":    ["playthrough"],
+                "duration": 5
+            }
+        ],
+        "checks": ["weight-loss : diet"]
+    },
+
+    "2.11":
+    {
+        "time":
+        [
+            {
+                "project":  "radkopeter",
+                "goals":    ["v2.0"],
+                "duration": 4
+            },
+            {
+                "project":  "the-walking-dead",
+                "goals":    ["playthrough"],
+                "duration": "2:30"
+            }
+        ],
+        "checks": ["weight-loss : diet"]
+    },
+
+    "3.11":
+    {
+        "time":
+        [
+            {
+                "project":  "radkopeter",
+                "goals":    ["v2.0"],
+                "duration": 6
+            },
+            {
+                "project":  "the-walking-dead",
+                "goals":    ["playthrough"],
+                "duration": "4:20"
+            }
+        ],
+        "checks": ["weight-loss : diet"],
+        "counters":
+        [
+            {
+                "counter": "game",
+                "project": "the-walking-dead"
+            }
+        ]
+    },
+
+    "4.11":
+    {
+        "time":
+        [
+            {
+                "project":  "radkopeter",
+                "goals":    ["v2.0"],
+                "duration": 6
+            },
+            {
+                "project":  "radkopeter",
+                "goals":    ["fill"],
+                "duration": "1:20"
+            }
+        ],
+        "checks": ["weight-loss : diet"]
+    },
+
+    "5.11":
+    {
+        "time":
+        [
+            {
+                "project":  "radkopeter",
+                "goals":    ["v2.0"],
+                "duration": 6
+            },
+            {
+                "project":  "the-walking-dead",
+                "goals":    ["rest-achievements"],
+                "duration": 4
+            }
+        ],
+        "checks": ["weight-loss : diet"]
+    },
+
+    "6.11":
+    {
+        "time":
+        [
+            {
+                "project":  "radkopeter",
+                "goals":    ["v2.0"],
+                "duration": "4:30"
+            },
+            {
+                "project":  "radkopeter",
+                "goals":    ["fill"],
+                "duration": "0:30"
+            },
+            {
+                "project":  "the-walking-dead",
+                "goals":    ["steam-review"],
+                "duration": "0:40"
+            },
+            {
+                "project":  "the-walking-dead",
+                "goals":    ["rest-achievements"],
+                "duration": 4
+            }
+        ],
+        "checks": ["weight-loss : diet"]
+    },
+
+    "7.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": ["v2.0"],
+                "duration": "4:30"
+            },
+            {
+                "project": "the-walking-dead",
+                "goals": ["rest-achievements"],
+                "duration": 5
+            }
+        ],
+        "checks": ["weight-loss : diet"]
+    },
+
+    "8.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": ["v2.0"],
+                "duration": 5
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": ["tasks"],
+                "duration": "0:40"
+            }
+        ],
+        "checks": ["weight-loss : diet"]
+    },
+
+    "9.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": ["v2.0"],
+                "duration": 5
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": ["tasks"],
+                "duration": "0:30"
+            },
+            {
+                "project": "cs-go",
+                "goals": ["play"],
+                "duration": 4
+            }
+        ],
+        "checks": ["weight-loss : diet"]
+    },
+
+    "10.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": ["v2.0"],
+                "duration": 5
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": ["tasks"],
+                "duration": "0:40"
+            },
+            {
+                "project": "cs-go",
+                "goals": ["play"],
+                "duration": 4
+            }
+        ],
+        "checks": ["weight-loss : diet"]
+    }
+}

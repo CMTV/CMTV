@@ -1,0 +1,398 @@
+@use 'sass:color';
+
+@use 'defs/size';
+@use 'defs/bp';
+
+@use 'includes/status';
+
+@use 'partials/block';
+@use 'partials/hover';
+@use 'partials/scroll';
+@use 'partials/toggle';
+@use 'partials/util';
+
+%tag
+{
+    font-size: 14px;
+    color: var(--c_text-shade-1);
+    padding: 5px size.$gapSmall;
+
+    border: 1px solid var(--c_border);
+    border-radius: size.$borderRadius;
+
+    cursor: pointer;
+
+    @include util.transition(background-color, color);
+}
+
+@mixin triangle($size, $color)
+{
+    @include util.size(0);
+    border: calc(#{$size} / .9) solid transparent;
+    border-left: 0;
+    border-right: $size solid $color;
+}
+
+//
+//
+//
+
+main > .search
+{
+    --searchHeight: 60px;
+
+    @extend %block;
+
+    display: flex;
+    flex-direction: column;
+
+    //
+
+    &:not(._filterTags)
+    {
+        > .filter { display: none; }
+    }
+
+    &._selectTags
+    {
+        > .main > .filterBtn { color: var(--c_text); }
+    }
+    &:not(._selectTags)
+    {
+        > .tags
+        {
+            @extend %toggledOff;
+            border: none;
+        }
+    }
+
+    //
+
+    > .main
+    {
+        display: flex;
+        align-items: stretch;
+        height: var(--searchHeight);
+
+        > i
+        {
+            font-size: 20px;
+            @include util.size(60px);
+            @include util.flexCC;
+        }
+
+        > .searchIcon
+        {
+            color: var(--c_text-shade-1);
+        }
+
+        > input
+        {
+            flex: 1;
+            font-family: inherit;
+            font-size: 18px;
+            outline: none;
+
+            color: var(--c_text);
+            background: var(--c_bg);
+
+            &::placeholder
+            {
+                color: var(--c_text-shade-2);
+            }
+        }
+
+        > .filterBtn
+        {
+            color: var(--c_text-shade-1);
+            cursor: pointer;
+            @include hover.colorAccent(var(--c_text));
+        }
+    }
+
+    > .filter
+    {
+        @extend %scrollbar;
+        height: var(--searchHeight);
+        
+        border-top: 1px solid var(--c_border);
+
+        display: flex;
+        align-items: center;
+        gap: size.$gap;
+
+        padding: 0 size.$gap;
+
+        font-size: 14px;
+
+        > * { flex-shrink: 0; }
+
+        > .emptyFilter
+        {
+            font-size: 15px;
+            color: var(--c_text-shade-2);
+        }
+
+        > .filterTag
+        {
+            @extend %tag;
+
+            background: var(--c_bg-shade-2);
+            &:hover { background: var(--c_bg); }
+        }
+    }
+
+    > .tags
+    {
+        border-top: 1px solid var(--c_border);
+
+        display: flex;
+        
+        > .tagTypes
+        {
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid var(--c_border);
+
+            > .tagType
+            {
+                display: flex;
+                align-items: center;
+                gap: size.$gapSmall;
+                padding: 0 size.$gap;
+                cursor: pointer;
+
+                height: 45px;
+
+                border-top: 1px solid var(--c_border);
+                &:first-of-type { border-top: none; }
+
+                color: var(--c_text-shade-1);
+                @include util.transition(color, background-color);
+
+                &:hover,
+                &[data-toggled]
+                {
+                    color: var(--c_text);
+                    background: var(--c_bg-shade-1);
+                }
+
+                > span { font-size: 16px; }
+
+                @include bp.max(mini) { > span { display: none; } }
+            }
+        }
+
+        > .tagLists
+        {
+            flex: 1;
+            padding: size.$gap;
+            max-height: 180px;
+            @extend %scrollbar;
+
+            > .tagList
+            {
+                display: flex;
+                flex-wrap: wrap;
+                gap: size.$gap;
+
+                @extend %toggle;
+
+                > .tag
+                {
+                    @extend %tag;
+
+                    &._selected,
+                    &:hover
+                    {
+                        background: var(--c_bg-shade-2);
+                    }
+                }
+            }
+        }
+    }
+}
+
+main
+{
+    > .searching,
+    > .searchFailed
+    {
+        &:not(._showing)
+        {
+            @extend %toggledOff;
+        }
+
+        @extend %blockLogic;
+        @include util.flexCC;
+        gap: size.$gap;
+
+        color: var(--c_text-shade-1);
+
+        > img { @include util.size(50px); }
+
+        > i { font-size: 50px; }
+
+        > .label
+        {
+            font-size: 23px;
+            font-weight: 600;
+        }
+    }
+
+    > .searching:not(._showing) { margin-top: -1 * size.$gapStruct; }
+    > .searchFailed:not(._showing)  { margin-bottom: -1 * size.$gapStruct; }
+}
+
+main > .searchResults
+{
+    display: flex;
+    flex-direction: column;
+    gap: size.$gapStruct;
+
+    > .searchResult
+    {
+        @extend %blockLogic;
+
+        display: flex;
+        align-items: flex-start;
+        gap: size.$gap + size.$gapSmall;
+
+        > a.icon
+        {
+            > img
+            {
+                display: block;
+                border-radius: size.$borderRadius;
+                @include util.size(50px);
+            }
+
+            @include bp.max(mini) { display: none; }
+        }
+
+        > .infoBlock
+        {
+            @extend %blockDeco, %blockSection;
+
+            flex: 1;
+            position: relative;
+
+            display: flex;
+            flex-direction: column;
+            gap: size.$gap - 2;
+
+            .arrows
+            {
+                position: absolute;
+                top: 10px;
+                left: -15px;
+
+                @include bp.max(mini) { display: none; }
+
+                .bgArrow
+                {
+                    position: absolute;
+                    top: 0px;
+                    left: 1px;
+                    z-index: 2;
+
+                    @include triangle(15px, var(--c_bg));
+                }
+
+                .borderArrow
+                {
+                    position: absolute;
+                    left: -.3px;
+                    z-index: 1;
+
+                    @include triangle(15px, var(--c_border));
+                }
+            }
+
+            .statusBg
+            {
+                position: absolute;
+                top: -1px; right: -1px; bottom: -1px; left: 0;
+                border-radius: size.$borderRadius;
+
+                @each $status, $color in status.$statusMap
+                {
+                    &.status--#{$status}
+                    {
+                        background: linear-gradient(45deg, transparent 30px, color.change($color, $alpha: .1));
+                    }
+                }
+            }
+
+            > header,
+            > .desc,
+            > footer
+            {
+                position: relative;
+            }
+
+            > header
+            {
+                display: flex;
+                align-items: center;
+                gap: size.$gap;
+
+                margin-bottom: -6px;
+
+                > a.icon
+                {
+                    display: none;
+
+                    img
+                    {
+                        display: block;
+                        border-radius: size.$borderRadius;
+                        @include util.size(30px);
+                    }
+
+                    @include bp.max(mini) { display: block; }
+                }
+
+                > a.title
+                {
+                    font-size: 112.5%;
+                    font-weight: 600;
+                    @extend %underline;
+                }
+            }
+
+            > .desc
+            {
+                color: var(--c_text-shade-1);
+            }
+
+            > footer
+            {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+
+                gap: size.$gap;
+                row-gap: calc(size.$gap / 2);
+
+                color: var(--c_text-shade-2);
+                font-size: 93%;
+                line-height: 1;
+
+                > .type
+                {
+                    cursor: help;
+                    @include util.size(15px);
+                }
+
+                > .tag
+                {
+                    position: relative;
+                    top: -1px;
+                    margin-left: -3px;
+                    &:not(:last-of-type) { &::after { content: ","; } }
+                }
+            }
+        }
+    }
+}

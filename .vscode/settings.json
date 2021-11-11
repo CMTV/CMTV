@@ -1,0 +1,38 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": ["data/tags/*"],
+            "url": "./.vscode/schemas/tags.json"
+        },
+
+        {
+            "fileMatch": ["data/projects/list/*/project.json"],
+            "url": "./.vscode/schemas/project.json"
+        },
+
+        {
+            "fileMatch": ["data/projects/list/*/goals.json"],
+            "url": "./.vscode/schemas/goals.json"
+        },
+
+        //
+        // Life Year
+        //
+
+        {
+            "fileMatch": ["data/life/*/report.json"],
+            "url": "./.vscode/schemas/report.json"
+        },
+
+        {
+            "fileMatch": ["data/life/*/results.json"],
+            "url": "./.vscode/schemas/year-results.json"
+        }
+    ],
+
+    //
+    // Addons
+    //
+    
+    "svg.preview.background": "transparent"
+}

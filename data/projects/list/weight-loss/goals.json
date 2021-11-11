@@ -1,0 +1,16 @@
+{
+    "diet":
+    {
+        "title": "Диета",
+        "status": "done",
+        "start": "21.10.2021",
+        "tags": ["я", "фитнес"],
+        "progress":
+        {
+            "label":    "95.6 → 75 кг",
+            "start":    99.2,
+            "current":  95.6,
+            "target":   75
+        }
+    }
+}

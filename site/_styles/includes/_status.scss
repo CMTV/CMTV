@@ -1,0 +1,31 @@
+@use 'sass:color';
+@use 'sass:list';
+@use 'sass:map';
+
+$statusMap: (
+    todo:   #7B7B7B,
+    do:     #DBBE00,
+    pause:  #ED9633,
+    fail:   #B50000,
+    done:   #0092DB
+);
+
+@function getNames()
+{
+    @return map.keys($statusMap);
+}
+
+@function getColor($statusName)
+{
+    @return map.get($statusMap, $statusName);
+}
+
+@function getBg($statusName)
+{
+    @return color.adjust(map.get($statusMap, $statusName), $lightness: 20%);
+}
+
+@function getBorder($statusName)
+{
+    @return color.adjust(map.get($statusMap, $statusName), $lightness: -5%);
+}

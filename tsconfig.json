@@ -1,0 +1,16 @@
+{
+    "compilerOptions":
+    {
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+
+        "esModuleInterop": true,
+        "baseUrl": "./",
+        "paths": { "src/*": ["./src/*"] },
+        "forceConsistentCasingInFileNames": true
+    },
+
+    "ts-node": { "require": ["tsconfig-paths/register"] },
+    
+    "exclude": ["site/_scripts/*"]
+}

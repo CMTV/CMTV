@@ -1,0 +1,35 @@
+{
+    "title":    "Pathfinder: Wrath of the Righteous",
+    "desc":     "Крестовый поход на демонов, возглавляемый... демоном!",
+    "type":     "in",
+    
+    "status":
+    {
+        "type": "done",
+        "label": "Пройдена"
+    },
+
+    "start":    "22.09.2021",
+    "end":      "15.10.2021",
+
+    "action":
+    {
+        "icon":     "fa-brands fa-steam",
+        "text":     "Steam",
+        "link":     "https://store.steampowered.com/app/1184370/Pathfinder_Wrath_of_the_Righteous/",
+        "colors":   "steam"
+    },
+
+    "tags":
+    [
+        "action:отдых",
+        "form:игра",
+        "rpg",
+        "dnd"
+    ],
+
+    "extra":
+    {
+        "timeFact": false
+    }
+}

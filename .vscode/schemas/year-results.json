@@ -1,0 +1,36 @@
+{
+    "$schema": "http://json-schema.org/schema",
+
+    "title": "Главные итоги года",
+    "description": "Массив главных итогов года",
+
+    "type": "array",
+    "items":
+    {
+        "type": "object",
+        "properties":
+        {
+            "project":
+            {
+                "description": "Идентификатор проекта (если нет иконки)",
+                "type": "string"
+            },
+            "icon":
+            {
+                "description": "Font Awesome иконка итога (если нет проекта)",
+                "type": "string"
+            },
+            "title":
+            {
+                "description": "Суть итога или просто меткая фраза, характеризующая итог",
+                "type": "string"
+            },
+            "desc":
+            {
+                "description": "Описание главного итога года",
+                "type": "string"
+            }
+        },
+        "additionalProperties": false
+    }
+}

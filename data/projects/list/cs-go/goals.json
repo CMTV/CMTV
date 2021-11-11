@@ -1,0 +1,9 @@
+{
+    "play":
+    {
+        "title":    "Игра",
+        "status":   "do",
+        "counted":  false,
+        "tags":     ["отдых", "игра"]
+    }
+}

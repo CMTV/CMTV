@@ -1,0 +1,221 @@
+{
+    "$schema":      "http://json-schema.org/schema",
+
+    "title":        "Проект",
+    "description":  "Основные параметры проекта",
+
+    "type": "object",
+    "properties":
+    {
+        "title":
+        {
+            "description":  "Название проекта",
+            "type":         "string"
+        },
+
+        "desc":
+        {
+            "description":  "Очень емкое и точное описание проекта в одну - две строки",
+            "type":         "string"
+        },
+
+        "type":
+        {
+            "description":  "Характер проекта: потребление, производство или микс?",
+            "type":         "string",
+            "enum":         ["in", "out", "mix"]
+        },
+
+        "status":
+        {
+            "type": "object",
+            "properties":
+            {
+                "type":
+                {
+                    "description":  "Статус проекта",
+                    "type":         "string",
+                    "enum":         ["todo", "do", "pause", "fail", "done"]
+                },
+                "label":
+                {
+                    "description":  "Текст статуса проекта",
+                    "type":         "string"
+                },
+                "tooltip":
+                {
+                    "description":  "Пояснение к статусу проекта",
+                    "type":         "string"
+                }
+            },
+            "additionalProperties": false,
+            "required":
+            [
+                "type",
+                "label"
+            ]
+        },
+
+        "date":
+        {
+            "description":  "Сокращение для свойств `start` и `end`, в случае, если проект длится всего один день",
+            "type":         "string"
+        },
+
+        "start":
+        {
+            "description":  "Дата начала любой работы над проектом",
+            "type":         "string"
+        },
+
+        "end":
+        {
+            "description":  "Дата полного завершения работы или закрытия проекта",
+            "type":         "string"
+        },
+
+        "action":
+        {
+            "description":  "Цветная кнопка действия",
+            "type": "object",
+            "properties":
+            {
+                "icon":
+                {
+                    "description":  "Font Awesome иконка перед текстом",
+                    "type":         "string"
+                },
+                "text":
+                {
+                    "description":  "Текст на кнопке действия",
+                    "type":         "string"
+                },
+                "link":
+                {
+                    "description":  "Адрес ссылки, на которую ведет кнопка",
+                    "type":         "string"
+                },
+                "colors":
+                {
+                    "description":  "Массив цветов фона для кнопки",
+                    "type":         ["array", "string"],
+                    "items":        { "type": "string" }
+                }
+            },
+            "additionalProperties": false,
+            "required":
+            [
+                "text",
+                "link",
+                "colors"
+            ]
+        },
+
+        "facts":
+        {
+            "description": "Набор основных фактов проекта (количество зрителей, написанных глав, решенных задач и всякое такое)",
+            "type": "array",
+            "items":
+            {
+                "type": "object",
+                "properties":
+                {
+                    "id":
+                    {
+                        "description":  "ID факта",
+                        "type":         "string"
+                    },
+                    "label":
+                    {
+                        "description":  "Пояснение к факту (одно/два слова)",
+                        "type":         "string"
+                    },
+                    "data":
+                    {
+                        "description":  "Значение факта"
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+
+        "links":
+        {
+            "description": "Ссылки на файлы и дополнительные материалы",
+            "type": "array",
+            "items":
+            {
+                "type": "object",
+                "properties":
+                {
+                    "icon":
+                    {
+                        "description":  "Font Awesome иконка ссылки",
+                        "type":         "string"
+                    },
+                    "text":
+                    {
+                        "description":  "Название ссылки",
+                        "type":         "string"
+                    },
+                    "link":
+                    {
+                        "description":  "Адрес ссылки",
+                        "type":         "string"
+                    }
+                },
+                "additionalProperties": false,
+                "required":
+                [
+                    "icon",
+                    "text",
+                    "link"
+                ]
+            }
+        },
+
+        "tags":
+        {
+            "description": "Теги проекта. Можно добавлять префиксы вида `area:`, `action:` и `form:`.",
+            "type": "array",
+            "items": { "type": "string" }
+        },
+
+        "related":
+        {
+            "description": "Связи с другими проектами. Для установки связи нужна серьезная причина!",
+            "type": "object",
+            "patternProperties":
+            {
+                "^[a-z-]+$":
+                {
+                    "description": "Идентификатор связанного проекта и веская причина, по которой связка установлена.",
+                    "type": "string"
+                }
+            }
+        },
+
+        "extra":
+        {
+            "description": "Дополнительные данные",
+            "type": "object",
+            "properties":
+            {
+                "timeFact":
+                {
+                    "description": "Показывать ли факт с общим временем, затраченным на проект",
+                    "type": "boolean"
+                }
+            }
+        }
+    },
+
+    "additionalProperties": false,
+
+    "required": [
+        "title",
+        "desc",
+        "type",
+        "status"
+    ]
+}

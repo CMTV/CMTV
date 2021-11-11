@@ -1,0 +1,25 @@
+name: Node CI
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Building site
+        run: |
+          npm install
+          npm run filldb
+          npm run build
+      
+      - name: Deploy site to gh-pages branch
+        uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
+        width:
+          repo-token: ${{ secrets.GH_PAT }}
+          site-directory: dist
+          commit-message: Deploy to GH Pages

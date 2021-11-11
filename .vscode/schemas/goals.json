@@ -1,0 +1,109 @@
+{
+    "$schema": "http://json-schema.org/schema",
+
+    "title":        "Цели проекта",
+    "description":  "Основные задачи проекта и прогресс по ним.",
+
+    "type": "object",
+    "patternProperties":
+    {
+        "^[a-z0-9-.]+$":
+        {
+            "description": "Уникальный (в пределах проекта) идентификатор цели.",
+            "type": "object",
+            "properties":
+            {
+                "title":
+                {
+                    "description": "Название цели",
+                    "type": "string"
+                },
+
+                "status":
+                {
+                    "description": "Статус цели. Влияет на цвет кружка цели и блоков в хронокарте. Цели со статусом `done` учитываются в результатах года (см. поля `date` и `end`).",
+                    "type": "string",
+                    "enum": ["todo", "do", "pause", "fail", "done"]
+                },
+
+                "counted":
+                {
+                    "description": "Учитывать ли статус цели в итогах года.",
+                    "type": "boolean"
+                },
+    
+                "plan":
+                {
+                    "description": "План цели. Используется только для разметки границ хроноблоков. Пример: [\"05.10.2021\", \"25.11.2019 - 11.12.2019\"].",
+                    "type": "array",
+                    "items": { "type": "string" }
+                },
+    
+                "date":
+                {
+                    "description": "Дата начала и конца цели. Используется вместо указания `start` и `end`, когда цель длится всего один день. Используется в учете итогов года.",
+                    "type": "string"
+                },
+    
+                "start":
+                {
+                    "description": "Дата начала цели. Используется вместо указания `date`, когда цель занимает больше одног одня. Используется в учете итогов года.",
+                    "type": "string"
+                },
+    
+                "end":
+                {
+                    "description": "Дата конца цели. Используется вместо указания `date`, когда цель занимает больше одного дня. Используется в учете итогов года.",
+                    "type": "string"
+                },
+    
+                "tags":
+                {
+                    "description": "Теги цели. По ним будет вестись учет по часам. Могут быть исключены в отчетах за день.",
+                    "type": "array",
+                    "items": { "type": "string" }
+                },
+
+                "progress":
+                {
+                    "description": "Строка заполнения прогресса.",
+                    "type": "object",
+                    "properties":
+                    {
+                        "label":
+                        {
+                            "description": "Текстовое представление полосы прогресса.",
+                            "type": "string"
+                        },
+                        "current":
+                        {
+                            "description": "Значение прогресса в данный момент.",
+                            "type": "number"
+                        },
+                        "start":
+                        {
+                            "description": "Начальное значение прогресса, с которого идет отсчет.",
+                            "type": "number"
+                        },
+                        "target":
+                        {
+                            "description": "Конечное значение прогресса, которого нужно достичь.",
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "current",
+                        "target"
+                    ],
+                    "additionalProperties": false
+                }
+            },
+            "required": [
+                "status",
+                "title"
+            ],
+            "additionalProperties": false
+        }
+    },
+    "additionalProperties": false
+}

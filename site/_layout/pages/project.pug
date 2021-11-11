@@ -135,14 +135,15 @@ block main
                             .info
                                 .title= goal.title
                                 .facts
-                                    .date
-                                        if (goal.single)
-                                            i.fa-solid.fa-calendar-day
-                                            span= goal.start
-                                        else
-                                            i.fa-solid.fa-calendar-days
-                                            span= goal.start + ' – ' + (goal.end ? goal.end : '?')
-                                    
+                                    if (goal.start || goal.end)
+                                        .date
+                                            if (goal.single)
+                                                i.fa-solid.fa-calendar-day
+                                                span= goal.start
+                                            else
+                                                i.fa-solid.fa-calendar-days
+                                                span= goal.start + ' – ' + (goal.end ? goal.end : '?')
+                                        
                                     if (goal.time)
                                         .time(title="Затрачено времени на цель")
                                             i.fa-solid.fa-clock

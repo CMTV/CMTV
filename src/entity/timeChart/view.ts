@@ -6,6 +6,8 @@ import { ViewTag } from "../tag/view";
 
 export class ViewTimeChart
 {
+    time:   string;
+
     area:   ViewTimeChartFrac[];
     action: ViewTimeChartFrac[];
     form:   ViewTimeChartFrac[];
@@ -63,6 +65,9 @@ export class ViewTimeChart
         });
 
         if (!chart.area && !chart.action && !chart.form) return null;
+
+        let globalDuration = reports.reduce((previous, current) => previous + current.duration, 0);
+        chart.time = UtilDate.getFancyTime(globalDuration);
 
         return chart;
     }

@@ -445,5 +445,18 @@
             }
         ],
         "checks": ["weight-loss : diet"]
+    },
+
+    "11.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": ["v2.0"],
+                "duration": 5
+            }
+        ],
+        "checks": ["weight-loss : diet"]
     }
 }

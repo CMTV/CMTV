@@ -21,6 +21,7 @@ main > .yearResults
         @extend %blockSection;
         font-size: 130%;
         font-weight: 600;
+        border-bottom: 1px solid var(--c_border);
     }
 
     > .results
@@ -32,7 +33,10 @@ main > .yearResults
         {
             @extend %blockSection;
 
-            border-top: 1px solid var(--c_border);
+            &:not(:first-of-type)
+            {
+                border-top: 1px solid var(--c_border);
+            }
 
             display: grid;
             grid-template-columns: 50px auto;

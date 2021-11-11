@@ -23,7 +23,21 @@ $customColors: (
 .tagChart
 {
     @extend %block;
-    > header { @extend %blockPlainHeader; }
+    
+    > header
+    {
+        @extend %blockPlainHeader;
+
+        > span { flex: 1; }
+    
+        > .time
+        {
+            cursor: help;
+            color: var(--c_text-shade-1);
+            font-size: 16px;
+            font-weight: normal;
+        }
+    }
 
     > .area,
     > .action,

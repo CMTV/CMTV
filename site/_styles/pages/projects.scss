@@ -322,6 +322,12 @@ main > .searchResults
                         background: linear-gradient(45deg, transparent 30px, color.change($color, $alpha: .1));
                     }
                 }
+
+                @include bp.max(mini)
+                {
+                    border-radius: 0;
+                    right: 0; left: 0;
+                }
             }
 
             > header,

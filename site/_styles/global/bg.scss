@@ -48,7 +48,7 @@ body.theme--dark > .bg
 {
     > .activities
     {
-        opacity: .04;
+        opacity: .035;
         filter: invert(1);
         @include bp.max(stretch) { opacity: .015; }
     }

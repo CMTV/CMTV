@@ -14,7 +14,8 @@ mixin tagChart(tagChart)
     .tagChart
         header
             i.fa-solid.fa-clock
-            span Распределение времени
+            span Время
+            .time(title="Время, принимаемое за 100%")= tagChart.time
         
         if (tagChart.area)
             .area

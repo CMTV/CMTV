@@ -19,7 +19,7 @@ jobs:
       
       - name: Deploy site to gh-pages branch
         uses: alex-page/blazing-fast-gh-pages-deploy@v1.1.0
-        width:
+        with:
           repo-token: ${{ secrets.GH_PAT }}
           site-directory: dist
           commit-message: Deploy to GH Pages

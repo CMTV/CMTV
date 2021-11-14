@@ -1,0 +1,186 @@
+<!DOCTYPE html><!--
+
+
+ ▄████▄   ███▄ ▄███▓▄▄▄█████▓ ██▒   █▓
+ ▒██▀ ▀█  ▓██▒▀█▀ ██▒▓  ██▒ ▓▒▓██░   █▒
+ ▒▓█    ▄ ▓██    ▓██░▒ ▓██░ ▒░ ▓██  █▒░
+ ▒▓▓▄ ▄██▒▒██    ▒██ ░ ▓██▓ ░   ▒██ █░░
+ ▒ ▓███▀ ░▒██▒   ░██▒  ▒██▒ ░    ▒▀█░  
+ ░ ░▒ ▒  ░░ ▒░   ░  ░  ▒ ░░      ░ ▐░  
+   ░  ▒   ░  ░      ░    ░       ░ ░░  
+ ░        ░      ░     ░           ░░  
+ ░ ░             ░                  ░  
+ ░                                 ░   
+
+
+--><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Демидович — Петр Радько</title><meta name="description" content="Подробный справочник по математическому анализу и задачник с понятными решениями."><link rel="canonical" href="https://radkopeter.ru/projects/dodem/"><meta name="keywords" content="Петр Радько, CMTV"><meta name="og:image" content="https://radkopeter.ru/site/graphics/og-images/project-dodem.jpeg"><meta name="generator" content="CMTV Static Site Generator"><meta name="build-time" content="1636902711920"><link rel="icon" type="image/png" href="/site/graphics/favicon.png"><link rel="preload" as="style" href="/site/vendor/font-awesome/css/all.min.css"><link rel="stylesheet" href="/site/vendor/font-awesome/css/all.min.css"><link href="/site/vendor/photoswipe/photoswipe.css" rel="stylesheet"><script type="module" src="/site/scripts/lightbox.js"></script><link href="/site/styles/global.css" rel="stylesheet"><link href="/site/styles/project.css" rel="stylesheet"><script src="/site/scripts/global.js" defer></script><script src="/site/scripts/project.js" defer></script></head><body class="project"><script>(() =>
+{
+    ['color-scheme', 'theme-color'].forEach(name =>
+    {
+        let tag = document.createElement('meta');
+            tag.setAttribute('name', name);
+            tag.setAttribute('content', '');
+        
+        document.head.appendChild(tag);
+    });
+
+    var preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+    var preferTheme = (preferDark ? 'dark' : 'light');
+    var theme = localStorage.getItem('theme');
+
+    if (theme === null || theme === 'null')
+        theme = preferTheme;
+
+    setTheme(theme);
+})();
+
+function setTheme(theme)
+{
+    document.body.classList.toggle('theme--dark', (theme === 'dark'));
+
+    var themeColors = { light: '#ffffff', dark: '#333333' };
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[theme]);
+    document.querySelector('meta[name="color-scheme"]').setAttribute('content', theme);
+
+    localStorage.setItem('theme', theme);
+}
+
+function toggleTheme()
+{
+    var theme = localStorage.getItem('theme');
+    setTheme((theme === 'dark' ? 'light' : 'dark'));
+}</script><div class="bg"><div class="activities"></div><div class="fog"></div></div><div class="contactBlock"><div class="modal"><header><h2>Связаться со мной</h2><i class="fa-solid fa-times closeBtn"></i></header><ul><li>Я предпочитаю общаться в текстовом формате</li><li>Ясно и понятно обозначайте тему переписки</li><li>Готов обсудить самые безумные и интересные идеи!</li></ul><div class="email"><a href="mailto:newpetya@inbox.ru">newpetya@inbox.ru</a></div></div></div><div class="site"><header><div class="gradient"><div></div></div><div class="headerContent"><a class="me" href="/"><div class="logo"><div class="gradient"><div></div></div><img src="/site/graphics/me.png"></div><h1>Петр <span>Радько</span></h1></a><nav><a class="navItem projects" href="/projects" title="Что я делаю?"><i class="fa-solid fa-clone"></i><span>Проекты</span></a><a class="navItem life" href="/life" title="Моя борьба"><i class="fa-solid fa-heart"></i><span>Жизнь</span></a><div class="navItem themeSwitcher" onclick="toggleTheme()" title="Переключить цветовую схему"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></div><div class="navItem contact" title="Связаться со мной"><i class="fa-solid fa-envelope-open-text"></i></div></nav></div></header><main><div class="mainBlock"><header><div class="icon"><img src="/projects/dodem/icon.svg"></div><div class="title">Демидович</div><div class="desc">Подробный справочник по математическому анализу и задачник с понятными решениями.</div></header><div class="mainBar"><div class="facts"><div class="fact status"><div class="label">Статус</div><div class="data"><div title="Работа приостановлена" class="statusCircle statusCircle--pause"></div> <div >Пауза</div></div></div><div class="fact tasks"><div class="label">Задачи</div><div class="data">4460</div></div></div><style>.actionBtn > .bg { background: linear-gradient(45deg, #147BDA,#0AA2F4); }</style><div class="actionContainer"><a class="actionBtn" href="https://dodem.ru" target="_blank"><div class="bg"></div><div class="label"><i class="fa-solid fa-globe"></i><span>Сайт</span></div></a></div></div><div class="showcase" data-pswp-gallery><a href="/projects/dodem/showcase/1-index.jpg" data-pswp-width="1000" data-pswp-height="1137"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img src="/projects/dodem/showcase/1-index.jpg" loading="lazy"></a><a href="/projects/dodem/showcase/2-toc-tasks.jpg" data-pswp-width="1000" data-pswp-height="1137"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img src="/projects/dodem/showcase/2-toc-tasks.jpg" loading="lazy"></a><a href="/projects/dodem/showcase/3-tasks.jpg" data-pswp-width="1000" data-pswp-height="1137"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img src="/projects/dodem/showcase/3-tasks.jpg" loading="lazy"></a><a href="/projects/dodem/showcase/4-task.jpg" data-pswp-width="1000" data-pswp-height="1137"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img src="/projects/dodem/showcase/4-task.jpg" loading="lazy"></a><a href="/projects/dodem/showcase/5-book-pages.jpg" data-pswp-width="1000" data-pswp-height="1137"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img src="/projects/dodem/showcase/5-book-pages.jpg" loading="lazy"></a><a href="/projects/dodem/showcase/6-book-page.jpg" data-pswp-width="1000" data-pswp-height="1137"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img src="/projects/dodem/showcase/6-book-page.jpg" loading="lazy"></a></div><div class="mainContent"><p>Задачник Демидовича по математическому анализу очень популярный. Он славится своими интересными, сложными и нестандартными задачами.
+В одном только Яндексе по ключевым фразам «демидович», «демидович решения» совершается более 200 000 поисковых запросов в год.
+Но есть одна гигантская проблема: <strong>не существует решебника на русском языке</strong>.</p>
+<p>Так как я изучаю математический анализ, мне в любом случае придется решить много задач из этого задачника.
+Поэтому я решил прорешать их все, а заодно создать самый понятный решебник вместе с подробной справочной системой.
+Причем свое решение или страницу справочника может предложить любой желающий.</p>
+</div><div class="links"><a class="link" href="https://github.com/CMTV/dodem" target="_blank"><i class="fa-fw fa-brands fa-github"></i><div>Исходный код</div></a><a class="link" href="https://vk.com/do_dem" target="_blank"><i class="fa-fw fa-brands fa-vk"></i><div>Группа ВК</div></a><a class="link" href="https://boosty.to/dodem" target="_blank"><i class="fa-fw fa-solid fa-hand-holding-dollar"></i><div>Пожертвования</div></a></div></div><div class="direction"><header><img class="type" src="/site/graphics/mix.svg" title="Производитель и потребитель"><div class="mainTags"><div class="area"><i class="fa-fw fa-solid fa-signs-post"></i><div class="label">Область</div><div class="value" title="Царица всех наук.">математика</div></div><div class="action"><i class="fa-fw fa-solid fa-hand-fist"></i><div class="label">Действие</div><div class="value" title="Делюсь знаниями с другими людьми.">просвещение</div></div><div class="form"><i class="fa-fw fa-solid fa-vector-square"></i><div class="label">Форма</div><div class="value">сайт</div></div></div></header><div class="tags"><div class="tag" title="Проекты, которые развивают меня как программиста.">информатика</div><div class="tag">программирование</div><div class="tag">изучение</div><div class="tag" title="Технология создания сайтов, страницы которых полностью собираются заранее.">ssg</div><div class="tag" title="Препроцессор языка HTML, позволяющий писать простую, динамическую и переиспользуемую разметку.">pug</div><div class="tag" title="Расширение языка CSS с поддержкой вложенных селекторов, переменных, функций и прочего.">scss</div><div class="tag" title="Строго типизированный диалект JavaScript от Microsoft.">ts</div><div class="tag" title="Программная платформа, превращающая язык JavaScript в язык общего назначения (как C, C++, Java и другие).">node.js</div></div></div><div class="goalDateData"><header><div class="goalChart"><div class="total">4</div><div class="inner"></div><div class="fracs" style="background: conic-gradient( var(--c_goalChart-done) 0% 75%,var(--c_goalChart-pause) 75% 100% )"><div class="sep" style="transform: rotateZ(270deg)"></div><div class="sep" style="transform: rotateZ(360deg)"></div></div></div><div class="data"><div class="goalCount"><i class="fa-solid fa-crosshairs fa-fw"></i><div class="label">Цели</div><div class="value"><div class="done" title="Выполнено">3</div><div class="pause" title="Приостановлено">1</div></div></div><div class="start"><i class="fa-solid fa-plus fa-fw"></i><div class="label">Начало</div><div class="value">6 января 2020</div></div></div></header><div class="goals"><div class="goal goal--pause"><div class="num">1</div><div class="info"><div class="title">Решение задач</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>06.01.2020 – ?</span></div></div><div class="progress"><div class="label" title="Прогресс (8.21%)">366 / 4460</div><div class="bar"><div style="width: 8.20627802690583%"></div></div></div></div></div><div class="goal goal--done"><div class="num">2</div><div class="info"><div class="title">Версия 3.0</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>21.03.2021 – 27.07.2021</span></div></div></div></div><div class="goal goal--done"><div class="num">3</div><div class="info"><div class="title">Версия 2.0</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>06.06.2020 – 26.07.2020</span></div></div></div></div><div class="goal goal--done"><div class="num">4</div><div class="info"><div class="title">Версия 1.0</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>01.01.2020 – 11.01.2020</span></div></div></div></div></div></div><div class="timelineBlock"><header><i class="fa-solid fa-bars-staggered"></i><span>Хронокарта</span></header><div class="timeline"><div class="inner"><div class="hider"></div><div class="months"><div class="month" style="flex-basis: 8.493150684931507%">янв</div><div class="month" style="flex-basis: 7.671232876712329%">фев</div><div class="month" style="flex-basis: 8.493150684931507%">мар</div><div class="month" style="flex-basis: 8.21917808219178%">апр</div><div class="month" style="flex-basis: 8.493150684931507%">май</div><div class="month" style="flex-basis: 8.21917808219178%">июн</div><div class="month" style="flex-basis: 8.493150684931507%">июл</div><div class="month" style="flex-basis: 8.493150684931507%">авг</div><div class="month" style="flex-basis: 8.21917808219178%">сен</div><div class="month" style="flex-basis: 8.493150684931507%">окт</div><div class="month" style="flex-basis: 8.21917808219178%">ноя</div><div class="month" style="flex-basis: 8.493150684931507%">дек</div></div><div class="labels"><div class="label label--year">2020</div><div class="vacant"></div><div class="sep"></div><div class="label label--year">2021</div><div class="vacant"></div></div><div class="data"><div class="monthGuides"><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 7.671232876712329%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div></div><div class="rows"><div class="row"><div class="fragment wire done  goal-4" style="left: 0.273224043715847%; width: 2.73224043715847%;"><div class="marker" title="01.01.2020 - 11.01.2020&#13;Версия 1.0"><div class="goalNum">4</div></div><div class="rect" title="01.01.2020 - 11.01.2020&#13;Версия 1.0"></div></div><div class="fragment wire done  goal-3" style="left: 43.169398907103826%; width: 13.661202185792348%;"><div class="marker" title="06.06.2020 - 26.07.2020&#13;Версия 2.0"><div class="goalNum">3</div></div><div class="rect" title="06.06.2020 - 26.07.2020&#13;Версия 2.0"></div></div></div><div class="row"><div class="fragment wire pause  goal-1" style="left: 1.639344262295082%; width: 41.53005464480874%;"><div class="marker" title="06.01.2020 - 06.06.2020&#13;Решение задач"><div class="goalNum">1</div></div><div class="rect" title="06.01.2020 - 06.06.2020&#13;Решение задач"></div></div><div class="fragment wire pause  goal-1" style="left: 56.830601092896174%; width: 43.169398907103826%;"><div class="rect" title="26.07.2020 - 31.12.2020&#13;Решение задач"></div></div></div><div class="sep"></div><div class="row"><div class="fragment wire pause  goal-1" style="left: 0.273972602739726%; width: 21.643835616438356%;"><div class="marker" title="01.01.2021 - 21.03.2021&#13;Решение задач"><div class="goalNum">1</div></div><div class="rect" title="01.01.2021 - 21.03.2021&#13;Решение задач"></div></div></div><div class="row"><div class="fragment wire done  goal-2" style="left: 21.91780821917808%; width: 35.06849315068493%;"><div class="marker" title="21.03.2021 - 27.07.2021&#13;Версия 3.0"><div class="goalNum">2</div></div><div class="rect" title="21.03.2021 - 27.07.2021&#13;Версия 3.0"></div></div></div></div></div></div></div></div><div class="related"><header><i class="fa-solid fa-code-compare"></i><span>Связанные проекты</span></header><div class="relatedProject"><a class="icon" href="/projects/severomorsk"><img src="/projects/severomorsk/icon.jpg"></a><div class="title"><a href="/projects/severomorsk">Жизнь на севере — Североморск</a></div><div class="reason">Без поездки на север &quot;Демидович&quot; никогда не появился бы на свет.</div></div></div><div class="blocks"><div class="groupSepTop"></div><div class="block"><header><div class="info"><div class="scope">Январь 2020</div><div class="title">Первая версия</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><div data-pswp-gallery>    <a href="images/v1/index.jpg" target="_blank" data-pswp-width="1279" data-pswp-height="914"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v1/index.jpg" alt="Главная страница">
+</a>
+    <a href="images/v1/search-states.jpg" target="_blank" data-pswp-width="630" data-pswp-height="863"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v1/search-states.jpg" alt="Состояния поля поиска">
+</a>
+    <a href="images/v1/task.jpg" target="_blank" data-pswp-width="830" data-pswp-height="891"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v1/task.jpg" alt="Задача">
+</a>
+</div>
+<p>Заканчивался 2020 год. Я все еще <a href="/projects/severomorsk" target="_blank">жил</a> в Североморске.
+Мы с Колей только завершили работу над <a href="/projects/tic-tac-toe-3d" target="_blank">«Крестиками Ноликами 3D»</a>.
+После решили полностью переключится на изучение математического анализа.</p>
+<p>Для отработки полученных знаний выбрали задачник Демидовича.
+И не прогадали. Задачи были интересными и сложными.
+Так продолжалось где-то месяц.</p>
+<p>Это был месяц открытий.
+Каждая задача поднимает какой-то важный аспект, раскрывает пройденную тему под необычным углом, решается хитрым образом.
+Я все яснее понимал, что просто не успеваю осознать и переварить всю эту информацию, что выбранный нами темп слишком быстрый для меня.</p>
+<p>Сразу после Нового года, я поделился своими мыслями с Колей и предложил идею сайта-решебника «Демидович».
+Подробно расписывая решения я не только сам полностью их понимаю и осознаю, но еще помогаю понять и другим учащимся, у которых нет такого крутого наставника.</p>
+<p>Коля идею поддержал и в начале 2021 года я за 10 дней сделал первую версию Демидовича.
+Сайт был статическим. Специально для него я написал генератор, который из подготовленных файлов решений
+собирал готовый сайт. Файлы сайта были расположены на GitHub. Платить нужно было только за доменное имя.</p>
+<p>Общий темп прохождения задачника и оформления решений на сайт оказался очень медленным.
+Удачей было в день решить и оформить 5 задач. Но зато я выжимал из этих 5 задач максимум информации.</p>
+<p>По мере оформления решений у нас накопилось много полезного материала, который использовался в большом количестве
+разных решений. И тогда мы придумали концепцию прото-задач, то есть отдельных страниц на сайте, в
+которых расписаны типовые приемы решения задач, полезные теоремы, свойства и всякое такое.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="scope">Июнь - июль 2020</div><div class="title">Вторая версия</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><div data-pswp-gallery>    <a href="images/v2/drafts.jpg" target="_blank" data-pswp-width="1563" data-pswp-height="1489"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v2/drafts.jpg" alt="Наброски">
+</a>
+    <a href="images/v2/index.jpg" target="_blank" data-pswp-width="1000" data-pswp-height="887"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v2/index.jpg" alt="Главная страница">
+</a>
+    <a href="images/v2/toc.jpg" target="_blank" data-pswp-width="1000" data-pswp-height="938"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v2/toc.jpg" alt="Оглавление">
+</a>
+    <a href="images/v2/toc-tasks.jpg" target="_blank" data-pswp-width="1000" data-pswp-height="940"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v2/toc-tasks.jpg" alt="Список задач">
+</a>
+    <a href="images/v2/task.jpg" target="_blank" data-pswp-width="1000" data-pswp-height="940"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v2/task.jpg" alt="Задача">
+</a>
+    <a href="images/v2/proto-task.jpg" target="_blank" data-pswp-width="1000" data-pswp-height="1039"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v2/proto-task.jpg" alt="Прото-задача">
+</a>
+</div>
+<p>Вскоре после возвращения домой из Североморска я принялся за разработку второй версии Демидовича,
+так как имеющегося функционала сайта просто не хватало. На разработку ушло полтора месяца.</p>
+<p>Целая неделя ушла на прототипирование дизайна страницы задачи.
+Нужно было придумать, как удобно и красиво расположить большое количество информации и множество элементов управления
+на одну веб-страницу. Мы с отцом перепробовали около 10 разных вариантов компоновки страницы. Но конечной результат получился просто шикарным.</p>
+<p>В этой версии математические формулы генерировалась вместе с генерацией страниц сайта.
+При загрузке страницы в браузере сразу отображается готовая математика без тяжеловесной JavaScript библиотеки. Это сильно облегчило страницы, ускорило их загрузку, а также позволило избавиться от надоедливого бага с пляшущим размером шрифта формул.</p>
+<p>Именно здесь я впервые придумал фишку с «облачным» фоном: еле заметные формулы медленно перекрываются фоновыми «облаками».
+Создается красивый эффект проявляющихся и исчезающих математических формул. Такую же идею я позднее использовал в интро своего <a href="p:youtube-cmtv">YouTube канала</a>, а также во второй версии <a href="/projects/radkopeter" target="_blank">сайта о себе</a>.</p>
+<p>В целом, начиная со второй версии сайт превратился из обычного решебника в новое, цифровое, улучшенное издание задачника Демидовича: с оглавлением, удобной навигацией и дополнительными материалами в виде прото-задач.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="scope">Март - июль 2021</div><div class="title">Третья версия</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><div data-pswp-gallery>    <a href="images/v3/cover.jpg" target="_blank" data-pswp-width="1920" data-pswp-height="1080"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v3/cover.jpg" alt="Обложка версии 3.0">
+</a>
+    <a href="images/v3/logo-variants.jpg" target="_blank" data-pswp-width="1000" data-pswp-height="356"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v3/logo-variants.jpg" alt="Финальные варианты логотипа">
+</a>
+    <a href="images/v3/logo-integral-concept.jpg" target="_blank" data-pswp-width="512" data-pswp-height="255"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v3/logo-integral-concept.jpg" alt="Идея &quot;интегрального&quot; логотипа">
+</a>
+    <a href="images/v3/logo-inspiration.jpg" target="_blank" data-pswp-width="1000" data-pswp-height="563"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v3/logo-inspiration.jpg" alt="Освновные источники вдохновления логотипа">
+</a>
+    <a href="images/v3/logo-drafts.jpg" target="_blank" data-pswp-width="1000" data-pswp-height="563"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v3/logo-drafts.jpg" alt="Наброски логотипа">
+</a>
+    <a href="images/v3/sketch.jpg" target="_blank" data-pswp-width="1200" data-pswp-height="1189"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v3/sketch.jpg" alt="Скетч основных элементов сайта в Adobe XD">
+</a>
+    <a href="images/v3/db-schema.jpg" target="_blank" data-pswp-width="1500" data-pswp-height="946"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/v3/db-schema.jpg" alt="Схема базы данных">
+</a>
+</div>
+<p>Разработку третьей версии можно назвать первым долгостроем в моей жизни.
+Почти 4 месяца ежедневной работы. Было очень сложно. Ближе к концу я очень устал от разработки.
+Хотелось все бросить и взяться за какой-нибудь другой проект. Но я справился.</p>
+<h2>Новый логотип</h2>
+<p>В предыдущих версиях логотип представлял собой синюю букву «Д».
+На первое время это вполне неплохой вариант.
+Но с грядущей третьей версией и окончательным превращением из решебника в информационно-справочную систему стало очевидно, что раскрашенная буква в качестве логотипа смотрится уж очень банально, пресно.</p>
+<p>Решил сделать новый, читаемый и стильный логотип.
+Основная идея — в должна читаться буква «Д» (отсылка к названию проекта).
+Но буква «Д» может много чего обозначать. Поэтому нужно добавить что-то еще.
+Что-то, что связывает эту букву и основную тему задачника. Нетрудно догадаться, что это символ бесконечности.
+Именно понятие о бесконечности лежит в основе всего математического анализа, которому и посвящен задачник.</p>
+<p>Мне сильно приглянулся стильный логотип IDE Visual Studio и Visual Studio Code от Microsofrt потому что в их основе как раз и лежит символ бесконечности. Я пытался изобразить метод интегрирования (разбиение на прямоугольники). Потом от этой идеи мы с отцом решили отказаться, потому что уж слишком отдаленно все это дело намекает букву «Д».</p>
+<p>Х отелось использовать красивые переходы цветов и градиенты и логотипов от Microsoft в сочетании с нашей идей для логотипа Демидовича (буква «Д» в сочетании с бесконечностью). В конечном итоге мы остановились на четырех финальных вариантах:</p>
+<p><strong>1</strong>. Первый вариант был прямой попыткой реализовать один из набросков.
+Получилось вроде неплохо, правда один из подошедших учеников спросил «Что это за член?».
+Больше от этой ассоциации избавиться не удавалось, поэтому пришлось думать над следующим вариантом.</p>
+<p><strong>2</strong>. Этот вариант стал отправной точкой, из которой последовательными шагами получился принятый в итоге вариант.
+Равнобокая трапеция как-бы отсылает к букве «Д». Символ бесконечности по центру походит на глаза.
+В целом, выглядит неплохо, но буква «Д» вообще не читается.
+И даже если человеку сказать, что проект называется «Демидович», ассоциаций с трапецией у него не возникнет.</p>
+<p><strong>3</strong>. К предыдущему варианту добавлен прямоугольник снизу.
+Теперь возникают интересные ассоциации с «глазастой шляпой» (прямо как говорящая шляпа из Гарри Поттера) или какой-нибудь мигалкой полицейских.
+Именно этот вариант хотел сделать финальным. Но возникла проблема — он не вписывается в квадрат, а это плохо.</p>
+<p><strong>4</strong>. Финальный вариант появился как последняя адекватная попытка вписать третий вариант в квадрат.
+Теперь логотип представляет собой четко различимую букву «Д» с бесконечностью в центре.
+Темно-синий цвет был опущен ближе к горизонтальному прямоугольнику, как бы создавая эффект тени от него (прямо как в логотипах от Microsoft).
+Большой плюс этого логотипа — символ бесконечности можно вращать, что добавляет динамику логотипу.</p>
+<p>Последний вариант решено было использовать в готовом проекте.</p>
+<h2>Использование базы данных</h2>
+<p>Файловая структура позволяет удобно организовывать решения и справочные страницы.
+Но работать со всеми этими файлами на программном уровне очень тяжело.</p>
+<p>Поэтому я внедрил комбинированный подход. Первый уровень — файловая система. Затем вся информация из файлов
+загружается в заранее готовую базу данных. И уже с базой данных работает генератор сайта. Да, эта схема гораздо сложнее, чем прямая связь «файлы &lt;-&gt; генератор», но с ее помощью удалось добавить огромное количество фишек в третью версию сайта.</p>
+<h2>Другие фишки</h2>
+<p>Впервые использовал Adobe XD для создания <strong>цифровых скетчей</strong> важных элементов сайта.
+Очень удобно, что можно разработать практически готовый дизайн элементов страницы, а потом
+просто программировать их, не терзаясь дизайнерскими вопросами.</p>
+<p>Добавил <strong>темную тему</strong> для спасения глаз измученных студентов, которые ботают по ночам.</p>
+<p>Реализовал полноценную <strong>поисковую систему</strong>. Теперь можно исказть задачи не только по номерам, но и по условиям.
+Страницы справочника тоже включены в поиск.</p>
+<p><strong>Справочник</strong>. Система прото-задач упразднена и вместо нее теперь имеется полноценный справочник с определениями, теоремами и другими терминами, причем многие из них связаны друг с другом! Ссылки на справочник теперь приводятся отдельно для каждого решения, а не в куче после всех решений. Все текущие прото-задачи преобразованы в страницы справочника.</p>
+<p><strong>Атрибуты</strong> задач и решений. У каждой задачи теперь есть сложность, также возможные дополнительные атрибуты (красивая, учебная и т.д.). У решений также есть свои атрибуты.</p>
+</div></div></div><div class="groupSepBottom"></div></div></main></div><!-- Yandex.Metrika counter -->
+<script async type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(86400654, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/86400654" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPLGTBHFF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPLGTBHFF4');
+</script></body></html>

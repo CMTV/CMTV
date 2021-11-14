@@ -282,15 +282,15 @@ class SearchResults
     }
 }
 
+declare var INITIAL_END;
+
 window.addEventListener('load', () =>
 {
     let loadingMore = false;
-    let isEnd = false;
+    let isEnd = INITIAL_END || false;
 
     let search = new Search;
     let searchResults = new SearchResults;
-
-    document.addEventListener('scroll', maybeLoadMore);
 
     let searchWorker = new SearchWorker(htmlResult => {
         
@@ -316,8 +316,11 @@ window.addEventListener('load', () =>
         }
     });
 
-    // Запускаем пустой поиск для начальных результатов
-    searchWorker.requestSearch('', []);
+    document.addEventListener('scroll', maybeLoadMore);
+    document.addEventListener('resize', maybeLoadMore);
+    maybeLoadMore();
+
+    // searchWorker.requestSearch('', []);
 
     search.onSearchUpdate = (text, tags) =>
     {

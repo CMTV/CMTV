@@ -1,6 +1,6 @@
 {
     "title":    "Сайт \"Петр Радько\"",
-    "desc":     "Хронология, ежедневник, автобиография и портфолио в одном флаконе.",
+    "desc":     "Хронология, ежедневник, автобиография и резюме в одном флаконе.",
     "type":     "in",
 
     "status":
@@ -19,12 +19,39 @@
         "colors":   ["#8A3232", "#8A5D31", "#8A8130", "#308A6E", "#308A86", "#303A8A", "#7D308A", "#8A3232"]
     },
 
+    "links":
+    [
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код",
+            "link": "https://github.com/CMTV/CMTV"
+        },
+
+        {
+            "icon": "fa-solid fa-file-zipper",
+            "text": "Скетчи",
+            "link": "files/sketch.zip"
+        },
+
+        {
+            "icon": "fa-solid fa-file-pdf",
+            "text": "Резюме 2016 года",
+            "link": "files/cv.pdf"
+        },
+
+        {
+            "icon": "fa-brands fa-wordpress",
+            "text": "WordPress тема",
+            "link": "https://github.com/CMTV/radkopeter-theme"
+        }
+    ],
+
     "tags":
     [
         "area:я",
         "form:сайт",
         "информатика",
         "программирование",
-        "pug", "scss", "ts"
+        "ssg", "pug", "scss", "ts", "wordpress", "node.js", "gulp"
     ]
 }

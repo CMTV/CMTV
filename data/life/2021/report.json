@@ -139,7 +139,6 @@
                 "duration": 2.5
             }
         ],
-        "counters": [{ "counter": "game", "value": 3, "desc": "Мое описание. Дюна фильм!" }],
         "checks": ["weight-loss : diet"]
     },
 
@@ -455,6 +454,52 @@
                 "project": "radkopeter",
                 "goals": ["v2.0"],
                 "duration": 5
+            },
+            {
+                "project":  "cs-go",
+                "goals":    ["play"],
+                "duration": 4
+            }
+        ],
+        "checks": ["weight-loss : diet"]
+    },
+
+    "12.11":
+    {
+        "time":
+        [
+            {
+                "project":  "radkopeter",
+                "goals":    ["fill"],
+                "duration": 6
+            },
+            {
+                "project": "cs-go",
+                "goals": ["play"],
+                "duration": "3:30"
+            }
+        ],
+        "checks": ["weight-loss : diet"]
+    },
+
+    "13.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": ["v2.0"],
+                "duration": 3
+            },
+            {
+                "project": "radkopeter",
+                "goals": ["fill"],
+                "duration": 4
+            },
+            {
+                "project": "cs-go",
+                "goals": ["play"],
+                "duration": 4
             }
         ],
         "checks": ["weight-loss : diet"]

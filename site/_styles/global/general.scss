@@ -56,11 +56,12 @@ body
     }
 }
 
-ul, ol
+ol, ul
 {
     list-style-position: inside;
-    list-style-type: square;
 }
+
+ul { list-style-type: square; }
 
 ::selection
 {

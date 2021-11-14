@@ -24,6 +24,8 @@ main > .yearResults
         border-bottom: 1px solid var(--c_border);
     }
 
+    &.noResults > header { border-bottom: none; }
+
     > .results
     {
         max-height: 400px;

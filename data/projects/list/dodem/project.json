@@ -1,0 +1,64 @@
+{
+    "title":    "Демидович",
+    "desc":     "Подробный справочник по математическому анализу и задачник с понятными решениями.",
+    "type":     "mix",
+
+    "status":
+    {
+        "type":     "pause",
+        "label":    "Пауза"
+    },
+
+    "start": "6.01.2020",
+
+    "facts":
+    [
+        {
+            "id":       "tasks",
+            "label":    "Задачи",
+            "data":     4460
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-globe",
+        "text": "Сайт",
+        "link": "https://dodem.ru",
+        "colors": ["#147BDA", "#0AA2F4"]
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код",
+            "link": "https://github.com/CMTV/dodem"
+        },
+
+        {
+            "icon": "fa-brands fa-vk",
+            "text": "Группа ВК",
+            "link": "https://vk.com/do_dem"
+        },
+
+        {
+            "icon": "fa-solid fa-hand-holding-dollar",
+            "text": "Пожертвования",
+            "link": "https://boosty.to/dodem"
+        }
+    ],
+
+    "related":
+    {
+        "severomorsk": "Без поездки на север \"Демидович\" никогда не появился бы на свет."
+    },
+
+    "tags":
+    [
+        "area:математика",
+        "action:просвещение",
+        "form:сайт",
+        "информатика", "программирование", "изучение", "ssg", "pug", "scss", "ts", "node.js"
+    ]
+}

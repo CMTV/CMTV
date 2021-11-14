@@ -60,7 +60,7 @@
         }
     }
 
-    li
+    ul > li
     {
         &::marker { color: var(--c_text-shade-1); }
         &::before { content: ""; margin-left: -5px; }

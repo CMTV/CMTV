@@ -3,6 +3,7 @@
     {
         "title":    "Первое прохождение",
         "status":   "done",
+        "counted":  false,
 
         "start":    "22.09.2021",
         "end":      "4.10.2021",
@@ -15,6 +16,7 @@
     {
         "title":    "Прохождение на секретную концовку",
         "status":   "done",
+        "counted":  false,
 
         "start":    "5.10.2021",
         "end":      "15.10.2021",
@@ -27,6 +29,7 @@
     {
         "title":    "Обзор в Steam",
         "status":   "done",
+        "counted":  false,
 
         "date":     "16.10.2021",
         "plan":     ["16.10.2021"]

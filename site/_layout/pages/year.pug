@@ -4,7 +4,7 @@ include /includes/chart
 include /includes/timeline
 
 block main
-    .yearResults
+    .yearResults(class= !results ? 'noResults' : '')
         header= year + ' год'
 
         if (results)

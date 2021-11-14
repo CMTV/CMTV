@@ -1,0 +1,50 @@
+{
+    "title":    "CMTV",
+    "desc":     "Личный YouTube канал и мой первый в жизни образовательный проект.",
+    "type":     "out",
+
+    "status":
+    {
+        "type":     "pause",
+        "label":    "Пауза"
+    },
+
+    "start": "17.07.2011",
+
+    "facts":
+    [
+        {
+            "id":       "videos",
+            "label":    "Видео",
+            "data":     176
+        },
+
+        {
+            "id":       "subs",
+            "label":    "Подписчики",
+            "data":     "48 600+"
+        },
+
+        {
+            "id":       "views",
+            "label":    "Просмотры",
+            "data":     "5 000 000+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-brands fa-youtube",
+        "text": "Канал",
+        "link": "https://www.youtube.com/c/CMTV_official",
+        "colors": ["#ab0c0c", "#f73939"]
+    },
+
+    "tags":
+    [
+        "action:просвещение",
+        "form:видео",
+        "youtube",
+        "информатика"
+    ]
+}

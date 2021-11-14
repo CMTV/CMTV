@@ -39,7 +39,7 @@ export class SearchProjectResults extends SearchProcess
                 pluck:      true
             });
 
-            searchProject.tagIds = projectTags.map(tagId => this.tagIdMap[tagId]);
+            searchProject.tagIds = projectTags ? projectTags.map(tagId => this.tagIdMap[tagId]) : null;
 
             projects[this.projectIdMap[projectId]] = searchProject;
         });

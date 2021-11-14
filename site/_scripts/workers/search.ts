@@ -42,7 +42,7 @@ class LastSearch
         let remains = this.ids.length - this.currentI;
         let toReturn = [];
 
-        if (remains === 0)
+        if (remains <= 0)
             return toReturn;
 
         if (remains < (LastSearch.batchSize * 3/2))
@@ -102,6 +102,9 @@ class SearchData
 
             if (this.pendingCallback)
                 this.pendingCallback();
+
+            lastSearch.ids = searchData.projectNumIds;
+            lastSearch.currentI = Math.min(LastSearch.batchSize, lastSearch.ids.length);
         });
     }
 
@@ -157,7 +160,7 @@ class SearchData
         let resultProject = this.results[projectNumId];
         let link = '/projects/' + resultProject.id;
         let icon = '/projects/' + resultProject.id + '/icon.' + resultProject.iconExt;
-        let tags = resultProject.tagIds.map(tagNumId => this.tagNumStrIds[tagNumId]);
+        let tags = resultProject.tagIds ? resultProject.tagIds.map(tagNumId => this.tagNumStrIds[tagNumId]).slice(0, 5) : [];
 
         let typeLabel = '';
         switch (resultProject.type)
@@ -228,7 +231,7 @@ onmessage = (e) =>
             response.id = request.id;
             response.resultHTML = batchIds.map(id => searchData.getHtmlProjectById(id)).join('');
 
-        if (lastSearch.isEnd)
+        if (response.resultHTML !== '' && lastSearch.isEnd)
             response.resultHTML = '!' + response.resultHTML;
 
         //setTimeout(() => { worker.postMessage(response); }, 500); 

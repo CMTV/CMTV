@@ -30,12 +30,43 @@ block main
                         each tag in tagMap[tagType]
                             .tag(data-id= tag.id, title= tag.desc)= tag.id
 
+    script.
+        var INITIAL_END = #{isInitialEnd};
+
     .searchFailed
         i.fa-regular.fa-face-sad-cry
         .label Ничего не найдено!
 
     .searchResults
+        each project in initialList
+            - let link = '/projects/' + project.id;
+            - let icon = '/projects/' + project.id + '/icon.' + project.iconExt;
 
-    .searching._showing
+            .searchResult
+                a.icon(href= link)
+                    img(src= icon, loading="lazy")
+                
+                .infoBlock
+                    .arrows
+                        .bgArrow
+                        .borderArrow
+
+                    .statusBg(class= `status--${project.status}`)
+
+                    header
+                        a.icon(href= link)
+                            img(src= icon, loading="lazy")
+                        a.title(href= link)= project.title
+
+                    .desc= project.desc
+
+                    footer
+                        img.type(title= project.type.label, src= project.type.icon)
+                        if (project.tags)
+                            i.fa-solid.fa-hashtag
+                            each tag in project.tags
+                                .tag= tag
+
+    .searching
         img(src="/site/graphics/searching.svg")
         .label Поиск проектов...

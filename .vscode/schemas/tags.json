@@ -7,7 +7,7 @@
     "type": "object",
     "patternProperties":
     {
-        "^[a-zА-я]+$":
+        "^[a-zА-я.]+$":
         {
             "description": "Уникальный идентификатор тега",
             "type": "object",

@@ -1,3 +1,4 @@
+import { ViewListProject } from "src/entity/project/view";
 import { Page, PageOgImg } from "./Page";
 
 export class PageProjects extends Page
@@ -8,6 +9,9 @@ export class PageProjects extends Page
     dest = () => 'projects/index.html';
     
     tagMap: { [tagType: string]: string[] };
+
+    isInitialEnd: boolean;
+    initialList: ViewListProject[];
 
     constructor()
     {

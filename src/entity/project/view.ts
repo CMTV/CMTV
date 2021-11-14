@@ -1,12 +1,27 @@
 import { Db } from "sqlean";
+
 import { UtilDate } from "src/util/Date";
 import { ViewProjectGoal } from "../goal/view";
 import { Status } from "../status/Status";
-
 import { ViewTag } from "../tag/view";
 import { UtilDataProject } from "./data";
 import { DbProject, DbProjectTag } from "./db";
 import { ProjectType, UtilProject } from "./global";
+
+export class ViewListProject
+{
+    id:         string;
+    title:      string;
+    desc:       string;
+    type:       ViewProjectType;
+    iconExt:    string;
+    status:     string;
+    tags:       string[];
+}
+
+//
+//
+//
 
 export class ViewProjectType
 {
@@ -101,6 +116,8 @@ export class ViewProjectRelated
 //
 
 //#region Goals + Date block
+//
+//
 
 class GoalChart
 {
@@ -226,4 +243,6 @@ export class ViewProjectDateData
     }
 }
 
+//
+//
 //#endregion

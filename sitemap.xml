@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url><loc>https://radkopeter.ru/index.html</loc></url>
     <url><loc>https://radkopeter.ru/projects</loc></url>
+    <url><loc>https://radkopeter.ru/projects/cmtv-pro</loc></url>
     <url><loc>https://radkopeter.ru/projects/combinatorics-book</loc></url>
     <url><loc>https://radkopeter.ru/projects/cs-go</loc></url>
+    <url><loc>https://radkopeter.ru/projects/deus-ex-hr</loc></url>
+    <url><loc>https://radkopeter.ru/projects/divine-body</loc></url>
     <url><loc>https://radkopeter.ru/projects/dodem</loc></url>
+    <url><loc>https://radkopeter.ru/projects/inner-core-logotype</loc></url>
     <url><loc>https://radkopeter.ru/projects/lis-true-colors</loc></url>
     <url><loc>https://radkopeter.ru/projects/neuralnet-info</loc></url>
+    <url><loc>https://radkopeter.ru/projects/ounity</loc></url>
     <url><loc>https://radkopeter.ru/projects/pathfinder-wotr</loc></url>
     <url><loc>https://radkopeter.ru/projects/radkopeter</loc></url>
     <url><loc>https://radkopeter.ru/projects/severomorsk</loc></url>
     <url><loc>https://radkopeter.ru/projects/the-walking-dead</loc></url>
+    <url><loc>https://radkopeter.ru/projects/translation-level-up</loc></url>
     <url><loc>https://radkopeter.ru/projects/translation-neural</loc></url>
-    <url><loc>https://radkopeter.ru/projects/weight-loss</loc></url>
+    <url><loc>https://radkopeter.ru/projects/webinar-neural-networks</loc></url>
+    <url><loc>https://radkopeter.ru/projects/wp-insert-math</loc></url>
+    <url><loc>https://radkopeter.ru/projects/xf-math</loc></url>
     <url><loc>https://radkopeter.ru/projects/youtube-cmtv</loc></url>
     <url><loc>https://radkopeter.ru/life</loc></url>
     <url><loc>https://radkopeter.ru/life/2021</loc></url>
+    <url><loc>https://radkopeter.ru/life/2020</loc></url>
+    <url><loc>https://radkopeter.ru/life/2019</loc></url>
+    <url><loc>https://radkopeter.ru/life/2017</loc></url>
+    <url><loc>https://radkopeter.ru/life/2016</loc></url>
+    <url><loc>https://radkopeter.ru/life/2015</loc></url>
+    <url><loc>https://radkopeter.ru/life/2013</loc></url>
+    <url><loc>https://radkopeter.ru/index.html</loc></url>
 </urlset>

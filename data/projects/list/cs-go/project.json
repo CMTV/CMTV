@@ -5,9 +5,11 @@
 
     "status":
     {
-        "type": "do",
-        "label": "Играю"
+        "type":     "pause",
+        "label":    "Не играю"
     },
+
+    "start": "22.12.2018",
 
     "action":
     {

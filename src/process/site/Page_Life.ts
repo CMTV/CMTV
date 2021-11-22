@@ -15,7 +15,9 @@ export class Page_Life extends Process
         let page = new PageLife;
         let years = UtilDataYear.getYears();
 
-        page.years = years.map(year =>
+        let yearPreviews = [];
+
+        years.forEach(year =>
         {
             this.stage = 'Обработка года ' + year;
 
@@ -25,9 +27,17 @@ export class Page_Life extends Process
                 yearPreview.counters = ViewCounter.getAll(year);
                 yearPreview.projects = ViewYearKeyProject.getAll(year);
 
-            return yearPreview;
+            if (yearPreview.time || yearPreview.counters || yearPreview.projects)
+            {
+                yearPreviews.push(yearPreview);
+                NON_EMPTY_YEARS.push(year);
+            }
         });
+
+        page.years = yearPreviews;
 
         page.compile();
     }
 }
+
+export let NON_EMPTY_YEARS = [];

@@ -19,33 +19,35 @@ export class Page_Year extends Process
         years.forEach(year =>
         {
             let page = new PageYear;
-                page.year = year;
 
-                page.seo.title = year;
-                page.seo.desc = `Основные итоги, проекты, хронокарта и распределение времени за ${year} год.`;
+            page.year = year;
 
-                page.ogImg = new PageOgImg(page.pageName, year + ' год');
+            page.seo.title = year;
+            page.seo.desc = `Основные итоги, проекты, хронокарта и распределение времени за ${year} год.`;
 
-                let dataResults = UtilDataYear.getResults(year);
-                if (dataResults)
-                    page.results = dataResults.map(dataResult => new ViewYearResult(dataResult));
+            page.ogImg = new PageOgImg(page.pageName, year + ' год');
 
-                page.counters = ViewCounter.getAll(year);
-                if (page.counters)
+            let dataResults = UtilDataYear.getResults(year);
+            if (dataResults)
+                page.results = dataResults.map(dataResult => new ViewYearResult(dataResult));
+
+            page.counters = ViewCounter.getAll(year);
+            if (page.counters)
+            {
+                page.counterData = [];
+                page.counters.forEach(counter =>
                 {
-                    page.counterData = [];
-                    page.counters.forEach(counter =>
-                    {
-                        let counterData = UtilViewCounterItem.getCounterDataForYear(counter.counterId, year);
-                        if (counterData)
-                            page.counterData.push(counterData);
-                    });
-                }
+                    let counterData = UtilViewCounterItem.getCounterDataForYear(counter.counterId, year);
+                    if (counterData)
+                        page.counterData.push(counterData);
+                });
+            }
 
-                page.timeline = ViewTimeline.forYear(year);
-                page.tagChart = ViewTimeChart.forYear(year);
+            page.timeline = ViewTimeline.forYear(year);
+            page.tagChart = ViewTimeChart.forYear(year);
 
-            page.compile();
+            if (page.results || page.counters || page.timeline || page.tagChart)
+                page.compile();
         });
     }
 }

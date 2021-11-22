@@ -1,8 +1,7 @@
 import { Db } from "sqlean";
 
-import { UtilDataProject } from "src/entity/project/data";
 import { DbProject } from "src/entity/project/db";
-import { ProjectType } from "src/entity/project/global";
+import { ProjectIcon, ProjectType } from "src/entity/project/global";
 import { Status } from "src/entity/status/Status";
 import { IO } from "src/util/IO";
 import { SearchProcess } from "./SearchProcess";
@@ -19,16 +18,17 @@ export class SearchProjectResults extends SearchProcess
         {
             let dbProject: DbProject = Db.Select.Get({
                 table:      'project',
-                columns:    ['title', 'desc', 'type', 'status'],
+                columns:    ['title', 'desc', 'type', 'status', 'featured'],
                 where:      ['@projectId', '=', projectId]
             });
 
             let searchProject = new SearchProject;
-                searchProject.id =      projectId;
-                searchProject.iconExt = UtilDataProject.getIconExt(projectId);
-                searchProject.title =   dbProject.title;
-                searchProject.desc =    dbProject.desc;
-                searchProject.type =    dbProject.type as any;
+                searchProject.id =          projectId;
+                searchProject.icon =        new ProjectIcon(projectId);
+                searchProject.title =       dbProject.title;
+                searchProject.desc =        dbProject.desc;
+                searchProject.type =        dbProject.type as any;
+                searchProject.featured =    dbProject.featured;
                 searchProject.status =  JSON.parse(dbProject.status as any).type;
 
             let projectTags = Db.Select.All({
@@ -59,10 +59,11 @@ export class SearchProjects
 export class SearchProject
 {
     id:         string;
-    iconExt:    string;
+    icon:       ProjectIcon;
     title:      string;
     desc:       string;
     type:       ProjectType;
+    featured:   boolean;
     status:     Status;
     tagIds:     number[];
 }

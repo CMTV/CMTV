@@ -35,7 +35,7 @@
                             "goals":
                             {
                                 "description": "ID целей, в учет которых пойдет указанное время",
-                                "type": "array",
+                                "type": ["array", "string"],
                                 "items": { "type": "string" }
                             },
                             "tags":

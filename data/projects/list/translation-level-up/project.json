@@ -1,0 +1,48 @@
+{
+    "title":    "Level UP!",
+    "desc":     "Перевел более 240 страниц книги Скотта Роджерса про геймдизайн.",
+    "type":     "out",
+
+    "status":
+    {
+        "type":     "done",
+        "label":    "Перевел"
+    },
+
+    "start":    "1.09.2013",
+    "end":      "15.10.2013",
+
+    "facts":
+    [
+        {
+            "id":       "translated",
+            "label":    "Переведено",
+            "data":     "240 стр."
+        }
+    ],
+
+    "action":
+    {
+        "icon":     "fa-solid fa-file-pdf",
+        "text":     "Перевод",
+        "link":     "files/level-up.pdf",
+        "colors":   ["#B82216", "#C7B414"]
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-cart-shopping",
+            "text": "Магазин",
+            "link": "https://www.amazon.co.uk/Level-Guide-Great-Video-Design/dp/1118877160"
+        }
+    ],
+
+    "tags":
+    [
+        "area:gamedev",
+        "action:перевод",
+        "form:книга",
+        "геймдизайн"
+    ]
+}

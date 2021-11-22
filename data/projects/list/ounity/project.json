@@ -1,0 +1,53 @@
+{
+    "title":    "О Unity",
+    "desc":     "Форум, учебник и YouTube канал, посвященные разработке игр на движке Unity.",
+    "type":     "mix",
+
+    "status":
+    {
+        "type":     "fail",
+        "label":    "Закрыт",
+        "tooltip":  "Решил сконцентрироваться на математических проектах."
+    },
+
+    "start": "5.05.2019",
+    "end": "26.06.2019",
+
+    "facts":
+    [
+        {
+            "id":       "articles",
+            "label":    "Статьи",
+            "data":     17
+        },
+
+        {
+            "id":       "videos",
+            "label":    "Ролики",
+            "data":     4
+        }
+    ],
+
+    "links":
+    [
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код учебника",
+            "link": "https://github.com/ounity/book"
+        },
+
+        {
+            "icon": "fa-brands fa-youtube",
+            "text": "YouTube канал",
+            "link": "https://www.youtube.com/channel/UCzMIw31DBtO9T0mBKB_RW8g"
+        }
+    ],
+
+    "tags":
+    [
+        "area:gamedev",
+        "action:просвещение",
+        "form:сайт",
+        "unity", "информатика", "изучение", "видео", "учебник", "форум", "youtube", "xenforo"
+    ]
+}

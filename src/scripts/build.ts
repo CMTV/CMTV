@@ -1,50 +1,102 @@
 import chalk from "chalk";
-import { Db } from "sqlean";
 
+import { BuildConfig, SET_BUILD_CONFIG } from "src/BuildConfig";
 import { Config, SET_CONFIG } from "src/Config";
+import { IO } from "src/util/IO";
+import { filldb } from "./filldb";
+import { makeSite } from "./makeSite";
 
-// Процессы
-import { Page_Project } from "src/process/site/Page_Project";
-import { Page_Life } from "src/process/site/Page_Life";
-import { SiteBase } from "src/process/site/SiteBase";
-import { Page_Year } from "src/process/site/Page_Year";
-import { SITEMAP, WriteSitemap } from "src/process/site/Sitemap";
-import { Page_Index } from "src/process/site/Page_Index";
-import { Page_Projects } from "src/process/site/Page_Projects";
-import { SearchGroup } from "src/process/site/search/SearchGroup";
-
-Db.Open('data/db/data.db');
-
-export function build(devMode = false)
+export function build(buildConfig: BuildConfig)
 {
-    let config = new Config;
-        config.devMode = devMode;
+    let beginTime = Date.now();
 
+    //#region BUILD ZONE
+    //
+    //
+
+    SET_BUILD_CONFIG(buildConfig);
+
+    let config = new Config;
+        config.devMode = buildConfig.devMode;
+    
     SET_CONFIG(config);
 
-    SITEMAP.reset();
+    //
 
-    console.log('\n' + chalk.bold.magenta(`Запуск ${devMode ? 'dev-' : ''}сборки сайта!`));
+    if (buildConfig.buildDb)
+        filldb();
 
-    (new SiteBase).run();
+    if (buildConfig.buildSite)
+        makeSite();
 
-    (new Page_Index).run();
+    //
+    //
+    //#endregion
 
-    (new Page_Projects).run();
-    (new Page_Project).run();
+    let endTime = Date.now();
 
-    (new Page_Life).run();
-    (new Page_Year).run();
-
-    //(new Page_Test).run();
-
-    (new SearchGroup).run();
-
-    if (!devMode)
-        (new WriteSitemap).run();
-
-    console.log('\n' + chalk.magenta('Сборка завершена!'));
+    console.log('\n' + chalk.bgGreen.black(' Сборка завершена! ') + ' ' + chalk.gray((endTime - beginTime) + 'ms'));
+    console.log();
 }
 
-if (process.argv[2] === '--do')
-    build();
+//
+//
+//
+
+export function argsToConfig(buildConfig: BuildConfig, args: string[])
+{
+    enum ArgFlag
+    {
+        Db =    '--db',
+        Site =  '--site',
+        Dev =   '--dev',
+        Whole = '--whole'
+    }
+
+    buildConfig.devMode = args.includes(ArgFlag.Dev);
+    buildConfig.whole = args.includes(ArgFlag.Whole);
+
+    buildConfig.buildDb =   args.includes(ArgFlag.Db);
+    buildConfig.buildSite = args.includes(ArgFlag.Site);
+
+    if (!buildConfig.buildDb && !buildConfig.buildSite)
+        buildConfig.buildDb = buildConfig.buildSite = true;
+
+    //
+    // Проекты для сборки: Все, Конкретные?
+    //
+
+    let projectIds = args.filter(arg => !Object.keys(ArgFlag).map(k => ArgFlag[k]).includes(arg));
+    buildConfig.projects = projectIds.length > 0 ? projectIds : null;
+}
+
+export function showBanner()
+{
+    console.log();
+    let art = IO.readFile('site/_layout/includes/art.html').split('\n').slice(3, -3).join('\n');
+    console.log(art);
+}
+
+export function showFlags(buildConfig: BuildConfig)
+{
+    let str = '\n';
+    
+    let boolSymbol = (boolVal: boolean) => boolVal ? '✔️' : '❌';
+    let flagStr = (label: string, boolVal: boolean) => chalk.bgWhiteBright.black(` ${label} ${boolSymbol(boolVal)} `) + ' ';
+
+    str += flagStr('db',    buildConfig.buildDb);
+    str += flagStr('site',  buildConfig.buildSite);
+    str += flagStr('dev',   buildConfig.devMode);
+    str += flagStr('whole', buildConfig.makeWholeSite());
+
+    console.log(str);
+}
+
+export function showMessages(buildConfig: BuildConfig)
+{
+    if (buildConfig.devMode)
+        console.log('\n' + chalk.bgYellow.black(' РЕЖИМ РАЗРАБОТЧИКА! '));
+
+    if (buildConfig.projects)
+        console.log('\n' + chalk.bgYellow.black(' ПРОЕКТЫ ') + ' ' + chalk.yellow(buildConfig.projects.join(chalk.gray(', '))));
+}

@@ -2,7 +2,7 @@ import pug from "pug";
 import * as esbuild from "esbuild";
 import sass from "sass";
 
-import { CONFIG } from "src/Config";
+import { BUILD_CONFIG } from "src/BuildConfig";
 import { IO } from "./IO";
 
 export class Layout
@@ -16,7 +16,7 @@ export class Layout
         {
             filename:   srcPath,
             basedir:    baseDir,
-            cache:      !CONFIG.devMode
+            cache:      !BUILD_CONFIG.devMode
         }
 
         return pug.renderFile(srcPath, {...pugOptions, ...view});
@@ -29,7 +29,7 @@ export class Layout
 
         IO.writeFile(destPath, html);
 
-        if (CONFIG.devMode)
+        if (BUILD_CONFIG.devMode)
             IO.writeFile(destPath + '.json', JSON.stringify(view, null, 4));
     }
 }
@@ -44,8 +44,8 @@ export class Script
         esbuild.buildSync({
             entryPoints:    [srcPath],
             outfile:        destPath,
-            sourcemap:      CONFIG.devMode,
-            minify:         !CONFIG.devMode,
+            sourcemap:      BUILD_CONFIG.devMode,
+            minify:         !BUILD_CONFIG.devMode,
             charset:        'utf8',
             bundle:         true
         });
@@ -62,14 +62,14 @@ export class Style
         let cssObj = sass.renderSync({
             file:           srcPath,
             outFile:        destPath,
-            outputStyle:    CONFIG.devMode ? 'expanded' : 'compressed',
-            sourceMap:      CONFIG.devMode,
+            outputStyle:    BUILD_CONFIG.devMode ? 'expanded' : 'compressed',
+            sourceMap:      BUILD_CONFIG.devMode,
             includePaths:   ['site/_styles']
         });
 
         IO.writeFile(destPath, cssObj.css);
 
-        if (CONFIG.devMode)
+        if (BUILD_CONFIG.devMode)
             IO.writeFile(destPath + '.map', cssObj.map);
     }
 }

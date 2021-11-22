@@ -14,7 +14,6 @@ jobs:
       - name: Building site
         run: |
           npm install
-          npm run filldb
           npm run build
       
       - name: Deploy site to gh-pages branch

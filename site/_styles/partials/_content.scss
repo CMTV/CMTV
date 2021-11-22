@@ -51,6 +51,8 @@
         max-width: 100%;
         height: auto;
 
+        border-radius: size.$borderRadius;
+
         @for $i from 1 through 9 { &.w#{$i} { width: 10% * $i; } }
 
         @include bp.max(mini)

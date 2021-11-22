@@ -11,6 +11,7 @@
 @use 'includes/actionColors';
 
 @use 'partials/block';
+@use 'partials/featured';
 @use 'partials/toggle';
 @use 'partials/tag';
 @use 'partials/content';
@@ -25,6 +26,7 @@ main > .mainBlock
     > header
     {
         @extend %blockSection;
+        @extend %featuredProjectSupport;
 
         display: grid;
         grid-template-columns: 50px auto;
@@ -169,7 +171,7 @@ main > .mainBlock
                 font-weight: 600;
                 text-decoration: none;
 
-                padding: 7px size.$gapBig;
+                padding: 7px 20px;
 
                 min-width: 120px;
 
@@ -229,6 +231,11 @@ main > .mainBlock
 
         @extend %blockSection;
         @extend %CONTENT;
+
+        > [data-pswp-gallery]:first-of-type
+        {
+            border-bottom-style: solid;
+        }
     }
 
     > .links
@@ -289,7 +296,7 @@ main > .direction
             @extend %blockDlHeaderList;
             > * > .value
             {
-                text-transform: capitalize;
+                &::first-letter { text-transform: capitalize; }
 
                 &[title] { cursor: help; }
             }

@@ -1,5 +1,7 @@
 extends /templates/default
 
+include /includes/icon
+
 block main
     each yearBlock in years
         .yearBlock
@@ -24,4 +26,4 @@ block main
                 .keyProjects
                     each project in yearBlock.projects
                         a.project(href= "/projects/" + project.id, title= project.title)
-                            img(src= project.icon)
+                            +icon(project.icon)

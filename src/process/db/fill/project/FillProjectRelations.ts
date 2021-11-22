@@ -1,5 +1,6 @@
 import { Db } from "sqlean";
 
+import { BUILD_CONFIG } from "src/BuildConfig";
 import { ProjectsProcess } from "./ProjectsProcess";
 import { DbProjectRelation } from "src/entity/project/db";
 import { UtilDataProject } from "src/entity/project/data";
@@ -19,6 +20,9 @@ export class FillProjectRelations extends ProjectsProcess
 
             Object.keys(config.related).forEach(relatedId =>
             {
+                if (!BUILD_CONFIG.projectAllowed(relatedId))
+                    return;
+
                 let relation = new DbProjectRelation;
                     relation.projectId =    projectId;
                     relation.relatedId =    relatedId;

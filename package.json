@@ -1,32 +1,38 @@
 {
-  "scripts": {
-    "filldb": "npx ts-node src/scripts/filldb",
-    "build": "npx ts-node src/scripts/build --do",
-    "watch": "npx ts-node src/scripts/watch",
-    "server": "npx ts-node src/scripts/server"
-  },
-  "dependencies": {
-    "@cmtv/processes": "^1.0.6",
-    "canvas": "^2.8.0",
-    "chalk": "^4.1.2",
-    "chokidar": "^3.5.2",
-    "esbuild": "^0.13.1",
-    "express": "^4.17.1",
-    "glob": "^7.1.7",
-    "image-size": "^1.0.0",
-    "markdown-it": "^12.2.0",
-    "markdown-it-attrs": "^4.1.0",
-    "pug": "^3.0.2",
-    "sass": "^1.42.1",
-    "sqlean": "^1.0.13",
-    "ts-node": "^10.2.1",
-    "tsconfig-paths": "^3.11.0",
-    "typescript": "^4.4.2"
-  },
-  "devDependencies": {
-    "@types/express": "^4.17.13",
-    "@types/glob": "^7.1.4",
-    "@types/pug": "^2.0.5",
-    "@types/sass": "^1.16.1"
-  }
+    "scripts": {
+        "filldb":       "npx ts-node cli/build --db",
+        "make-site":    "npx ts-node cli/build --site",
+
+        "build":        "npx ts-node cli/build",
+        "build-dev":    "npx ts-node cli/build --dev",
+        
+        "watch-fill":   "npx ts-node cli/watch",
+        "watch-site":   "npx ts-node cli/watch --whole --site",
+        
+        "server":       "npx ts-node cli/server"
+    },
+    "dependencies": {
+        "@cmtv/processes": "^1.0.6",
+        "canvas": "^2.8.0",
+        "chalk": "^4.1.2",
+        "chokidar": "^3.5.2",
+        "esbuild": "^0.13.1",
+        "express": "^4.17.1",
+        "glob": "^7.1.7",
+        "image-size": "^1.0.0",
+        "markdown-it": "^12.2.0",
+        "markdown-it-attrs": "^4.1.0",
+        "pug": "^3.0.2",
+        "sass": "^1.42.1",
+        "sqlean": "^1.0.13",
+        "ts-node": "^10.2.1",
+        "tsconfig-paths": "^3.11.0",
+        "typescript": "^4.4.2"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.13",
+        "@types/glob": "^7.1.4",
+        "@types/pug": "^2.0.5",
+        "@types/sass": "^1.16.1"
+    }
 }

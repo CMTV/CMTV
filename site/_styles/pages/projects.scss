@@ -6,6 +6,7 @@
 @use 'includes/status';
 
 @use 'partials/block';
+@use 'partials/featured';
 @use 'partials/hover';
 @use 'partials/scroll';
 @use 'partials/toggle';
@@ -273,6 +274,7 @@ main > .searchResults
         > .infoBlock
         {
             @extend %blockDeco, %blockSection;
+            @extend %featuredProjectSupport;
 
             flex: 1;
             position: relative;

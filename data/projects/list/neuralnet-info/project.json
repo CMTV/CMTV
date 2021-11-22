@@ -1,17 +1,59 @@
 {
     "title":    "Нейронные сети",
-    "desc":     "Портал по нейронным сетям.",
+    "desc":     "Интересный учебник, форум и новостной портал по нейронным сетям.",
     "type":     "mix",
 
     "status":
     {
-        "type":     "pause",
-        "label":    "Пауза"
+        "type": "pause",
+        "label": "Пауза"
+    },
+
+    "start": "01.05.2016",
+
+    "facts":
+    [
+        {
+            "id": "chapters",
+            "label": "Учебник",
+            "data": "4 главы"
+        },
+        {
+            "id": "articles",
+            "label": "Статьи",
+            "data": 10
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-globe",
+        "text": "Сайт",
+        "link": "https://neuralnet.info",
+        "colors": ["#4492FD", "#5EA1FD"]
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-brands fa-wordpress",
+            "text": "WordPress тема",
+            "link": "https://github.com/CMTV/neuralnet-theme"
+        }
+    ],
+
+    "related":
+    {
+        "translation-neural": "Перевод выполнял частями в виде статей на сайте.",
+        "wp-insert-math": "Плагин, упрощающий добавление формул, так как в 4 главе их очень много.",
+        "cmtv-pro": "На этом сайте были первые наброски, которые затем переросли в учебник."
     },
 
     "tags":
     [
+        "area:ai",
         "action:просвещение",
-        "form:сайт"
+        "form:сайт",
+        "учебник", "форум", "wordpress", "xenforo", "php", "scss", "node.js"
     ]
 }

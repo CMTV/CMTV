@@ -1,16 +1,18 @@
 import { Db } from "sqlean";
 
+import { BUILD_CONFIG } from "src/BuildConfig";
 import { UtilDate } from "src/util/Date";
 import { ViewCounter } from "../counter/view";
 import { UtilDataProject } from "../project/data";
 import { DbProject } from "../project/db";
+import { ProjectIcon } from "../project/global";
 import { DataYearResult, UtilDataYear } from "./data";
 
 export class ViewYearResult
 {
     type:   'project' | 'other';
     link:   string;
-    icon:   string;
+    icon:   ProjectIcon | string;
     title:  string;
     desc:   string;
 
@@ -21,7 +23,7 @@ export class ViewYearResult
         if (dataResult.project)
         {
             this.link =     `/projects/${dataResult.project}`;
-            this.icon =     `/projects/${dataResult.project}/icon.${UtilDataProject.getIconExt(dataResult.project)}`;
+            this.icon =     new ProjectIcon(dataResult.project);
             this.title =    dataResult.title || DbProject.getById(dataResult.project, ['title']).title;
         }
         else
@@ -45,13 +47,13 @@ export class ViewYearPreview
 export class ViewYearKeyProject
 {
     id:     string;
-    icon:   string;
+    icon:   ProjectIcon;
     title:  string;
 
     constructor(projectId: string)
     {
         this.id =       projectId;
-        this.icon =     `/projects/${projectId}/icon.` + UtilDataProject.getIconExt(projectId);
+        this.icon =     new ProjectIcon(projectId);
         this.title =    DbProject.getById(projectId, ['title']).title;
     }
 

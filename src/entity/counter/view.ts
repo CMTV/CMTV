@@ -4,8 +4,8 @@ import { AND } from "sqlean/dist/query/Where";
 import { DbCounter } from "src/entity/counter/db";
 import { UtilDate } from "src/util/Date";
 import { DbGoal } from "../goal/db";
-import { UtilDataProject } from "../project/data";
 import { DbProject } from "../project/db";
+import { ProjectIcon } from "../project/global";
 import { DbCounterReport, DbEventReport } from "../report/db";
 
 export class ViewCounter
@@ -144,7 +144,7 @@ export class ViewDefaultCounterItem
 {
     count:      string;
     project:    string;
-    icon:       string;
+    icon:       ProjectIcon;
     title:      string;
     link:       string;
     date:       string;
@@ -158,7 +158,7 @@ export class ViewDefaultCounterItem
             if (dbDefault.projectId)
             {
                 item.project =  dbDefault.projectId;
-                item.icon =     `/projects/${item.project}/icon.` + UtilDataProject.getIconExt(item.project);
+                item.icon =     new ProjectIcon(dbDefault.projectId);
                 item.title =    DbProject.getById(item.project, ['title']).title;
                 item.link =     `/projects/${item.project}`;
             }
@@ -188,7 +188,7 @@ export class ViewEventCounterItem
 export class ViewGoalCounterItem
 {
     project:    string;
-    icon:       string;
+    icon:       ProjectIcon;
     title:      string;
     goals:      GoalCounterSubItem[];
 
@@ -214,7 +214,7 @@ export class ViewGoalCounterItem
         {
             let projectItem = new ViewGoalCounterItem;
                 projectItem.project =   projectId;
-                projectItem.icon =      `/projects/${projectId}/icon.${UtilDataProject.getIconExt(projectId)}`;
+                projectItem.icon =      new ProjectIcon(projectId);
                 projectItem.title =     DbProject.getById(projectId, ['title']).title;
                 projectItem.goals =     projectGoalsMap[projectId];
             

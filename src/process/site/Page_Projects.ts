@@ -1,11 +1,10 @@
 import { Process } from "@cmtv/processes";
 import { Db } from "sqlean";
-import { UtilDataProject } from "src/entity/project/data";
 
-import { DbProject, DbProjectTag } from "src/entity/project/db";
-import { ProjectType } from "src/entity/project/global";
+import { BUILD_CONFIG } from "src/BuildConfig";
+import { DbProject } from "src/entity/project/db";
+import { ProjectIcon, ProjectType } from "src/entity/project/global";
 import { ViewListProject, ViewProjectType } from "src/entity/project/view";
-
 import { DbTag } from "src/entity/tag/db";
 import { PageProjects } from "src/page/PageProjects";
 
@@ -46,7 +45,7 @@ export class Page_Projects extends Process
 
         let dbProjects: DbProject[] = Db.Select.All({
             table:      'project',
-            columns:    ['projectId', 'title', 'desc', 'type', 'status'],
+            columns:    ['projectId', 'title', 'desc', 'type', 'status', 'featured'],
             order:      { displayOrder: 'ASC' },
             limit:      max
         });
@@ -55,12 +54,16 @@ export class Page_Projects extends Process
 
         dbProjects.forEach(dbProject =>
         {
+            if (!BUILD_CONFIG.projectAllowed(dbProject.projectId))
+                return;
+
             let listProject = new ViewListProject;
                 listProject.id =        dbProject.projectId;
                 listProject.title =     dbProject.title;
                 listProject.desc =      dbProject.desc;
+                listProject.featured =  dbProject.featured;
                 listProject.type =      new ViewProjectType(dbProject.type as ProjectType);
-                listProject.iconExt =   UtilDataProject.getIconExt(dbProject.projectId);
+                listProject.icon =      new ProjectIcon(dbProject.projectId);
                 listProject.status =    JSON.parse(dbProject.status as any).type;
 
             let projectTags: string[] = Db.Select.All({

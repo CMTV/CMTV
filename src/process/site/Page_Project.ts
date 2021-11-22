@@ -1,12 +1,13 @@
 import { Process } from "@cmtv/processes";
 import { Db } from "sqlean";
 
+import { BUILD_CONFIG } from "src/BuildConfig";
 import { IO } from "src/util/IO";
 import { PageProject } from "src/page/PageProject";
 import { UtilDataProject } from "src/entity/project/data";
 import { DbProject } from "src/entity/project/db";
 import { ViewProjectDateData, ViewProjectGoalData, ViewProjectRelated, ViewProjectTags, ViewProjectType } from "src/entity/project/view";
-import { ProjectExtra, ProjectFact, ProjectStatus, ProjectType, UtilProject } from "src/entity/project/global";
+import { ProjectExtra, ProjectFact, ProjectIcon, ProjectStatus, ProjectType, UtilProject } from "src/entity/project/global";
 import { UtilDate } from "src/util/Date";
 import { ViewTimeChart } from "src/entity/timeChart/view";
 import { ViewTimeline } from "src/entity/timelineFragment/view";
@@ -25,6 +26,8 @@ export class Page_Project extends Process
             pluck:      true
         });
 
+        projectIds = projectIds.filter(projectId => BUILD_CONFIG.projectAllowed(projectId));
+
         projectIds.forEach(projectId =>
         {
             this.stage = `Сборка страницы '${projectId}'`;
@@ -39,7 +42,7 @@ export class Page_Project extends Process
                 page.id =       projectId;
                 page.title =    dbProject.title;
                 page.desc =     dbProject.desc;
-                page.icon =     `/projects/${projectId}/icon.` + UtilDataProject.getIconExt(projectId);
+                page.icon =     new ProjectIcon(projectId);
 
                 page.type =     new ViewProjectType(dbProject.type as ProjectType);
                 page.tags =     new ViewProjectTags(projectId);
@@ -54,8 +57,10 @@ export class Page_Project extends Process
                         page.facts.splice(1, 0, timeFact);
                 }
 
+                page.status =   dbProject.status.type;
+                page.featured = dbProject.featured;
+
                 page.action =   dbProject.action;
-                page.showcase = dbProject.showcase;
 
                 page.main =     Translator.renderAll(dbProject.main, { projectId: projectId });
 
@@ -92,7 +97,16 @@ export class Page_Project extends Process
     {
         UtilDataProject.getFilesToMove(projectId).forEach(dataFile =>
         {
-            IO.copyFile(dataFile, `dist/projects/` + dataFile.split('/').slice(3).join('/'));
+            let destPath = 'dist/projects/' + dataFile.split('/').slice(3).join('/');
+
+            if (dataFile.split('.').pop() === 'svg')
+            {
+                let content = IO.readFile(dataFile);
+                    content = content.replace('</svg>', '<style>._black { fill: #333; }</style></svg>');
+                
+                IO.writeFile(destPath, content);
+            }
+            else IO.copyFile(dataFile, destPath);
         });
     }
 

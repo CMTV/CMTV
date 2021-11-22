@@ -1,5 +1,6 @@
 extends /templates/default
 
+include /includes/icon
 include /includes/chart
 include /includes/timeline
 
@@ -17,9 +18,14 @@ block main
     .mainBlock
 
         header
-            .icon:  img(src= icon)
+            .icon:  +icon(icon)
             .title= title
             .desc=  desc
+
+            if (featured)
+                .featured(class= `status--${status}`)
+                    i.fa-solid.fa-star
+                    .hover(title="Важный проект")
 
         if (facts || action)
             .mainBar
@@ -40,14 +46,6 @@ block main
                                 if (action.icon)
                                     i(class= action.icon)
                                 span= action.text
-            
-        if (showcase)
-            .showcase(data-pswp-gallery)
-                each showcaseImg in showcase
-                    a(href= showcaseImg.src, data-pswp-width= showcaseImg.width, data-pswp-height= showcaseImg.height)
-                        .hoverOverlay
-                            i.fa-solid.fa-eye
-                        img(src= showcaseImg.src, loading="lazy")
         
         if (main)
             .mainContent!= main
@@ -186,7 +184,7 @@ block main
             each rProject in related
                 .relatedProject
                     a.icon(href= "/projects/" + rProject.id)
-                        img(src= rProject.icon)
+                        +icon(rProject.icon)
                     .title: a(href= "/projects/" + rProject.id)= rProject.title
                     .reason= rProject.reason
 

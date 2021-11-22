@@ -1,0 +1,54 @@
+{
+    "title": "Insert Math",
+    "desc": "Плагин WordPress для удобной вставки математических формул.",
+    "type": "mix",
+
+    "status": 
+    {
+        "type": "done",
+        "label": "Разработал"
+    },
+
+    "start": "28.07.2017",
+    "end": "1.08.2017",
+
+    "facts":
+    [
+        {
+            "id": "downloads",
+            "label": "Скачиваний",
+            "data": "200+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-brands fa-wordpress",
+        "text": "Плагин",
+        "link": "https://ru.wordpress.org/plugins/insert-math",
+        "colors": ["#007CB8", "#008EC2"]
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код",
+            "link": "https://github.com/CMTV/wordpress-plugin-insert-math"
+        }
+    ],
+
+    "related":
+    {
+        "neuralnet-info": "Работа над этим сайтом побудила меня создать плагин.",
+        "xf-math": "Аналогичный аддон для форумного движка XenForo."
+    },
+
+    "tags":
+    [
+        "area:математика",
+        "action:программирование",
+        "form:плагин",
+        "информатика", "wordpress", "php", "scss", "node.js"
+    ]
+}

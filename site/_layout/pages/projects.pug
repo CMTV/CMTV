@@ -1,5 +1,7 @@
 extends /templates/default
 
+include /includes/icon
+
 block main
 
     .search
@@ -40,11 +42,9 @@ block main
     .searchResults
         each project in initialList
             - let link = '/projects/' + project.id;
-            - let icon = '/projects/' + project.id + '/icon.' + project.iconExt;
-
             .searchResult
                 a.icon(href= link)
-                    img(src= icon, loading="lazy")
+                    +icon(project.icon)
                 
                 .infoBlock
                     .arrows
@@ -53,9 +53,14 @@ block main
 
                     .statusBg(class= `status--${project.status}`)
 
+                    if (project.featured)
+                        .featured(class= `status--${project.status}`)
+                            i.fa-solid.fa-star
+                            .hover(title="Важный проект")
+
                     header
                         a.icon(href= link)
-                            img(src= icon, loading="lazy")
+                            +icon(project.icon)
                         a.title(href= link)= project.title
 
                     .desc= project.desc

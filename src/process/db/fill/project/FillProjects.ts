@@ -7,7 +7,7 @@ import { UtilDate } from "src/util/Date";
 import { IO } from "src/util/IO";
 import { ProjectsProcess } from "./ProjectsProcess";
 import { DbProject } from "src/entity/project/db";
-import { ProjectBlock, ProjectShowcaseItem } from "src/entity/project/global";
+import { ProjectBlock } from "src/entity/project/global";
 
 export class FillProjects extends ProjectsProcess
 {
@@ -43,10 +43,11 @@ export class FillProjects extends ProjectsProcess
                 project.action =    dataProject.action;
                 project.links =     dataProject.links;
 
-                project.showcase =  this.getShowcase(projectId);
                 project.main =      this.getMain(projectId);
                 project.blocks =    this.getBlocks(projectId);
                 project.extra =     dataProject.extra;
+
+                project.featured =  this.featuredIds.includes(projectId);
 
                 project.displayOrder = this.getDisplayOrder(projectId);
 
@@ -70,26 +71,6 @@ export class FillProjects extends ProjectsProcess
             return null;
 
         return IO.readFile(mainFile);
-    }
-    
-    private getShowcase(projectId: string)
-    {
-        let showcaseDir = UtilDataProject.getPathTo(projectId, 'showcase/');
-        let showcaseItems: ProjectShowcaseItem[] = [];
-
-        glob.sync(showcaseDir + '*').forEach(showcaseFile =>
-        {
-            let imgDimensions = sizeOf(showcaseFile);
-
-            let showcaseItem = new ProjectShowcaseItem;
-                showcaseItem.src =      `/projects/${projectId}/showcase/` + showcaseFile.split('/').pop();
-                showcaseItem.width =    imgDimensions.width;
-                showcaseItem.height =   imgDimensions.height;
-
-            showcaseItems.push(showcaseItem);
-        });
-
-        return (showcaseItems.length > 0 ? showcaseItems : null);
     }
 
     private getBlocks(projectId: string)

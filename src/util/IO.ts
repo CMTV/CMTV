@@ -67,8 +67,8 @@ export class IO
         fs.mkdirSync(path);
     }
 
-    static watch(paths: string[], callback: (filename: string) => void)
+    static watch(paths: string[], options: chokidar.WatchOptions, callback: (filename: string) => void)
     {
-        chokidar.watch(paths.map(path => IO.normalize(path))).on('change', (path) => { try { callback(path); } catch(e) { console.log(e); } });
+        chokidar.watch(paths.map(path => IO.normalize(path)), options).on('change', (path) => { try { callback(path); } catch(e) { console.log(e); } });
     }
 }

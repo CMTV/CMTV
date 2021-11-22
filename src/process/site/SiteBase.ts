@@ -3,6 +3,7 @@ import { glob } from "glob";
 
 import * as pre from "src/util/preprocessor";
 import { IO } from "src/util/IO";
+import { BUILD_CONFIG } from "src/BuildConfig";
 
 export class SiteBase extends ProcessGroup
 {
@@ -87,6 +88,10 @@ class Scripts extends Process
         glob.sync('site/_scripts/pages/*').forEach(pageScriptFile =>
         {
             let pageName = pageScriptFile.split('/').pop().replace('.ts', '');
+
+            if (!BUILD_CONFIG.makeWholeSite() && pageName !== 'project')
+                return;
+
             this.stage = 'Скрипты страницы ' + pageName;
 
             pageScriptFile = pageScriptFile.replace('site/_scripts', '');
@@ -125,6 +130,10 @@ class Styles extends Process
         glob.sync('site/_styles/pages/*').forEach(pageStyleFile =>
         {
             let pageName = pageStyleFile.split('/').pop().replace('.scss', '');
+
+            if (!BUILD_CONFIG.makeWholeSite() && pageName !== 'project')
+                return;
+
             this.stage = 'Стиль страницы ' + pageName;
 
             pageStyleFile = pageStyleFile.replace('site/_styles/', '');

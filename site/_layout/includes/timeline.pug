@@ -1,3 +1,5 @@
+include /includes/icon
+
 mixin timeline(timeline)
     - daysInYear = 365;
     -
@@ -34,7 +36,7 @@ mixin timeline(timeline)
                             when 'project'
                                 .label.label--project
                                     a.icon(href= groupRow.data.link, title= groupRow.data.title)
-                                        img(src= groupRow.data.icon)
+                                        +icon(groupRow.data.icon)
 
                             when 'year'
                                 .label.label--year= groupRow.data

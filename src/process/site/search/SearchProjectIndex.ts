@@ -1,6 +1,6 @@
 import { Db } from "sqlean";
-import { UtilDataProject } from "src/entity/project/data";
 
+import { UtilDataProject } from "src/entity/project/data";
 import { DbProject } from "src/entity/project/db";
 import { IO } from "src/util/IO";
 import { SearchProcess } from "./SearchProcess";
@@ -9,6 +9,8 @@ const lunr =    require('site/vendor/lunr/lunr.min.js');
                 require('site/vendor/lunr/lunr-stemmer.min.js')(lunr);
                 require('site/vendor/lunr/lunr-ru.min.js')(lunr);
                 require('site/vendor/lunr/lunr-multi.min.js')(lunr);
+
+const lunrMultiLang = lunr.multiLanguage('en', 'ru');
 
 export class SearchProjectIndex extends SearchProcess
 {
@@ -70,7 +72,7 @@ class Index
 
         return lunr(function ()
         {
-            this.use(lunr.multiLanguage('en', 'ru'));
+            this.use(lunrMultiLang);
 
             this.ref('ref');
             this.field('title', { boost: 10 });

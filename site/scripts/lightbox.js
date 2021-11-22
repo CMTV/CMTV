@@ -24,6 +24,13 @@ lightboxGallery.init();
 lightboxSingle.init();
 
 function captionUI(lightbox) {
+    lightbox.on('afterSetContent', function (e) {
+        let isInvertible = lightbox.pswp.currSlide.data.element.querySelector('img').classList.contains('invertible');
+
+        if (isInvertible)
+            e.slide.image.classList.add('_invert');
+    });
+
     lightbox.on('uiRegister', function () {
         lightbox.pswp.ui.registerElement({
             name: 'custom-caption',

@@ -1,6 +1,7 @@
 import { ProcessGroup } from "@cmtv/processes";
 import { Db } from "sqlean";
 
+import { BUILD_CONFIG } from "src/BuildConfig";
 import { ProjectIdMap, TagIdMap } from "./SearchProcess";
 import { SearchProjectIndex } from "./SearchProjectIndex";
 import { SearchProjectResults } from "./SearchProjectResults";
@@ -18,6 +19,8 @@ export class SearchGroup extends ProcessGroup
             order:      { displayOrder: 'ASC' },
             pluck:      true
         });
+
+        projectIds = projectIds.filter(projectId => BUILD_CONFIG.projectAllowed(projectId));
 
         let tagIds = Db.Select.All({
             table:      'tag',

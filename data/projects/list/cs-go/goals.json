@@ -2,8 +2,9 @@
     "play":
     {
         "title":    "Игра",
-        "status":   "do",
+        "status":   "pause",
         "counted":  false,
+        "start":    "22.12.2018",
         "tags":     ["отдых", "игра"]
     }
 }

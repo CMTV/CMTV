@@ -3,8 +3,8 @@ import { Db } from "sqlean";
 import { DbGoal } from "src/entity/goal/db";
 import { DbTimelineFragment } from "src/entity/timelineFragment/db";
 import { UtilDate } from "src/util/Date";
-import { UtilDataProject } from "../project/data";
 import { DbProject } from "../project/db";
+import { ProjectIcon } from "../project/global";
 
 export class ViewTimeline
 {
@@ -48,7 +48,7 @@ export class ViewTimeline
 
             let data = {};
                 data['link'] =  `/projects/${project}`;
-                data['icon'] =  data['link'] + `/icon.${UtilDataProject.getIconExt(project)}`;
+                data['icon'] =  new ProjectIcon(project);
                 data['title'] = DbProject.getById(project, ['title']).title;
 
             let groupRow = new GroupRow;

@@ -1,0 +1,27 @@
+{
+    "title":    "Deus Ex: Human Revolution",
+    "desc":     "Борьба между научно-техническим прогрессом и этикой в недалеком будущем.",
+    "type":     "in",
+
+    "status":
+    {
+        "type":     "do",
+        "label":    "Играю"
+    },
+
+    "start": "16.11.2021",
+
+    "action":
+    {
+        "icon":     "fa-brands fa-steam",
+        "text":     "Steam",
+        "link":     "https://store.steampowered.com/app/238010/Deus_Ex_Human_Revolution__Directors_Cut/",
+        "colors":   "steam"
+    },
+
+    "tags":
+    [
+        "action:отдых",
+        "form:игра"
+    ]
+}

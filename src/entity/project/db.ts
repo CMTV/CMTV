@@ -1,6 +1,6 @@
 import { Column, Entity, PrimaryKey, Table } from "sqlean";
 
-import { ProjectAction, ProjectBlock, ProjectExtra, ProjectFact, ProjectLink, ProjectShowcaseItem, ProjectStatus } from "./global";
+import { ProjectAction, ProjectBlock, ProjectExtra, ProjectFact, ProjectLink, ProjectStatus } from "./global";
 
 @Table('project')
 export class DbProject extends Entity
@@ -31,9 +31,6 @@ export class DbProject extends Entity
     action: ProjectAction;
 
     @Column
-    showcase: ProjectShowcaseItem[];
-
-    @Column
     links: ProjectLink[];
 
     @Column
@@ -47,6 +44,9 @@ export class DbProject extends Entity
 
     @Column
     extra: ProjectExtra;
+
+    @Column
+    featured: boolean;
 
     @Column
     displayOrder: number;

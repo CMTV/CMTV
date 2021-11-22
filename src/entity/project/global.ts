@@ -1,4 +1,7 @@
+import { glob } from "glob";
+
 import { Status } from "../status/Status";
+import { UtilDataProject } from "./data";
 
 export enum ProjectType
 {
@@ -36,13 +39,6 @@ export class ProjectLink
     link: string;
 }
 
-export class ProjectShowcaseItem
-{
-    src:    string;
-    width:  number;
-    height: number;
-}
-
 export class ProjectBlock
 {
     scope:      string;
@@ -60,6 +56,36 @@ export class ProjectExtra
             extra.timeFact = true;
         
         return extra;
+    }
+}
+
+export class ProjectIcon
+{
+    url:        string;
+    dataPath:   string;
+    invertible: boolean;
+
+    constructor(projectId: string)
+    {
+        let globResult = glob.sync(UtilDataProject.getPathTo(projectId, 'icon*'));
+
+        if (globResult.length === 0)
+        {
+            this.invertible = true;
+            this.dataPath = 'site/graphics/no-icon.svg';
+            this.url = '/' + this.dataPath;
+
+            return;
+        }
+
+        let iconFilename = globResult[0].split('/').pop();
+        let parts = iconFilename.split('.');
+
+        parts.pop();
+        this.invertible = parts.pop() === 'i';
+
+        this.dataPath = `data/projects/list/${projectId}/${iconFilename}`;
+        this.url = `/projects/${projectId}/${iconFilename}`;
     }
 }
 

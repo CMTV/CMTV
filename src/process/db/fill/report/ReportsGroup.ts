@@ -1,10 +1,12 @@
 import { ProcessGroup } from "@cmtv/processes";
 
-import { FillCounterReports } from "./FillCounterReports";
-import { FillEventReports } from "./FillEventReports";
-import { FillTimeReports } from "./FillTimeReports";
 import { UtilDataYear } from "src/entity/year/data";
+
+// Процессы
+import { FillTimeReports } from "./FillTimeReports";
 import { FillCheckReports } from "./FillCheckReports";
+import { FillEventReports } from "./FillEventReports";
+import { FillCounterReports } from "./FillCounterReports";
 import { FillReportTimelineFragments } from "./FillReportTimelineFragments";
 
 export class ReportGroup extends ProcessGroup

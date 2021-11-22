@@ -5,10 +5,10 @@ import { PageIndex } from "src/page/PageIndex";
 import { DataMyInfo } from "src/entity/me/data";
 import { ViewMyInfoFact, ViewMyInfoSocialItem } from "src/entity/me/view";
 import { UtilMisc } from "src/util/Misc";
-import { UtilDataYear } from "src/entity/year/data";
 import { ViewCounter } from "src/entity/counter/view";
 import { ViewTimeChart } from "src/entity/timeChart/view";
 import { Translator } from "src/translator/Translator";
+import { NON_EMPTY_YEARS } from "./Page_Life";
 
 export class Page_Index extends Process
 {
@@ -37,8 +37,7 @@ export class Page_Index extends Process
 
         page.about = Translator.renderAll(IO.readFile('data/me/about.md'));
 
-        let years = UtilDataYear.getYears();
-        page.years = years.length > 0 ? years : null;
+        page.years = NON_EMPTY_YEARS;
 
         page.counters = ViewCounter.getAll();
 

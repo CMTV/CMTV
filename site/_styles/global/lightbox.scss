@@ -32,3 +32,8 @@
         font-size: 14px;
     }
 }
+
+.pswp__img._invert
+{
+    filter: hue-rotate(180deg) invert(1);
+}

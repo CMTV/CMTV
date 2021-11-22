@@ -3,9 +3,9 @@ import { ProcessGroup } from "@cmtv/processes"
 import { UtilDataProject } from "src/entity/project/data";
 
 // Процессы
-import { FillProjectRelations } from "./FillProjectRelations";
 import { FillProjects } from "./FillProjects";
 import { FillProjectTags } from "./FillProjectTags";
+import { FillProjectRelations } from "./FillProjectRelations";
 
 export class ProjectsGroup extends ProcessGroup
 {

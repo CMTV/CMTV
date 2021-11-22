@@ -37,7 +37,12 @@
         "icon": "fa-brands fa-youtube",
         "text": "Канал",
         "link": "https://www.youtube.com/c/CMTV_official",
-        "colors": ["#ab0c0c", "#f73939"]
+        "colors": "youtube"
+    },
+
+    "related":
+    {
+        "cmtv-pro": "Некоторые серии роликов записывались по текстам курсов с этого сайта."
     },
 
     "tags":

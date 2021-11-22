@@ -5,6 +5,7 @@ import { UtilDataReport } from "src/entity/report/data";
 import { DbTimeReport } from "src/entity/report/db";
 import { DbGoal } from "src/entity/goal/db";
 import { UtilDate } from "src/util/Date";
+import { BUILD_CONFIG } from "src/BuildConfig";
 
 export class FillTimeReports extends YearsProcess
 {
@@ -30,6 +31,9 @@ export class FillTimeReports extends YearsProcess
 
                 rawReport.time.forEach(rawTimeReport =>
                 {
+                    if (!BUILD_CONFIG.projectAllowed(rawTimeReport.project))
+                        return;
+
                     let dbTimeReport = new DbTimeReport;
                         dbTimeReport.reportId =     reportId++;
                         dbTimeReport.date =         date;
@@ -46,11 +50,14 @@ export class FillTimeReports extends YearsProcess
         Db.Transaction(() => dbTimeReports.forEach(report => report.save()));
     }
 
-    private getGoalIds(projectId: string, strGoals: string[]): number[]
+    private getGoalIds(projectId: string, strGoals: string[] | string): number[]
     {
         if (!projectId || !strGoals) return null;
 
         let ids = [];
+
+        if (typeof strGoals === 'string')
+            strGoals = [strGoals];
 
         strGoals.forEach(strGoal =>
         {

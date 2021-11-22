@@ -1,5 +1,6 @@
 extends /templates/default
 
+include /includes/icon
 include /includes/chart
 include /includes/timeline
 
@@ -12,7 +13,7 @@ block main
                 each result in results
                     .result
                         if (result.type === 'project')
-                            a.icon(href= result.link): img(src= result.icon)
+                            a.icon(href= result.link): +icon(result.icon)
                             .title: a(href= result.link)= result.title
                         else
                             .icon: i.fa-fw(class= result.icon)
@@ -42,7 +43,7 @@ block main
                                         .project
                                             .count= '+' + counterItem.goals.length
                                             a.icon(href= "/projects/" + counterItem.project)
-                                                img(src= counterItem.icon)
+                                                +icon(counterItem.icon)
                                             a.title(href= "/projects/" + counterItem.project)= counterItem.title
                                             .eyeContainer
                                                 i.fa-fw.fa-solid.fa-eye
@@ -69,7 +70,7 @@ block main
                                         
                                         if (counterItem.project)
                                             a.icon(href= counterItem.link)
-                                                img(src= counterItem.icon)
+                                                +icon(counterItem.icon)
 
                                         a.title(href= counterItem.link)= counterItem.title
                                         .date= counterItem.date

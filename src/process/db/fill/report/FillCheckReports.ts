@@ -1,4 +1,5 @@
 import { Db } from "sqlean";
+import { BUILD_CONFIG } from "src/BuildConfig";
 
 import { DbGoal } from "src/entity/goal/db";
 import { UtilDataReport } from "src/entity/report/data";
@@ -30,12 +31,17 @@ export class FillCheckReports extends YearsProcess
                 rawReport.checks.forEach(rawCheckReport =>
                 {
                     let arr = rawCheckReport.split(':').map(item => item.trim());
+                    let projectId = arr[0];
+                    let goalId = arr[1];
+
+                    if (!BUILD_CONFIG.projectAllowed(projectId))
+                        return;
 
                     let dbCheckReport = new DbCheckReport;
                         dbCheckReport.reportId =    reportId++;
                         dbCheckReport.date =        date;
-                        dbCheckReport.projectId =   arr[0];
-                        dbCheckReport.goalId =      DbGoal.getGoalIdByName(arr[0], arr[1]);
+                        dbCheckReport.projectId =   projectId;
+                        dbCheckReport.goalId =      DbGoal.getGoalIdByName(projectId, goalId);
                     
                     dbCheckReports.push(dbCheckReport);
                 });

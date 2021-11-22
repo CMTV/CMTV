@@ -1,5 +1,6 @@
+import { BUILD_CONFIG } from "src/BuildConfig";
 import { CONFIG } from "src/Config";
-import { UtilDataProject } from "src/entity/project/data";
+import { ProjectIcon } from "src/entity/project/global";
 import { SITEMAP } from "src/process/site/Sitemap";
 import { paint, paintProject } from "src/util/Paint";
 import * as pre from "src/util/preprocessor";
@@ -79,9 +80,9 @@ export class PageOgImg
         this.title =    title;
 
         if (projectId)
-            this.iconPath = 'data/projects/list/' + projectId + '/icon.' + UtilDataProject.getIconExt(projectId);
+            this.iconPath = new ProjectIcon(projectId).dataPath;
 
-        if (!CONFIG.devMode && title)
+        if (!BUILD_CONFIG.devMode && title)
         {
             let dest = 'dist/site/graphics/og-images/' + this.id + '.jpeg';
 

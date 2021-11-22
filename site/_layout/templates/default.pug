@@ -18,7 +18,8 @@ html(lang="ru")
         meta(name="generator", content="CMTV Static Site Generator")
         meta(name="build-time", content= config.buildTime)
 
-        link(rel="icon", type="image/png", href="/site/graphics/favicon.png")
+        link(rel="icon", href="/site/graphics/favicon/favicon.ico")
+        link(rel="icon", type="image/png", href="/site/graphics/favicon/favicon.png")
 
         //-
         //- Сторонние библиотеки
@@ -78,5 +79,6 @@ html(lang="ru")
         //- Сторонние ресурсы
         //-
 
-        include /vendor/yandex.html
-        include /vendor/google.html
+        if (!config.devMode)
+            include /vendor/yandex.html
+            include /vendor/google.html

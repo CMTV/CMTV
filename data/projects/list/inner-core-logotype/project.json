@@ -1,0 +1,41 @@
+{
+    "title":    "Логотип Inner Core",
+    "desc":     "Перерисовал в векторном формате логотип Inner Core — загрузчика модов для Minecraft PE.",
+    "type":     "out",
+
+    "status":
+    {
+        "type":     "done",
+        "label":    "Нарисовал"
+    },
+
+    "date": "23.09.2017",
+
+    "action":
+    {
+        "icon":     "fa-solid fa-file-zipper",
+        "text":     "Материалы",
+        "link":     "files/inner-core.zip",
+        "colors":   "other"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-brands fa-google-play",
+            "text": "Inner Core",
+            "link": "https://play.google.com/store/apps/details?id=com.zhekasmirnov.innercore&hl=ru"
+        },
+
+        {
+            "icon": "fa-brands fa-vk",
+            "text": "Группа Inner Core",
+            "link": "https://vk.com/core_engine"
+        }
+    ],
+
+    "tags":
+    [
+        "area:графика"
+    ]
+}

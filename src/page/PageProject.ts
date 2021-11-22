@@ -1,8 +1,9 @@
 import { Page } from "./Page";
 import { ViewProjectDateData, ViewProjectGoalData, ViewProjectRelated, ViewProjectTags, ViewProjectType } from "src/entity/project/view";
-import { ProjectAction, ProjectBlock, ProjectFact, ProjectLink, ProjectShowcaseItem } from "src/entity/project/global";
+import { ProjectAction, ProjectBlock, ProjectFact, ProjectIcon, ProjectLink } from "src/entity/project/global";
 import { ViewTimeChart } from "src/entity/timeChart/view";
 import { ViewTimeline } from "src/entity/timelineFragment/view";
+import { Status } from "src/entity/status/Status";
 
 export class PageProject extends Page
 {
@@ -12,14 +13,16 @@ export class PageProject extends Page
     id:         string;
     title:      string;
     desc:       string;
-    icon:       string;
+    icon:       ProjectIcon;
+
+    status:     Status;
+    featured:   boolean;
 
     type:       ViewProjectType;
     tags:       ViewProjectTags;
 
     facts:      ProjectFact[];
     action:     ProjectAction;
-    showcase:   ProjectShowcaseItem[];
 
     main:       string;
 

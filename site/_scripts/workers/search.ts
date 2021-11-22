@@ -100,11 +100,11 @@ class SearchData
 
             this.ready = true;
 
-            if (this.pendingCallback)
-                this.pendingCallback();
-
             lastSearch.ids = searchData.projectNumIds;
             lastSearch.currentI = Math.min(LastSearch.batchSize, lastSearch.ids.length);
+
+            if (this.pendingCallback)
+                this.pendingCallback();
         });
     }
 
@@ -159,7 +159,6 @@ class SearchData
     {
         let resultProject = this.results[projectNumId];
         let link = '/projects/' + resultProject.id;
-        let icon = '/projects/' + resultProject.id + '/icon.' + resultProject.iconExt;
         let tags = resultProject.tagIds ? resultProject.tagIds.map(tagNumId => this.tagNumStrIds[tagNumId]).slice(0, 5) : [];
 
         let typeLabel = '';
@@ -170,10 +169,21 @@ class SearchData
             case 'mix': typeLabel = 'Производитель и потребитель'; break;
         }
 
+        let featuredHtml = '';
+        if (resultProject.featured)
+            featuredHtml = `
+                <div class="featured status--${resultProject.status}">
+                    <i class="fa-solid fa-star"></i>
+                    <div class="hover" title="Важный проект"></div>
+                </div>
+            `;
+
+        let iconHtml = `<img src="${resultProject.icon.url}" ${resultProject.icon.invertible ? 'class="invertible"' : ''} loading="lazy">`;
+
         let html = `
             <div class="searchResult">
                 <a class="icon" href="${link}">
-                    <img src="${icon}" loading="lazy">
+                    ${iconHtml}
                 </a>
                 
                 <div class="infoBlock">
@@ -184,8 +194,10 @@ class SearchData
 
                     <div class="statusBg status--${resultProject.status}"></div>
 
+                    ${featuredHtml}
+
                     <header>
-                        <a class="icon" href="${link}"><img src="${icon}" loading="lazy"></a>
+                        <a class="icon" href="${link}">${iconHtml}</a>
                         <a class="title" href="${link}">${resultProject.title}</a>
                     </header>
 

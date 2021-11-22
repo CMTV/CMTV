@@ -1,12 +1,12 @@
 import { Db } from "sqlean";
 
+import { BUILD_CONFIG } from "src/BuildConfig";
 import { UtilDate } from "src/util/Date";
 import { ViewProjectGoal } from "../goal/view";
 import { Status } from "../status/Status";
 import { ViewTag } from "../tag/view";
-import { UtilDataProject } from "./data";
 import { DbProject, DbProjectTag } from "./db";
-import { ProjectType, UtilProject } from "./global";
+import { ProjectIcon, ProjectType, UtilProject } from "./global";
 
 export class ViewListProject
 {
@@ -14,8 +14,9 @@ export class ViewListProject
     title:      string;
     desc:       string;
     type:       ViewProjectType;
-    iconExt:    string;
+    icon:       ProjectIcon;
     status:     string;
+    featured:   boolean;
     tags:       string[];
 }
 
@@ -86,14 +87,14 @@ export class ViewProjectRelated
 {
     id:     string;
     title:  string;
-    icon:   string;
+    icon:   ProjectIcon;
     reason: string;
 
     constructor(relatedId: string, reason: string)
     {
         this.id =       relatedId;
         this.title =    DbProject.getById(relatedId, ['title']).title;
-        this.icon =     `/projects/${relatedId}/icon.` + UtilDataProject.getIconExt(relatedId);
+        this.icon =     new ProjectIcon(relatedId);
         this.reason =   reason;
     }
     
@@ -106,6 +107,8 @@ export class ViewProjectRelated
         });
 
         if (!dbRelated) return null;
+
+        dbRelated = dbRelated.filter(item => BUILD_CONFIG.projectAllowed(item.relatedId));
 
         return dbRelated.map(dbItem => new ViewProjectRelated(dbItem.relatedId, dbItem.reason));
     }

@@ -1,5 +1,6 @@
 import { Db } from "sqlean";
 
+import { BUILD_CONFIG } from "src/BuildConfig";
 import { IO } from "src/util/IO";
 import { SearchProcess } from "./SearchProcess";
 
@@ -9,7 +10,7 @@ export class SearchTagIndex extends SearchProcess
     
     process()
     {
-        let tagIndex = new TagIndex;
+        let tagIndex: TagIndex = {};
 
         Object.keys(this.tagIdMap).forEach(tagId =>
         {
@@ -19,6 +20,14 @@ export class SearchTagIndex extends SearchProcess
                 where:      ['@tagId', '=', tagId],
                 pluck:      true
             });
+
+            if (!projectsWithTag)
+            {
+                tagIndex[tagId] = [];
+                return;
+            }
+
+            projectsWithTag = projectsWithTag.filter(projectId => BUILD_CONFIG.projectAllowed(projectId));
 
             tagIndex[tagId] = projectsWithTag.map(projectId => this.projectIdMap[projectId]);
         });

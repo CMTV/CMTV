@@ -3,6 +3,7 @@ import { Db } from "sqlean";
 import { YearsProcess } from "../life/YearsProcess";
 import { UtilDataReport } from "src/entity/report/data";
 import { DbCounterReport } from "src/entity/report/db";
+import { BUILD_CONFIG } from "src/BuildConfig";
 
 export class FillCounterReports extends YearsProcess
 {
@@ -28,6 +29,9 @@ export class FillCounterReports extends YearsProcess
                 
                 rawReport.counters.forEach(rawCounterReport =>
                 {
+                    if (!BUILD_CONFIG.projectAllowed(rawCounterReport.project))
+                        return;
+
                     let dbCounterReport = new DbCounterReport;
                         dbCounterReport.reportId =    reportId++;
                         dbCounterReport.date =        date;

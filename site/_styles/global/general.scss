@@ -1,5 +1,8 @@
+@use 'defs/color';
 @use 'defs/size';
 @use 'defs/bp';
+
+@use 'partials/util';
 
 //
 // Сброс стандартных стилей
@@ -62,6 +65,16 @@ ol, ul
 }
 
 ul { list-style-type: square; }
+
+img.invertible
+{
+    @include util.transition(filter);
+
+    @include color.themeDark
+    {
+        filter: hue-rotate(180deg) invert(1);
+    }
+}
 
 ::selection
 {

@@ -25,8 +25,8 @@
     {
         "icon":     "fa-solid fa-file-pdf",
         "text":     "Перевод",
-        "link":     "files/translation.pdf",
-        "colors":   ["#0C2A6C", "#1D3C82"]
+        "link":     "files/make-your-own-neural-network.pdf",
+        "colors":   ["#1F4192", "#2854BB"]
     },
 
     "links":
@@ -37,6 +37,11 @@
             "link": "https://www.amazon.com/Make-Your-Own-Neural-Network-ebook/dp/B01EER4Z4G"
         }
     ],
+
+    "related":
+    {
+        "neuralnet-info": "Перевод публиковался частями на этом портале."
+    },
 
     "tags":
     [

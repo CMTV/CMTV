@@ -1,6 +1,7 @@
 import glob from "glob";
 
 import { IO } from "src/util/IO";
+import { BUILD_CONFIG } from "src/BuildConfig";
 import { ProjectAction, ProjectExtra, ProjectFact, ProjectLink, ProjectStatus, ProjectType } from "./global";
 
 /**
@@ -52,7 +53,17 @@ export class UtilDataProject
 {
     static getIds(): string[]
     {
-        return glob.sync('data/projects/list/*').map(path => path.split('/').pop());
+        let projectIds = glob.sync('data/projects/list/*/project.json').map(projectPath =>
+        {
+            let arr = projectPath.split('/');
+            arr.pop(); // Пропускаем файл `project.json`
+
+            return arr.pop();
+        });
+
+        projectIds = projectIds.filter(projectId => BUILD_CONFIG.projectAllowed(projectId));
+
+        return projectIds;
     }
 
     static getFeaturedIds(): string[]
@@ -88,10 +99,5 @@ export class UtilDataProject
     static getDataProject(projectId: string): DataProject
     {
         return JSON.parse(IO.readFile(this.getPathTo(projectId, 'project.json')));
-    }
-
-    static getIconExt(projectId: string)
-    {
-        return glob.sync(this.getPathTo(projectId, 'icon.*'))[0].split('.').pop();
     }
 }

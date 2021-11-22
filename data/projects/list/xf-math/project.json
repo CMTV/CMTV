@@ -1,0 +1,11 @@
+{
+    "title": "Math",
+    "desc": "Аддон для встраивания математики на XenForo.",
+    "type": "mix",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Разработал"
+    }
+}

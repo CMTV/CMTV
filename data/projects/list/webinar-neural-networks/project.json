@@ -1,0 +1,59 @@
+{
+    "title":    "Вебинар «Нейронные сети»",
+    "desc":     "Ознакомительный вебинар про нейронные сети для платформы GeekBrains.",
+    "type":     "out",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Провел"
+    },
+
+    "start":    "4.04.2016",
+    "end":      "29.04.2016",
+
+    "facts":
+    [
+        {
+            "id":       "time",
+            "label":    "Длительность",
+            "data":     "2 часа"
+        },
+
+        {
+            "id":       "viewers",
+            "label":    "Зрители",
+            "data":     100
+        }
+    ],
+
+    "action":
+    {
+        "icon":     "fa-brands fa-youtube",
+        "text":     "Запись",
+        "link":     "https://youtu.be/lOvr6NL9VHI",
+        "colors":   "youtube"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-file-pdf",
+            "text": "Презентация",
+            "link": "files/webinar-presentation.pdf"
+        },
+
+        {
+            "icon": "fa-solid fa-file-pdf",
+            "text": "Программа курса",
+            "link": "files/course-program.pdf"
+        }
+    ],
+
+    "tags":
+    [
+        "area:ai",
+        "action:просвещение",
+        "form:видео"
+    ]
+}

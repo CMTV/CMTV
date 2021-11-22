@@ -27,19 +27,19 @@
 
     "21.10":
     {
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "22.10":
     {
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "23.10":
     {
         "counters": [{ "counter": "game", "value": 1, "project": "lis-true-colors" }],
 
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "24.10":
@@ -53,7 +53,7 @@
             }
         ],
 
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "25.10":
@@ -63,7 +63,7 @@
             {
                 "duration": 6,
                 "project":  "radkopeter",
-                "goals":    ["v2.0"]
+                "goals":    ["v2"]
             },
 
             {
@@ -79,7 +79,7 @@
             }
         ],
 
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "26.10":
@@ -88,7 +88,7 @@
         [
             {
                 "project": "radkopeter",
-                "goals": ["v2.0"],
+                "goals": ["v2"],
                 "duration": 6
             },
 
@@ -111,7 +111,7 @@
             }
         ],
 
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "27.10":
@@ -120,7 +120,7 @@
         [
             {
                 "project":  "radkopeter",
-                "goals":    ["v2.0"],
+                "goals":    ["v2"],
                 "duration": 6
             },
             {
@@ -139,7 +139,7 @@
                 "duration": 2.5
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "28.10":
@@ -148,7 +148,7 @@
         [
             {
                 "project":  "radkopeter",
-                "goals":    ["v2.0"],
+                "goals":    ["v2"],
                 "duration": 7.5
             },
             {
@@ -162,7 +162,7 @@
                 "duration": 5
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "29.10":
@@ -171,7 +171,7 @@
         [
             {
                 "project":  "radkopeter",
-                "goals":    ["v2.0"],
+                "goals":    ["v2"],
                 "duration": 6
             },
             {
@@ -185,7 +185,7 @@
                 "duration": 5
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "30.10":
@@ -194,7 +194,7 @@
         [
             {
                 "project":  "radkopeter",
-                "goals":    ["v2.0"],
+                "goals":    ["v2"],
                 "duration": "6:30"
             },
             {
@@ -208,7 +208,7 @@
                 "duration": 5
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "31.10":
@@ -217,7 +217,7 @@
         [
             {
                 "project":  "radkopeter",
-                "goals":    ["v2.0"],
+                "goals":    ["v2"],
                 "duration": 5
             },
             {
@@ -236,7 +236,7 @@
                 "duration": 4
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "1.11":
@@ -245,7 +245,7 @@
         [
             {
                 "project":  "radkopeter",
-                "goals":    ["v2.0"],
+                "goals":    ["v2"],
                 "duration": 6
             },
             {
@@ -254,7 +254,7 @@
                 "duration": 5
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "2.11":
@@ -263,7 +263,7 @@
         [
             {
                 "project":  "radkopeter",
-                "goals":    ["v2.0"],
+                "goals":    ["v2"],
                 "duration": 4
             },
             {
@@ -272,7 +272,7 @@
                 "duration": "2:30"
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "3.11":
@@ -281,7 +281,7 @@
         [
             {
                 "project":  "radkopeter",
-                "goals":    ["v2.0"],
+                "goals":    ["v2"],
                 "duration": 6
             },
             {
@@ -290,7 +290,7 @@
                 "duration": "4:20"
             }
         ],
-        "checks": ["weight-loss : diet"],
+        "checks": ["divine-body : diet"],
         "counters":
         [
             {
@@ -306,7 +306,7 @@
         [
             {
                 "project":  "radkopeter",
-                "goals":    ["v2.0"],
+                "goals":    ["v2"],
                 "duration": 6
             },
             {
@@ -315,7 +315,7 @@
                 "duration": "1:20"
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "5.11":
@@ -324,7 +324,7 @@
         [
             {
                 "project":  "radkopeter",
-                "goals":    ["v2.0"],
+                "goals":    ["v2"],
                 "duration": 6
             },
             {
@@ -333,7 +333,7 @@
                 "duration": 4
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "6.11":
@@ -342,7 +342,7 @@
         [
             {
                 "project":  "radkopeter",
-                "goals":    ["v2.0"],
+                "goals":    ["v2"],
                 "duration": "4:30"
             },
             {
@@ -361,7 +361,7 @@
                 "duration": 4
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "7.11":
@@ -370,7 +370,7 @@
         [
             {
                 "project": "radkopeter",
-                "goals": ["v2.0"],
+                "goals": ["v2"],
                 "duration": "4:30"
             },
             {
@@ -379,7 +379,7 @@
                 "duration": 5
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "8.11":
@@ -388,7 +388,7 @@
         [
             {
                 "project": "radkopeter",
-                "goals": ["v2.0"],
+                "goals": ["v2"],
                 "duration": 5
             },
             {
@@ -397,7 +397,7 @@
                 "duration": "0:40"
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "9.11":
@@ -406,7 +406,7 @@
         [
             {
                 "project": "radkopeter",
-                "goals": ["v2.0"],
+                "goals": ["v2"],
                 "duration": 5
             },
             {
@@ -420,7 +420,7 @@
                 "duration": 4
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "10.11":
@@ -429,7 +429,7 @@
         [
             {
                 "project": "radkopeter",
-                "goals": ["v2.0"],
+                "goals": ["v2"],
                 "duration": 5
             },
             {
@@ -443,7 +443,7 @@
                 "duration": 4
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "11.11":
@@ -452,7 +452,7 @@
         [
             {
                 "project": "radkopeter",
-                "goals": ["v2.0"],
+                "goals": ["v2"],
                 "duration": 5
             },
             {
@@ -461,7 +461,7 @@
                 "duration": 4
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "12.11":
@@ -479,7 +479,7 @@
                 "duration": "3:30"
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
     },
 
     "13.11":
@@ -488,7 +488,7 @@
         [
             {
                 "project": "radkopeter",
-                "goals": ["v2.0"],
+                "goals": ["v2"],
                 "duration": 3
             },
             {
@@ -502,6 +502,206 @@
                 "duration": 4
             }
         ],
-        "checks": ["weight-loss : diet"]
+        "checks": ["divine-body : diet"]
+    },
+
+    "14.11":
+    {
+        "time":
+        [
+            {
+                "project":  "radkopeter",
+                "goals":    ["fill"],
+                "duration": 6
+            },
+            {
+                "project":  "cs-go",
+                "goals":    ["play"],
+                "duration": 4
+            }
+        ],
+        "checks": ["divine-body : diet"]
+    },
+
+    "15.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": ["fill"],
+                "duration": 5
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": ["tasks"],
+                "duration": 1
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "16.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": ["fill"],
+                "duration": 7
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": ["tasks"],
+                "duration": 1
+            },
+            {
+                "project": "deus-ex-hr",
+                "goals": ["playthrough"],
+                "duration": 3
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "17.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": ["fill"],
+                "duration": 6
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": ["notes"],
+                "duration": "0:30"
+            },
+            {
+                "project": "deus-ex-hr",
+                "goals": ["playthrough"],
+                "duration": 3.1
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "18.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": ["v2"],
+                "duration": 4
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": ["tasks"],
+                "duration": "0:40"
+            },
+            {
+                "project": "deus-ex-hr",
+                "goals": ["playthrough"],
+                "duration": 3.3
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "19.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": ["v2"],
+                "duration": 6
+            },
+            {
+                "project": "deus-ex-hr",
+                "goals": ["playthrough"],
+                "duration": 2.8
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "20.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": ["v2"],
+                "duration": "1:30"
+            },
+            {
+                "project": "radkopeter",
+                "goals": ["fill"],
+                "duration": 5
+            },
+            {
+                "project": "deus-ex-hr",
+                "goals": ["playthrough"],
+                "duration": 4.8
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet"
+        ]
+    },
+
+    "21.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 2
+            },
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 5  
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": 1
+            },
+            {
+                "project": "deus-ex-hr",
+                "goals": "playthrough",
+                "duration": 3.6
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet"
+        ]
     }
 }

@@ -1,0 +1,50 @@
+{
+    "title":    "Тренировочный корпус KSP",
+    "desc":     "Обучающий YouTube канал про космический симулятор Kerbal Space Program.",
+    "type":     "out",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Закрыт"
+    },
+
+    "start": "14.11.2013",
+    "end": "27.11.2013",
+
+    "facts":
+    [
+        {
+            "id": "videos",
+            "label": "Видео",
+            "data": 5
+        },
+
+        {
+            "id": "subs",
+            "label": "Подписчики",
+            "data": "100+"
+        },
+
+        {
+            "id": "views",
+            "label": "Просмотры",
+            "data": "7 000+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-brands fa-youtube",
+        "text": "Канал",
+        "link": "https://www.youtube.com/user/kerbalSP",
+        "colors": "youtube"
+    },
+
+    "tags":
+    [
+        "!просвещение",
+        "!видео",
+        "youtube", "игра"
+    ]
+}

@@ -81,7 +81,7 @@ block main
         if (tags && tags.other)
             .tags
                 each tag in tags.other
-                    .tag(title= tag.desc)= tag.id
+                    .tag(title= tag.desc, class= tag.old ? 'old' : '')= tag.id
 
     //-
     //- Цели и даты

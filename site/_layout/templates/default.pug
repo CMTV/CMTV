@@ -18,8 +18,8 @@ html(lang="ru")
         meta(name="generator", content="CMTV Static Site Generator")
         meta(name="build-time", content= config.buildTime)
 
-        link(rel="icon", href="/site/graphics/favicon/favicon.ico")
-        link(rel="icon", type="image/png", href="/site/graphics/favicon/favicon.png")
+        link(rel="icon", href= config.getUrl() + "/favicon.ico")
+        link(rel="icon", type="image/png", href= config.getUrl() + "/site/graphics/favicon/favicon.png")
 
         //-
         //- Сторонние библиотеки

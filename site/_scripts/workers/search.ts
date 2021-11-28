@@ -50,7 +50,7 @@ class LastSearch
         else
             toReturn = this.ids.slice(this.currentI, this.currentI + LastSearch.batchSize);
 
-        this.currentI += LastSearch.batchSize;
+        this.currentI += toReturn.length;
         this.isEnd = this.currentI >= this.ids.length;
 
         return toReturn;
@@ -182,7 +182,7 @@ class SearchData
 
         let html = `
             <div class="searchResult">
-                <a class="icon" href="${link}">
+                <a class="icon" href="${link}" target="_blank">
                     ${iconHtml}
                 </a>
                 
@@ -197,8 +197,8 @@ class SearchData
                     ${featuredHtml}
 
                     <header>
-                        <a class="icon" href="${link}">${iconHtml}</a>
-                        <a class="title" href="${link}">${resultProject.title}</a>
+                        <a class="icon" href="${link}" target="_blank">${iconHtml}</a>
+                        <a class="title" href="${link}" target="_blank">${resultProject.title}</a>
                     </header>
 
                     <div class="desc">${resultProject.desc}</div>
@@ -227,7 +227,7 @@ onmessage = (e) =>
 {
     let request: WorkerRequest = e.data;
 
-    // console.log(request); /* Remove */
+    //console.log(request); /* Debug */
 
     searchData.whenReady(() =>
     {
@@ -236,7 +236,7 @@ onmessage = (e) =>
             let searchRequest = request as WorkerSearchRequest;
             lastSearch.reInit(searchData.search(searchRequest.text, searchRequest.tags));
         }
-
+        
         let batchIds = lastSearch.more();
 
         let response = new WorkerResponse;
@@ -246,7 +246,7 @@ onmessage = (e) =>
         if (response.resultHTML !== '' && lastSearch.isEnd)
             response.resultHTML = '!' + response.resultHTML;
 
-        //setTimeout(() => { worker.postMessage(response); }, 500); 
+        //setTimeout(() => { worker.postMessage(response); }, 500); /* Debug */
         worker.postMessage(response);
     });
 }

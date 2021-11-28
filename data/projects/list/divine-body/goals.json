@@ -10,9 +10,9 @@
 
         "progress":
         {
-            "label":    "93.3 → 75 кг",
+            "label":    "90.9 → 75 кг",
             "start":    99.2,
-            "current":  93.3,
+            "current":  90.9,
             "target":   75
         }
     },

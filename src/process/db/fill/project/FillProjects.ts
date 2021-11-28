@@ -1,5 +1,3 @@
-import glob from "glob";
-import sizeOf from "image-size";
 import { Db } from "sqlean";
 
 import { UtilDataProject } from "src/entity/project/data";

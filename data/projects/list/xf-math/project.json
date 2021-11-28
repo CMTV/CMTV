@@ -1,11 +1,53 @@
 {
     "title": "Math",
-    "desc": "Аддон для встраивания математики на XenForo.",
+    "desc": "Аддон XenForo для удобной вставки и отображения математических формул.",
     "type": "mix",
 
     "status":
     {
         "type": "done",
         "label": "Разработал"
-    }
+    },
+
+    "start": "23.04.2018",
+    "end": "09.10.2020",
+
+    "facts":
+    [
+        {
+            "id": "downloads",
+            "label": "Скачиваний",
+            "data": "150+"
+        }   
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-globe",
+        "text": "Аддон",
+        "link": "https://xenforo.com/community/resources/math.6386/",
+        "colors": "xenforo"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код",
+            "link": "https://github.com/CMTV/XF2A-Math"
+        }
+    ],
+
+    "related":
+    {
+        "wp-insert-math": "Аналогичный аддон для WordPress."
+    },
+
+    "tags":
+    [
+        "!математика",
+        "!программирование",
+        "!плагин",
+        "информатика", "xenforo", "php", "js"
+    ]
 }

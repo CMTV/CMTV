@@ -51,9 +51,9 @@
 
     "tags":
     [
-        "area:ai",
-        "action:просвещение",
-        "form:сайт",
-        "учебник", "форум", "wordpress", "xenforo", "php", "scss", "node.js"
+        "!ai",
+        "!просвещение",
+        "!сайт",
+        "учебник", "форум", "xenforo", "scss", "node.js", "wordpress*", "php*"
     ]
 }

@@ -97,7 +97,7 @@ class Search
 
     constructor()
     {
-        this.root = document.querySelector('main > .search');
+        this.root =         document.querySelector('main > .search');
         
         this.input =        this.root.querySelector('.main > input');
 
@@ -106,6 +106,7 @@ class Search
         this.filterEmpty =  this.filterPane.querySelector('.emptyFilter');
 
         this.selectPane =   this.root.querySelector('.tags');
+        this.setupTagTypeUi();
 
         //
 
@@ -149,11 +150,7 @@ class Search
         {
             let tagId = tag.getAttribute('data-id');
             this.tagMap[tagId] = tag;
-
-            tag.addEventListener('click', () =>
-            {
-                this.updateFilterTags(tagId, !tag.classList.contains('_selected') ? 'add' : 'remove');
-            });
+            tag.addEventListener('click', () => this.updateFilterTags(tagId, !tag.classList.contains('_selected') ? 'add' : 'remove'));
         });
 
         //
@@ -213,28 +210,57 @@ class Search
     {
         this.onSearchUpdate(this.value, this.filterTags);
     }
-}
 
-// Переключение типов тегов
-window.addEventListener('load', () =>
-{
-    let togglers: Toggler[] = [];
-
-    document.querySelectorAll('main > .search > .tags > .tagTypes > .tagType').forEach(tagTypeElem =>
+    setupTagTypeUi()
     {
-        let tagType = tagTypeElem.getAttribute('data-type');
-        let tagList = document.querySelector(`main > .search > .tags > .tagLists > .tagList[data-type="${tagType}"]`);
+        // Переключение типов тегов
 
-        let toggler = new Toggler(tagTypeElem, tagList);
+        let typeTogglers: Toggler[] = [];
+
+        this.selectPane.querySelectorAll('.tagType').forEach(tagTypeElem =>
+        {
+            let tagType = tagTypeElem.getAttribute('data-type');
+            let tagTypePaneElem = this.selectPane.querySelector(`.tagTypePane[data-type="${tagType}"]`);
+            let tagTypeToggler = new Toggler(tagTypeElem, tagTypePaneElem);
+                tagTypeToggler.clickCallback = () =>
+                {
+                    typeTogglers.forEach(toggler => toggler.setState(false));
+                    return true;
+                }
+
+            typeTogglers.push(tagTypeToggler);
+        });
+
+        // Переключение категорий тегов типа "Остальные"
+
+        let tagTypeOtherElem = this.selectPane.querySelector('.tagType[data-type="other"]');
+        let categoriesElem = this.selectPane.querySelector('.categories');
+
+        let categoryTogglers: Toggler[] = [];
+
+        categoryTogglers.push(new Toggler(tagTypeOtherElem, categoriesElem));
+
+        this.selectPane.querySelectorAll('.categories .category').forEach(categoryElem =>
+        {
+            let categoryId = categoryElem.getAttribute('data-cat-id');
+            let categoryPaneElem = this.selectPane.querySelector(`.categoryPane[data-cat-id="${categoryId}"]`);
+
+            // Клик по иконке "Назад" в открытой категории
+            categoryPaneElem.querySelector('header > i').addEventListener('click', () => (categoryTogglers[0].button as any).click());
+
+            categoryTogglers.push(new Toggler(categoryElem, categoryPaneElem));
+        });
+
+        categoryTogglers.forEach(toggler =>
+        {
             toggler.clickCallback = () =>
             {
-                togglers.forEach(toggler => toggler.setState(false));
+                categoryTogglers.forEach(toggler => toggler.setState(false));
                 return true;
-            };
-
-        togglers.push(toggler);
-    });
-});
+            }
+        });
+    }
+}
 
 //
 //

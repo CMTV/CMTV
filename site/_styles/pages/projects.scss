@@ -145,11 +145,41 @@ main > .search
 
     > .tags
     {
-        border-top: 1px solid var(--c_border);
+        --maxHeight: 180px;
+        --sectionHeight: calc(var(--maxHeight) / 4);
 
+        %section
+        {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            height: var(--sectionHeight);
+            font-size: 16px;
+            line-height: 1;
+            color: var(--c_text-shade-1);
+            @include util.transition(color, background-color);
+        }
+
+        %sectionActive
+        {
+            color: var(--c_text);
+            background: var(--c_bg-shade-1);
+        }
+
+        %tag
+        {
+            @extend %tag;
+            &._selected,
+            &:hover { background: var(--c_bg-shade-2); }
+        }
+
+        //
+
+        border-top: 1px solid var(--c_border);
         display: flex;
-        
-        > .tagTypes
+        gap: 1px;
+
+        > .tagTypeList
         {
             display: flex;
             flex-direction: column;
@@ -157,47 +187,29 @@ main > .search
 
             > .tagType
             {
-                display: flex;
-                align-items: center;
+                @extend %section;
+                &:hover, &[data-toggled] { @extend %sectionActive; }
+
                 gap: size.$gapSmall;
                 padding: 0 size.$gap;
-                cursor: pointer;
 
-                height: 45px;
-
-                border-top: 1px solid var(--c_border);
-                &:first-of-type { border-top: none; }
-
-                color: var(--c_text-shade-1);
-                @include util.transition(color, background-color);
-
-                &:hover,
-                &[data-toggled]
-                {
-                    color: var(--c_text);
-                    background: var(--c_bg-shade-1);
-                }
-
-                > span { font-size: 16px; }
+                &:not(:first-of-type) { border-top: 1px solid var(--c_border); }
 
                 @include bp.max(mini) { > span { display: none; } }
             }
         }
 
-        > .tagLists
+        > .tagTypePanes
         {
             flex: 1;
-            padding: size.$gap;
-            max-height: 180px;
-            @extend %scrollbar;
+            border-left: 1px solid var(--c_border);
 
-            > .tagList
+            .tags
             {
+                padding: size.$gap;
                 display: flex;
-                flex-wrap: wrap;
                 gap: size.$gap;
-
-                @extend %toggle;
+                flex-wrap: wrap;
 
                 > .tag
                 {
@@ -207,6 +219,71 @@ main > .search
                     &:hover
                     {
                         background: var(--c_bg-shade-2);
+                    }
+                }
+            }
+
+            > .tagTypePane { @extend %toggle; }
+
+            > .tagTypePane:not([data-type="other"])
+            {
+                overflow: auto;
+                @extend %scrollbar;
+                max-height: var(--maxHeight);
+            }
+
+            > .tagTypePane[data-type="other"]
+            {
+                > * { @extend %toggle; }
+
+                > .categories
+                {
+                    overflow: auto;
+                    @extend %scrollbar;
+                    max-height: var(--maxHeight);
+
+                    > .list
+                    {
+                        display: flex;
+                        flex-direction: column;
+
+                        > .category
+                        {
+                            @extend %section;
+                            &:hover { @extend %sectionActive; }
+                            &:not(:first-of-type) { border-top: 1px solid var(--c_border); }
+                            > .title { padding-left: size.$gap; }
+                        }
+                    }
+                }
+
+                > .categoryPane
+                {
+                    > header
+                    {
+                        @extend %section, %sectionActive;
+                        border-bottom: 1px solid var(--c_border);
+                        cursor: auto;
+
+                        > i
+                        {
+                            @include util.flexCC;
+
+                            height: 100%;
+                            padding: 0 size.$gap;
+
+                            cursor: pointer;
+                            color: var(--c_text-shade-1);
+
+                            @include hover.colorAccent(var(--c_text));
+                        }
+                    }
+
+                    > .tagsHolder
+                    {
+                        overflow: auto;
+                        @extend %scrollbar;
+                        max-height: calc(var(--maxHeight) - var(--sectionHeight));
                     }
                 }
             }

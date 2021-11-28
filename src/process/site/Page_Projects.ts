@@ -6,6 +6,7 @@ import { DbProject } from "src/entity/project/db";
 import { ProjectIcon, ProjectType } from "src/entity/project/global";
 import { ViewListProject, ViewProjectType } from "src/entity/project/view";
 import { DbTag } from "src/entity/tag/db";
+import { ViewTagMap } from "src/entity/tag/view";
 import { PageProjects } from "src/page/PageProjects";
 
 export class Page_Projects extends Process
@@ -16,20 +17,7 @@ export class Page_Projects extends Process
     {
         let page = new PageProjects;
 
-        let tagMap = {};
-
-        let tags: DbTag[] = Db.Select.All({
-            table: 'tag',
-            columns: ['tagId', 'type', 'desc']
-        });
-
-        tags.forEach(tag =>
-        {
-            if (!tagMap[tag.type]) tagMap[tag.type] = [];
-            tagMap[tag.type].push({ id: tag.tagId, desc: tag.desc });
-        });
-
-        page.tagMap = tagMap;
+        page.tagMap = ViewTagMap.getFromDb();
         
         let batchSize = 20;
 

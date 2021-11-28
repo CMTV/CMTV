@@ -703,5 +703,179 @@
         [
             "divine-body : diet"
         ]
+    },
+
+    "22.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": "6:30"
+            },
+            {
+                "project": "deus-ex-hr",
+                "goals": "playthrough",
+                "duration": 1.7
+            }
+        ],
+        "checks": ["divine-body : diet"]
+    },
+
+    "23.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 5
+            },
+            {
+                "project": "deus-ex-hr",
+                "goals": "playthrough",
+                "duration": 3.4
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "24.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 6
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": 1
+            },
+            {
+                "project": "deus-ex-hr",
+                "goals": "playthrough",
+                "duration": 2.4
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "25.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 6
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": "1:15"  
+            },
+            {
+                "project": "deus-ex-hr",
+                "goals": "playthrough",
+                "duration": 3.2
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "26.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 3
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": "1:15"
+            },
+            {
+                "project": "deus-ex-hr",
+                "goals": "playthrough",
+                "duration": 1.3
+            },
+            {
+                "project": "deus-ex-hr",
+                "goals": "rest-achievements",
+                "duration": 2.3
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet"
+        ],
+        "counters":
+        [
+            {
+                "counter": "game",
+                "project": "deus-ex-hr"
+            }
+        ]
+    },
+
+    "27.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 5
+            },
+            {
+                "project": "deus-ex-hr",
+                "goals": "steam-review",
+                "duration": 1
+            },
+            {
+                "project": "deus-ex-hr",
+                "goals": "rest-achievements",
+                "duration": "6:20"
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet"
+        ]
+    },
+
+    "28.11":
+    {
+        "time":
+        [
+            {
+                "project": "deus-ex-hr",
+                "goals": "rest-achievements",
+                "duration": "1:30"
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet"
+        ]
     }
 }

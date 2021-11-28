@@ -12,6 +12,8 @@ export class Page_Life extends Process
 
     process()
     {
+        NON_EMPTY_YEARS = [];
+
         let page = new PageLife;
         let years = UtilDataYear.getYears();
 

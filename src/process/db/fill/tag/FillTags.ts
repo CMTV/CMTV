@@ -1,5 +1,6 @@
 import { Process } from "@cmtv/processes";
 import { Db } from "sqlean";
+import { parse as jsoncParse } from "comment-json";
 
 import { IO } from "src/util/IO";
 import { DbTag } from "src/entity/tag/db";
@@ -17,14 +18,13 @@ export class FillTags extends Process
         {
             'actions':  'action',
             'areas':    'area',
-            'forms':    'form',
-            'other':    'other'
+            'forms':    'form'
         };
 
         Object.keys(tagTypeFileMap).forEach(file =>
         {
-            let path = `data/tags/${file}.json`;
-            let rawTags = JSON.parse(IO.readFile(path)) as DataTags;
+            let path = `data/tags/${file}.jsonc`;
+            let rawTags = jsoncParse(IO.readFile(path)) as DataTags;
 
             Object.keys(rawTags).forEach(tagId =>
             {

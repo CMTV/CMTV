@@ -48,10 +48,10 @@
 
     "tags":
     [
-        "area:я",
-        "form:сайт",
+        "!я",
+        "!сайт",
         "информатика",
         "программирование",
-        "ssg", "pug", "scss", "ts", "wordpress", "node.js", "gulp"
+        "ssg", "pug", "scss", "ts", "node.js", "wordpress*", "gulp*"
     ]
 }

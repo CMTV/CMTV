@@ -54,7 +54,7 @@ export class ViewProjectTags
     {
         let projectTags: DbProjectTag[] = Db.Select.All({
             table:      'project_tag',
-            columns:    ['tagId', 'role'],
+            columns:    ['tagId', 'role', 'old'],
             where:      ['@projectId', '=', projectId],
             order:      { displayOrder: 'ASC' }
         });
@@ -63,7 +63,7 @@ export class ViewProjectTags
 
         projectTags.forEach(projectTag =>
         {
-            let tag = new ViewTag(projectTag.tagId);
+            let tag = new ViewTag(projectTag.tagId, projectTag.old);
 
             switch (projectTag.role)
             {

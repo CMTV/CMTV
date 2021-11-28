@@ -97,5 +97,8 @@ export class DbProjectTag extends Entity
     role: string;
 
     @Column
+    old: boolean;
+
+    @Column
     displayOrder: number;
 }

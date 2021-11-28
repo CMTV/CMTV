@@ -1,21 +1,19 @@
 {
     "scripts": {
-        "filldb":       "npx ts-node cli/build --db",
-        "make-site":    "npx ts-node cli/build --site",
-
-        "build":        "npx ts-node cli/build",
-        "build-dev":    "npx ts-node cli/build --dev",
-        
-        "watch-fill":   "npx ts-node cli/watch",
-        "watch-site":   "npx ts-node cli/watch --whole --site",
-        
-        "server":       "npx ts-node cli/server"
+        "filldb": "npx ts-node cli/build --db",
+        "make-site": "npx ts-node cli/build --site",
+        "build": "npx ts-node cli/build",
+        "build-dev": "npx ts-node cli/build --dev",
+        "watch-fill": "npx ts-node cli/watch",
+        "watch-site": "npx ts-node cli/watch --whole --site",
+        "server": "npx ts-node cli/server"
     },
     "dependencies": {
         "@cmtv/processes": "^1.0.6",
         "canvas": "^2.8.0",
         "chalk": "^4.1.2",
         "chokidar": "^3.5.2",
+        "comment-json": "^4.1.1",
         "esbuild": "^0.13.1",
         "express": "^4.17.1",
         "glob": "^7.1.7",

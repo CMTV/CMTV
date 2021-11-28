@@ -5,3 +5,9 @@ export class DataTags
         desc?:  string;
     }
 }
+
+export class DataTagCategory
+{
+    categoryTitle: string;
+    tags: DataTags;
+}

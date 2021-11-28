@@ -1,5 +1,5 @@
 <gallery>
-    ![Как пользоваться плагином?](showcase/how-to.jpg)
+    ![Кликни по кнопке — Введи формулу — Вставь ее](showcase/how-to.jpg)
     ![Смотрится хорошо в любой WordPress теме!](showcase/styling.jpg)
     ![Гибкая настройка формул](showcase/customize.jpg)
 </gallery>

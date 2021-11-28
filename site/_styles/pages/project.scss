@@ -316,6 +316,12 @@ main > .direction
         > .tag
         {
             @extend %tag;
+
+            &.old
+            {
+                border: 1px solid var(--c_border);
+                background: var(--c_bg);
+            }
         }
     }
 }

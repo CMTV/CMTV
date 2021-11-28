@@ -2,9 +2,29 @@
     "playthrough":
     {
         "title":    "Прохождение игры",
-        "status":   "do",
+        "status":   "done",
         "counted":  false,
         "start":    "16.11.2021",
+        "end":      "26.11.2021",
         "tags":     ["отдых", "игра"]
+    },
+
+    "rest-achievements":
+    {
+        "title": "Оставшиеся достижения",
+        "status": "done",
+        "counted": false,
+        "start": "26.11.2021",
+        "end": "28.11.2021",
+        "tags": ["отдых", "игра"]
+    },
+
+    "steam-review":
+    {
+        "title": "Обзор в Steam",
+        "status": "done",
+        "counted": false,
+        "date": "27.11.2021",
+        "plan": ["27.11.2021"]
     }
 }

@@ -12,7 +12,7 @@ block main
         .filter
             .emptyFilter Выберите теги...
         .tags
-            .tagTypes
+            .tagTypeList
                 .tagType(data-type="area", data-toggled)
                     i.fa-fw.fa-solid.fa-signs-post
                     span Область
@@ -26,11 +26,30 @@ block main
                     i.fa-fw.fa-solid.fa-ellipsis
                     span Остальные
 
-            .tagLists
-                each tagType in Object.keys(tagMap)
-                    .tagList(data-type= tagType, data-toggled= (tagType === 'area' ? '' : null))
-                        each tag in tagMap[tagType]
-                            .tag(data-id= tag.id, title= tag.desc)= tag.id
+            .tagTypePanes
+                each tagType in ['area', 'action', 'form']
+                    .tagTypePane(data-type= tagType, data-toggled= (tagType === 'area' ? '' : null))
+                        .tags
+                            each tag in tagMap[tagType]
+                                .tag(data-id= tag.id, title= tag.desc)= tag.id
+
+                if (tagMap['other'])
+                    .tagTypePane(data-type="other")
+                        .categories
+                            .list
+                                each tagCategory in tagMap['other']
+                                    .category(data-cat-id= tagCategory.id)
+                                        .title= tagCategory.title
+                        
+                        each tagCategory in tagMap['other']
+                            .categoryPane(data-cat-id= tagCategory.id)
+                                header
+                                    i.fa-solid.fa-arrow-left(title="Закрыть категорию")
+                                    span= tagCategory.title
+                                .tagsHolder
+                                    .tags
+                                        each tag in tagCategory.tags
+                                            .tag(data-id= tag.id, title= tag.desc)= tag.id
 
     script.
         var INITIAL_END = #{isInitialEnd};
@@ -43,7 +62,7 @@ block main
         each project in initialList
             - let link = '/projects/' + project.id;
             .searchResult
-                a.icon(href= link)
+                a.icon(href= link, target="_blank")
                     +icon(project.icon)
                 
                 .infoBlock
@@ -59,9 +78,9 @@ block main
                             .hover(title="Важный проект")
 
                     header
-                        a.icon(href= link)
+                        a.icon(href= link, target="_blank")
                             +icon(project.icon)
-                        a.title(href= link)= project.title
+                        a.title(href= link, target="_blank")= project.title
 
                     .desc= project.desc
 

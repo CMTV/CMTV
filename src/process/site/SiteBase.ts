@@ -63,6 +63,10 @@ class MoveSiteFiles extends Process
 
         siteFiles.forEach(siteFile => IO.copyFile(siteFile, 'dist/' + siteFile));
         rootFiles.forEach(rootFile => IO.copyFile(rootFile, 'dist/' + rootFile.replace('site/_root/', '')));
+
+        // Перемещение иконки сайта в корневую директорию
+
+        IO.copyFile('site/graphics/favicon/favicon.ico', 'dist/favicon.ico');
     }
 }
 

@@ -15,4 +15,21 @@ export class DbTag extends Entity
 
     @Column
     desc: string;
+
+    @Column
+    tagCategoryId: string;
+}
+
+@Table('tag_category')
+export class DbTagCategory extends Entity
+{
+    @PrimaryKey
+    @Column
+    tagCategoryId: string;
+
+    @Column
+    title: string;
+
+    @Column
+    displayOrder: number;
 }

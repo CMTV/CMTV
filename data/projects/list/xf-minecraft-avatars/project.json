@@ -1,0 +1,54 @@
+{
+    "title": "Minecraft Avatars",
+    "desc": "Аддон XenForo, позволяющий поставить свой Minecraft скин в качестве аватары.",
+    "type": "mix",
+
+    "status":
+    {
+        "type": "fail",
+        "label": "Разработал",
+        "tooltip": "Аддон оказался практически нерабочим, и я не смог его починить."
+    },
+
+    "date": "16.10.2017",
+
+    "facts": 
+    [
+        {
+            "id": "downloads",
+            "label": "Скачиваний",
+            "data": "130+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-globe",
+        "text": "Аддон",
+        "link": "https://xenforo.com/community/resources/minecraft-avatars.5741/",
+        "colors": "xenforo"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-globe",
+            "text": "Страница на русском",
+            "link": "https://xenforo.info/resources/minecraft-avatars.5922/"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код",
+            "link": "https://github.com/CMTV/xenForo-addon-MinecraftAvatars"
+        }
+    ],
+
+    "tags":
+    [
+        "!программирование",
+        "!плагин",
+        "информатика",
+        "xenforo",
+        "php"
+    ]
+}

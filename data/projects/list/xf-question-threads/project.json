@@ -1,0 +1,69 @@
+{
+    "title": "Question Threads",
+    "desc": "Аддон XenForo, позволяющий создавать темы-вопросы и отмечать лучшие ответы.",
+    "type": "mix",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Разработал"
+    },
+
+    "start": "22.10.2017",
+    "end": "21.04.2019",
+
+    "facts":
+    [
+        {
+            "id": "download",
+            "label": "Скачиваний",
+            "data": "600+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-globe",
+        "text": "Аддон",
+        "link": "https://xenforo.com/community/resources/question-threads.5767/",
+        "colors": "xenforo"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-globe",
+            "text": "Страница на русском",
+            "link": "https://xenforo.info/resources/question-threads.5943/"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код",
+            "link": "https://github.com/CMTV/XF2A-QuestionThreads"
+        },
+        {
+            "icon": "fa-solid fa-globe",
+            "text": "Конвертер",
+            "link": "https://xenforo.com/community/resources/question-threads-to-xf-2-2.7935/"
+        },
+        {
+            "icon": "fa-solid fa-file-zipper",
+            "text": "Файлы конвертера",
+            "link": "files/converter.zip"
+        }
+    ],
+
+    "related":
+    {
+        "mcmodding": "Аддон создавался специально для этого форума."
+    },
+
+    "tags":
+    [
+        "!программирование",
+        "!плагин",
+        "информатика",
+        "xenforo",
+        "php"
+    ]
+}

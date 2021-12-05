@@ -1,4 +1,5 @@
 import { Toggler } from "../global/toggler";
+import { WheelScroll } from "../includes/wheel-scroll";
 
 window.addEventListener('load', () =>
 {
@@ -17,4 +18,8 @@ window.addEventListener('load', () =>
                 button.setAttribute('title', title);
             }
     });
+
+    new WheelScroll(document.querySelector('.mainBlock > .mainBar > .facts'));
+    new WheelScroll(document.querySelector('.mainBlock > .links'));
+    document.querySelectorAll('[data-pswp-gallery]').forEach(gallery => new WheelScroll(gallery as HTMLElement));
 });

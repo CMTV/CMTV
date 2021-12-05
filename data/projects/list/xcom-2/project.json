@@ -1,0 +1,11 @@
+{
+    "title": "XCOM 2",
+    "desc": "",
+    "type":"in",
+
+    "status":
+    {
+        "type": "do",
+        "label": "Играю"
+    }
+}

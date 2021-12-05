@@ -1,0 +1,60 @@
+{
+    "title": "Code",
+    "desc": "Аддон XenForo, сильно улучшающий систему отображения программного кода.",
+    "type": "mix",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Разработал"
+    },
+
+    "start": "31.08.2018",
+    "end": "13.08.2020",
+
+    "facts":
+    [
+        {
+            "id": "downloads",
+            "label": "Скачиваний",
+            "data": "300+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-globe",
+        "text": "Аддон",
+        "link": "https://xenforo.com/community/resources/code.6624/",
+        "colors": "xenforo"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-globe",
+            "text": "Страница на русском",
+            "link": "https://xenforo.info/resources/code.7178/"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код",
+            "link": "https://github.com/CMTV/XF2A-Code"
+        }
+    ],
+
+    "related":
+    {
+        "mcmodding": "Стандартного функционала по отображению кода не хватало для форума по разработке Minecraft модов."
+    },
+
+    "tags":
+    [
+        "!программирование",
+        "!плагин",
+        "информатика",
+        "xenforo",
+        "php",
+        "js"
+    ]
+}

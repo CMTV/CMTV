@@ -1,0 +1,69 @@
+{
+    "title": "Образовательный контент по XenForo",
+    "desc": "Обучаю людей пользоваться и модифицировать XenForo!",
+    "type": "out",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Написал"
+    },
+
+    "start": "21.12.2017",
+    "end": "10.03.2019",
+
+    "facts":
+    [
+        {
+            "id": "contributions",
+            "label": "Материалов",
+            "data": "5"
+        },
+        {
+            "id": "dev-messages",
+            "label": "Лайки / Сообщения",
+            "data": "2.26"
+        }
+    ],
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-book",
+            "text": "Документация по критериям",
+            "link": "https://xenforo.com/docs/dev/criteria/"
+        },
+        {
+            "icon": "fa-solid fa-file-invoice",
+            "text": "Статья про подсветку языков программрования",
+            "link": "https://xenforo.com/community/resources/additional-language-for-code-bbcode.5985/"
+        },
+        {
+            "icon": "fa-solid fa-file-invoice",
+            "text": "Статья про журнал изменений",
+            "link": "https://xenforo.com/community/resources/pretty-names-and-values-in-user-change-log.7062/"
+        },
+        {
+            "icon": "fa-brands fa-youtube",
+            "text": "Серия роликов",
+            "link": "https://youtube.com/playlist?list=PLDywto_IU4_4lSw_WPCuKqjzjwhX1h65F"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код статьи в документации",
+            "link": "https://github.com/CMTV/docs/blob/master/docs/criteria.md"
+        }
+    ],
+
+    "tags":
+    [
+        "!информатика",
+        "!просвещение",
+        "сайт",
+        "видео",
+        "youtube",
+        "xenforo",
+        "php",
+        "js"
+    ]
+}

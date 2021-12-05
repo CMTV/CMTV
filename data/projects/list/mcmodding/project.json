@@ -1,0 +1,11 @@
+{
+    "title": "Minecraft Modding",
+    "desc": "",
+    "type": "mix",
+
+    "status":
+    {
+        "type": "pause",
+        "label": "Тех. поддержка"
+    }
+}

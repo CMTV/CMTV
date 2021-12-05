@@ -868,6 +868,21 @@
         "time":
         [
             {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 4
+            },
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 1
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": "0:40"
+            },
+            {
                 "project": "deus-ex-hr",
                 "goals": "rest-achievements",
                 "duration": "1:30"
@@ -876,6 +891,150 @@
         "checks":
         [
             "divine-body : diet"
+        ]
+    },
+
+    "29.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 5
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ],
+        "events":
+        [
+            {
+                "title": "Радикальная борьба с перхотью (грибком)",
+                "desc": "Надоело при каждом шевелении волос вызывать снежный буран! Впервые в жизни побрился бритвой под ноль и намазался лекарственным шампунем."
+            }
+        ]
+    },
+
+    "30.11":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 3
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": 1
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "1.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 4
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": 1.63
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "2.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 5
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": "1:30"
+            },
+            {
+                "project": "xcom-2",
+                "goals": "playthrough",
+                "duration": 2.2
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "3.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 4
+            },
+            {
+                "project": "xcom-2",
+                "goals": "playthrough",
+                "duration": 3.7
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "4.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 5
+            },
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": "1:30"
+            },
+            {
+                "project": "xcom-2",
+                "goals": "playthrough",
+                "duration": 5.5
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
         ]
     }
 }

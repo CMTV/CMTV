@@ -1,0 +1,55 @@
+{
+    "title": "Rules",
+    "desc": "Аддон XenForo, который привносит силу закона на форумы.",
+    "type": "mix",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Разработал"
+    },
+
+    "start": "9.08.2019",
+    "end": "14.08.2019",
+
+    "facts":
+    [
+        {
+            "id": "downloads",
+            "label": "Скачиваний",
+            "data": "200+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-globe",
+        "text": "Аддон",
+        "link": "https://xenforo.com/community/resources/rules.7306/",
+        "colors": "xenforo"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-globe",
+            "text": "Страница на русском",
+            "link": "https://xenforo.info/resources/rules.8242/"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код",
+            "link": "https://github.com/CMTV/XF2A-Rules"
+        }
+    ],
+
+    "tags":
+    [
+        "!программирование",
+        "!плагин",
+        "информатика",
+        "xenforo",
+        "php",
+        "js"
+    ]
+}

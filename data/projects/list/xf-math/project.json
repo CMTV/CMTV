@@ -32,6 +32,11 @@
     "links":
     [
         {
+            "icon": "fa-solid fa-globe",
+            "text": "Страница на русском",
+            "link": "https://xenforo.info/resources/math.6718/"
+        },
+        {
             "icon": "fa-brands fa-github",
             "text": "Исходный код",
             "link": "https://github.com/CMTV/XF2A-Math"

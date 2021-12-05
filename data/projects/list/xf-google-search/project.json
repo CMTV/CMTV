@@ -1,0 +1,60 @@
+{
+    "title": "Google Search",
+    "desc": "Аддон XenForo, интегрирующий систему поиска Google внутрь форума.",
+    "type": "mix",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Разработал"
+    },
+
+    "start": "4.09.2018",
+    "end": "2.02.2019",
+
+    "facts":
+    [
+        {
+            "id": "downloads",
+            "label": "Скачиваний",
+            "data": "300+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-globe",
+        "text": "Аддон",
+        "link": "https://xenforo.com/community/resources/google-search.6639/",
+        "colors": "xenforo"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-globe",
+            "text": "Страница на русском",
+            "link": "https://xenforo.info/resources/google-search.7189/"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код",
+            "link": "https://github.com/CMTV/XF2A-GoogleSearch"
+        }
+    ],
+
+    "related":
+    {
+        "mcmodding": "В моддинге достаточно много трехбуквенных аббревиатур. Нужно было дать пользователям их находить."
+    },
+
+    "tags":
+    [
+        "!программирование",
+        "!плагин",
+        "информатика",
+        "xenforo",
+        "php",
+        "js"
+    ]
+}

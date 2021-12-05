@@ -1,0 +1,61 @@
+{
+    "title": "Minecraft All Pack",
+    "desc": "Все текстуры из Minecraft в виде набора смайликов для XenForo.",
+    "type": "mix",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Собрал"
+    },
+
+    "date": "13.11.2017",
+
+    "facts":
+    [
+        {
+            "id": "downloads",
+            "label": "Скачиваний",
+            "data": "250+"
+        },
+        {
+            "id": "smiles",
+            "label": "Смайликов",
+            "data": "700+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-globe",
+        "text": "Набор",
+        "link": "https://xenforo.com/community/resources/minecraft-all-pack.5828/",
+        "colors": "xenforo"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-globe",
+            "text": "Страница на русском",
+            "link": "https://xenforo.info/resources/minecraft-all-pack.6001/"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код",
+            "link": "https://github.com/CMTV/xenForo-graphics-MinecraftAllPack"
+        }
+    ],
+
+    "related":
+    {
+        "mcmodding": "Хотелось дать возможность пользователям своего форума использовать текстуры из Minecraft в качестве смайликов."
+    },
+
+    "tags":
+    [
+        "!программирование",
+        "!плагин",
+        "xenforo"
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "title": "Criteria Builder",
+    "desc": "Аддон XenForo, добавляющий мощный редактор для создания критериев.",
+    "type": "mix",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Разработал"
+    },
+
+    "start": "1.10.2018",
+    "end": "19.12.2018",
+
+    "facts":
+    [
+        {
+            "id": "downloads",
+            "label": "Скачиваний",
+            "data": "70+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-globe",
+        "text": "Аддон",
+        "link": "https://xenforo.com/community/resources/criteria-builder.6866/",
+        "colors": "xenforo"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-globe",
+            "text": "Страница на русском",
+            "link": "https://xenforo.info/resources/criteria-builder.7599/"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код",
+            "link": "https://github.com/CMTV/XF2A-CriteriaBuilder"
+        }
+    ],
+
+    "related":
+    {
+        "xf-php-criteria": "Аддон предшественник. Первая попытка реализовать идею нестандартных критериев.",
+        "xf-tutorials": "Параллельно с разработкой аддона написал огромную статью про систему критериев XenForo."
+    },
+
+    "tags":
+    [
+        "!программирование",
+        "!плагин",
+        "информатика",
+        "xenforo",
+        "php",
+        "js"
+    ]
+}

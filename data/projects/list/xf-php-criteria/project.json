@@ -1,0 +1,63 @@
+{
+    "title": "PHP Criteria",
+    "desc": "Аддон XenForo для создания сложных PHP критериев достижений/повышений.",
+    "type": "mix",
+    
+    "status":
+    {
+        "type": "done",
+        "label": "Разработал"
+    },
+
+    "date": "2.12.2017",
+
+    "facts":
+    [
+        {
+            "id": "downloads",
+            "label": "Скачиваний",
+            "data": "60+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-globe",
+        "text": "Аддон",
+        "link": "https://xenforo.com/community/resources/php-criteria.5899/",
+        "colors": "xenforo"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-globe",
+            "text": "Страница на русском",
+            "link": "https://xenforo.info/resources/php-criteria.6060/"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код",
+            "link": "https://github.com/CMTV/XF2A-PHPCritera"
+        },
+        {
+            "icon": "fa-solid fa-file-code",
+            "text": "Пример PHP критерия",
+            "link": "files/example-criteria.php"
+        }
+    ],
+
+    "related":
+    {
+        "xf-criteria-builder": "Полностью переосмысленная и улучшенная версия этого аддона."
+    },
+
+    "tags":
+    [
+        "!программирование",
+        "!плагин",
+        "информатика",
+        "xenforo",
+        "php"
+    ]
+}

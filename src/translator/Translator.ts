@@ -44,7 +44,7 @@ export class Translator
 
     static renderProjectLinks(str: string): string
     {
-        let regexp = /\[(.*)\]\(p:(.+)\)/gm;
+        let regexp = /\[(.*)\]\(p:(.+?)\)/gm;
 
         return str.replace(regexp, (match, label, projectId) =>
         {

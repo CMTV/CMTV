@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -18,26 +18,8 @@ jobs:
           npm ci
           npm run build
       
-      - name: Upload Artifacts ⬆️
-        uses: actions/upload-artifact@main
-        with:
-          name: site
-          path: dist
-
-  deploy:
-    needs: [build]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@main
-
-      - name: Download Artifacts ⬇️
-        uses: actions/download-artifact@main
-        with:
-          name: site
-
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.7
         with:
           branch: gh-pages
-          folder: 'site'
+          folder: dist

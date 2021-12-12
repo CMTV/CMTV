@@ -1,0 +1,33 @@
+mixin chartPart(fracs)
+    .chartPart
+        .bar
+            each frac in fracs
+                .frac(class= frac.class ? `frac--${frac.class}` : null, style= `width: ${frac.width}%`)
+        .labels
+            each frac in fracs
+                .label
+                    .color(class= frac.class ? `color--${frac.class}` : null)
+                    .title(title= frac.desc)= frac.label
+                    .percent(title!= frac.tooltip)= Math.round(frac.width)
+
+mixin tagChart(tagChart)
+    .tagChart
+        header
+            i.fa-solid.fa-clock
+            span Время
+            .time(title="Время, принимаемое за 100%")= tagChart.time
+        
+        if (tagChart.area)
+            .area
+                header Область
+                +chartPart(tagChart.area)
+        
+        if (tagChart.action)
+            .action
+                header Действие
+                +chartPart(tagChart.action)
+
+        if (tagChart.form)
+            .action
+                header Форма
+                +chartPart(tagChart.form)

@@ -1,0 +1,92 @@
+@use 'defs/size';
+@use 'defs/bp';
+
+@use 'partials/block';
+@use 'partials/counter';
+@use 'partials/hover';
+@use 'partials/util';
+
+main > .yearBlock
+{
+    @extend %block;
+
+    > header
+    {
+        @extend %blockSection;
+
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: auto auto;
+
+        align-items: center;
+        column-gap: size.$gapBig;
+
+        > .info
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            > .year
+            {
+                font-size: 130%;
+                font-weight: 600;
+                @extend %underline;
+            }
+
+            > .hours
+            {
+                font-size: 90%;
+                color: var(--c_text-shade-2);
+                cursor: help;
+            }
+        }
+
+        > .counters
+        {
+            flex: 1;
+            @extend %counters;
+
+            > .counter { cursor: help; }
+        }
+
+        > .gotoBtn
+        {
+            grid-column: 3;
+            @extend %blockButton;
+        }
+
+        @include bp.max(mini)
+        {
+            > .counters
+            {
+                margin-top: size.$gap;
+
+                grid-column: 1 / 4;
+                grid-row: 2;
+                column-gap: size.$gap;
+            }
+        }
+    }
+
+    > .keyProjects
+    {
+        @extend %blockSection;
+
+        border-top: 1px solid var(--c_border);
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: size.$gap;
+
+        > .project
+        {
+            > img
+            {
+                @include util.size(30px);
+                border-radius: size.$borderRadius;
+                display: block;
+            }
+        }
+    }
+}

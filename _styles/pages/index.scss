@@ -1,0 +1,249 @@
+@use 'defs/size';
+
+@use 'includes/status';
+@use 'includes/chart';
+
+@use 'partials/block';
+@use 'partials/counter';
+@use 'partials/content';
+@use 'partials/scroll';
+@use 'partials/hover';
+@use 'partials/util';
+
+%tick
+{
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+
+    transform: translateX(-50%);
+
+    > .value
+    {
+        color: var(--c_text-shade-2);
+        font-size: 15px;
+    }
+
+    > .rect
+    {
+        height: 20px;
+        width: 0;
+        border-right: 1px solid var(--c_border);
+    }
+}
+
+main > .me
+{
+    @extend %block;
+    > header { @extend %blockPlainHeader; }
+
+    > .facts
+    {
+        border-top: 1px solid var(--c_border);
+
+        display: flex;
+        align-items: center;
+        gap: 50px;
+
+        padding: size.$gap;
+
+        flex: 1;
+
+        @extend %scrollbar;
+
+        > .fact
+        {
+            flex-shrink: 0;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3px;
+
+            .label
+            {
+                color: var(--c_text-shade-2);
+                font-size: 85%;
+            }
+
+            .data
+            {
+                color: var(--c_text-shade-1);
+                font-size: 87%;
+            }
+        }
+    }
+
+    > .about
+    {
+        border-top: 1px solid var(--c_border);
+
+        @extend %blockSection;
+        @extend %CONTENT;
+    }
+
+    > .social
+    {
+        display: flex;
+        align-items: center;
+        gap: size.$gap;
+        padding: size.$gap;
+
+        border-top: 1px solid var(--c_border);
+
+        border-radius: size.$borderRadius;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        background: var(--c_bg-shade-1);
+
+        @extend %scrollbar;
+
+        > .socialItem
+        {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            padding: 7px size.$gapSmall;
+
+            border: 1px solid var(--c_border);
+            border-radius: size.$borderRadius;
+            background: var(--c_bg);
+
+            font-size: 95%;
+            color: var(--c_text-shade-1);
+            @include hover.colorAccent(var(--c_text));
+
+            i { font-size: 110%; }
+        }
+    }
+}
+
+main > .life
+{
+    @extend %block;
+    > header { @extend %blockPlainHeader; }
+
+    > .progressBlock
+    {
+        @extend %blockSection;
+        border-top: 1px solid var(--c_border);
+
+        height: 100px;
+        @include util.flexCC;
+
+        >.progress
+        {
+            flex: .95;
+            position: relative;
+            top: -2px;
+            left: -5px;
+
+            $fillColor: status.getColor('done');
+
+            > .bar
+            {
+                position: relative;
+
+                height: 10px;
+                width: 100%;
+                background: var(--c_bg-shade-2);
+
+                border-radius: size.$borderRadius;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+
+                overflow: hidden;
+
+                > div
+                {
+                    height: 100%;
+                    background: $fillColor;
+                }
+            }
+
+            > .ticks
+            {
+                > .tick
+                {
+                    @extend %tick;
+                    top: 0;
+                }
+            }
+
+            > .currentTick
+            {
+                @extend %tick;
+                bottom: 0;
+
+                > .value
+                {
+                    color: $fillColor;
+                    font-weight: 600;
+                }
+
+                > .rect
+                {
+                    border-width: 2px;
+                    border-color: $fillColor;
+                }
+            }
+        }
+    }
+
+    > .years
+    {
+        display: flex;
+        align-items: center;
+        gap: size.$gap;
+        padding: size.$gap;
+
+        border-top: 1px solid var(--c_border);
+
+        border-radius: size.$borderRadius;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        background: var(--c_bg-shade-1);
+
+        @extend %scrollbar;
+
+        > .year
+        {
+            flex-shrink: 0;
+            @include util.flexCC;
+            gap: 5px;
+
+            padding: 7px size.$gapSmall;
+
+            border: 1px solid var(--c_border);
+            border-radius: size.$borderRadius;
+            background: var(--c_bg);
+
+            font-size: 95%;
+            color: var(--c_text-shade-1);
+            @include hover.colorAccent(var(--c_text));
+        }
+    }
+}
+
+main > .countersBlock
+{
+    @extend %block;
+    > header { @extend %blockPlainHeader; }
+
+    > .counters
+    {
+        @extend %blockSection;
+        border-top: 1px solid var(--c_border);
+
+        @extend %counters;
+
+        > .counter { cursor: help; }
+    }
+}

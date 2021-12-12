@@ -1,0 +1,21 @@
+%scrollbar
+{
+    overflow: auto;
+
+    &::-webkit-scrollbar
+    {
+        height: 5px;
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb
+    {
+        background: var(--c_border);
+        &:hover { background: var(--c_bg-shade-4); }
+    }
+
+    &::-webkit-scrollbar-corner
+    {
+        background: var(--c_border);
+    }
+}

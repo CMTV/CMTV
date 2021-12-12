@@ -1,0 +1,82 @@
+@use 'defs/color';
+@use 'defs/size';
+@use 'defs/bp';
+
+@use 'partials/util';
+
+//
+// Сброс стандартных стилей
+//
+
+*
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+//
+// Общие стили
+//
+
+html
+{
+    scroll-padding-top: size.$headerHeight + size.$gapStruct;
+}
+
+body
+{
+    position: relative;
+
+    color: var(--c_text);
+    font-family: "Open Sans", "Segoe UI", sans-serif;
+    font-size: 1.05em;
+    letter-spacing: .01em;
+
+    background: var(--c_bg-body);
+
+    > .site
+    {
+        position: relative;
+        z-index: 1;
+        min-height: 100vh;
+
+        > main
+        {
+            margin-top: size.$gapStruct;
+            padding-bottom: size.$gapStruct;
+
+            display: flex;
+            flex-direction: column;
+            gap: size.$gapStruct;
+
+            @include bp.max(mini)
+            {
+                font-size: 92%;
+            }
+        }
+    }
+}
+
+ol, ul
+{
+    list-style-position: inside;
+}
+
+ul { list-style-type: square; }
+
+img.invertible
+{
+    @include util.transition(filter);
+
+    @include color.themeDark
+    {
+        filter: hue-rotate(180deg) invert(1);
+    }
+}
+
+::selection
+{
+    background-color: var(--c_selection);
+}

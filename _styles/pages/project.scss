@@ -1,0 +1,686 @@
+@use 'sass:color' as sassColor;
+
+@use 'defs/color';
+@use 'defs/size';
+@use 'defs/bp';
+
+@use 'includes/status';
+@use 'includes/gallery';
+@use 'includes/chart';
+@use 'includes/timeline';
+@use 'includes/actionColors';
+
+@use 'partials/block';
+@use 'partials/featured';
+@use 'partials/toggle';
+@use 'partials/tag';
+@use 'partials/content';
+@use 'partials/hover';
+@use 'partials/scroll';
+@use 'partials/util';
+
+main > .mainBlock
+{
+    @extend %block;
+
+    > header
+    {
+        @extend %blockSection;
+        @extend %featuredProjectSupport;
+
+        display: grid;
+        grid-template-columns: 50px auto;
+        grid-template-rows: auto auto;
+
+        column-gap: size.$gap;
+
+        > .icon
+        {
+            grid-column: 1;
+            grid-row: 1 / 3;
+            align-self: center;
+
+            > img
+            {
+                display: block;
+                border-radius: size.$borderRadius;
+                @include util.size(50px);
+            }
+        }
+
+        > .title
+        {
+            grid-column: 2;
+            grid-row: 1;
+
+            font-weight: 600;
+            font-size: 120%;
+        }
+
+        > .desc
+        {
+            grid-column: 2;
+            grid-row: 2;
+
+            color: var(--c_text-shade-1);
+        }
+
+        @include bp.max(mini)
+        {
+            grid-template-columns: 30px auto;
+            row-gap: size.$gapSmall;
+
+            > .icon
+            {
+                grid-row: 1;
+                > img { @include util.size(30px); }
+            }
+
+            > .title
+            {
+                position: relative;
+                top: 2px;
+            }
+
+            > .desc { grid-column: 1 / 3; }
+        }
+    }
+
+    > .mainBar
+    {
+        display: flex;
+        align-items: stretch;
+        gap: size.$gap;
+        border-top: 1px solid var(--c_border);
+    
+        > .facts
+        {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+
+            padding: size.$gap;
+
+            flex: 1;
+
+            @extend %scrollbar;
+
+            > .fact
+            {
+                flex-shrink: 0;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 3px;
+
+                .label
+                {
+                    color: var(--c_text-shade-2);
+                    font-size: 85%;
+                }
+
+                .data
+                {
+                    color: var(--c_text-shade-1);
+                    font-size: 87%;
+                }
+            }
+
+            > .fact.status > .data
+            {
+                display: flex;
+                align-items: center;
+                gap: 7px;
+
+                > *[title] { cursor: help; }
+
+                > .statusCircle
+                {
+                    @include util.size(10px);
+
+                    border: 1.5px solid black;
+                    border-radius: 50%;
+
+                    @each $status in status.getNames()
+                    {
+                        &--#{$status}
+                        {
+                            background-color: status.getBg($status);
+                            border-color: status.getBorder($status);
+                        }
+                    }
+                }
+            }
+        }
+
+        > .actionContainer
+        {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: size.$gap;
+
+            > .actionBtn
+            {
+                @include util.flexCC;
+                position: relative;
+
+                color: white;
+                font-size: 95%;
+                font-weight: 600;
+                text-decoration: none;
+
+                padding: 7px 20px;
+
+                min-width: 120px;
+
+                &:hover { .bg { filter: brightness(.85); } }
+
+                > .bg
+                {
+                    position: absolute;
+                    left: 0; top: 0;
+                    right: 0; bottom: 0;
+
+                    border-radius: size.$borderRadius;
+
+                    @include util.transition(filter);
+                }
+
+                > .label
+                {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    gap: size.$gapSmall;
+
+                    > span { position: relative; top: -1px; }
+                }
+            }
+        }
+
+        @include bp.max(mini)
+        {
+            flex-direction: column;
+
+            > .facts
+            {
+                padding: size.$gap;
+                border-bottom: 1px solid var(--c_border);
+            }
+
+            > .actionContainer
+            {
+                padding: 0 size.$gap;
+                padding-bottom: size.$gap;
+
+                > .actionBtn
+                {
+                    height: 40px;
+                    padding: 0 size.$gap;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    > .mainContent
+    {
+        border-top: 1px solid var(--c_border);
+
+        @extend %blockSection;
+        @extend %CONTENT;
+
+        > [data-pswp-gallery]:first-of-type
+        {
+            border-bottom-style: solid;
+        }
+    }
+
+    > .links
+    {
+        display: flex;
+        align-items: center;
+        gap: size.$gap;
+        padding: size.$gap;
+
+        border-top: 1px solid var(--c_border);
+
+        border-radius: size.$borderRadius;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        background: var(--c_bg-shade-1);
+
+        @extend %scrollbar;
+
+        .link
+        {
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            padding: 7px size.$gapSmall;
+
+            border: 1px solid var(--c_border);
+            border-radius: size.$borderRadius;
+            background: var(--c_bg);
+
+            font-size: 95%;
+            color: var(--c_text-shade-1);
+            @include hover.colorAccent(var(--c_text));
+
+            i { font-size: 110%; }
+        }
+    }
+}
+
+main > .direction
+{
+    @extend %block;
+
+    > header
+    {
+        @extend %blockDlHeader;
+
+        > .type
+        {
+            width: 50px;
+            cursor: help;
+        }
+
+        > .mainTags
+        {
+            @extend %blockDlHeaderList;
+            > * > .value
+            {
+                &::first-letter { text-transform: capitalize; }
+
+                &[title] { cursor: help; }
+            }
+        }
+    }
+
+    > .tags
+    {
+        @extend %blockSection;
+
+        border-top: 1px solid var(--c_border);
+        
+        display: flex;
+        flex-wrap: wrap;
+        gap: size.$gap;
+
+        > .tag
+        {
+            @extend %tag;
+
+            &.old
+            {
+                border: 1px solid var(--c_border);
+                background: var(--c_bg);
+            }
+        }
+    }
+}
+
+main > .goalDateData
+{
+    @extend %block;
+
+    > header
+    {
+        @extend %blockDlHeader;
+
+        > .goalChart
+        {
+            @each $name, $color in status.$statusMap { --c_goalChart-#{$name}: #{$color}; }
+
+            @include util.size(50px);
+            border-radius: 50%;
+            
+            position: relative;
+            overflow: hidden;
+
+            &[title] { cursor: help; }
+
+            > .total
+            {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 15;
+
+                transform: translate(-50%, -50%);
+
+                font-size: 110%;
+                font-weight: 600;
+            }
+
+            > .inner
+            {
+                position: absolute;
+                left: 50%; top: 50%;
+                z-index: 10;
+
+                transform: translate(-50%, -50%);
+
+                @include util.size(calc(100% - 15px));
+                background: var(--c_bg);
+                border-radius: 50%;
+            }
+
+            > .fracs
+            {
+                position: absolute;
+                left: 0; right: 0; top: 0; bottom: 0;
+                z-index: 5;
+
+                transform: rotateZ(-90deg);
+
+                > .sep
+                {
+                    position: absolute;
+                    left: calc(50% - (1px / 2)); top: 0;
+                    transform-origin: bottom center;
+                    height: 50%;
+                    width: 1px;
+                    background: var(--c_bg);
+                }
+            }
+        }
+
+        > .data
+        {
+            @extend %blockDlHeaderList;
+
+            > .goalCount
+            {
+                > .value
+                {
+                    display: flex;
+    
+                    > *
+                    {
+                        cursor: help;
+    
+                        &:not(:last-of-type)::after
+                        {
+                            content: "/";
+                            color: var(--c_text-shade-2);
+                            margin: 4px;
+                            cursor: default;
+                        }
+                    }
+
+                    @each $name, $color in status.$statusMap
+                    {
+                        > .#{$name} { color: $color; }
+                    }
+                }
+            }
+        }
+    }
+
+    > .goals
+    {
+        display: flex;
+        flex-direction: column;
+
+        border-top: 1px solid var(--c_border);
+
+        overflow: auto;
+        max-height: 400px;
+
+        @extend %scrollbar;
+
+        > .goal
+        {
+            @extend %blockSection;
+
+            display: flex;
+            gap: size.$gap;
+
+            &:not(:last-of-type) { border-bottom: 1px solid var(--c_border); }
+
+            @each $status, $color in status.$statusMap
+            {
+                &.goal--#{$status}
+                {
+                    > .num { color: $color; }
+                    > .info > .progress > .bar > div { background: $color; }
+                }
+            }
+
+            > .num
+            {
+                @include util.flexCC;
+                @include util.size(40px);
+
+                font-size: 110%;
+                font-weight: 600;
+                line-height: 1;
+
+                border: 3px solid;
+                border-radius: 50%;
+            }
+
+            > .info
+            {
+                flex: 1;
+
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+
+                position: relative;
+                top: -4px;
+
+                > .facts
+                {
+                    display: flex;
+                    gap: size.$gap;
+                    flex-wrap: wrap;
+
+                    color: var(--c_text-shade-1);
+                    font-size: .9rem;
+                    line-height: 1;
+
+                    > *
+                    {
+                        display: flex;
+                        align-items: center;
+                        gap: size.$gapSmall;
+                    }
+
+                    > .time,
+                    > .checks
+                    {
+                        cursor: help;
+                    }
+                }
+
+                > .progress
+                {
+                    display: flex;
+                    align-items: center;
+                    gap: size.$gap;
+
+                    > .label
+                    {
+                        cursor: help;
+                        color: var(--c_text-shade-1);
+                        font-size: .85rem;
+                    }
+
+                    > .bar
+                    {
+                        flex: 1;
+
+                        position: relative;
+                        overflow: hidden;
+
+                        margin-top: 3px;
+
+                        height: 10px;
+                        background: var(--c_bg-shade-2);
+                        border-radius: size.$borderRadius;
+
+                        > div { height: 100%; }
+                    }
+                }
+            }            
+        }
+    }
+}
+
+main > .related
+{
+    @extend %block;
+
+    > header { @extend %blockPlainHeader; }
+
+    > .relatedProject
+    {
+        @extend %blockSection;
+        border-top: 1px solid var(--c_border);
+
+        display: grid;
+        grid-template-columns: 50px auto;
+        grid-template-rows: auto auto;
+        
+        column-gap: size.$gap;
+
+        > .icon
+        {
+            grid-column: 1;
+            grid-row: 1 / 3;
+            align-self: center;
+
+            > img
+            {
+                display: block;
+                border-radius: size.$borderRadius;
+                @include util.size(50px);
+            }
+        }
+
+        > .title
+        {
+            font-size: 110%;
+            > a { @extend %underline; }
+        }
+
+        > .reason { color: var(--c_text-shade-1); }
+
+        @include bp.max(mini)
+        {
+            grid-template-columns: 30px auto;
+            row-gap: size.$gapSmall;
+
+            > .icon
+            {
+                grid-row: 1;
+                > img { @include util.size(30px); }
+            }
+
+            > .title
+            {
+                position: relative;
+                top: 2px;
+            }
+
+            > .reason { grid-column: 1 / 3; }
+        }
+    }
+}
+
+main > .blocks
+{
+    display: flex;
+    flex-direction: column;
+    gap: size.$gapStruct;
+
+    > .groupSepTop,
+    > .groupSepBottom
+    {
+        @extend %blockLogic;
+        height: 25px;
+        border: 3px solid var(--c_bg-shade-4);
+        border-radius: size.$borderRadius;
+
+        @include bp.max(mini)
+        {
+            width: auto;
+            margin: 0 size.$gap;
+        }
+    }
+
+    > .groupSepTop
+    {
+        border-bottom: none;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    > .groupSepBottom
+    {
+        border-top: none;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    > .block
+    {
+        @extend %block;
+
+        > header
+        {
+            @extend %blockSection;
+
+            display: flex;
+            align-items: center;
+            min-height: 80px;
+            gap: size.$gap;
+
+            > .info
+            {
+                flex: 1;
+                
+                display: flex;
+                flex-direction: column;
+
+                > .scope
+                {
+                    color: var(--c_text-shade-1);
+                }
+
+                > .title 
+                {
+                    font-size: 120%;
+                    font-weight: 600;
+                }
+            }
+
+            > .showBtn
+            {
+                @extend %blockButton;
+            }
+        }
+
+        > .contentContainer
+        {
+            @extend %toggle;
+
+            > .content
+            {
+                border-top: 1px solid var(--c_border);
+
+                @extend %blockSection;
+                @extend %CONTENT;
+            }
+        }
+    }
+}

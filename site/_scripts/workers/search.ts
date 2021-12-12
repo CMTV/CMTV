@@ -182,7 +182,7 @@ class SearchData
 
         let html = `
             <div class="searchResult">
-                <a class="icon" href="${link}" target="_blank">
+                <a class="icon" href="${link}">
                     ${iconHtml}
                 </a>
                 
@@ -197,8 +197,8 @@ class SearchData
                     ${featuredHtml}
 
                     <header>
-                        <a class="icon" href="${link}" target="_blank">${iconHtml}</a>
-                        <a class="title" href="${link}" target="_blank">${resultProject.title}</a>
+                        <a class="icon" href="${link}">${iconHtml}</a>
+                        <a class="title" href="${link}">${resultProject.title}</a>
                     </header>
 
                     <div class="desc">${resultProject.desc}</div>

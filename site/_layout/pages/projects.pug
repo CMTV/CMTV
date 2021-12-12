@@ -62,7 +62,7 @@ block main
         each project in initialList
             - let link = '/projects/' + project.id;
             .searchResult
-                a.icon(href= link, target="_blank")
+                a.icon(href= link)
                     +icon(project.icon)
                 
                 .infoBlock
@@ -78,9 +78,9 @@ block main
                             .hover(title="Важный проект")
 
                     header
-                        a.icon(href= link, target="_blank")
+                        a.icon(href= link)
                             +icon(project.icon)
-                        a.title(href= link, target="_blank")= project.title
+                        a.title(href= link)= project.title
 
                     .desc= project.desc
 

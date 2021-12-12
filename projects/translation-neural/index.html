@@ -1,0 +1,85 @@
+<!DOCTYPE html><!--
+
+
+ ▄████▄   ███▄ ▄███▓▄▄▄█████▓ ██▒   █▓
+ ▒██▀ ▀█  ▓██▒▀█▀ ██▒▓  ██▒ ▓▒▓██░   █▒
+ ▒▓█    ▄ ▓██    ▓██░▒ ▓██░ ▒░ ▓██  █▒░
+ ▒▓▓▄ ▄██▒▒██    ▒██ ░ ▓██▓ ░   ▒██ █░░
+ ▒ ▓███▀ ░▒██▒   ░██▒  ▒██▒ ░    ▒▀█░  
+ ░ ░▒ ▒  ░░ ▒░   ░  ░  ▒ ░░      ░ ▐░  
+   ░  ▒   ░  ░      ░    ░       ░ ░░  
+ ░        ░      ░     ░           ░░  
+ ░ ░             ░                  ░  
+ ░                                 ░   
+
+
+--><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Создаем нейронную сеть — Петр Радько</title><meta name="description" content="Перевод первой главы книги Тарика Рашида."><link rel="canonical" href="https://radkopeter.ru/projects/translation-neural/"><meta name="keywords" content="Петр Радько, CMTV"><meta name="og:image" content="https://radkopeter.ru/site/graphics/og-images/project-translation-neural.jpeg"><meta name="generator" content="CMTV Static Site Generator"><meta name="build-time" content="1639315205346"><link rel="icon" href="https://radkopeter.ru/favicon.ico"><link rel="icon" type="image/png" href="https://radkopeter.ru/site/graphics/favicon/favicon.png"><link rel="preload" as="style" href="/site/vendor/font-awesome/css/all.min.css"><link rel="stylesheet" href="/site/vendor/font-awesome/css/all.min.css"><link href="/site/vendor/photoswipe/photoswipe.css" rel="stylesheet"><script type="module" src="/site/scripts/lightbox.js"></script><link href="/site/styles/global.css" rel="stylesheet"><link href="/site/styles/project.css" rel="stylesheet"><script src="/site/scripts/global.js" defer></script><script src="/site/scripts/project.js" defer></script></head><body class="project"><script>(() =>
+{
+    ['color-scheme', 'theme-color'].forEach(name =>
+    {
+        let tag = document.createElement('meta');
+            tag.setAttribute('name', name);
+            tag.setAttribute('content', '');
+        
+        document.head.appendChild(tag);
+    });
+
+    var preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+    var preferTheme = (preferDark ? 'dark' : 'light');
+    var theme = localStorage.getItem('theme');
+
+    if (theme === null || theme === 'null')
+        theme = preferTheme;
+
+    setTheme(theme);
+})();
+
+function setTheme(theme)
+{
+    document.body.classList.toggle('theme--dark', (theme === 'dark'));
+
+    var themeColors = { light: '#ffffff', dark: '#333333' };
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[theme]);
+    document.querySelector('meta[name="color-scheme"]').setAttribute('content', theme);
+
+    localStorage.setItem('theme', theme);
+}
+
+function toggleTheme()
+{
+    var theme = localStorage.getItem('theme');
+    setTheme((theme === 'dark' ? 'light' : 'dark'));
+}</script><div class="bg"><div class="activities"></div><div class="fog"></div></div><div class="contactBlock"><div class="modal"><header><h2>Связаться со мной</h2><i class="fa-solid fa-times closeBtn"></i></header><ul><li>Я предпочитаю общаться в текстовом формате</li><li>Ясно и понятно обозначайте тему переписки</li><li>Готов обсудить самые безумные и интересные идеи!</li></ul><div class="email"><a href="mailto:newpetya@inbox.ru">newpetya@inbox.ru</a></div></div></div><div class="site"><header><div class="gradient"><div></div></div><div class="headerContent"><a class="me" href="/"><div class="logo"><div class="gradient"><div></div></div><img src="/site/graphics/me.png"></div><h1>Петр <span>Радько</span></h1></a><nav><a class="navItem projects" href="/projects" title="Что я делаю?"><i class="fa-solid fa-clone"></i><span>Проекты</span></a><a class="navItem life" href="/life" title="Моя борьба"><i class="fa-solid fa-heart"></i><span>Жизнь</span></a><div class="navItem themeSwitcher" onclick="toggleTheme()" title="Переключить цветовую схему"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></div><div class="navItem contact" title="Связаться со мной"><i class="fa-solid fa-envelope-open-text"></i></div></nav></div></header><main><div class="mainBlock"><header><div class="icon"><img src="/projects/translation-neural/icon.png" loading="lazy"/></div><div class="title">Создаем нейронную сеть</div><div class="desc">Перевод первой главы книги Тарика Рашида.</div></header><div class="mainBar"><div class="facts"><div class="fact status"><div class="label">Статус</div><div class="data"><div title="Проект завершен" class="statusCircle statusCircle--done"></div> <div >Перевел</div></div></div><div class="fact translated"><div class="label">Переведено</div><div class="data">80 стр.</div></div></div><style>.actionBtn > .bg { background: linear-gradient(45deg, #1F4192,#2854BB); }</style><div class="actionContainer"><a class="actionBtn" href="files/make-your-own-neural-network.pdf" target="_blank"><div class="bg"></div><div class="label"><i class="fa-solid fa-file-pdf"></i><span>Перевод</span></div></a></div></div><div class="mainContent"><div data-pswp-gallery>    <a href="showcase/perceptron-training.jpg" target="_blank" data-pswp-width="1435" data-pswp-height="886"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/perceptron-training.jpg" alt="">
+</a>    <a href="showcase/xor.jpg" target="_blank" data-pswp-width="949" data-pswp-height="905"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/xor.jpg" alt="">
+</a>    <a href="showcase/ann.jpg" target="_blank" data-pswp-width="1591" data-pswp-height="1030"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/ann.jpg" alt="">
+</a>    <a href="showcase/back-propagation.jpg" target="_blank" data-pswp-width="1446" data-pswp-height="772"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/back-propagation.jpg" alt="">
+</a>    <a href="showcase/back-propagation-2.jpg" target="_blank" data-pswp-width="1587" data-pswp-height="697"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/back-propagation-2.jpg" alt="">
+</a></div>
+<p>Перевод первой главы (80 страниц) замечательной книги Тарика Рашида «Создаем нейронную сеть», включая полную перерисовку всех изображений.
+Некоторые места объяснены более подробно, чем в оригинале.
+Продолжать не стал — вышел официальный перевод от издательства «Вильямс».</p>
+<p>Качеством перевода я горжусь!
+На момент написания я уже свободно владел английским. Ошибки встречаются относительно редко.
+Больше нет впечатления, что перевод машинный, как было в случае моим <a href="/projects/translation-level-up" target="_blank">переводом</a> книги «Level UP!».</p>
+</div><div class="links"><a class="link" href="https://www.amazon.com/Make-Your-Own-Neural-Network-ebook/dp/B01EER4Z4G" target="_blank"><i class="fa-fw fa-solid fa-cart-shopping"></i><div>Магазин</div></a></div></div><div class="direction"><header><img class="type" src="/site/graphics/mix.svg" title="Производитель и потребитель"><div class="mainTags"><div class="area"><i class="fa-fw fa-solid fa-signs-post"></i><div class="label">Область</div><div class="value">Искусственный интеллект</div></div><div class="action"><i class="fa-fw fa-solid fa-hand-fist"></i><div class="label">Действие</div><div class="value">перевод</div></div><div class="form"><i class="fa-fw fa-solid fa-vector-square"></i><div class="label">Форма</div><div class="value">книга</div></div></div></header></div><div class="goalDateData"><header><div class="goalChart"><div class="total">1</div><div class="inner"></div><div class="fracs" style="background: conic-gradient( var(--c_goalChart-done) 0% 100% )"></div></div><div class="data"><div class="start"><i class="fa-solid fa-plus fa-fw"></i><div class="label">Начало</div><div class="value">22 августа 2017</div></div><div class="end"><i class="fa-solid fa-flag-checkered fa-fw"></i><div class="label">Конец</div><div class="value">10 сентября 2017</div></div></div></header><div class="goals"><div class="goal goal--done"><div class="num">1</div><div class="info"><div class="title">Перевод первой главы</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>22.08.2017 – 10.09.2017</span></div></div></div></div></div></div><div class="timelineBlock"><header><i class="fa-solid fa-bars-staggered"></i><span>Хронокарта</span></header><div class="timeline"><div class="inner"><div class="hider"></div><div class="months"><div class="month" style="flex-basis: 8.493150684931507%">янв</div><div class="month" style="flex-basis: 7.671232876712329%">фев</div><div class="month" style="flex-basis: 8.493150684931507%">мар</div><div class="month" style="flex-basis: 8.21917808219178%">апр</div><div class="month" style="flex-basis: 8.493150684931507%">май</div><div class="month" style="flex-basis: 8.21917808219178%">июн</div><div class="month" style="flex-basis: 8.493150684931507%">июл</div><div class="month" style="flex-basis: 8.493150684931507%">авг</div><div class="month" style="flex-basis: 8.21917808219178%">сен</div><div class="month" style="flex-basis: 8.493150684931507%">окт</div><div class="month" style="flex-basis: 8.21917808219178%">ноя</div><div class="month" style="flex-basis: 8.493150684931507%">дек</div></div><div class="labels"><div class="label label--year">2017</div></div><div class="data"><div class="monthGuides"><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 7.671232876712329%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div></div><div class="rows"><div class="row"><div class="fragment wire done  goal-1" style="left: 64.10958904109589%; width: 5.205479452054803%;"><div class="marker" title="22.08.2017 - 10.09.2017&#13;Перевод первой главы"><div class="goalNum">1</div></div><div class="rect" title="22.08.2017 - 10.09.2017&#13;Перевод первой главы"></div></div></div></div></div></div></div></div><div class="related"><header><i class="fa-solid fa-code-compare"></i><span>Связанные проекты</span></header><div class="relatedProject"><a class="icon" href="/projects/neuralnet-info"><img src="/projects/neuralnet-info/icon.svg" loading="lazy"/></a><div class="title"><a href="/projects/neuralnet-info">Нейронные сети</a></div><div class="reason">Перевод публиковался частями на этом портале.</div></div></div></main></div><!-- Yandex.Metrika counter -->
+<script async type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(86400654, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/86400654" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPLGTBHFF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPLGTBHFF4');
+</script></body></html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html><!--
+
+
+ ▄████▄   ███▄ ▄███▓▄▄▄█████▓ ██▒   █▓
+ ▒██▀ ▀█  ▓██▒▀█▀ ██▒▓  ██▒ ▓▒▓██░   █▒
+ ▒▓█    ▄ ▓██    ▓██░▒ ▓██░ ▒░ ▓██  █▒░
+ ▒▓▓▄ ▄██▒▒██    ▒██ ░ ▓██▓ ░   ▒██ █░░
+ ▒ ▓███▀ ░▒██▒   ░██▒  ▒██▒ ░    ▒▀█░  
+ ░ ░▒ ▒  ░░ ▒░   ░  ░  ▒ ░░      ░ ▐░  
+   ░  ▒   ░  ░      ░    ░       ░ ░░  
+ ░        ░      ░     ░           ░░  
+ ░ ░             ░                  ░  
+ ░                                 ░   
+
+
+--><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Badges — Петр Радько</title><meta name="description" content="Аддон XenForo, добавляющий медали — особые награды за выдающиеся заслуги."><link rel="canonical" href="https://radkopeter.ru/projects/xf-badges/"><meta name="keywords" content="Петр Радько, CMTV"><meta name="og:image" content="https://radkopeter.ru/site/graphics/og-images/project-xf-badges.jpeg"><meta name="generator" content="CMTV Static Site Generator"><meta name="build-time" content="1639315205346"><link rel="icon" href="https://radkopeter.ru/favicon.ico"><link rel="icon" type="image/png" href="https://radkopeter.ru/site/graphics/favicon/favicon.png"><link rel="preload" as="style" href="/site/vendor/font-awesome/css/all.min.css"><link rel="stylesheet" href="/site/vendor/font-awesome/css/all.min.css"><link href="/site/vendor/photoswipe/photoswipe.css" rel="stylesheet"><script type="module" src="/site/scripts/lightbox.js"></script><link href="/site/styles/global.css" rel="stylesheet"><link href="/site/styles/project.css" rel="stylesheet"><script src="/site/scripts/global.js" defer></script><script src="/site/scripts/project.js" defer></script></head><body class="project"><script>(() =>
+{
+    ['color-scheme', 'theme-color'].forEach(name =>
+    {
+        let tag = document.createElement('meta');
+            tag.setAttribute('name', name);
+            tag.setAttribute('content', '');
+        
+        document.head.appendChild(tag);
+    });
+
+    var preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+    var preferTheme = (preferDark ? 'dark' : 'light');
+    var theme = localStorage.getItem('theme');
+
+    if (theme === null || theme === 'null')
+        theme = preferTheme;
+
+    setTheme(theme);
+})();
+
+function setTheme(theme)
+{
+    document.body.classList.toggle('theme--dark', (theme === 'dark'));
+
+    var themeColors = { light: '#ffffff', dark: '#333333' };
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[theme]);
+    document.querySelector('meta[name="color-scheme"]').setAttribute('content', theme);
+
+    localStorage.setItem('theme', theme);
+}
+
+function toggleTheme()
+{
+    var theme = localStorage.getItem('theme');
+    setTheme((theme === 'dark' ? 'light' : 'dark'));
+}</script><div class="bg"><div class="activities"></div><div class="fog"></div></div><div class="contactBlock"><div class="modal"><header><h2>Связаться со мной</h2><i class="fa-solid fa-times closeBtn"></i></header><ul><li>Я предпочитаю общаться в текстовом формате</li><li>Ясно и понятно обозначайте тему переписки</li><li>Готов обсудить самые безумные и интересные идеи!</li></ul><div class="email"><a href="mailto:newpetya@inbox.ru">newpetya@inbox.ru</a></div></div></div><div class="site"><header><div class="gradient"><div></div></div><div class="headerContent"><a class="me" href="/"><div class="logo"><div class="gradient"><div></div></div><img src="/site/graphics/me.png"></div><h1>Петр <span>Радько</span></h1></a><nav><a class="navItem projects" href="/projects" title="Что я делаю?"><i class="fa-solid fa-clone"></i><span>Проекты</span></a><a class="navItem life" href="/life" title="Моя борьба"><i class="fa-solid fa-heart"></i><span>Жизнь</span></a><div class="navItem themeSwitcher" onclick="toggleTheme()" title="Переключить цветовую схему"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></div><div class="navItem contact" title="Связаться со мной"><i class="fa-solid fa-envelope-open-text"></i></div></nav></div></header><main><div class="mainBlock"><header><div class="icon"><img src="/projects/xf-badges/icon.svg" loading="lazy"/></div><div class="title">Badges</div><div class="desc">Аддон XenForo, добавляющий медали — особые награды за выдающиеся заслуги.</div></header><div class="mainBar"><div class="facts"><div class="fact status"><div class="label">Статус</div><div class="data"><div title="Проект завершен" class="statusCircle statusCircle--done"></div> <div >Разработал</div></div></div><div class="fact downloads"><div class="label">Скачиваний</div><div class="data">600+</div></div></div><div class="actionContainer"><a class="actionBtn" href="https://xenforo.com/community/resources/badges.7367/" target="_blank"><div class="bg xenforo"></div><div class="label"><i class="fa-solid fa-globe"></i><span>Аддон</span></div></a></div></div><div class="mainContent"><div data-pswp-gallery>    <a href="showcase/cover.png" target="_blank" data-pswp-width="908" data-pswp-height="908"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/cover.png" alt="">
+</a>    <a href="showcase/badges-list.png" target="_blank" data-pswp-width="1280" data-pswp-height="774"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/badges-list.png" alt="Список медалей">
+</a>    <a href="showcase/profile-badges.png" target="_blank" data-pswp-width="993" data-pswp-height="617"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/profile-badges.png" alt="Медали в профиле пользователя">
+</a>    <a href="showcase/featured.png" target="_blank" data-pswp-width="664" data-pswp-height="780"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/featured.png" alt="Избранные медали">
+</a>    <a href="showcase/award.png" target="_blank" data-pswp-width="918" data-pswp-height="672"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/award.png" alt="Награждение медалью">
+</a>    <a href="shocase/most-badges.png" target="_blank" ><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="shocase/most-badges.png" alt="Топ пользователей по количеству медалей">
+</a>    <a href="showcase/badges-admin.png" target="_blank" data-pswp-width="961" data-pswp-height="658"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/badges-admin.png" alt="Список медалей в админ-панели">
+</a>    <a href="showcase/edit-badge.png" target="_blank" data-pswp-width="1280" data-pswp-height="1092"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/edit-badge.png" alt="Редактирование медали">
+</a></div>
+<p>В XenForo есть система «достижений». С ее помощью можно награждать пользователей за всякие полезные действия. Но достижения обычны и скучны. Так или иначе, любой может их получить. ☹️</p>
+<p>Медали — совсем другое дело! Медалями можно по-настоящему гордиться!</p>
+<p>Аддон Badges добавляет на форум возможность создавать красивые медали, объединять их в категории и вручать их пользователям за ценные и уникальные действия!
+Сами пользователи могут выбрать выставить напоказ несколько своих самых любимых медалей.</p>
+</div><div class="links"><a class="link" href="https://xenforo.info/resources/badges.8289/" target="_blank"><i class="fa-fw fa-solid fa-globe"></i><div>Страница на русском</div></a><a class="link" href="https://github.com/CMTV/XF2A-Badges" target="_blank"><i class="fa-fw fa-brands fa-github"></i><div>Исходный код</div></a></div></div><div class="direction"><header><img class="type" src="/site/graphics/mix.svg" title="Производитель и потребитель"><div class="mainTags"><div class="action"><i class="fa-fw fa-solid fa-hand-fist"></i><div class="label">Действие</div><div class="value">программирование</div></div><div class="form"><i class="fa-fw fa-solid fa-vector-square"></i><div class="label">Форма</div><div class="value" title="Дополнительный модуль, встраиваемый в готовую программу и расширяющий ее функционал.">плагин</div></div></div></header><div class="tags"><div class="tag" title="Проекты, которые развивают меня как программиста.">информатика</div><div class="tag" title="Форумный движок.">xenforo</div><div class="tag" title="Язык для разработки веб-приложений с тесной связью с серверами.">php</div></div></div><div class="goalDateData"><header><div class="goalChart"><div class="total">1</div><div class="inner"></div><div class="fracs" style="background: conic-gradient( var(--c_goalChart-done) 0% 100% )"></div></div><div class="data"><div class="date"><i class="fa-solid fa-calendar-day fa-fw"></i><div class="label">Дата</div><div class="value">7 сентября 2019</div></div></div></header><div class="goals"><div class="goal goal--done"><div class="num">1</div><div class="info"><div class="title">Публикация аддона</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-day"></i><span>07.09.2019</span></div></div></div></div></div></div><div class="timelineBlock"><header><i class="fa-solid fa-bars-staggered"></i><span>Хронокарта</span></header><div class="timeline"><div class="inner"><div class="hider"></div><div class="months"><div class="month" style="flex-basis: 8.493150684931507%">янв</div><div class="month" style="flex-basis: 7.671232876712329%">фев</div><div class="month" style="flex-basis: 8.493150684931507%">мар</div><div class="month" style="flex-basis: 8.21917808219178%">апр</div><div class="month" style="flex-basis: 8.493150684931507%">май</div><div class="month" style="flex-basis: 8.21917808219178%">июн</div><div class="month" style="flex-basis: 8.493150684931507%">июл</div><div class="month" style="flex-basis: 8.493150684931507%">авг</div><div class="month" style="flex-basis: 8.21917808219178%">сен</div><div class="month" style="flex-basis: 8.493150684931507%">окт</div><div class="month" style="flex-basis: 8.21917808219178%">ноя</div><div class="month" style="flex-basis: 8.493150684931507%">дек</div></div><div class="labels"><div class="label label--year">2019</div></div><div class="data"><div class="monthGuides"><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 7.671232876712329%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div></div><div class="rows"><div class="row"><div class="fragment wire done single goal-1" style="left: 68.4931506849315%; "><div class="marker" title="07.09.2019&#13;Публикация аддона"><div class="goalNum">1</div></div><div class="rect" title="07.09.2019&#13;Публикация аддона"></div></div></div></div></div></div></div></div><div class="related"><header><i class="fa-solid fa-code-compare"></i><span>Связанные проекты</span></header><div class="relatedProject"><a class="icon" href="/projects/mcmodding"><img class="invertible" src="/site/graphics/no-icon.svg" loading="lazy"/></a><div class="title"><a href="/projects/mcmodding">Minecraft Modding</a></div><div class="reason">Конкурсы и уникальные достижения послужили стимулом к созданию этого аддона.</div></div></div><div class="blocks"><div class="groupSepTop"></div><div class="block"><header><div class="info"><div class="title">Идея аддона</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Идея аддона возникла во время работы над лигами на форуме <a href="/projects/mcmodding" target="_blank">MC Modding</a>.
+На нем я устраивал ряд конкурсов, за которые выдавал уникальные достижения.
+Естественно, после окончания конкурса эти достижения уже невозможно получить.</p>
+<p>Проблема в том, что достижения дают пользователю специальные очки, на основе которых расчитывается его лига.
+Очки за уникальные достижения вносят сильную путаницу в точный подсчет количества очков для повышения лиги.</p>
+<p>Выход нашел как раз в концепции медалей. Они не дают очков достижений, зато само их наличие является поощрением за выдающиеся или даже уникальные заслуги.</p>
+</div></div></div><div class="groupSepBottom"></div></div></main></div><!-- Yandex.Metrika counter -->
+<script async type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(86400654, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/86400654" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPLGTBHFF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPLGTBHFF4');
+</script></body></html>

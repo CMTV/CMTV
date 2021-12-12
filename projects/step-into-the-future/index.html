@@ -1,0 +1,135 @@
+<!DOCTYPE html><!--
+
+
+ ▄████▄   ███▄ ▄███▓▄▄▄█████▓ ██▒   █▓
+ ▒██▀ ▀█  ▓██▒▀█▀ ██▒▓  ██▒ ▓▒▓██░   █▒
+ ▒▓█    ▄ ▓██    ▓██░▒ ▓██░ ▒░ ▓██  █▒░
+ ▒▓▓▄ ▄██▒▒██    ▒██ ░ ▓██▓ ░   ▒██ █░░
+ ▒ ▓███▀ ░▒██▒   ░██▒  ▒██▒ ░    ▒▀█░  
+ ░ ░▒ ▒  ░░ ▒░   ░  ░  ▒ ░░      ░ ▐░  
+   ░  ▒   ░  ░      ░    ░       ░ ░░  
+ ░        ░      ░     ░           ░░  
+ ░ ░             ░                  ░  
+ ░                                 ░   
+
+
+--><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Шаг в будущее — Петр Радько</title><meta name="description" content="Ценный жизненный урок и моя первая научная работа."><link rel="canonical" href="https://radkopeter.ru/projects/step-into-the-future/"><meta name="keywords" content="Петр Радько, CMTV"><meta name="og:image" content="https://radkopeter.ru/site/graphics/og-images/project-step-into-the-future.jpeg"><meta name="generator" content="CMTV Static Site Generator"><meta name="build-time" content="1639315205346"><link rel="icon" href="https://radkopeter.ru/favicon.ico"><link rel="icon" type="image/png" href="https://radkopeter.ru/site/graphics/favicon/favicon.png"><link rel="preload" as="style" href="/site/vendor/font-awesome/css/all.min.css"><link rel="stylesheet" href="/site/vendor/font-awesome/css/all.min.css"><link href="/site/vendor/photoswipe/photoswipe.css" rel="stylesheet"><script type="module" src="/site/scripts/lightbox.js"></script><link href="/site/styles/global.css" rel="stylesheet"><link href="/site/styles/project.css" rel="stylesheet"><script src="/site/scripts/global.js" defer></script><script src="/site/scripts/project.js" defer></script></head><body class="project"><script>(() =>
+{
+    ['color-scheme', 'theme-color'].forEach(name =>
+    {
+        let tag = document.createElement('meta');
+            tag.setAttribute('name', name);
+            tag.setAttribute('content', '');
+        
+        document.head.appendChild(tag);
+    });
+
+    var preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+    var preferTheme = (preferDark ? 'dark' : 'light');
+    var theme = localStorage.getItem('theme');
+
+    if (theme === null || theme === 'null')
+        theme = preferTheme;
+
+    setTheme(theme);
+})();
+
+function setTheme(theme)
+{
+    document.body.classList.toggle('theme--dark', (theme === 'dark'));
+
+    var themeColors = { light: '#ffffff', dark: '#333333' };
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[theme]);
+    document.querySelector('meta[name="color-scheme"]').setAttribute('content', theme);
+
+    localStorage.setItem('theme', theme);
+}
+
+function toggleTheme()
+{
+    var theme = localStorage.getItem('theme');
+    setTheme((theme === 'dark' ? 'light' : 'dark'));
+}</script><div class="bg"><div class="activities"></div><div class="fog"></div></div><div class="contactBlock"><div class="modal"><header><h2>Связаться со мной</h2><i class="fa-solid fa-times closeBtn"></i></header><ul><li>Я предпочитаю общаться в текстовом формате</li><li>Ясно и понятно обозначайте тему переписки</li><li>Готов обсудить самые безумные и интересные идеи!</li></ul><div class="email"><a href="mailto:newpetya@inbox.ru">newpetya@inbox.ru</a></div></div></div><div class="site"><header><div class="gradient"><div></div></div><div class="headerContent"><a class="me" href="/"><div class="logo"><div class="gradient"><div></div></div><img src="/site/graphics/me.png"></div><h1>Петр <span>Радько</span></h1></a><nav><a class="navItem projects" href="/projects" title="Что я делаю?"><i class="fa-solid fa-clone"></i><span>Проекты</span></a><a class="navItem life" href="/life" title="Моя борьба"><i class="fa-solid fa-heart"></i><span>Жизнь</span></a><div class="navItem themeSwitcher" onclick="toggleTheme()" title="Переключить цветовую схему"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></div><div class="navItem contact" title="Связаться со мной"><i class="fa-solid fa-envelope-open-text"></i></div></nav></div></header><main><div class="mainBlock"><header><div class="icon"><img src="/projects/step-into-the-future/icon.svg" loading="lazy"/></div><div class="title">Шаг в будущее</div><div class="desc">Ценный жизненный урок и моя первая научная работа.</div></header><div class="mainBar"><div class="facts"><div class="fact status"><div class="label">Статус</div><div class="data"><div title="Проект завершен" class="statusCircle statusCircle--done"></div> <div >Поучаствовал</div></div></div></div></div><div class="mainContent"><div data-pswp-gallery>    <a href="showcase/lab-device.jpg" target="_blank" data-pswp-width="1000" data-pswp-height="785"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/lab-device.jpg" alt="Лабораторная установка">
+</a>    <a href="showcase/3d-cuts.png" target="_blank" data-pswp-width="1236" data-pswp-height="402"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/3d-cuts.png" alt="Сечения фотонного кристалла">
+</a>    <a href="showcase/results.png" target="_blank" data-pswp-width="1500" data-pswp-height="844"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/results.png" alt="Итоги эксперимента">
+</a>    <a href="showcase/first-page.png" target="_blank" data-pswp-width="1343" data-pswp-height="1899"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/first-page.png" alt="Тутальная страница работы">
+</a>    <a href="showcase/draft.jpg" target="_blank" data-pswp-width="816" data-pswp-height="1088"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/draft.jpg" alt="Один из набросков Юрасова Н.И.">
+</a>    <a href="showcase/draft-data.jpg" target="_blank" data-pswp-width="854" data-pswp-height="1333"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/draft-data.jpg" alt="Экспериментальные данные от Юрасова Н.И.">
+</a></div>
+<p>МГТУ им. Баумана проводит специальную олимпиаду «Шаг в будущее», пройдя которую можно поступить на бюджет без высоких баллов на ЕГЭ.
+Олимпиада состоит из двух частей: научной работы и непосредственно олимпиады.</p>
+<p>Вместе с научным руководителем я впервые в жизни занимался наукой: исследовал влияние структуры фотонных кристаллов на его оптические характеристики.
+Собрали с отцом лабораторную установку, светили мощными лазерами на выданный образец кристалла и замеряли отраженный свет.</p>
+<p>За презентацию и защиту научной работы я получил 50 баллов из 50.
+А вот олимпиаду завалил, решив целиком только одну задачу.
+Общей суммы балов не хватило, поэтому поступить в университет автоматом не получилось.</p>
+</div><div class="links"><a class="link" href="files/presentation.pdf" target="_blank"><i class="fa-fw fa-solid fa-file-pdf"></i><div>Презентация</div></a><a class="link" href="files/article.pdf" target="_blank"><i class="fa-fw fa-solid fa-file-pdf"></i><div>Статья</div></a></div></div><div class="direction"><header><img class="type" src="/site/graphics/mix.svg" title="Производитель и потребитель"><div class="mainTags"><div class="area"><i class="fa-fw fa-solid fa-signs-post"></i><div class="label">Область</div><div class="value" title="Наука о материи и явлениях, которые с ней происходят.">физика</div></div><div class="action"><i class="fa-fw fa-solid fa-hand-fist"></i><div class="label">Действие</div><div class="value">исследование</div></div><div class="form"><i class="fa-fw fa-solid fa-vector-square"></i><div class="label">Форма</div><div class="value">конкурс</div></div></div></header><div class="tags"><div class="tag" title="Проекты, которые развивают меня как программиста.">информатика</div><div class="tag" title="Царица всех наук.">математика</div></div></div><div class="goalDateData"><header><div class="goalChart"><div class="total">2</div><div class="inner"></div><div class="fracs" style="background: conic-gradient( var(--c_goalChart-done) 0% 50%,var(--c_goalChart-fail) 50% 100% )"><div class="sep" style="transform: rotateZ(180deg)"></div><div class="sep" style="transform: rotateZ(360deg)"></div></div></div><div class="data"><div class="goalCount"><i class="fa-solid fa-crosshairs fa-fw"></i><div class="label">Цели</div><div class="value"><div class="done" title="Выполнено">1</div><div class="fail" title="Провалено">1</div></div></div><div class="start"><i class="fa-solid fa-plus fa-fw"></i><div class="label">Начало</div><div class="value">12 октября 2014</div></div><div class="end"><i class="fa-solid fa-flag-checkered fa-fw"></i><div class="label">Конец</div><div class="value">19 марта 2015</div></div></div></header><div class="goals"><div class="goal goal--done"><div class="num">1</div><div class="info"><div class="title">Презентация и защита работы</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-day"></i><span>17.03.2015</span></div></div></div></div><div class="goal goal--fail"><div class="num">2</div><div class="info"><div class="title">Олимпиада по физике</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-day"></i><span>19.03.2015</span></div></div></div></div></div></div><div class="timelineBlock"><header><i class="fa-solid fa-bars-staggered"></i><span>Хронокарта</span></header><div class="timeline"><div class="inner"><div class="hider"></div><div class="months"><div class="month" style="flex-basis: 8.493150684931507%">янв</div><div class="month" style="flex-basis: 7.671232876712329%">фев</div><div class="month" style="flex-basis: 8.493150684931507%">мар</div><div class="month" style="flex-basis: 8.21917808219178%">апр</div><div class="month" style="flex-basis: 8.493150684931507%">май</div><div class="month" style="flex-basis: 8.21917808219178%">июн</div><div class="month" style="flex-basis: 8.493150684931507%">июл</div><div class="month" style="flex-basis: 8.493150684931507%">авг</div><div class="month" style="flex-basis: 8.21917808219178%">сен</div><div class="month" style="flex-basis: 8.493150684931507%">окт</div><div class="month" style="flex-basis: 8.21917808219178%">ноя</div><div class="month" style="flex-basis: 8.493150684931507%">дек</div></div><div class="labels"><div class="label label--year">2015</div><div class="vacant"></div></div><div class="data"><div class="monthGuides"><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 7.671232876712329%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div></div><div class="rows"><div class="row"><div class="fragment wire done single goal-1" style="left: 20.82191780821918%; "><div class="marker" title="17.03.2015&#13;Презентация и защита работы"><div class="goalNum">1</div></div><div class="rect" title="17.03.2015&#13;Презентация и защита работы"></div></div></div><div class="row"><div class="fragment wire fail single goal-2" style="left: 21.36986301369863%; "><div class="marker" title="19.03.2015&#13;Олимпиада по физике"><div class="goalNum">2</div></div><div class="rect" title="19.03.2015&#13;Олимпиада по физике"></div></div></div></div></div></div></div></div><div class="blocks"><div class="groupSepTop"></div><div class="block"><header><div class="info"><div class="title">Как все началось</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>В МГТУ проходило какое-то бесплатное мероприятие про технику решения изобретательских задач.
+Мы с отцом приехали туда поучаствовать.</p>
+<p>После мероприятия, вместо того, чтобы уехать домой, мы начали бродить по главному корпусу университета.
+Посетили туалеты, столовые, учебные классы. Несколько раз мы проходили мимо больших стеклянных дверей, над которыми висела надпись «Дом физики». Мы решились зайти и туда.</p>
+<p>Внутри оказалось огромное новое помещение с множеством лабораторий.
+Выглядело все невероятно круто: огромный маятник Фуко в центре, лаборатории вокруг и переговорные комнаты на втором этаже!
+Действительно «Дом физики», можно даже сказать «Храм физики».</p>
+<p>Мы подошли к преподавательнице в одной из лабораторий. Она удивилась, увидев нас.
+Но отец не растерялся и сходу соврал, что сегодня день открытых дверей и мы на экскурсии.
+Она удивилась, затем сказала, что времени на нас у нее нет и указала на другого учителя, Юрасова Николая Ильича, который сидел в соседней лаборатории.</p>
+<p>Подойдя к нему и отец напрямую спросил, нет ли у него какой-нибудь интересной научной темы, которой мы совместо могли бы заняться. Ответ меня шокировал. Он ответил, что у него как раз есть интересная работенка, которую можно выполнить со школьником в рамках программы «Шаг в будущее».</p>
+<p>После недолгого разговора мы сразу же пошли в отдел для поступающих и записались на участие в программе «Шаг в будущее» по направлению ФН-4 «Техническая физика». Буквально за час я из будущего программиста решил стать будущим физиком.</p>
+<h2>Мораль</h2>
+<p>Все это время я активно протестовал и просил отца вернуться домой.
+Мне было противно, что он соврал про день открытых дверей и вообще ходил там, где не просят.
+Я пообещал себе никогда подобным образом не поступать.</p>
+<p>Но на самом деле, из всей этой истории можно извлечь важный жизненный урок.
+Иногда игра не по правилам, совершение нелогичных, неожиданных, не всегда «правильных» ходов может привести к уникальным возможностям, открыть совершенно неожиданные пути.</p>
+<p>Без этой незапланированной «прогулки» по МГТУ и «Дому физики» я бы не захотел в него поступать, не увлекся бы математикой и физикой, не познакомился бы с Колей и Светой. Можно сказать, один день изменил всю мою жизнь…</p>
+<p>Не обязательно поступать так всегда, но всегда надо помнить, что поступить так можно.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Научная работа</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Научную работу выполнял под руководством Юрасова Николая Ильича.
+Основной задачей был замер отраженного света с определенной длиной волны от фотонного кристалла.
+Первое время я каждую субботу ездил в Дом физики, и там он мне на листочках пояснял за матчасть.
+Естественно, я практически ничего не понимал, так как уровень моей математической подготовки оставлял желать лучшего.</p>
+<p>Параллельно я знакомился математическим пакетом Maple, выполнял сечения кристаллов в 3ds Max, и читал рекомендованные им параграфы из «Курса Общей Физики» и отрывки из журнала «Квант».</p>
+<p>Через некоторое время Николай Ильич выдал мне небольшой образец фотонного кристалла, и мы с отцом приступили к экспериментальной части.
+Купили мощные лазерные указки Dragon, фотометр, мультиметр и еще ряд инструментов.</p>
+<p>Сначала замеряли коэффициент преломления используемого стекла из рамочки для фотографии.
+Потом собрали лабораторную установку и замерали отраженный свет лазера от фотонного кристалла.
+Было очень интересно и весело.</p>
+<p>С подготовкой статьи особых проблем не возникло.
+На презентацию ушло больше времени. Свой рассказ про проект надо было уложить в 7 минут.
+На слайды презентации мы потратили очень много сил. Очень пригодились знания, полученные на тренинге <a href="/projects/presentation-course" target="_blank">«Перезнтация бизнес класса»</a>.</p>
+<p>Под каждым слайдом мы добавили основные предложения и идеи, которые надо озвучить.
+Затем распечатали каждый слайд, развесили их все на стене и каждый день я отрабатывал текст, пытаясь уложиться в 7 минут.</p>
+<p>Презентация прошла великолепно. Все слушали с большим итересом.
+Для большей убедительности прямо туда я притащил и лабораторную установку.
+Выступления других участников были гораздо слабее.
+Потом мне дали задачу на дифракционную решетку, с которой я облажался.</p>
+<p>За научную работу я получил максимальные 50 баллов из 50.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Олимпиада</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>А вот олимпиада прошла не так гладно. Из 5 представленных задач полностью я смог решить только одну, про попрыгунчик, который за каждый удар о пол терял часть энергии.
+В самом конце решения там надо было использовать формулу суммы членов арифметической прогрессии.
+Я эту формулу забыл, поэтому честно написал, что последнее действите требует эту формулу, но «я ее не помню».</p>
+<p>И все же, за эту почти решенную задачу я получил максимальные 10 баллов и еще пару баллов за некоторые попытки решить остальные.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Итог</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Всего за «Шаг в будущее» я набрал 60-70 из 100 возможных баллов.
+Для урощенного поступления надо было набрать больше 70. Мне не хватило совсем чуть чуть.
+Я не жалею, что принял участие. Первая в жизни научная работа, посещение офигенного «Дома физики», подготовка и проведение презентации.
+Бесценный опыт.</p>
+</div></div></div><div class="groupSepBottom"></div></div></main></div><!-- Yandex.Metrika counter -->
+<script async type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(86400654, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/86400654" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPLGTBHFF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPLGTBHFF4');
+</script></body></html>

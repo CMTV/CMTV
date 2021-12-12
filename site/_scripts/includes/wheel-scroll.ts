@@ -2,6 +2,9 @@ export class WheelScroll
 {
     constructor(container: HTMLElement)
     {
+        if (!container)
+            return;
+
         /** Max `scrollLeft` value */
         let scrollWidth;
 

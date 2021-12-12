@@ -1033,8 +1033,172 @@
         ],
         "checks":
         [
+            "divine-body : diet"
+        ]
+    },
+
+    "5.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 6
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": 1
+            },
+            {
+                "project": "xcom-2",
+                "goals": "playthrough",
+                "duration": 4.6
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet"
+        ]
+    },
+
+    "6.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 5
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": 1
+            },
+            {
+                "project": "xcom-2",
+                "goals": "playthrough",
+                "duration": 4.8
+            }
+        ],
+        "checks":
+        [
             "divine-body : diet",
             "divine-body : training"
+        ]
+    },
+
+    "7.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 4
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": "1:15"
+            },
+            {
+                "project": "xcom-2",
+                "goals": "playthrough",
+                "duration": 3.7
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "8.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 4
+            },
+            {
+                "project": "xcom-2",
+                "goals": "playthrough",
+                "duration": 2
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "9.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 3
+            },
+            {
+                "project": "xcom-2",
+                "goals": "playthrough",
+                "duration": 2.7
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": 1
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet"
+        ]
+    },
+
+    "10.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 5
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet"
+        ]
+    },
+
+    "11.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 5
+            },
+            {
+                "project": "xcom-2",
+                "goals": "playthrough",
+                "duration": 4.4
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet"
         ]
     }
 }

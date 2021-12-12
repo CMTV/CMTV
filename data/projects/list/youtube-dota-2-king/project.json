@@ -1,0 +1,55 @@
+{
+    "title": "Dota 2 King",
+    "desc": "Попытка вести развлекательно-образовательный канал по Dote 2.",
+    "type": "mix",
+
+    "status":
+    {
+        "type": "fail",
+        "label": "Катастрофа"
+    },
+
+    "start": "30.11.2016",
+    "end": "19.01.2017",
+
+    "facts":
+    [
+        {
+            "id": "videos",
+            "label": "Видео",
+            "data": 9
+        },
+        {
+            "id": "subs",
+            "label": "Подписчики",
+            "data": "10+"
+        },
+        {
+            "id": "views",
+            "label": "Просмотры",
+            "data": "900+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-brands fa-youtube",
+        "text": "Канал",
+        "link": "https://www.youtube.com/channel/UCxN0-tiCi8CjLv8LtVBnXGw",
+        "colors": "youtube"
+    },
+
+    "related":
+    {
+        "dota-2": "Пытался извлечить пользу из своей зависимости. Не вышло..."
+    },
+
+    "tags":
+    [
+        "!просвещение",
+        "!видео",
+        "youtube",
+        "отдых",
+        "игра"
+    ]
+}

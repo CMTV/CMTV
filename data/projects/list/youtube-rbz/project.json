@@ -1,0 +1,49 @@
+{
+    "title": "Российская база знаний",
+    "desc": "Сделай себя сам! Попытка создать базу знаний по всем школьным предметам.",
+    "type": "out",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Закрыт"
+    },
+
+    "start": "5.09.2013",
+    "end": "19.03.2014",
+
+    "facts":
+    [
+        {
+            "id": "videos",
+            "label": "Видео",
+            "data": "28"
+        },
+        {
+            "id": "subs",
+            "label": "Подписчики",
+            "data": "2 500+"
+        },
+        {
+            "id": "views",
+            "label": "Просмотры",
+            "data": "280 000+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-brands fa-youtube",
+        "text": "Канал",
+        "link": "https://www.youtube.com/channel/UCB_QTSjwHp0Aad3DWoC4FMw",
+        "colors": "youtube"
+    },
+
+    "tags":
+    [
+        "!просвещение",
+        "!видео",
+        "физика",
+        "youtube"
+    ]
+}

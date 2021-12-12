@@ -1,0 +1,54 @@
+{
+    "title": "Username Change",
+    "desc": "Аддон XenForo, позволяющий пользователям форума менять свои никнеймы.",
+    "type": "mix",
+    
+    "status":
+    {
+        "type": "done",
+        "label": "Разработал"
+    },
+
+    "start": "4.11.2018",
+    "end": "13.03.2019",
+
+    "facts":
+    [
+        {
+            "id": "downloads",
+            "label": "Скачиваний",
+            "data": "400+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-globe",
+        "text": "Аддон",
+        "link": "https://xenforo.com/community/resources/username-change.6792/",
+        "colors": "xenforo"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-globe",
+            "text": "Страница на русском",
+            "link": "https://xenforo.info/resources/username-change.7413/"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код",
+            "link": "https://github.com/CMTV/XF2A-UsernameChange"
+        }
+    ],
+
+    "tags":
+    [
+        "!программирование",
+        "!плагин",
+        "информатика",
+        "xenforo",
+        "php"
+    ]
+}

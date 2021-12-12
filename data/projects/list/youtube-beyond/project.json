@@ -1,0 +1,64 @@
+{
+    "title": "За | Гранью",
+    "desc": "Канал про преодоление рамок возможного и выход за грань привычного.",
+    "type": "mix",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Прокачался"
+    },
+    
+    "start": "19.01.2015",
+    "end": "4.03.2015",
+
+    "facts":
+    [
+        {
+            "id": "videos",
+            "label": "Видео",
+            "data": 30
+        },
+        {
+            "id": "subs",
+            "label": "Подписчики",
+            "data": "100+"
+        },
+        {
+            "id": "views",
+            "label": "Просмотры",
+            "data": "16 000+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-brands fa-youtube",
+        "text": "Канал",
+        "link": "https://www.youtube.com/channel/UCxGw2u6McY3116BNi9LXqyw",
+        "colors": "youtube"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-file-lines",
+            "text": "Скороговорка",
+            "link": "files/liguria.txt"
+        },
+        {
+            "icon": "fa-brands fa-youtube",
+            "text": "Пример прочтения скороговорки",
+            "link": "https://www.youtube.com/watch?v=XE48xpDg-QU"
+        }
+    ],
+
+    "tags":
+    [
+        "!я",
+        "!видео",
+        "youtube",
+        "изучение",
+        "фитнес"
+    ]
+}

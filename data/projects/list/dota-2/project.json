@@ -1,0 +1,11 @@
+{
+    "title": "Dota 2",
+    "desc": "Игра",
+    "type": "in",
+
+    "status":
+    {
+        "type": "pause",
+        "label": "Воздержание"
+    }
+}

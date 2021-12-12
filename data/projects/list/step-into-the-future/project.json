@@ -1,0 +1,37 @@
+{
+    "title": "Шаг в будущее",
+    "desc": "Ценный жизненный урок и моя первая научная работа.",
+    "type": "mix",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Поучаствовал" 
+    },
+
+    "start": "12.10.2014",
+    "end": "19.03.2015",
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-file-pdf",
+            "text": "Презентация",
+            "link": "files/presentation.pdf"
+        },
+        {
+            "icon": "fa-solid fa-file-pdf",
+            "text": "Статья",
+            "link": "files/article.pdf"
+        }
+    ],
+
+    "tags":
+    [
+        "!физика",
+        "!исследование",
+        "!конкурс",
+        "информатика",
+        "математика"
+    ]
+}

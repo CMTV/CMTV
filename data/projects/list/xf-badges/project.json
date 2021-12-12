@@ -1,0 +1,58 @@
+{
+    "title": "Badges",
+    "desc": "Аддон XenForo, добавляющий медали — особые награды за выдающиеся заслуги.",
+    "type": "mix",
+    
+    "status":
+    {
+        "type": "done",
+        "label": "Разработал"
+    },
+
+    "date": "7.09.2019",
+    
+    "facts":
+    [
+        {
+            "id": "downloads",
+            "label": "Скачиваний",
+            "data": "600+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-globe",
+        "text": "Аддон",
+        "link": "https://xenforo.com/community/resources/badges.7367/",
+        "colors": "xenforo"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-globe",
+            "text": "Страница на русском",
+            "link": "https://xenforo.info/resources/badges.8289/"
+        },
+        {
+            "icon": "fa-brands fa-github",
+            "text": "Исходный код",
+            "link": "https://github.com/CMTV/XF2A-Badges"
+        }
+    ],
+
+    "related":
+    {
+        "mcmodding": "Конкурсы и уникальные достижения послужили стимулом к созданию этого аддона."
+    },
+
+    "tags":
+    [
+        "!программирование",
+        "!плагин",
+        "информатика",
+        "xenforo",
+        "php"
+    ]
+}

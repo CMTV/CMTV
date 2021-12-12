@@ -42,36 +42,7 @@
 
 Кампания прошла неудачно. Удалось собрать всего 4401 рубль из планируемых 100 000. На успех кампании я особо не рассчитывал, а вторую версию проекта сделать собирался в любом случае. Поэтому, сразу после начала сбора средств, начал разработку второй версии сайта.
 
-<style>
-.yt-video {
-    overflow: hidden;
-    position: relative;
-    width: 70%;
-    margin: 0 auto;
-}
-
-@media (max-width: 530px)
-{
-    .yt-video { width: 100%; }
-}
-
-.yt-video::after {
-    padding-top: 56.25%;
-    display: block;
-    content: '';
-}
-
-.yt-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-</style>
-<div class="yt-video">
-    <iframe style="width: 100%; height: 100%;" src="https://www.youtube.com/embed/ZEhwZhdk-zI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
+<youtube video="ZEhwZhdk-zI">
 
 # Первая версия
 

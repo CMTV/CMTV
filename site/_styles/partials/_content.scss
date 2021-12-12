@@ -4,6 +4,8 @@
 
 @use 'partials/hover';
 
+@use 'partials/util';
+
 %CONTENT
 {
     font-size: 102%;
@@ -84,4 +86,33 @@
 
     > :first-child  { border-top: none; margin-top: -1 * size.$gap; padding-top: size.$gap; }
     > :last-child   { border-bottom: none; }
+
+    //
+    // YouTube
+    //
+
+    .youtube-wrapper
+    {
+        overflow: hidden;
+        position: relative;
+        width: 70%;
+        margin: 0 auto;
+
+        &::after
+        {
+            content: '';
+            display: block;
+            padding-top: 56.25%;
+        }
+
+        iframe
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+            @include util.size(100%);
+        }
+
+        @media (max-width: 530px) { width: 100%; }
+    }
 }

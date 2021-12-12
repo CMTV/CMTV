@@ -1,0 +1,64 @@
+{
+    "title": "Цифровое поколение. Вперед!",
+    "desc": "Полуфиналист молодежного всероссийского конкурса от Google.",
+    "type": "mix",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Полуфиналист"
+    },
+
+    "start": "5.12.2013",
+    "end": "22.04.2014",
+
+    "facts":
+    [
+        {
+            "id": "place",
+            "label": "Место",
+            "data": "Топ 16"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-brands fa-youtube",
+        "text": "Итоги",
+        "link": "https://www.youtube.com/watch?v=i_6iIfqLuZU",
+        "colors": "youtube"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-brands fa-youtube",
+            "text": "Ролик про финалистов",
+            "link": "https://youtu.be/z1Zcav4YPLE"
+        },
+        {
+            "icon": "fa-brands fa-youtube",
+            "text": "Просьба проголосовать",
+            "link": "https://www.youtube.com/watch?v=cYEdtd-g7yw"
+        },
+        {
+            "icon": "fa-brands fa-youtube",
+            "text": "Ролик-визитка",
+            "link": "https://youtu.be/muvurVl8LW0" 
+        }
+    ],
+
+    "related":
+    {
+        "youtube-cmtv": "Выдвинул свой основной YouTube канал для участия в конкурсе."
+    },
+
+    "tags":
+    [
+        "!информатика",
+        "!просвещение",
+        "!конкурс",
+        "мероприятие",
+        "программирование"
+    ]
+}

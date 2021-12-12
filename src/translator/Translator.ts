@@ -35,6 +35,8 @@ export class Translator
         str = Image.renderGalleries(str, extra);
         str = Image.renderSingles(str, extra);
 
+        str = this.renderYoutube(str);
+
         str = this.renderMd(str);
 
         return str;
@@ -55,6 +57,16 @@ export class Translator
     static renderMd(str: string): string
     {
         return mdIt.render(str);
+    }
+
+    static renderYoutube(str: string): string
+    {
+        let regexp = /^<youtube video="(.+?)">$/gm;
+
+        return str.replace(regexp, (match, video) =>
+        {
+            return `<div class="youtube-wrapper"><iframe src="https://www.youtube.com/embed/${video}" frameborder="0" allowfullscreen></iframe></div>`;
+        });
     }
 }
 

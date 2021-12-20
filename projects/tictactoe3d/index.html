@@ -1,0 +1,201 @@
+<!DOCTYPE html><!--
+
+
+ ▄████▄   ███▄ ▄███▓▄▄▄█████▓ ██▒   █▓
+ ▒██▀ ▀█  ▓██▒▀█▀ ██▒▓  ██▒ ▓▒▓██░   █▒
+ ▒▓█    ▄ ▓██    ▓██░▒ ▓██░ ▒░ ▓██  █▒░
+ ▒▓▓▄ ▄██▒▒██    ▒██ ░ ▓██▓ ░   ▒██ █░░
+ ▒ ▓███▀ ░▒██▒   ░██▒  ▒██▒ ░    ▒▀█░  
+ ░ ░▒ ▒  ░░ ▒░   ░  ░  ▒ ░░      ░ ▐░  
+   ░  ▒   ░  ░      ░    ░       ░ ░░  
+ ░        ░      ░     ░           ░░  
+ ░ ░             ░                  ░  
+ ░                                 ░   
+
+
+--><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Крестики Нолики 3D — Петр Радько</title><meta name="description" content="Собирайте комбо, закрашивая ячейки и вращая грани! Звучит обманчиво просто..."><link rel="canonical" href="https://radkopeter.ru/projects/tictactoe3d/"><meta name="keywords" content="Петр Радько, CMTV"><meta name="og:image" content="https://radkopeter.ru/site/graphics/og-images/project-tictactoe3d.jpeg"><meta name="generator" content="CMTV Static Site Generator"><meta name="build-time" content="1639980712911"><link rel="icon" href="https://radkopeter.ru/favicon.ico"><link rel="icon" type="image/png" href="https://radkopeter.ru/site/graphics/favicon/favicon.png"><link rel="preload" as="style" href="/site/vendor/font-awesome/css/all.min.css"><link rel="stylesheet" href="/site/vendor/font-awesome/css/all.min.css"><link href="/site/vendor/photoswipe/photoswipe.css" rel="stylesheet"><script type="module" src="/site/scripts/lightbox.js"></script><link href="/site/styles/global.css" rel="stylesheet"><link href="/site/styles/project.css" rel="stylesheet"><script src="/site/scripts/global.js" defer></script><script src="/site/scripts/project.js" defer></script></head><body class="project"><script>(() =>
+{
+    ['color-scheme', 'theme-color'].forEach(name =>
+    {
+        let tag = document.createElement('meta');
+            tag.setAttribute('name', name);
+            tag.setAttribute('content', '');
+        
+        document.head.appendChild(tag);
+    });
+
+    var preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+    var preferTheme = (preferDark ? 'dark' : 'light');
+    var theme = localStorage.getItem('theme');
+
+    if (theme === null || theme === 'null')
+        theme = preferTheme;
+
+    setTheme(theme);
+})();
+
+function setTheme(theme)
+{
+    document.body.classList.toggle('theme--dark', (theme === 'dark'));
+
+    var themeColors = { light: '#ffffff', dark: '#333333' };
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[theme]);
+    document.querySelector('meta[name="color-scheme"]').setAttribute('content', theme);
+
+    localStorage.setItem('theme', theme);
+}
+
+function toggleTheme()
+{
+    var theme = localStorage.getItem('theme');
+    setTheme((theme === 'dark' ? 'light' : 'dark'));
+}</script><div class="bg"><div class="activities"></div><div class="fog"></div></div><div class="contactBlock"><div class="modal"><header><h2>Связаться со мной</h2><i class="fa-solid fa-times closeBtn"></i></header><ul><li>Я предпочитаю общаться в текстовом формате</li><li>Ясно и понятно обозначайте тему переписки</li><li>Готов обсудить самые безумные и интересные идеи!</li></ul><div class="email"><a href="mailto:newpetya@inbox.ru">newpetya@inbox.ru</a></div></div></div><div class="site"><header><div class="gradient"><div></div></div><div class="headerContent"><a class="me" href="/"><div class="logo"><div class="gradient"><div></div></div><img src="/site/graphics/me.png"></div><h1>Петр <span>Радько</span></h1></a><nav><a class="navItem projects" href="/projects" title="Что я делаю?"><i class="fa-solid fa-clone"></i><span>Проекты</span></a><a class="navItem life" href="/life" title="Моя борьба"><i class="fa-solid fa-heart"></i><span>Жизнь</span></a><div class="navItem themeSwitcher" onclick="toggleTheme()" title="Переключить цветовую схему"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></div><div class="navItem contact" title="Связаться со мной"><i class="fa-solid fa-envelope-open-text"></i></div></nav></div></header><main><div class="mainBlock"><header><div class="icon"><img src="/projects/tictactoe3d/icon.svg" loading="lazy"/></div><div class="title">Крестики Нолики 3D</div><div class="desc">Собирайте комбо, закрашивая ячейки и вращая грани! Звучит обманчиво просто...</div><div class="featured status--fail"><i class="fa-solid fa-star"></i><div class="hover" title="Важный проект"></div></div></header><div class="mainBar"><div class="facts"><div class="fact status"><div class="label">Статус</div><div class="data"><div title="Проект закрыт" class="statusCircle statusCircle--fail"></div> <div >Разработали</div></div></div><div class="fact downloads"><div class="label">Установки</div><div class="data">100+</div></div></div><div class="actionContainer"><a class="actionBtn" href="https://play.google.com/store/apps/details?id=ru.cmtv.tictactoe3d" target="_blank"><div class="bg google-play"></div><div class="label"><i class="fa-brands fa-google-play"></i><span>Приложение</span></div></a></div></div><div class="mainContent"><div data-pswp-gallery>    <a href="showcase/banner.jpg" target="_blank" data-pswp-width="1024" data-pswp-height="500"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/banner.jpg" alt="">
+</a>    <a href="showcase/gameplay.png" target="_blank" data-pswp-width="1919" data-pswp-height="1128"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/gameplay.png" alt="">
+</a>    <a href="showcase/main-menu.jpg" target="_blank" data-pswp-width="576" data-pswp-height="1024"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/main-menu.jpg" alt="">
+</a>    <a href="showcase/other.png" target="_blank" data-pswp-width="1920" data-pswp-height="1129"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/other.png" alt="">
+</a>    <a href="showcase/personalisation.jpg" target="_blank" data-pswp-width="726" data-pswp-height="1290"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/personalisation.jpg" alt="">
+</a></div>
+<p>Головоломка, основанная на переносе повсеместно известных крестиков-ноликов из плоскости на поверхность куба.
+Правила достаточно сильно поменялись, но базовая суть одна — игроки по очереди закрашивают кубы в свои цвета.
+Создание комбо линии или диагонали дает дополнительный ход.
+Побеждает тот, кто закрасил больше кубиков.</p>
+<p>Помимо закраски есть еще механика поворота граней, прямо как в Кубике Рубика.
+Эта механика добавляет множество хитрых стратегий, например закрашивать кубы в отдаленных местах, а затем с помощью поворота собирать их в комбинацию, получая дополнительный ход.</p>
+<p>Реализовали сетевую игру и даже соревновательный рейтинг, на манер MMR в <a href="/projects/dota-2" target="_blank">Dota 2</a>.
+За заработанные монетки можно было настраивать внешний вид своих блоков: менять цвета, текстуру и наклейки.</p>
+<p>Сама идея и разные программные наработки растянулись на пару лет.
+Полноценной разработкой занялся уже в <a href="/projects/severomorsk" target="_blank">Североморске</a> совместно с Николаем Нагибином.</p>
+<p>Планы на поддержку игры были очень обширными.
+Но она не выстрелила, поэтому мы решили переключиться на математику.
+Примерно тогда я понял, что не хочу заниматься разработкой игр в качестве основной работы.</p>
+</div></div><div class="direction"><header><img class="type" src="/site/graphics/mix.svg" title="Производитель и потребитель"><div class="mainTags"><div class="area"><i class="fa-fw fa-solid fa-signs-post"></i><div class="label">Область</div><div class="value" title="Проекты, которые развивают меня как программиста.">информатика</div></div><div class="action"><i class="fa-fw fa-solid fa-hand-fist"></i><div class="label">Действие</div><div class="value">программирование</div></div><div class="form"><i class="fa-fw fa-solid fa-vector-square"></i><div class="label">Форма</div><div class="value">приложение</div></div></div></header><div class="tags"><div class="tag">игра</div><div class="tag">android</div><div class="tag" title="Популярная межплатформенная среда разработки компьютерных игр.">unity</div><div class="tag" title="Царица всех наук.">математика</div></div></div><div class="goalDateData"><header><div class="goalChart"><div class="total">2</div><div class="inner"></div><div class="fracs" style="background: conic-gradient( var(--c_goalChart-done) 0% 100% )"></div></div><div class="data"><div class="start"><i class="fa-solid fa-plus fa-fw"></i><div class="label">Начало</div><div class="value">21 декабря 2018</div></div><div class="end"><i class="fa-solid fa-flag-checkered fa-fw"></i><div class="label">Конец</div><div class="value">1 декабря 2019</div></div></div></header><div class="goals"><div class="goal goal--done"><div class="num">1</div><div class="info"><div class="title">Разработка прототипов</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>21.03.2018 – 28.04.2019</span></div></div></div></div><div class="goal goal--done"><div class="num">2</div><div class="info"><div class="title">Полноценная разработка приложения</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>13.09.2019 – 01.12.2019</span></div></div></div></div></div></div><div class="timelineBlock"><header><i class="fa-solid fa-bars-staggered"></i><span>Хронокарта</span></header><div class="timeline"><div class="inner"><div class="hider"></div><div class="months"><div class="month" style="flex-basis: 8.493150684931507%">янв</div><div class="month" style="flex-basis: 7.671232876712329%">фев</div><div class="month" style="flex-basis: 8.493150684931507%">мар</div><div class="month" style="flex-basis: 8.21917808219178%">апр</div><div class="month" style="flex-basis: 8.493150684931507%">май</div><div class="month" style="flex-basis: 8.21917808219178%">июн</div><div class="month" style="flex-basis: 8.493150684931507%">июл</div><div class="month" style="flex-basis: 8.493150684931507%">авг</div><div class="month" style="flex-basis: 8.21917808219178%">сен</div><div class="month" style="flex-basis: 8.493150684931507%">окт</div><div class="month" style="flex-basis: 8.21917808219178%">ноя</div><div class="month" style="flex-basis: 8.493150684931507%">дек</div></div><div class="labels"><div class="label label--year">2018</div><div class="sep"></div><div class="label label--year">2019</div><div class="vacant"></div></div><div class="data"><div class="monthGuides"><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 7.671232876712329%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div></div><div class="rows"><div class="row"><div class="fragment wire done  goal-1" style="left: 21.91780821917808%; width: 44.10958904109589%;"><div class="marker" title="21.03.2018 - 29.08.2018&#13;Разработка прототипов"><div class="goalNum">1</div></div><div class="rect" title="21.03.2018 - 29.08.2018&#13;Разработка прототипов"></div></div></div><div class="sep"></div><div class="row"><div class="fragment wire done single goal-1" style="left: 32.32876712328767%; "><div class="marker" title="28.04.2019&#13;Разработка прототипов"><div class="goalNum">1</div></div><div class="rect" title="28.04.2019&#13;Разработка прототипов"></div></div></div><div class="row"><div class="fragment wire done  goal-2" style="left: 70.13698630136986%; width: 21.643835616438366%;"><div class="marker" title="13.09.2019 - 01.12.2019&#13;Полноценная разработка приложения"><div class="goalNum">2</div></div><div class="rect" title="13.09.2019 - 01.12.2019&#13;Полноценная разработка приложения"></div></div></div></div></div></div></div></div><div class="related"><header><i class="fa-solid fa-code-compare"></i><span>Связанные проекты</span></header><div class="relatedProject"><a class="icon" href="/projects/severomorsk"><img src="/projects/severomorsk/icon.jpg" loading="lazy"/></a><div class="title"><a href="/projects/severomorsk">Жизнь на севере — Североморск</a></div><div class="reason">Основной этап разработки игры проходил в Североморске совместно с Николаем Нагибиным.</div></div><div class="relatedProject"><a class="icon" href="/projects/unity-i18n"><img class="invertible" src="/projects/unity-i18n/icon.i.svg" loading="lazy"/></a><div class="title"><a href="/projects/unity-i18n">I18n</a></div><div class="reason">Разработал отдельный пакет для локализации игр.</div></div></div><div class="blocks"><div class="groupSepTop"></div><div class="block"><header><div class="info"><div class="title">Идея игры</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Долгое время игра провела просто в голове в виде концепта, который мы с отцом придумывали на ходу во время прогулок с собакой.</p>
+<p>Сначала мы хотели просто перенести правила всем известных крестиков-ноликов из плоскости на поверхность куба.
+В какой-то момент мы поняли, что с кубами связана не менее известная игра «Кубик Рубика».
+Так появилась идея вращения граней.</p>
+<p>Мало-помалу вырисовывался смысл игры: закрасить как можно больше кубиков, хитро используя повороты граней.</p>
+<p>Была также идея реализовать режим испытаний, где игроку уже дается какая-нибудь игровая ситуация и требуется выполнить ряд задач соблюдая условия (например, выиграть за 3 хода).</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Источники вдохновения</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Самое большое влияние на мое видение игры оказали две самые популярные мультиплеерные игры: Dota 2 и CS: GO, а также Rocket League.
+Он простой, в нем невозможно запутаться и имеет интуитивные небольшие анимации.</p>
+<h2>Игровой процесс</h2>
+<p>Основной концепт сетевой игры, соревновательный рейтинг (MMR), целиком взял из игр Valve.
+Игра пытается подобрать похожего по рейтингу противника.
+Победитель получает очки рейтинга, а проигравший теряет.</p>
+<p>Формула изменения учитывает рейтинг обоих игроков.
+Если слабый победил сильного, то он получит много очков рейтинга.
+Наоборот, если слабый игрок проиграл сильному, то он потеряет совсем немного очков.</p>
+<h2>Дизайн</h2>
+<div data-pswp-gallery>    <a href="images/inspiration/switching-modes.jpg" target="_blank" data-pswp-width="1200" data-pswp-height="686"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/inspiration/switching-modes.jpg" alt="Переключение между режимами игры в Dota 2">
+</a>    <a href="images/inspiration/game-mode-inspiration.jpg" target="_blank" data-pswp-width="1200" data-pswp-height="676"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/inspiration/game-mode-inspiration.jpg" alt="Настройки режима игры в Rocket League">
+</a></div>
+<p>Интерфейс в Dota 2 и CS сделан идеально.
+Особенно мне понравилось, что при нажатии на «Играть» в обеих играх справа красиво выползает окно с настройками.
+Можно изменить регион и выбрать режим.
+Но самое главное, что кнопка «Играть» остается на месте!
+То есть, если я уже ранее все настроил и просто хочу играть, мне нужно всего лишь дважды на нее нажать. Гениально!</p>
+<p>А из Rocket League я позаимствовал подход к реализации самих настроек режимов.
+Выбираешь желаемый режим. Если выбраешь сразу несколько, получишь какой-то случайно выбранный один.
+Максимально просто и понятно!</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Прототипы</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>В марте 2018 года я впервые попробовал реализовать часть механик.
+Опыта работы с Unity у меня практически не было.
+Кое-как у меня получилось спрограммировать вращение куба пальцем, а также масштабирование с помощью двух пальцев.</p>
+<p>Далее время от времени продолжал работать над прототипами на протяжении 5 месяцев.
+Полученные результаты оформлял в виде небольших <a href="https://vk.com/video/playlist/77335203_1">роликов</a> и отсылал их Коле.</p>
+<h2>Необъяснимая функция</h2>
+<p>Во время поворота граней нужно перенести необходимо обновить состояния кубиков.
+Я целый день мучился, пытаясь написать абстрактную функцию для игрового куба произвольного размера, которая по данным координатам кубика и направлению поворота грани высчитывает его новые координаты.</p>
+<p>И у меня получилось! Вот только я почти сразу забыл, как именно она работает.
+Уже во время полноценной разработки я использовал эту функцию как черный ящик.</p>
+<h2>Свой движок анимаций</h2>
+<p>Мне было лень разбираться в стандартном функционале Unity по работе с анимациями, поэтому я потратил пару дней на создание своего аналога, который полностью управлялся из кода.
+На его основе я реализовал все анимации в главном меню и только потом заметил, что на средних телефонах все анимации жутко тормозят, а функции Unity на самом деле простые, оптимизированные и удобные.</p>
+<p>Пришлось вновь переписывать весь интерфес, но уже используя средства Unity.
+Однако, я не жалею, что потратил время на создание своего аналога, получил ценный опыт.</p>
+<h2>Генерация страницы настроек</h2>
+<p>Очень горжусь тем, что с помощью рефлексии написал механизм, который создает интерфейс страницы настроек игры прямо из кода, прямо как публичные переменные выносятся в инспектор Unity.</p>
+<p>Эта технология дошла до релиза практически без изменений.</p>
+<h2>Игра в главном меню</h2>
+<p>В процессе разработки выяснилось, что в главном кнопки у меня только сверху и снизу.
+Центральная область пустует.
+Решил поместить туда игровой куб, который играет сам с собой, используя цвета и наклейки игрока.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Полноценная разработка</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Работать над игрой в полную силу мы с Николаем начали после моего переезда в <a href="/projects/severomorsk" target="_blank">Североморск</a>.
+В целом процесс шел хорошо. Некоторые особо запомнившиеся эпизоды расписал ниже.</p>
+<h2>Усложнение правил</h2>
+<p>По мере разработки мы постоянно обновляли и усложняли правила игры.</p>
+<p>Довольно быстро мы отказались от идеи полной закраски всех кубиков грани при завершении комбо, так как из-за такого подхода выгодно играть было только на одной грани, то есть в обычные крестики-нолики.</p>
+<p>Другая проблема состояла в том, что механика поворота граней была не очень полезной.
+Действительно, зачем поворачивать грань ради дополнительного хода, если в этот дополнительный ход ты все равно закрасишь только один кубик?
+Тогда решили сделать первое вращение в ходу бесплатным, а также поставили лимит в максимум 3 дополнительных хода.</p>
+<p>Была еще проблема с тем, что можно было войти в бесконечный цикл, постоянно разрывая и собирая одни и те же комбо с помощью поворотов граней.
+Решили мы ее через глобальный счетчик комбо. Если в результате действий игрока количество комбо не изменилось, значит дополнительный ход он не получит.</p>
+<h2>Бот</h2>
+<p>В игре есть режим одиночной игры против самого телефона.
+Сначала мы хотели обучить полноценную нейросеть, но быстро от этой идеи отказались, так как ни я, ни он не имели достаточных знаний по этой теме.</p>
+<p>В итоге остановились на том, что легкий бот просчитывал все возможные ходы без учета вращения граней и с некоторой вероятностью выбирал оптимальный вариант.
+Средний бот делал то же самое, но уже с учетом вращения граней.
+Наконец, сильный бот практически никогда не ошибался и выбирал самые выгодные варианты в рамках одного хода.</p>
+<p>Мы очень много времени потратили на то, чтобы проверить, действительно ли он играет по правилам.
+Правила были сложными, а некоторые его ходы были совсем странными.
+Дошло до того, я выводил целый список всех возможных ходов с расставленными приоритетами.</p>
+<p>Бот получился добротным. Сложную его версию даже Коля обыгрывал с трудом.</p>
+<h2>Неуловимая ошибка</h2>
+<p>Уже на финишной прямой мы заметили странные ходы нашего бота.
+Иногда он пытался закрашивать уже занятые кубы.
+Кроме того, после поворота граней, игра заканчивалась с неверным счетом или вообще преждевременно со свободными пустыми клетками.</p>
+<p>Сначала я пытался найти ошибку в одиночку. Но у меня ничего не вышло.
+В итоге мы уже вдвоем потратили целый день на проверку каждого класса и каждой функции, которая отвечает за игровой процесс.
+И нашли ошибку!</p>
+<p>Проблема была в том, что в нашем игровом кубе отсутствует ячека в центре, поэтому формула для расчета координат ячеек, на которую мы опирались, работала нормально только для одной половины куба.
+Как только требовалось получить координаты «за центром» кубика, они оказывались «смещенными» на единицу «назад».
+Простое добавление +1 к координатам для компенсации отсутствующей центральной ячейки решили проблему.</p>
+<h2>Мнимый процентный рейтинг</h2>
+<p>Нам очень понравилась идея выводить не только числовой рейтинг игрока, но еще и писать что-то в духе «Вы лучше, чем X% игроков».
+Проблема заключалась в том, что составить такой процентный рейтинг можно было только имея на руках глобальную статистику рейтинга игроков.</p>
+<p>В итоге решили схитрить. Мы прикинули, какой средний рейтинг будут иметь большинство игроков и построили нормальное распределение, по которому и рассчитывался процентный рейтинг.
+Игрокам приятно видеть, что они крутые, а мы не потратили силы на создание глобального рейтинга.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Публикация</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Поздним вечером 1-го декабря работа была выполнена, игра загружена в Google Play и проходила модерацию.
+Мы заказали 3 пиццы (по одной каждому и одну про запас) и две бутылки пепси.
+Пиццу везли очень долго, хотя само заведение находилось в пяти минутах ходьбы от нас.
+В итоге, насладиться ей мы смогли только в первом часу ночи.</p>
+<p>Мы оба так устали за все время разработки, что во время еды больше молчали.
+Все темы осудили, на все вопросы ответили.
+Просто два довольных разработчика молча едят пиццу и пьют пепси…</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Планы на будущее</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Мы планировали добавлять новые игровые режимы, даже специальные мини-игры.
+Конечно, хотели расширить возможности и кастомизации тоже, добавить уникальные анимированные фоны и наклейки.
+Но игра не выстрелила, поэтому все это так и осталось в планах.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Ощущения от разработки</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Если коротко, было очень тяжело и одновременно очень интересно!</p>
+<p>Отдельно хочу поделиться впечатлениями от совместой работы.
+Программированием занимался я, но вот ежедневные обсуждения дальнейших действий, совместное построение математических моделей, споры как лучше реализовать ту или иную систему, проверка на прочность правил игры и многое другое мы делали вдвоем.</p>
+<p>Это был совершенно необычный для меня опыт.
+Я привык работать один. В этом много плюсов.
+С другой стороны, в команде можно распределять обязанности и задействовать сильные стороны каждого участника.
+Так получается создавать действительно большие и комплексные проекты.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">3D Пятнашки</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><div data-pswp-gallery>    <a href="images/26-puzzle/screenshot-1.jpg" target="_blank" data-pswp-width="500" data-pswp-height="800"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/26-puzzle/screenshot-1.jpg" alt="">
+</a>    <a href="images/26-puzzle/screenshot-2.jpg" target="_blank" data-pswp-width="500" data-pswp-height="800"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/26-puzzle/screenshot-2.jpg" alt="">
+</a>    <a href="images/26-puzzle/screenshot-3.jpg" target="_blank" data-pswp-width="500" data-pswp-height="800"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/26-puzzle/screenshot-3.jpg" alt="">
+</a>    <a href="images/26-puzzle/screenshot-4.jpg" target="_blank" data-pswp-width="500" data-pswp-height="800"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/26-puzzle/screenshot-4.jpg" alt="">
+</a></div>
+<p>Не только я в то время разрабатывал игру с большим кубом в главной роли.
+Мне удалось сагитировать Liahim, одного из создателей Minecraft модов и пользователей проекта <a href="/projects/mcmodding" target="_blank">MC Modding</a>, создать и свою игру тоже.
+Он решил перенести пятнашки из плоскости на поверхность куба. <a href="https://play.google.com/store/apps/details?id=com.liahim85.puzzle26">Игра</a> получилась классной. Скачиваний у него больше, чем у нашей игры.</p>
+</div></div></div><div class="groupSepBottom"></div></div></main></div><!-- Yandex.Metrika counter -->
+<script async type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(86400654, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/86400654" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPLGTBHFF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPLGTBHFF4');
+</script></body></html>

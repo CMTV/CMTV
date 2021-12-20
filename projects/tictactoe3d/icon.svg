@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 422 422">
+    <defs>
+        <linearGradient id="gradient" x1="27.84" y1="395.06" x2="394.16" y2="28.74" gradientTransform="matrix(1, 0, 0, -1, 0, 422.9)" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#6ad8c3" />
+            <stop offset="1" stop-color="#009cf3" />
+        </linearGradient>
+    </defs>
+    <rect x="0.45" y="0.45" width="421.1" height="421.1" rx="93.53" style="fill:url(#gradient)" />
+    <path fill="#fff" d="M211,49.92,71.5,130.46V291.54L211,372.08l139.5-80.54V130.46ZM335.5,206.67l-51,29.44V177.22l51-29.44Zm-249-58.89,51,29.44v58.89l-51-29.44ZM277,164.24,226,134.8l51-29.45,51,29.44Zm-15,8.66-51,29.44L160,172.9l51-29.44Zm-117-8.66L94,134.79l51-29.44,51,29.45Zm7.5,21.65,51,29.44v58.89l-51-29.45Zm51,105.65v58.89L152.5,321V262.1Zm15,0,51-29.44V321l-51,29.45Zm0-17.32V215.33l51-29.44v58.88ZM262,96.69l-51,29.45L160,96.69l51-29.45ZM86.5,224l51,29.44v58.89l-51-29.44Zm198,88.33V253.43l51-29.44v58.89Z" />
+<style>._black { fill: #333; }</style></svg>

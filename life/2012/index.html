@@ -1,0 +1,73 @@
+<!DOCTYPE html><!--
+
+
+ ▄████▄   ███▄ ▄███▓▄▄▄█████▓ ██▒   █▓
+ ▒██▀ ▀█  ▓██▒▀█▀ ██▒▓  ██▒ ▓▒▓██░   █▒
+ ▒▓█    ▄ ▓██    ▓██░▒ ▓██░ ▒░ ▓██  █▒░
+ ▒▓▓▄ ▄██▒▒██    ▒██ ░ ▓██▓ ░   ▒██ █░░
+ ▒ ▓███▀ ░▒██▒   ░██▒  ▒██▒ ░    ▒▀█░  
+ ░ ░▒ ▒  ░░ ▒░   ░  ░  ▒ ░░      ░ ▐░  
+   ░  ▒   ░  ░      ░    ░       ░ ░░  
+ ░        ░      ░     ░           ░░  
+ ░ ░             ░                  ░  
+ ░                                 ░   
+
+
+--><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>2012 — Петр Радько</title><meta name="description" content="Основные итоги, проекты, хронокарта и распределение времени за 2012 год."><link rel="canonical" href="https://radkopeter.ru/life/2012/"><meta name="keywords" content="Петр Радько, CMTV"><meta name="og:image" content="https://radkopeter.ru/site/graphics/og-images/year.jpeg"><meta name="generator" content="CMTV Static Site Generator"><meta name="build-time" content="1639980712911"><link rel="icon" href="https://radkopeter.ru/favicon.ico"><link rel="icon" type="image/png" href="https://radkopeter.ru/site/graphics/favicon/favicon.png"><link rel="preload" as="style" href="/site/vendor/font-awesome/css/all.min.css"><link rel="stylesheet" href="/site/vendor/font-awesome/css/all.min.css"><link href="/site/vendor/photoswipe/photoswipe.css" rel="stylesheet"><script type="module" src="/site/scripts/lightbox.js"></script><link href="/site/styles/global.css" rel="stylesheet"><link href="/site/styles/year.css" rel="stylesheet"><script src="/site/scripts/global.js" defer></script><script src="/site/scripts/year.js" defer></script></head><body class="year"><script>(() =>
+{
+    ['color-scheme', 'theme-color'].forEach(name =>
+    {
+        let tag = document.createElement('meta');
+            tag.setAttribute('name', name);
+            tag.setAttribute('content', '');
+        
+        document.head.appendChild(tag);
+    });
+
+    var preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+    var preferTheme = (preferDark ? 'dark' : 'light');
+    var theme = localStorage.getItem('theme');
+
+    if (theme === null || theme === 'null')
+        theme = preferTheme;
+
+    setTheme(theme);
+})();
+
+function setTheme(theme)
+{
+    document.body.classList.toggle('theme--dark', (theme === 'dark'));
+
+    var themeColors = { light: '#ffffff', dark: '#333333' };
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[theme]);
+    document.querySelector('meta[name="color-scheme"]').setAttribute('content', theme);
+
+    localStorage.setItem('theme', theme);
+}
+
+function toggleTheme()
+{
+    var theme = localStorage.getItem('theme');
+    setTheme((theme === 'dark' ? 'light' : 'dark'));
+}</script><div class="bg"><div class="activities"></div><div class="fog"></div></div><div class="contactBlock"><div class="modal"><header><h2>Связаться со мной</h2><i class="fa-solid fa-times closeBtn"></i></header><ul><li>Я предпочитаю общаться в текстовом формате</li><li>Ясно и понятно обозначайте тему переписки</li><li>Готов обсудить самые безумные и интересные идеи!</li></ul><div class="email"><a href="mailto:newpetya@inbox.ru">newpetya@inbox.ru</a></div></div></div><div class="site"><header><div class="gradient"><div></div></div><div class="headerContent"><a class="me" href="/"><div class="logo"><div class="gradient"><div></div></div><img src="/site/graphics/me.png"></div><h1>Петр <span>Радько</span></h1></a><nav><a class="navItem projects" href="/projects" title="Что я делаю?"><i class="fa-solid fa-clone"></i><span>Проекты</span></a><a class="navItem life" href="/life" title="Моя борьба"><i class="fa-solid fa-heart"></i><span>Жизнь</span></a><div class="navItem themeSwitcher" onclick="toggleTheme()" title="Переключить цветовую схему"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></div><div class="navItem contact" title="Связаться со мной"><i class="fa-solid fa-envelope-open-text"></i></div></nav></div></header><main><div class="yearResults noResults"><header>2012 год</header></div><div class="counters"><header><div class="counter counter--goal" title="Завершенные цели" data-toggled><i class="fa-solid fa-crosshairs"></i><span>1</span></div></header><div class="counterTitle">Завершенные цели</div><div class="details"><div class="counterPane counterPane--goal" data-toggled><div class="counterItem"><div class="project"><div class="count">+1</div><a class="icon" href="/projects/max-city-facade"><img src="/projects/max-city-facade/icon.png" loading="lazy"/></a><a class="title" href="/projects/max-city-facade">Кубический фасад ТЦ &quot;Макс Сити&quot;</a><div class="eyeContainer"><i class="fa-fw fa-solid fa-eye"></i></div></div><div class="goals"><div class="goal"><div class="pointer">●</div><div class="info"><div class="title">Консультация</div><div class="date">24.08</div></div></div></div></div></div></div></div><div class="timelineBlock"><header><i class="fa-solid fa-bars-staggered"></i><span>Хронокарта</span></header><div class="timeline"><div class="inner"><div class="hider"></div><div class="months"><div class="month" style="flex-basis: 8.493150684931507%">янв</div><div class="month" style="flex-basis: 7.671232876712329%">фев</div><div class="month" style="flex-basis: 8.493150684931507%">мар</div><div class="month" style="flex-basis: 8.21917808219178%">апр</div><div class="month" style="flex-basis: 8.493150684931507%">май</div><div class="month" style="flex-basis: 8.21917808219178%">июн</div><div class="month" style="flex-basis: 8.493150684931507%">июл</div><div class="month" style="flex-basis: 8.493150684931507%">авг</div><div class="month" style="flex-basis: 8.21917808219178%">сен</div><div class="month" style="flex-basis: 8.493150684931507%">окт</div><div class="month" style="flex-basis: 8.21917808219178%">ноя</div><div class="month" style="flex-basis: 8.493150684931507%">дек</div></div><div class="labels"><div class="label label--project"><a class="icon" href="/projects/max-city-facade" title="Кубический фасад ТЦ &quot;Макс Сити&quot;"><img src="/projects/max-city-facade/icon.png" loading="lazy"/></a></div></div><div class="data"><div class="monthGuides"><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 7.671232876712329%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div></div><div class="rows"><div class="row"><div class="fragment wire done  goal-1" style="left: 63.934426229508205%; width: 0.8196721311475414%;"><div class="marker" title="21.08.2012 - 24.08.2012&#13;Консультация"><div class="goalNum">1</div></div><div class="rect" title="21.08.2012 - 24.08.2012&#13;Консультация"></div></div></div></div></div></div></div></div></main></div><!-- Yandex.Metrika counter -->
+<script async type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(86400654, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/86400654" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPLGTBHFF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPLGTBHFF4');
+</script></body></html>

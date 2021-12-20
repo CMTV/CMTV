@@ -1,0 +1,94 @@
+<!DOCTYPE html><!--
+
+
+ ▄████▄   ███▄ ▄███▓▄▄▄█████▓ ██▒   █▓
+ ▒██▀ ▀█  ▓██▒▀█▀ ██▒▓  ██▒ ▓▒▓██░   █▒
+ ▒▓█    ▄ ▓██    ▓██░▒ ▓██░ ▒░ ▓██  █▒░
+ ▒▓▓▄ ▄██▒▒██    ▒██ ░ ▓██▓ ░   ▒██ █░░
+ ▒ ▓███▀ ░▒██▒   ░██▒  ▒██▒ ░    ▒▀█░  
+ ░ ░▒ ▒  ░░ ▒░   ░  ░  ▒ ░░      ░ ▐░  
+   ░  ▒   ░  ░      ░    ░       ░ ░░  
+ ░        ░      ░     ░           ░░  
+ ░ ░             ░                  ░  
+ ░                                 ░   
+
+
+--><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Счет в уме — Петр Радько</title><meta name="description" content="Создал первое красивое и очень популярное приложение по счету в уме."><link rel="canonical" href="https://radkopeter.ru/projects/mental-calc/"><meta name="keywords" content="Петр Радько, CMTV"><meta name="og:image" content="https://radkopeter.ru/site/graphics/og-images/project-mental-calc.jpeg"><meta name="generator" content="CMTV Static Site Generator"><meta name="build-time" content="1639980712911"><link rel="icon" href="https://radkopeter.ru/favicon.ico"><link rel="icon" type="image/png" href="https://radkopeter.ru/site/graphics/favicon/favicon.png"><link rel="preload" as="style" href="/site/vendor/font-awesome/css/all.min.css"><link rel="stylesheet" href="/site/vendor/font-awesome/css/all.min.css"><link href="/site/vendor/photoswipe/photoswipe.css" rel="stylesheet"><script type="module" src="/site/scripts/lightbox.js"></script><link href="/site/styles/global.css" rel="stylesheet"><link href="/site/styles/project.css" rel="stylesheet"><script src="/site/scripts/global.js" defer></script><script src="/site/scripts/project.js" defer></script></head><body class="project"><script>(() =>
+{
+    ['color-scheme', 'theme-color'].forEach(name =>
+    {
+        let tag = document.createElement('meta');
+            tag.setAttribute('name', name);
+            tag.setAttribute('content', '');
+        
+        document.head.appendChild(tag);
+    });
+
+    var preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+    var preferTheme = (preferDark ? 'dark' : 'light');
+    var theme = localStorage.getItem('theme');
+
+    if (theme === null || theme === 'null')
+        theme = preferTheme;
+
+    setTheme(theme);
+})();
+
+function setTheme(theme)
+{
+    document.body.classList.toggle('theme--dark', (theme === 'dark'));
+
+    var themeColors = { light: '#ffffff', dark: '#333333' };
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[theme]);
+    document.querySelector('meta[name="color-scheme"]').setAttribute('content', theme);
+
+    localStorage.setItem('theme', theme);
+}
+
+function toggleTheme()
+{
+    var theme = localStorage.getItem('theme');
+    setTheme((theme === 'dark' ? 'light' : 'dark'));
+}</script><div class="bg"><div class="activities"></div><div class="fog"></div></div><div class="contactBlock"><div class="modal"><header><h2>Связаться со мной</h2><i class="fa-solid fa-times closeBtn"></i></header><ul><li>Я предпочитаю общаться в текстовом формате</li><li>Ясно и понятно обозначайте тему переписки</li><li>Готов обсудить самые безумные и интересные идеи!</li></ul><div class="email"><a href="mailto:newpetya@inbox.ru">newpetya@inbox.ru</a></div></div></div><div class="site"><header><div class="gradient"><div></div></div><div class="headerContent"><a class="me" href="/"><div class="logo"><div class="gradient"><div></div></div><img src="/site/graphics/me.png"></div><h1>Петр <span>Радько</span></h1></a><nav><a class="navItem projects" href="/projects" title="Что я делаю?"><i class="fa-solid fa-clone"></i><span>Проекты</span></a><a class="navItem life" href="/life" title="Моя борьба"><i class="fa-solid fa-heart"></i><span>Жизнь</span></a><div class="navItem themeSwitcher" onclick="toggleTheme()" title="Переключить цветовую схему"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></div><div class="navItem contact" title="Связаться со мной"><i class="fa-solid fa-envelope-open-text"></i></div></nav></div></header><main><div class="mainBlock"><header><div class="icon"><img class="invertible" src="/projects/mental-calc/icon.i.svg" loading="lazy"/></div><div class="title">Счет в уме</div><div class="desc">Создал первое красивое и очень популярное приложение по счету в уме.</div></header><div class="mainBar"><div class="facts"><div class="fact status"><div class="label">Статус</div><div class="data"><div title="Проект завершен" class="statusCircle statusCircle--done"></div> <div >Удалено</div></div></div><div class="fact downloads"><div class="label">Установки</div><div class="data">700 000+</div></div></div></div><div class="mainContent"><div data-pswp-gallery>    <a href="showcase/common-stats.png" target="_blank" data-pswp-width="720" data-pswp-height="1280"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/common-stats.png" alt="Общая статистика">
+</a>    <a href="showcase/full-analytics.png" target="_blank" data-pswp-width="720" data-pswp-height="1280"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/full-analytics.png" alt="Полная статистика">
+</a>    <a href="showcase/settings.png" target="_blank" data-pswp-width="720" data-pswp-height="1280"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/settings.png" alt="Настройки">
+</a>    <a href="showcase/play.png" target="_blank" data-pswp-width="720" data-pswp-height="1280"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/play.png" alt="Тренировка">
+</a>    <a href="showcase/training-results.png" target="_blank" data-pswp-width="720" data-pswp-height="1280"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/training-results.png" alt="Результаты тренировки">
+</a></div>
+<p>«Счет в уме» — первое и одно из самых популярных моих Android приложений.
+В нем велся учет полной статистики, подсчитывалась средняя скорость счета, можно было выбирать тип отрабатываемых операций, сложность примеров и время тренировки.</p>
+<p>Поначалу приложение почти никто не скачивал.
+Где-то через год произошел резкий скачок и оно попало на первое место.
+И уже с него не слезало, даже когда появились более функциональные аналоги.
+Одно только приложение приносило около 5000 рублей в месяц.</p>
+</div></div><div class="direction"><header><img class="type" src="/site/graphics/mix.svg" title="Производитель и потребитель"><div class="mainTags"><div class="area"><i class="fa-fw fa-solid fa-signs-post"></i><div class="label">Область</div><div class="value" title="Царица всех наук.">математика</div></div><div class="action"><i class="fa-fw fa-solid fa-hand-fist"></i><div class="label">Действие</div><div class="value">программирование</div></div><div class="form"><i class="fa-fw fa-solid fa-vector-square"></i><div class="label">Форма</div><div class="value">приложение</div></div></div></header><div class="tags"><div class="tag" title="Проекты, которые развивают меня как программиста.">информатика</div><div class="tag">android</div></div></div><div class="goalDateData"><header><div class="goalChart"><div class="total">2</div><div class="inner"></div><div class="fracs" style="background: conic-gradient( var(--c_goalChart-done) 0% 50%,var(--c_goalChart-fail) 50% 100% )"><div class="sep" style="transform: rotateZ(180deg)"></div><div class="sep" style="transform: rotateZ(360deg)"></div></div></div><div class="data"><div class="goalCount"><i class="fa-solid fa-crosshairs fa-fw"></i><div class="label">Цели</div><div class="value"><div class="done" title="Выполнено">1</div><div class="fail" title="Провалено">1</div></div></div><div class="start"><i class="fa-solid fa-plus fa-fw"></i><div class="label">Начало</div><div class="value">29 декабря 2014</div></div><div class="end"><i class="fa-solid fa-flag-checkered fa-fw"></i><div class="label">Конец</div><div class="value">22 февраля 2020</div></div></div></header><div class="goals"><div class="goal goal--done"><div class="num">1</div><div class="info"><div class="title">Публикация приложения</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-day"></i><span>29.12.2014</span></div></div></div></div><div class="goal goal--fail"><div class="num">2</div><div class="info"><div class="title">Удаление приложения</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-day"></i><span>22.02.2020</span></div></div></div></div></div></div><div class="timelineBlock"><header><i class="fa-solid fa-bars-staggered"></i><span>Хронокарта</span></header><div class="timeline"><div class="inner"><div class="hider"></div><div class="months"><div class="month" style="flex-basis: 8.493150684931507%">янв</div><div class="month" style="flex-basis: 7.671232876712329%">фев</div><div class="month" style="flex-basis: 8.493150684931507%">мар</div><div class="month" style="flex-basis: 8.21917808219178%">апр</div><div class="month" style="flex-basis: 8.493150684931507%">май</div><div class="month" style="flex-basis: 8.21917808219178%">июн</div><div class="month" style="flex-basis: 8.493150684931507%">июл</div><div class="month" style="flex-basis: 8.493150684931507%">авг</div><div class="month" style="flex-basis: 8.21917808219178%">сен</div><div class="month" style="flex-basis: 8.493150684931507%">окт</div><div class="month" style="flex-basis: 8.21917808219178%">ноя</div><div class="month" style="flex-basis: 8.493150684931507%">дек</div></div><div class="labels"><div class="label label--year">2014</div><div class="sep"></div><div class="label label--year">2020</div></div><div class="data"><div class="monthGuides"><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 7.671232876712329%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div><div class="guide" style="flex-basis: 8.21917808219178%"></div><div class="guide" style="flex-basis: 8.493150684931507%"></div></div><div class="rows"><div class="row"><div class="fragment wire done single goal-1" style="left: 99.45205479452055%; "><div class="marker" title="29.12.2014&#13;Публикация приложения"><div class="goalNum">1</div></div><div class="rect" title="29.12.2014&#13;Публикация приложения"></div></div></div><div class="sep"></div><div class="row"><div class="fragment wire fail single goal-2" style="left: 14.48087431693989%; "><div class="marker" title="22.02.2020&#13;Удаление приложения"><div class="goalNum">2</div></div><div class="rect" title="22.02.2020&#13;Удаление приложения"></div></div></div></div></div></div></div></div><div class="blocks"><div class="groupSepTop"></div><div class="block"><header><div class="info"><div class="title">Разработка</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Я хотел тренировать устный счет, но каждый раз печатать листки с примерами было неудобно.
+Было бы классно заниматься этим прямо в телефоне.
+На тот момент в Google Play было несколько приложений по счету в уме, но выглядели они отвратительно и имели очень скудный функционал.</p>
+<p>Решил сделать свою качественную и красивую версию.
+В первый раз попытался разработать собственный дизайн.
+Не потянул. Пришлось переписывать, используя рекомендуемые темы для Android приложений. И получилось!</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Удаление из магазина</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>В феврале 2020 года Google потребовал внести некоторые правки в приложение.
+Этого я сделать не мог, так как давно потерял ключ разработчика.
+В результате, приложение убрали из магазина.</p>
+</div></div></div><div class="groupSepBottom"></div></div></main></div><!-- Yandex.Metrika counter -->
+<script async type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(86400654, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/86400654" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPLGTBHFF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPLGTBHFF4');
+</script></body></html>

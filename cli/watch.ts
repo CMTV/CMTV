@@ -19,6 +19,8 @@ showMessages(buildConfig);
 console.log('\n' + chalk.bgCyanBright.black(' ОТСЛЕЖИВАНИЕ ИЗМЕНЕНИЙ... '));
 console.log();
 
+buildConfig.watch = true;
+
 IO.watch(['data', 'site'], { ignored: 'data/db/data.db', awaitWriteFinish: true }, (e) =>
 {
     console.log(chalk.bgMagentaBright.black(' ===== ПЕРЕСБОРКА ===== '));

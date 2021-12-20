@@ -1200,5 +1200,183 @@
         [
             "divine-body : diet"
         ]
+    },
+
+    "12.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 3
+            },
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 1
+            },
+            {
+                "project": "xcom-2",
+                "goals": "playthrough",
+                "duration": 3.8
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet"
+        ]
+    },
+
+    "13.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 2
+            },
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 2
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+    
+    "15.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 3
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": 2.5
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "16.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 5
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": "0:45"
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": 3.7
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "17.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 5
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": 1
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": 3.4
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "18.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 5
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": 5.7
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet"
+        ]
+    },
+
+    "19.12":
+    {
+        "time":
+        [
+            {
+                "project": "matrix-resurrections",
+                "goals": "watch",
+                "duration": "2:28"
+            },
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 2
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": 2.1
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet"
+        ],
+        "counters":
+        [
+            {
+                "counter": "movie",
+                "project": "matrix-resurrections"
+            }
+        ]
     }
 }

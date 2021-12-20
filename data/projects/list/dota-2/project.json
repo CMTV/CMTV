@@ -1,11 +1,42 @@
 {
     "title": "Dota 2",
-    "desc": "Игра",
+    "desc": "Великая игра, мой наркотик и мое проклятье.",
     "type": "in",
 
     "status":
     {
         "type": "pause",
-        "label": "Воздержание"
+        "label": "Ремиссия"
+    },
+
+    "start": "7.06.2016",
+    "end": "13.09.2021",
+
+    "facts":
+    [
+        {
+            "id": "hours",
+            "label": "Часы",
+            "data": "3 000+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-brands fa-steam",
+        "text": "Steam",
+        "link": "https://store.steampowered.com/app/570/Dota_2/",
+        "colors": "steam"
+    },
+
+    "tags":
+    [
+        "!отдых",
+        "!игра"
+    ],
+
+    "extra":
+    {
+        "timeFact": false
     }
 }

@@ -1,0 +1,11 @@
+{
+    "title": "Dragon Age: Inquisition",
+    "desc": "",
+    "type": "in",
+
+    "status":
+    {
+        "type": "do",
+        "label": "Играю"
+    }
+}

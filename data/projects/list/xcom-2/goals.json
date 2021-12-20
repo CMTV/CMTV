@@ -2,6 +2,8 @@
     "playthrough":
     {
         "title": "Прохождение",
-        "status": "do"
+        "status": "fail",
+        "start": "2.12.2021",
+        "end": "12.12.2021"
     }
 }

@@ -1,13 +1,13 @@
 {
     "task":
     {
-        "icon":     "fas fa-square-root-alt",
+        "icon":     "fa-solid fa-square-root-alt",
         "title":    "Задачи"
     },
 
     "book":
     {
-        "icon":     "fas fa-book",
+        "icon":     "fa-solid fa-book",
         "title":    "Книги"
     },
 
@@ -15,5 +15,11 @@
     {
         "icon":     "fa-solid fa-gamepad",
         "title":    "Игры"
+    },
+
+    "movie":
+    {
+        "icon": "fa-solid fa-film",
+        "title": "Фильмы"
     }
 }

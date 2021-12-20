@@ -15,6 +15,12 @@
         "xenforo":      { "title": "XenForo", "desc": "Форумный движок." },
 
         //
+        // Mobile
+        //
+
+        "android":      {},
+
+        //
         // Gamedev
         //
 

@@ -8,6 +8,8 @@ export class BuildConfig
     devMode:    boolean;
     whole:      boolean;
 
+    watch:      boolean;
+
     //
 
     makeWholeSite(): boolean

@@ -38,7 +38,8 @@ export function build(buildConfig: BuildConfig)
     console.log('\n' + chalk.bgGreen.black(' Сборка завершена! ') + ' ' + chalk.gray((endTime - beginTime) + 'ms'));
     console.log();
 
-    process.exit(0);
+    if (!buildConfig.watch)
+        process.exit(0);
 }
 
 //

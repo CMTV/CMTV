@@ -6,7 +6,8 @@
         "build-dev": "npx ts-node cli/build --dev",
         "watch-fill": "npx ts-node cli/watch",
         "watch-site": "npx ts-node cli/watch --whole --site",
-        "server": "npx ts-node cli/server"
+        "server": "npx ts-node cli/server",
+        "check": "npx ts-node cli/check"
     },
     "dependencies": {
         "@cmtv/processes": "^1.0.6",

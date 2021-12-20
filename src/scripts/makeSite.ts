@@ -1,7 +1,5 @@
 import chalk from "chalk";
-import { DB, Db } from "sqlean";
 
-import { IO } from "src/util/IO";
 import { BUILD_CONFIG } from "src/BuildConfig";
 
 // Процессы
@@ -13,18 +11,13 @@ import { SITEMAP, WriteSitemap } from "src/process/site/Sitemap";
 import { Page_Index } from "src/process/site/Page_Index";
 import { Page_Projects } from "src/process/site/Page_Projects";
 import { SearchGroup } from "src/process/site/search/SearchGroup";
+import { UtilDb } from "src/util/Db";
 
 export function makeSite()
 {
     console.log('\n' + chalk.bold.magenta(`Запуск ${BUILD_CONFIG.devMode ? 'dev-' : ''}сборки сайта!`));
-
-    if (!DB._db)
-    {
-        if (!IO.exists('data/db/data.db'))
-            throw new Error(chalk.bgRedBright.black(' БАЗА ДАННЫХ ОТСУТСТВУЕТ! '));
-
-        Db.Open('data/db/data.db');
-    }
+    
+    UtilDb.requestDb();
 
     SITEMAP.reset();
 

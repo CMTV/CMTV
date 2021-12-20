@@ -1,11 +1,28 @@
 {
     "title": "XCOM 2",
-    "desc": "",
+    "desc": "Не осилил партизанскую войну против инопланетян за Землю.",
     "type":"in",
 
     "status":
     {
-        "type": "do",
-        "label": "Играю"
-    }
+        "type": "fail",
+        "label": "Не осилил"
+    },
+
+    "start": "2.12.2021",
+    "end": "12.12.2021",
+
+    "action":
+    {
+        "icon": "fa-brands fa-steam",
+        "text": "Steam",
+        "link": "https://store.steampowered.com/app/268500/XCOM_2",
+        "colors": "steam"
+    },
+
+    "tags":
+    [
+        "!отдых",
+        "!игра"
+    ]
 }

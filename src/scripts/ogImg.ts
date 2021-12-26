@@ -1,4 +1,7 @@
+import * as readline from 'readline'
+
 import chalk from "chalk";
+
 import { Global } from "src/Global";
 import { paint, paintProject } from "src/util/Paint";
 
@@ -22,7 +25,7 @@ export async function paintOgImages()
     {
         let imgData = OGIMG.list[i];
         
-        process.stdout.cursorTo(0);
+        readline.cursorTo(process.stdout, 0);
         process.stdout.write(chalk.bgWhite.black(' Отрисовка Open Graph изображений ') + ' ' + `${i+1} / ${len}`);
 
         if (!imgData.text) continue;

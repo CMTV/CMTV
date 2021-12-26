@@ -5,6 +5,7 @@ import { Config, SET_CONFIG } from "src/Config";
 import { IO } from "src/util/IO";
 import { filldb } from "./filldb";
 import { makeSite } from "./makeSite";
+import { paintOgImages } from "./ogImg";
 
 export function build(buildConfig: BuildConfig)
 {
@@ -38,8 +39,8 @@ export function build(buildConfig: BuildConfig)
     console.log('\n' + chalk.bgGreen.black(' Сборка завершена! ') + ' ' + chalk.gray((endTime - beginTime) + 'ms'));
     console.log();
 
-    if (!buildConfig.watch)
-        process.exit(0);
+    if (!buildConfig.devMode)
+        paintOgImages();
 }
 
 //

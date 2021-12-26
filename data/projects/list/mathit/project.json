@@ -1,0 +1,41 @@
+{
+    "title": "Math It",
+    "desc": "Понятный, подробный и интересный учебник по математике. Попытка #2",
+    "type": "out",
+
+    "status":
+    {
+        "type": "fail",
+        "label": "Закрыт"
+    },
+
+    "start": "18.03.2019",
+    "end": "13.01.2020",
+
+    "facts":
+    [
+        {
+            "id": "articles",
+            "label": "Статьи",
+            "data": 13
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-brands fa-github",
+        "text": "Исходный код",
+        "link": "https://github.com/CMTV/mathit",
+        "colors": "github"
+    },
+
+    "tags":
+    [
+        "!математика",
+        "!просвещение",
+        "!сайт",
+        "ssg",
+        "учебник",
+        "форум"
+    ]
+}

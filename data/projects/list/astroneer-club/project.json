@@ -1,0 +1,58 @@
+{
+    "title": "Astroneer Club",
+    "desc": "Первый и самый популярный русскоязычный портал по игре Astroneer.",
+    "type": "out",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Закрыт"
+    },
+
+    "start": "25.12.2016",
+    "end": "4.02.2019",
+
+    "facts":
+    [
+        {
+            "id": "news",
+            "label": "Новостей",
+            "data": "150+"
+        },
+
+        {
+            "id": "forum-users",
+            "label": "Форумчане",
+            "data": "500+"
+        },
+
+        {
+            "id": "vk-subs",
+            "label": "Подписчики ВК",
+            "data": "1 000+"
+        }
+    ],
+
+    "links":
+    [
+        {
+            "icon": "fa-brands fa-youtube",
+            "text": "YouTube канал",
+            "link": "https://www.youtube.com/channel/UCaaUShqpBZMSvjTkOGNhPVA"
+        },
+
+        {
+            "icon": "fa-brands fa-vk",
+            "text": "Группа ВКонтакте",
+            "link": "https://vk.com/ruastroneer"
+        }
+    ],
+
+    "tags":
+    [
+        "!просвещение",
+        "!сайт",
+        "форум",
+        "игра"
+    ]
+}

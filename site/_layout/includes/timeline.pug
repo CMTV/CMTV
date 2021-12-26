@@ -1,73 +1,62 @@
 include /includes/icon
 
 mixin timeline(timeline)
-    - daysInYear = 365;
-    -
-        monthData = [
-            ['янв', 31 / daysInYear],
-            ['фев', 28 / daysInYear],
-            ['мар', 31 / daysInYear],
-            ['апр', 30 / daysInYear],
-            ['май', 31 / daysInYear],
-            ['июн', 30 / daysInYear],
-            ['июл', 31 / daysInYear],
-            ['авг', 31 / daysInYear],
-            ['сен', 30 / daysInYear],
-            ['окт', 31 / daysInYear],
-            ['ноя', 30 / daysInYear],
-            ['дек', 31 / daysInYear]
-        ];
-
     .timelineBlock
         header
             i.fa-solid.fa-bars-staggered
             span Хронокарта
         .timeline
+            -
+                let monthPercent = (days) => { return (100 * days / 366) + '%'; };
+                
+                let months = [ ['янв', 31], ['фев', 29], ['мар', 31], ['апр', 30], ['май', 31], ['июн', 30], ['июл', 31], ['авг', 31], ['сен', 30], ['окт', 31], ['ноя', 30], ['дек', 31] ];
+                    months = months.map(month => [month[0], monthPercent(month[1])]);
+
             .inner
-                .hider
+            
+                .corner
+                
+                .monthLabels
+                    each month in months
+                        .label(style= `flex-basis: ${month[1]}`)= month[0]
 
-                .months
-                    each month, i in monthData
-                        .month(style= `flex-basis: ${monthData[i][1] * 100}%`)= monthData[i][0]
-
-                .labels
+                .dataLabels
                     each groupRow, i in timeline.groupRows
-                        case groupRow.type
-                            when 'project'
-                                .label.label--project
-                                    a.icon(href= groupRow.data.link, title= groupRow.data.title)
-                                        +icon(groupRow.data.icon)
+                        .labelContainer
+                            case groupRow.type
+                                when 'project'
+                                    .label.label--project
+                                        a.icon(href= groupRow.data.link, title= groupRow.data.title)
+                                            +icon(groupRow.data.icon)
 
-                            when 'year'
-                                .label.label--year= groupRow.data
-                        
-                        - let j = 1;
-                        while j < groupRow.rows.length
-                            .vacant
-                            - j++;
-                        
+                                when 'year'
+                                    .label.label--year= groupRow.data
+                            
+                            - let j = 1;
+                            while j < groupRow.rows.length
+                                .extraRow
+                                - j++;
+                            
                         if (i !== timeline.groupRows.length - 1)
                             .sep
-
+                
                 .data
                     .monthGuides
-                        - let monthI = 0;
-                            while monthI < 12
-                                .guide(style= `flex-basis: ${monthData[monthI][1] * 100}%`)
-                                - monthI++;
-                    
+                        each month in months
+                            .guide(style= `flex-basis: ${month[1]}`)
+
                     .rows
                         each groupRow, i in timeline.groupRows
                             each row in groupRow.rows
                                 .row
                                     each fragment in row.fragments
                                         .fragment(
-                                            class= `${fragment.type} ${fragment.status} ${fragment.single ? 'single' : ''} goal-${fragment.goalNum}`,
+                                            class= `${fragment.type} ${fragment.status} ${fragment.single ? 'single' : ''} goal-${fragment.goalNum}`
                                             style= `left: ${fragment.left}%; ` + (fragment.width ? `width: ${fragment.width}%;` : '')
                                         )
                                             if (fragment.showGoalNum)
-                                                .marker(title!= fragment.label): .goalNum= fragment.goalNum
+                                                .marker(title!= fragment.label)= fragment.goalNum
                                             .rect(title!= fragment.label)
 
-                            if (i != timeline.groupRows.length - 1)
+                            if (i !== timeline.groupRows.length - 1)
                                 .sep

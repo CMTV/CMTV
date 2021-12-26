@@ -57,18 +57,26 @@ export class FillGoals extends ProjectsProcess
                 if (rawGoal.plan)
                     rawGoal.plan.forEach(strFragment =>
                     {
+                        let sure = true;
+
+                        if (strFragment[0] === '?')
+                        {
+                            strFragment = strFragment.substring(1);
+                            sure = false;
+                        }
+                        
                         Edge.getEdges(strFragment).forEach(edge =>
                         {
                             let dbFragment = new DbTimelineFragment;
                                 dbFragment.timelineFragmentId = fragmentId++;
                                 dbFragment.projectId =          projectId;
                                 dbFragment.goalId =             dbGoal.goalId;
-                                dbFragment.type =               'wire';
+                                dbFragment.type =               'plan' + (!sure ? 'Unsure' : '');
 
                                 dbFragment.start =              edge.start;
                                 dbFragment.end =                edge.end;
                                 dbFragment.year =               edge.year;
-                            
+
                             dbFragments.push(dbFragment);
                         });
                     });

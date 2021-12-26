@@ -51,7 +51,7 @@ export class FillReportTimelineFragments extends Process
                             fragment.timelineFragmentId = fragmentId++;
                             fragment.projectId = projectId;
                             fragment.goalId = +goalId;
-                            fragment.type = 'fill';
+                            fragment.type = 'report';
                             
                             fragment.start =    edge.start;
                             fragment.end =      edge.end;

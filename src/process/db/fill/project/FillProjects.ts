@@ -26,7 +26,7 @@ export class FillProjects extends ProjectsProcess
                 
                 project.projectId = projectId;
                 
-                project.title =     dataProject.title;
+                project.title =     dataProject.title.replace(/( |^)\"(.+?)\"( |$)/gm, '$1«$2»$3');
                 project.desc =      dataProject.desc;
                 project.type =      dataProject.type;
                 project.status =    dataProject.status;

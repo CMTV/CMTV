@@ -155,7 +155,7 @@ export class Fragment
         
         let totalDays = UtilDate.getDaysInYear(start);
         
-        this.left = (UtilDate.getDayInYear(start) / totalDays) * 100;
+        this.left = ((UtilDate.getDayInYear(start) - 1) / totalDays) * 100;
         
         if (end)
             this.width = ((UtilDate.getDayInYear(end) / totalDays) * 100) - this.left;

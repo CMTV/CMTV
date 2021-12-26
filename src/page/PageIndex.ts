@@ -6,6 +6,8 @@ import { ViewTimeChart } from "src/entity/timeChart/view";
 export class PageIndex extends Page
 {
     pageName = 'index';
+    hasScript = true;
+    
     dest = () => 'index.html';
 
     maxAge: number;

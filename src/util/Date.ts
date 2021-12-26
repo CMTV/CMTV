@@ -53,8 +53,10 @@ export class UtilDate
     {
         if (!date) return null;
 
-        let year = this.getYear(date);
-        return ((year % 4 === 0 && year % 100 > 0) || year % 400 == 0) ? 366 : 365;
+        //let year = this.getYear(date);
+        //return ((year % 4 === 0 && year % 100 > 0) || year % 400 == 0) ? 366 : 365;
+
+        return 366;
     }
 
     static getDayInYear(date: DateLike)
@@ -62,7 +64,7 @@ export class UtilDate
         if (!date) return null;
 
         date = this.dateFrom(date);
-        return (Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) - Date.UTC(date.getFullYear(), 0, 0)) / 24 / 60 / 60 / 1000;
+        return (Date.UTC(2020, date.getMonth(), date.getDate()) - Date.UTC(2020, 0, 0)) / 24 / 60 / 60 / 1000;
     }
 
     static getFancyTime(hours: number)

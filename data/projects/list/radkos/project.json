@@ -1,0 +1,39 @@
+{
+    "title": "Семейная школа Радько",
+    "desc": "Сайт про нашу семейную школу с полезными статьями и афоризмами.",
+    "type": "out",
+
+    "status":
+    {
+        "type": "do",
+        "label": "Работает"
+    },
+
+    "start": "29.10.2020",
+
+    "action":
+    {
+        "icon": "fa-solid fa-globe",
+        "text": "Сайт",
+        "link": "https://radkos.ru",
+        "colors": "other"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-face-laugh",
+            "text": "Смешные афоризмы",
+            "link": "https://radkos.ru/funny/"
+        }
+    ],
+
+    "tags":
+    [
+        "!я",
+        "!сайт",
+        "wordpress",
+        "php",
+        "css"
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "tickets":
+    {
+        "title": "Покупка билетов в кино",
+        "counted": false,
+        "status": "done",
+        "date": "23.12.2021",
+        "plan": ["23.12.2021"]
+    },
+
+    "watch":
+    {
+        "title": "Просмотр фильма",
+        "counted": false,
+        "status": "done",
+        "date": "26.12.2021",
+        "plan": ["26.12.2021"]
+    }
+}

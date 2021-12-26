@@ -1,5 +1,6 @@
 import chalk from "chalk";
-import { DB, Db } from "sqlean";
+
+import { UtilDb } from "src/util/Db";
 
 // Процессы
 import { CreateFromScheme } from "src/process/db/CreateFromScheme";
@@ -16,8 +17,7 @@ export function filldb()
 
     (new CreateFromScheme).run();
 
-    if (!DB._db)
-        Db.Open('data/db/data.db');
+    UtilDb.requestDb();
 
     (new FillTagCategories).run();
     (new FillTags).run();

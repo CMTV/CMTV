@@ -60,50 +60,71 @@ export function paintProject(iconPath: string, projectTitle: string, dest: strin
 
 function drawText(ctx: NodeCanvasRenderingContext2D, text: string, isProject: boolean)
 {
-    let gap = 50;
-    let maxWidth = W - 2 * gap - (isProject ? iconRectSize + 2 * gap : 0);
-
-    let outText;
-    let fontSize;
-
-    let tWidth;
-    let tHeight;
-
-    let words = text.split(' ');
-    
     ctx.fillStyle = '#fff';
     ctx.textBaseline = 'top';
 
-    loop:
-    for (let lines = 1; lines <= words.length; lines++)
-    {
-        outText = chunkify(words, lines).map(arr => arr.join(' ')).join('\n');
+    let gap = 50;
+    let maxWidth = W - 2 * gap - (isProject ? iconRectSize + 2 * gap : 0);
 
-        fontSize = fontMax;
-        while (fontSize > fontMin)
-        {
-            ctx.font = fontSize + 'px "Open Sans"';
+    let textData = getFitTextData(ctx, [text], maxWidth);
 
-            let measure = ctx.measureText(outText);
-
-            tWidth = measure.width;
-            tHeight = measure.actualBoundingBoxAscent + measure.actualBoundingBoxDescent;
-
-            if (measure.width <= maxWidth)
-                break loop;
-
-            fontSize--;
-        }
-    }
+    let outText =   textData.text;
+    let fontSize =  textData.fontSize;
+    let tWidth =    textData.measure.width;
+    let tHeight =   textData.measure.actualBoundingBoxAscent + textData.measure.actualBoundingBoxDescent;
 
     let x;
 
     if (!isProject) x = (W - tWidth) / 2;
     else x = (W - tWidth + gap + iconRectSize) / 2;
 
-    ctx.fillText(outText, x, (H - tHeight) / 2 - 30 /* Магическая корректировка */ );
+    ctx.font = fontSize + 'px "Open Sans"';
+    ctx.fillText(outText, x, (H - tHeight) / 2 - 25 /* Магическая корректировка */ );
 
     return x - gap - iconRectSize;
+}
+
+function getFitTextData(ctx: NodeCanvasRenderingContext2D, lines: string[], maxWidth: number)
+{
+    let text = lines.join('\n');
+    let fontSize = fontMax;
+
+    while (fontSize >= fontMin)
+    {
+        ctx.font = fontSize + 'px "Open Sans"';
+        
+        let measure = ctx.measureText(text);
+
+        if (measure.width <= maxWidth)
+            return { text: text, fontSize: fontSize, measure: measure }
+        
+        fontSize--;
+    }
+
+    let maxLineI;
+
+    for (let i = 0; i < lines.length; i++)
+    {
+        if (ctx.measureText(lines[i]).width <= maxWidth)
+            continue;
+
+        maxLineI = i;
+        break; 
+    }
+
+    let newLines = [...lines];
+
+    let words = newLines[maxLineI].split(' ');
+    let lastWord = words.pop();
+
+    newLines[maxLineI] = words.join(' ');
+
+    if (newLines.length === maxLineI + 1)
+        newLines.push(lastWord);
+    else
+        newLines[maxLineI + 1] = lastWord + ' ' + newLines[maxLineI + 1];
+
+    return getFitTextData(ctx, newLines, maxWidth);
 }
 
 /** @see https://stackoverflow.com/a/3368118/3050341 */
@@ -140,45 +161,4 @@ function roundRect(ctx, x, y, width, height, radius, fill = undefined, stroke = 
     if (stroke) {
         ctx.stroke();
     }
-}
-
-/** @see https://stackoverflow.com/a/8189268/3050341 */
-function chunkify(a, n, balanced = true) {
-    
-    if (n < 2)
-        return [a];
-
-    var len = a.length,
-            out = [],
-            i = 0,
-            size;
-
-    if (len % n === 0) {
-        size = Math.floor(len / n);
-        while (i < len) {
-            out.push(a.slice(i, i += size));
-        }
-    }
-
-    else if (balanced) {
-        while (i < len) {
-            size = Math.ceil((len - i) / n--);
-            out.push(a.slice(i, i += size));
-        }
-    }
-
-    else {
-
-        n--;
-        size = Math.floor(len / n);
-        if (len % size === 0)
-            size--;
-        while (i < size * n) {
-            out.push(a.slice(i, i += size));
-        }
-        out.push(a.slice(size * n));
-
-    }
-
-    return out;
 }

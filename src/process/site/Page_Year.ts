@@ -25,8 +25,6 @@ export class Page_Year extends Process
             page.seo.title = year;
             page.seo.desc = `Основные итоги, проекты, хронокарта и распределение времени за ${year} год.`;
 
-            page.ogImg = new PageOgImg(page.pageName, year + ' год');
-
             let dataResults = UtilDataYear.getResults(year);
             if (dataResults)
                 page.results = dataResults.map(dataResult => new ViewYearResult(dataResult));
@@ -47,7 +45,10 @@ export class Page_Year extends Process
             page.tagChart = ViewTimeChart.forYear(year);
 
             if (page.results || page.counters || page.timeline || page.tagChart)
+            {
+                page.ogImg = new PageOgImg(page.pageName + '-' + year, year + ' год');
                 page.compile();
+            }
         });
     }
 }

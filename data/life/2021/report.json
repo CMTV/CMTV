@@ -1225,6 +1225,13 @@
         "checks":
         [
             "divine-body : diet"
+        ],
+        "counters":
+        [
+            {
+                "counter": "game",
+                "project": "xcom-2"
+            }
         ]
     },
 
@@ -1243,6 +1250,15 @@
                 "duration": 2
             }
         ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "14.12":
+    {
         "checks":
         [
             "divine-body : diet",
@@ -1376,6 +1392,177 @@
             {
                 "counter": "movie",
                 "project": "matrix-resurrections"
+            }
+        ]
+    },
+
+    "20.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 3
+            },
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 2.5
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": 5.5
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "21.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 3
+            },
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 3
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": 3.3
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "22.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 5
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": 2.5
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "23.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 4
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": 1
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": 4
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "24.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 3
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": 1
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": "3:30"
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet"
+        ]
+    },
+
+    "25.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 5
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": 1
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": "3:30"
+            }
+        ],
+        "checks": ["divine-body : diet"]
+    },
+
+    "26.12":
+    {
+        "time":
+        [
+            {
+                "project": "spider-man-no-way-home",
+                "goals": "watch",
+                "duration": "2:28"
+            }
+        ],
+        "counters":
+        [
+            {
+                "counter": "movie",
+                "project": "spider-man-no-way-home"
             }
         ]
     }

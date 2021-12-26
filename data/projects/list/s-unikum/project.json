@@ -1,0 +1,38 @@
+{
+    "title": "Образовательный центр \"УникУм\"",
+    "desc": "Сайт-визитка образовательного центра моего друга Николая Нагибина.",
+    "type": "out",
+    
+    "status":
+    {
+        "type": "done",
+        "label": "Разработал"
+    },
+
+    "date": "4.04.2020",
+
+    "action":
+    {
+        "icon": "fa-brands fa-github",
+        "text": "Исходный код",
+        "link": "https://github.com/CMTV/s-unikum",
+        "colors": "github"
+    },
+
+    "related":
+    {
+        "severomorsk": "Я занимался этим проектом на севере."
+    },
+
+    "tags":
+    [
+        "!программирование",
+        "!сайт",
+        "node.js",
+        "gulp",
+        "ssg",
+        "pug",
+        "scss",
+        "js"
+    ]
+}

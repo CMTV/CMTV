@@ -73,7 +73,7 @@ export class Edge
             if (i === yearDiff)
                 edges.push(new Edge(currentYear + '.01.1', (end === currentYear + '.01.1') ? null : end));
             else
-                edges.push(new Edge(currentYear + '.01.1', currentYear + '12.31'));
+                edges.push(new Edge(currentYear + '.01.1', currentYear + '.12.31'));
         }
 
         return edges;

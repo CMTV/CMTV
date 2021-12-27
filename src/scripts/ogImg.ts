@@ -30,13 +30,14 @@ export async function paintOgImages()
 
         if (!imgData.text) continue;
 
-        await new Promise(resolve => {
+        await new Promise<void>(resolve => {
             let dest = `dist/site/graphics/og-images/${imgData.id}.jpeg`;
 
             if (imgData.icon) paintProject(imgData.icon, imgData.text, dest);
             else paint(imgData.text, dest);
 
-            resolve("done");
+            if (i === len - 1) process.exit(0);
+            resolve();
         });
     }
 }

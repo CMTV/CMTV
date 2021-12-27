@@ -75,7 +75,7 @@ export class PageOgImg
 
     constructor(id: string, title: string = null, projectId: string = null)
     {
-        if (this.id === 'index') return;
+        if (id === 'index') return;
 
         this.id =       id;
         this.title =    title;

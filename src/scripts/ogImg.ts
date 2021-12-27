@@ -1,4 +1,4 @@
-import * as readline from 'readline'
+import * as readline from 'readline';
 
 import chalk from "chalk";
 
@@ -36,7 +36,6 @@ export async function paintOgImages()
             if (imgData.icon) paintProject(imgData.icon, imgData.text, dest);
             else paint(imgData.text, dest);
 
-            if (i === len - 1) process.exit(0);
             resolve();
         });
     }

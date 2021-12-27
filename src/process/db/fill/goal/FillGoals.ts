@@ -2,7 +2,7 @@ import { Db } from "sqlean";
 
 import { IO } from "src/util/IO";
 import { UtilDate } from "src/util/Date";
-import { DataGoalProgress, DataGoals } from "src/entity/goal/data";
+import { DataGoals } from "src/entity/goal/data";
 import { DbGoal } from "src/entity/goal/db";
 import { UtilDataProject } from "src/entity/project/data";
 import { DbTimelineFragment, Edge } from "src/entity/timelineFragment/db";

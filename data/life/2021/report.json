@@ -1556,6 +1556,21 @@
                 "project": "spider-man-no-way-home",
                 "goals": "watch",
                 "duration": "2:28"
+            },
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": "2:30"  
+            },
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": "0:30"
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": "3:30"
             }
         ],
         "counters":

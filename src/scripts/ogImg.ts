@@ -36,6 +36,8 @@ export async function paintOgImages()
             if (imgData.icon) paintProject(imgData.icon, imgData.text, dest);
             else paint(imgData.text, dest);
 
+            if (i === len - 1) process.exit(0);
+
             resolve();
         });
     }

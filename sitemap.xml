@@ -2,9 +2,11 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url><loc>https://radkopeter.ru/projects</loc></url>
+    <url><loc>https://radkopeter.ru/projects/all-tasks</loc></url>
     <url><loc>https://radkopeter.ru/projects/astroneer-club</loc></url>
     <url><loc>https://radkopeter.ru/projects/cmtv-pro</loc></url>
     <url><loc>https://radkopeter.ru/projects/combinatorics-book</loc></url>
+    <url><loc>https://radkopeter.ru/projects/craftmania</loc></url>
     <url><loc>https://radkopeter.ru/projects/cs-go</loc></url>
     <url><loc>https://radkopeter.ru/projects/deus-ex-hr</loc></url>
     <url><loc>https://radkopeter.ru/projects/divine-body</loc></url>
@@ -12,6 +14,7 @@
     <url><loc>https://radkopeter.ru/projects/dota-2</loc></url>
     <url><loc>https://radkopeter.ru/projects/dragon-age-inquisition</loc></url>
     <url><loc>https://radkopeter.ru/projects/dva</loc></url>
+    <url><loc>https://radkopeter.ru/projects/eco-effect</loc></url>
     <url><loc>https://radkopeter.ru/projects/frontend-ege</loc></url>
     <url><loc>https://radkopeter.ru/projects/google-digital-generation</loc></url>
     <url><loc>https://radkopeter.ru/projects/inner-core-logotype</loc></url>
@@ -35,10 +38,12 @@
     <url><loc>https://radkopeter.ru/projects/step-into-the-future</loc></url>
     <url><loc>https://radkopeter.ru/projects/the-walking-dead</loc></url>
     <url><loc>https://radkopeter.ru/projects/tictactoe3d</loc></url>
+    <url><loc>https://radkopeter.ru/projects/topmath</loc></url>
     <url><loc>https://radkopeter.ru/projects/translation-level-up</loc></url>
     <url><loc>https://radkopeter.ru/projects/translation-neural</loc></url>
     <url><loc>https://radkopeter.ru/projects/unity-i18n</loc></url>
     <url><loc>https://radkopeter.ru/projects/webinar-neural-networks</loc></url>
+    <url><loc>https://radkopeter.ru/projects/wiki-proves</loc></url>
     <url><loc>https://radkopeter.ru/projects/wp-insert-math</loc></url>
     <url><loc>https://radkopeter.ru/projects/xcom-2</loc></url>
     <url><loc>https://radkopeter.ru/projects/xf-badges</loc></url>

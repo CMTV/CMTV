@@ -1,0 +1,30 @@
+{
+    "title": "Eco Effect",
+    "desc": "Масштабный сайт для голосования в рамках экологического проекта сестры.",
+    "type": "mix",
+    
+    "status":
+    {
+        "type": "fail",
+        "label": "Разработал"
+    },
+
+    "start": "25.10.2016",
+    "end": "28.05.2017",
+
+    "action":
+    {
+        "icon": "fa-brands fa-github",
+        "text": "Исходный код",
+        "link": "https://github.com/CMTV/Eco-Effect",
+        "colors": "github"
+    },
+
+    "tags":
+    [
+        "!информатика",
+        "!программирование",
+        "!сайт",
+        "php", "css", "js", "vk"
+    ]
+}

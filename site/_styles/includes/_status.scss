@@ -4,7 +4,7 @@
 
 $statusMap: (
     todo:   #7B7B7B,
-    do:     #C3A900,
+    do:     #e2c50a,
     pause:  #ED9633,
     fail:   #DB1F1F,
     done:   #0092DB
@@ -22,7 +22,7 @@ $statusMap: (
 
 @function getBg($statusName)
 {
-    @return color.adjust(map.get($statusMap, $statusName), $lightness: 15%, $saturation: -35%);
+    @return color.adjust(map.get($statusMap, $statusName), $lightness: 20%);
 }
 
 @function getBorder($statusName)

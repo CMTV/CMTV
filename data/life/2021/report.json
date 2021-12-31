@@ -1573,11 +1573,109 @@
                 "duration": "3:30"
             }
         ],
+        "checks": ["divine-body : diet"],
         "counters":
         [
             {
                 "counter": "movie",
                 "project": "spider-man-no-way-home"
+            }
+        ]
+    },
+
+    "27.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "v2",
+                "duration": 4
+            },
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": "1:30"
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": "1:30"
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": 3
+            }
+        ],
+        "checks": ["divine-body : diet"]
+    },
+
+    "28.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 5
+            },
+            {
+                "project": "combinatorics-book",
+                "goals": "tasks",
+                "duration": "1:30"
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": "3:30"
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ],
+        "events":
+        [
+            {
+                "title": "10 подтягиваний!",
+                "desc": "Как в свои старые лучшие годы!"
+            }
+        ]
+    },
+
+    "29.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 5
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": 4
+            }
+        ],
+        "checks": ["divine-body : diet"]
+    },
+
+    "30.12":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 5
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": 3
             }
         ]
     }

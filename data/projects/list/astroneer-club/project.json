@@ -45,6 +45,18 @@
             "icon": "fa-brands fa-vk",
             "text": "Группа ВКонтакте",
             "link": "https://vk.com/ruastroneer"
+        },
+
+        {
+            "icon": "fa-brands fa-twitter",
+            "text": "Twitter аккаунт",
+            "link": "https://twitter.com/Astroneer_RU"
+        },
+
+        {
+            "icon": "fa-solid fa-table",
+            "text": "Правки перевода",
+            "link": "https://docs.google.com/spreadsheets/d/11nTbfEm-UnT90NZopx6xqPGDlMgLjsu0OE8tW9iZHUA/edit?usp=sharing"
         }
     ],
 
@@ -53,6 +65,10 @@
         "!просвещение",
         "!сайт",
         "форум",
-        "игра"
+        "игра",
+        "wordpress",
+        "xenforo",
+        "программирование",
+        "видео"
     ]
 }

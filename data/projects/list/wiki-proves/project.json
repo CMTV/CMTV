@@ -1,0 +1,47 @@
+{
+    "title": "Wiki Proves",
+    "desc": "Энциклопедия доказательств теорем, лемм и других утверждений.",
+    "type": "mix",
+
+    "status":
+    {
+        "type": "fail",
+        "label": "Закрыт"
+    },
+
+    "start": "25.11.2015",
+    "end": "10.06.2016",
+
+    "facts":
+    [
+        {
+            "id": "proofs",
+            "label": "Доказательств",
+            "data": "96"
+        },
+
+        {
+            "id": "video",
+            "label": "Ролик",
+            "data": "1"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-brands fa-youtube",
+        "text": "Канал",
+        "link": "https://www.youtube.com/channel/UCM8TRCrLpH1dphJYMLF0i2g",
+        "colors": "youtube"
+    },
+
+    "tags":
+    [
+        "!математика",
+        "!просвещение",
+        "!сайт",
+        "изучение",
+        "видео",
+        "youtube"
+    ]
+}

@@ -16,8 +16,12 @@
 @include actionTheme('steam', #47A5FF, #2F7EDF);
 @include actionTheme('youtube', #ab0c0c, #f73939);
 @include actionTheme('google-play', #658E36, #8BC34A);
+@include actionTheme('vk', #0077FF, #005FCC);
 
 @include actionTheme('xenforo', #185886, #498FC0);
 
 @include actionTheme('github', #575757, #848484);
 @include actionTheme('other', #575757, #848484);
+
+// Minecraft Modding
+.actionContainer > .actionBtn > .bg.mcmodding { background: linear-gradient(0deg, #824B1B, #B57D4E 80%, #00933D 90%); }

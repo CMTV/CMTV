@@ -1,0 +1,29 @@
+{
+    "title": "CraftMania",
+    "desc": "Попытка вести собственные Minecarft сервера и сказочно разбогатеть!",
+    "type": "out",
+
+    "status":
+    {
+        "type": "fail",
+        "label": "Не пошло"
+    },
+
+    "start": "11.08.2012",
+    "end": "21.08.2012",
+
+    "action":
+    {
+        "icon": "fa-brands fa-vk",
+        "text": "Группа сервера",
+        "link": "https://vk.com/cmserver",
+        "colors": "vk"
+    },
+
+    "tags":
+    [
+        "!игра",
+        "vk",
+        "сайт"
+    ]
+}

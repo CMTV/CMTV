@@ -1,11 +1,57 @@
 {
     "title": "Minecraft Modding",
-    "desc": "",
+    "desc": "Самый крупный русскоязычный портал по созданию Minecraft модов.",
     "type": "mix",
 
     "status":
     {
         "type": "pause",
         "label": "Тех. поддержка"
-    }
+    },
+
+    "start": "21.11.2013",
+
+    "facts":
+    [
+        {
+            "id": "articles",
+            "label": "Статьи",
+            "data": "100+"
+        },
+
+        {
+            "id": "topics",
+            "label": "Темы",
+            "data": "15 000+"
+        },
+
+        {
+            "id": "users",
+            "label": "Форумчане",
+            "data": "7 500+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-comments",
+        "text": "Форум",
+        "link": "https://forum.mcmodding.ru/",
+        "colors": "mcmodding"
+    },
+
+    "related":
+    {
+        "youtube-cmtv": "Проект начался с серий уроков по созданию модов."
+    },
+
+    "tags":
+    [
+        "!информатика",
+        "!просвещение",
+        "!сайт",
+        "учебник", "форум", "игра",
+        "программирование",
+        "wordpress*"
+    ]
 }

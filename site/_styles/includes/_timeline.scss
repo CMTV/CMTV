@@ -194,7 +194,7 @@
                             flex-direction: column;
                             justify-content: space-between;
 
-                            border: 2px solid;
+                            border: 1.5px solid;
                             border-radius: size.$borderRadius;
 
                             &[title] { cursor: help; }
@@ -221,7 +221,7 @@
                                 &.plan > .rect, &.planUnsure > .rect { border-color: status.getBorder($status); }
                                 &.planUnsure > .rect { border-style: dashed; }
 
-                                &.report > .rect    { background-color: status.getBg($status); }
+                                &.report > .rect    { background-color: color.adjust(status.getBg($status), $lightness: -5%, $saturation: -25%); }
                             }
                         }
                     }

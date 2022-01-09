@@ -1,0 +1,11 @@
+{
+    "title": "Alien: Isolation",
+    "desc": "",
+    "type": "in",
+
+    "status":
+    {
+        "type": "do",
+        "label": "Играю"
+    }
+}

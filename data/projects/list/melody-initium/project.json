@@ -1,0 +1,40 @@
+{
+    "title": "Initium",
+    "desc": "Первая полноценная мелодия через месяц после начала обучения.",
+    "type": "out",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Написал"
+    },
+
+    "date": "26.08.2017",
+
+    "facts":
+    [
+        {
+            "id": "duration",
+            "label": "Длительность",
+            "data": "56 сек"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-music",
+        "text": "Мелодия",
+        "link": "files/Initium.wav",
+        "colors": ["#f24c2d", "#dd2476"]
+    },
+
+    "related": {
+        "music-learn": "Написал мелодию во время изучения музыки."
+    },
+
+    "tags":
+    [
+        "!искусство",
+        "!музыка"
+    ]
+}

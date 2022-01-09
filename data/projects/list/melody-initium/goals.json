@@ -1,0 +1,10 @@
+{
+    "publish":
+    {
+        "title": "Выпуск мелодии",
+        "counted": false,
+        "status": "done",
+        "date": "26.08.2017",
+        "plan": ["26.08.2017"]
+    }
+}

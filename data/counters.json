@@ -19,7 +19,13 @@
 
     "movie":
     {
-        "icon": "fa-solid fa-film",
-        "title": "Фильмы"
+        "icon":     "fa-solid fa-film",
+        "title":    "Фильмы"
+    },
+
+    "music":
+    {
+        "icon":     "fa-solid fa-music",
+        "title":    "Мелодии"
     }
 }

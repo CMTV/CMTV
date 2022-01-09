@@ -1,0 +1,32 @@
+{
+    "title": "Презентации",
+    "desc": "Отдельные презентации, которые не связаны с другими проектами.",
+    "type": "out",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Создал"
+    },
+
+    "start": "16.10.2014",
+
+    "facts":
+    [
+        {
+            "id": "presentations",
+            "label": "Презентации",
+            "data": "4"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-file-zipper",
+        "text": "Презентации",
+        "link": "files/presentations.zip",
+        "colors": "other"
+    },
+
+    "tags": ["!презентация"]
+}

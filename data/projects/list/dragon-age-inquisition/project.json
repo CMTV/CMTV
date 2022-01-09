@@ -1,11 +1,28 @@
 {
-    "title": "Dragon Age: Inquisition",
-    "desc": "",
+    "title": "Dragon Age Inquisition",
+    "desc": "Эпическое и очень красивое приключение про борьбу с мировым злом.",
     "type": "in",
 
     "status":
     {
-        "type": "do",
-        "label": "Играю"
-    }
+        "type": "done",
+        "label": "Прошел"
+    },
+
+    "start": "15.12.2021",
+    "end": "5.01.2022",
+
+    "action":
+    {
+        "icon": "fa-brands fa-steam",
+        "text": "Steam",
+        "link": "https://store.steampowered.com/app/1222690/Dragon_Age/",
+        "colors": "steam"
+    },
+
+    "tags":
+    [
+        "!отдых",
+        "!игра"
+    ]
 }

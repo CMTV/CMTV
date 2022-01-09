@@ -18,6 +18,9 @@
     {
         position: relative;
 
+        border: 1px solid var(--c_border);
+        border-radius: size.$borderRadius;
+
         &:not(:hover) .hoverOverlay
         {
             opacity: 0;

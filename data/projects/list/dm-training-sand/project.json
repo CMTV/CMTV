@@ -1,0 +1,46 @@
+{
+    "title": "dm_training_sand",
+    "desc": "Небольшая сбалансированная карта с множеством хитрых проходов.",
+    "type": "out",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Создал"
+    },
+
+    "date": "19.07.2014",
+
+    "facts":
+    [
+        {
+            "id": "downloads",
+            "label": "Загрузки",
+            "data": "2 500+"
+        }
+    ],
+
+    "action":
+    {
+        "icon": "fa-solid fa-file-zipper",
+        "text": "Карта",
+        "link": "files/dm_training_sand.zip",
+        "colors": ["#767266", "#8d806d"]
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-globe",
+            "text": "Карта на GameBanana",
+            "link": "https://gamebanana.com/mods/117664"
+        }
+    ],
+
+    "tags":
+    [
+        "!gamedev",
+        "!игра",
+        "отдых"
+    ]
+}

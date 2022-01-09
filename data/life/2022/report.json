@@ -1,0 +1,154 @@
+{
+    "1.01":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": "1:30"
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": 6
+            }
+        ]
+    },
+
+    "2.01":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 5
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": 5
+            }
+        ]
+    },
+
+    "3.01":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 3
+            }
+        ]
+    },
+
+    "4.01":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 4
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": "5:20"
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "5.01":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 4
+            },
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "playthrough",
+                "duration": "5:30"
+            }
+        ],
+        "counters":
+        [
+            {
+                "counter": "game",
+                "project": "dragon-age-inquisition"                
+            }
+        ],
+        "checks":
+        [
+            "divine-body : diet",
+            "divine-body : training"
+        ]
+    },
+
+    "6.01":
+    {
+        "time":
+        [
+            {
+                "project": "dragon-age-inquisition",
+                "goals": "steam-review",
+                "duration": "0:30"
+            },
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 5
+            },
+            {
+                "project": "alien-isolation",
+                "goals": "playthrough",
+                "duration": 4.6
+            }
+        ]
+    },
+
+    "7.01":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 4
+            },
+            {
+                "project": "alien-isolation",
+                "goals": "playthrough",
+                "duration": "5:30"
+            }
+        ]
+    },
+
+    "8.01":
+    {
+        "time":
+        [
+            {
+                "project": "radkopeter",
+                "goals": "fill",
+                "duration": 5
+            },
+            {
+                "project": "alien-isolation",
+                "goals": "playthrough",
+                "duration": 4
+            }
+        ]
+    }
+}

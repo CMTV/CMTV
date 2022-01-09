@@ -1,9 +1,21 @@
 {
     "playthrough":
     {
+        "counted": false,
         "title": "Прохождение",
-        "status": "do",
+        "status": "done",
         "start": "15.12.2021",
-        "plan": ["15.12.2021 - 31.12.2021"]
+        "end": "5.01.2022",
+        "plan": ["15.12.2021 - 5.01.2022"],
+        "tags": ["отдых", "игра"]
+    },
+
+    "steam-review":
+    {
+        "counted": false,
+        "title": "Обзор в Steam",
+        "status": "done",
+        "date": "6.01.2022",
+        "plan": ["6.01.2022"]
     }
 }

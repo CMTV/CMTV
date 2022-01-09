@@ -40,6 +40,27 @@
         "colors": "mcmodding"
     },
 
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-book",
+            "text": "Учебник",
+            "link": "https://mcmodding.ru"
+        },
+
+        {
+            "icon": "fa-brands fa-youtube",
+            "text": "Серия уроков по моддингу #1",
+            "link": "https://www.youtube.com/playlist?list=PLDywto_IU4_549B8QoCH6tYwDKyzlj3As"
+        },
+
+        {
+            "icon": "fa-brands fa-youtube",
+            "text": "Серия уроков по моддингу #2",
+            "link": "https://www.youtube.com/playlist?list=PLDywto_IU4_7JKUqmiYV9L-M08ftAfJVx"
+        }
+    ],
+
     "related":
     {
         "youtube-cmtv": "Проект начался с серий уроков по созданию модов."
@@ -52,6 +73,12 @@
         "!сайт",
         "учебник", "форум", "игра",
         "программирование",
-        "wordpress*"
+        "xenforo",
+        "ssg",
+        "js",
+        "scss",
+        "wordpress*",
+        "gulp*",
+        "node.js*"
     ]
 }

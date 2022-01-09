@@ -1,5 +1,6 @@
 [
     "radkopeter",
+    "mcmodding",
     "dodem",
     "neuralnet-info",
 
@@ -7,10 +8,10 @@
 
     "tictactoe3d",
 
+    "omath",
+    "bydef",
     "mathit",
     "topmath",
-
-    "mcmodding",
 
     "xf-criteria-builder",
     "xf-question-threads",

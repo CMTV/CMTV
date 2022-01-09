@@ -1,0 +1,45 @@
+{
+    "title": "SQLean",
+    "desc": "Библиотека для связи TypeScript и SQLite баз данных с поддержкой ООП.",
+    "type": "mix",
+
+    "status":
+    {
+        "type": "done",
+        "label": "Разработал"
+    },
+
+    "start": "21.08.2021",
+    "end": "21.09.2021",
+
+    "action":
+    {
+        "icon": "fa-brands fa-github",
+        "text": "Исходный код",
+        "link": "https://github.com/CMTV/sqlean",
+        "colors": "github"
+    },
+
+    "links":
+    [
+        {
+            "icon": "fa-brands fa-npm",
+            "text": "Пакет на NPM",
+            "link": "https://www.npmjs.com/package/sqlean"
+        }
+    ],
+
+    "related":
+    {
+        "radkopeter": "Первый проект, который опирается на эту библиотеку."
+    },
+
+    "tags":
+    [
+        "!информатика",
+        "!программирование",
+        "!библиотека",
+        "ts",
+        "node.js"
+    ]
+}

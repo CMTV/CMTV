@@ -1,0 +1,200 @@
+<!DOCTYPE html><!--
+
+
+ ▄████▄   ███▄ ▄███▓▄▄▄█████▓ ██▒   █▓
+ ▒██▀ ▀█  ▓██▒▀█▀ ██▒▓  ██▒ ▓▒▓██░   █▒
+ ▒▓█    ▄ ▓██    ▓██░▒ ▓██░ ▒░ ▓██  █▒░
+ ▒▓▓▄ ▄██▒▒██    ▒██ ░ ▓██▓ ░   ▒██ █░░
+ ▒ ▓███▀ ░▒██▒   ░██▒  ▒██▒ ░    ▒▀█░  
+ ░ ░▒ ▒  ░░ ▒░   ░  ░  ▒ ░░      ░ ▐░  
+   ░  ▒   ░  ░      ░    ░       ░ ░░  
+ ░        ░      ░     ░           ░░  
+ ░ ░             ░                  ░  
+ ░                                 ░   
+
+
+--><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>МГТУ им. Баумана — Петр Радько</title><meta name="description" content="Очень сложный жизненный период с судьбоносными встречами и решениями."><link rel="canonical" href="https://radkopeter.ru/projects/bmstu/"><meta name="keywords" content="Петр Радько, CMTV"><meta name="og:image" content="https://radkopeter.ru/site/graphics/og-images/project-bmstu.jpeg"><meta name="generator" content="CMTV Static Site Generator"><meta name="build-time" content="1642337188869"><link rel="icon" href="https://radkopeter.ru/favicon.ico"><link rel="icon" type="image/png" href="https://radkopeter.ru/site/graphics/favicon/favicon.png"><link rel="preload" as="style" href="/site/vendor/font-awesome/css/all.min.css"><link rel="stylesheet" href="/site/vendor/font-awesome/css/all.min.css"><link href="/site/vendor/photoswipe/photoswipe.css" rel="stylesheet"><script type="module" src="/site/scripts/lightbox.js"></script><link href="/site/styles/global.css" rel="stylesheet"><link href="/site/styles/project.css" rel="stylesheet"><script src="/site/scripts/global.js" defer></script><script src="/site/scripts/project.js" defer></script></head><body class="project"><script>(() =>
+{
+    ['color-scheme', 'theme-color'].forEach(name =>
+    {
+        let tag = document.createElement('meta');
+            tag.setAttribute('name', name);
+            tag.setAttribute('content', '');
+        
+        document.head.appendChild(tag);
+    });
+
+    var preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+    var preferTheme = (preferDark ? 'dark' : 'light');
+    var theme = localStorage.getItem('theme');
+
+    if (theme === null || theme === 'null')
+        theme = preferTheme;
+
+    setTheme(theme);
+})();
+
+function setTheme(theme)
+{
+    document.body.classList.toggle('theme--dark', (theme === 'dark'));
+
+    var themeColors = { light: '#ffffff', dark: '#333333' };
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[theme]);
+    document.querySelector('meta[name="color-scheme"]').setAttribute('content', theme);
+
+    localStorage.setItem('theme', theme);
+}
+
+function toggleTheme()
+{
+    var theme = localStorage.getItem('theme');
+    setTheme((theme === 'dark' ? 'light' : 'dark'));
+}</script><div class="bg"><div class="activities"></div><div class="fog"></div></div><div class="contactBlock"><div class="modal"><header><h2>Связаться со мной</h2><i class="fa-solid fa-times closeBtn"></i></header><ul><li>Я предпочитаю общаться в текстовом формате</li><li>Ясно и понятно обозначайте тему переписки</li><li>Готов обсудить самые безумные и интересные идеи!</li></ul><div class="email"><a href="mailto:newpetya@inbox.ru">newpetya@inbox.ru</a></div></div></div><div class="site"><header><div class="gradient"><div></div></div><div class="headerContent"><a class="me" href="/"><div class="logo"><div class="gradient"><div></div></div><img src="/site/graphics/me.png"></div><h1>Петр <span>Радько</span></h1></a><nav><a class="navItem projects" href="/projects" title="Что я делаю?"><i class="fa-solid fa-clone"></i><span>Проекты</span></a><a class="navItem life" href="/life" title="Моя борьба"><i class="fa-solid fa-heart"></i><span>Жизнь</span></a><div class="navItem themeSwitcher" onclick="toggleTheme()" title="Переключить цветовую схему"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></div><div class="navItem contact" title="Связаться со мной"><i class="fa-solid fa-envelope-open-text"></i></div></nav></div></header><main><div class="mainBlock"><header><div class="icon"><img src="/projects/bmstu/icon.png" loading="lazy"/></div><div class="title">МГТУ им. Баумана</div><div class="desc">Очень сложный жизненный период с судьбоносными встречами и решениями.</div></header><div class="mainBar"><div class="facts"><div class="fact status"><div class="label">Статус</div><div class="data"><div title="Проект завершен" class="statusCircle statusCircle--done"></div> <div >Исключен</div></div></div><div class="fact course"><div class="label">Курс</div><div class="data">I</div></div><div class="fact department"><div class="label">Кафедра</div><div class="data">ФН-4</div></div></div></div><div class="mainContent"><div data-pswp-gallery>    <a href="showcase/geometry.jpg" target="_blank" data-pswp-width="1280" data-pswp-height="760"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/geometry.jpg" alt="Все формулы про прямую на плоскости">
+</a>    <a href="showcase/dom-physics.jpg" target="_blank" data-pswp-width="1000" data-pswp-height="658"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/dom-physics.jpg" alt="Дом Физики">
+</a>    <a href="showcase/basement.jpg" target="_blank" data-pswp-width="1920" data-pswp-height="1440"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/basement.jpg" alt="Тайны в инженерных подвалах университета">
+</a>    <a href="showcase/big-board.jpg" target="_blank" data-pswp-width="2560" data-pswp-height="1440"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/big-board.jpg" alt="Покоряем высоты знаний">
+</a>    <a href="showcase/physics.png" target="_blank" data-pswp-width="1188" data-pswp-height="1680"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/physics.png" alt="Домашнее задание по физике">
+</a></div>
+<p>Мой первый и единственный год в университете я могу сравнить с первой десантной высадкой в какой-нибудь горячей точке.
+Теплая и уютная домашная обстановка сменилась адской нервотрепкой ВУЗа с миллионом предметов, людей и заданий.
+Но я смог выстоять в этом бою, получить ценный опыт и найти настоящих друзей…</p>
+<p>Порой я задаюсь вопросом, какой была бы моя жизнь, если бы я не выбрал кафедру физики? Если бы воля случая определила меня в одну группу, а Свету (и Колю) в другую? Была ба такая жизнь лучше? Не знаю.</p>
+<p>Но одно я знаю точно. Мало у кого был настолько необычный и насыщенный первый год в университете. И несмотря на серьезные проблемы по всем фронтам, я не жалею, что прошел через этот период. Он сделал меня другим человеком.</p>
+</div><div class="links"><a class="link" href="files/reports.zip" target="_blank"><i class="fa-fw fa-solid fa-file-zipper"></i><div>Отчеты</div></a></div></div><div class="direction"><header><img class="type" src="/site/graphics/in.svg" title="Потребитель"><div class="mainTags"><div class="action"><i class="fa-fw fa-solid fa-hand-fist"></i><div class="label">Действие</div><div class="value">изучение</div></div></div></header></div><div class="goalDateData"><header><div class="goalChart"><div class="total">3</div><div class="inner"></div><div class="fracs" style="background: conic-gradient( var(--c_goalChart-done) 0% 100% )"></div></div><div class="data"><div class="start"><i class="fa-solid fa-plus fa-fw"></i><div class="label">Начало</div><div class="value">1 сентября 2015</div></div><div class="end"><i class="fa-solid fa-flag-checkered fa-fw"></i><div class="label">Конец</div><div class="value">14 января 2017</div></div></div></header><div class="goals"><div class="goal goal--done"><div class="num">1</div><div class="info"><div class="title">Обучение в университете</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>01.09.2015 – 14.01.2017</span></div></div></div></div><div class="goal goal--done"><div class="num">2</div><div class="info"><div class="title">Месяц математики</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>15.10.2015 – 15.11.2015</span></div></div></div></div><div class="goal goal--done"><div class="num">3</div><div class="info"><div class="title">Группа олимпиадников по математике</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>13.09.2016 – 03.10.2016</span></div></div></div></div></div></div><div class="timelineBlock"><header><i class="fa-solid fa-bars-staggered"></i><span>Хронокарта</span></header><div class="timeline"><div class="inner"><div class="corner"></div><div class="monthLabels"><div class="label" style="flex-basis: 8.469945355191257%">янв</div><div class="label" style="flex-basis: 7.923497267759563%">фев</div><div class="label" style="flex-basis: 8.469945355191257%">мар</div><div class="label" style="flex-basis: 8.19672131147541%">апр</div><div class="label" style="flex-basis: 8.469945355191257%">май</div><div class="label" style="flex-basis: 8.19672131147541%">июн</div><div class="label" style="flex-basis: 8.469945355191257%">июл</div><div class="label" style="flex-basis: 8.469945355191257%">авг</div><div class="label" style="flex-basis: 8.19672131147541%">сен</div><div class="label" style="flex-basis: 8.469945355191257%">окт</div><div class="label" style="flex-basis: 8.19672131147541%">ноя</div><div class="label" style="flex-basis: 8.469945355191257%">дек</div></div><div class="dataLabels"><div class="labelContainer"><div class="label label--year">2015</div><div class="extraRow"></div></div><div class="sep"></div><div class="labelContainer"><div class="label label--year">2016</div><div class="extraRow"></div></div><div class="sep"></div><div class="labelContainer"><div class="label label--year">2017</div></div></div><div class="data"><div class="monthGuides"><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 7.923497267759563%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div></div><div class="rows"><div class="row"><div class="fragment planUnsure done  goal-1" style="left: 66.66666666666666%; width: 33.33333333333334%;"><div class="marker" title="01.09.2015 - 31.12.2015&#13;Обучение в университете">1</div><div class="rect" title="01.09.2015 - 31.12.2015&#13;Обучение в университете"></div></div></div><div class="row"><div class="fragment plan done  goal-2" style="left: 78.68852459016394%; width: 8.7431693989071%;"><div class="marker" title="15.10.2015 - 15.11.2015&#13;Месяц математики">2</div><div class="rect" title="15.10.2015 - 15.11.2015&#13;Месяц математики"></div></div></div><div class="sep"></div><div class="row"><div class="fragment planUnsure done  goal-1" style="left: 0%; width: 100%;"><div class="marker" title="01.01.2016 - 31.12.2016&#13;Обучение в университете">1</div><div class="rect" title="01.01.2016 - 31.12.2016&#13;Обучение в университете"></div></div></div><div class="row"><div class="fragment plan done  goal-3" style="left: 69.94535519125684%; width: 5.737704918032776%;"><div class="marker" title="13.09.2016 - 03.10.2016&#13;Группа олимпиадников по математике">3</div><div class="rect" title="13.09.2016 - 03.10.2016&#13;Группа олимпиадников по математике"></div></div></div><div class="sep"></div><div class="row"><div class="fragment planUnsure done  goal-1" style="left: 0%; width: 3.825136612021858%;"><div class="marker" title="01.01.2017 - 14.01.2017&#13;Обучение в университете">1</div><div class="rect" title="01.01.2017 - 14.01.2017&#13;Обучение в университете"></div></div></div></div></div></div></div></div><div class="blocks"><div class="groupSepTop"></div><div class="block"><header><div class="info"><div class="title">Поступление</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Первоначально я рассчитывал поступить на бюджетную форму обучения через проект <a href="/projects/step-into-the-future" target="_blank">«Шаг в Будущее»</a>.
+После провала пришлось усиленно готовиться к ЕГЭ.
+И все же мне совсем чуть-чуть не хватило баллов, чтобы попать на бюджет.
+Пришлось идти на платную форму обучения.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Общие впечатления</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>У меня были наивные мечты, что ВУЗ это храм науки, где по просторным коридорам ходят студенты в черных робах с задумчивыми выражениями лиц, придумывая решения великих теорем.
+Ну, просторные коридоры там действительно есть, как и студенты, правда они не носят робы и сводят концы с концами любой ценой пытаясь успеть сдать задания в срок…</p>
+<p>В целом, от реальной университетской жизни (скорее от ее темпа) я больше разочаровался, но положительных моментов было тоже очень много.</p>
+<h2>Университет</h2>
+<p>От самого университета только положительные впечатления.
+Несколько огромных, монументальных зданий, просторные коридоры, большие лектории с огромными досками высотой почти под двухэтажный дом, «Дом Физики» с крутыми лабораториями, умные профессора, олимпиады, вкусная и недорогая еда в столовых, собственный комбинат питания.</p>
+<p>Идеальное место для того, чтобы посвятить себя науке и образованию…</p>
+<h2>Режим</h2>
+<p>Невыносимый, это если одним словом.
+Больше десятка предметов, каждый имеет свой внушительного размера учебник, который нужно пройти за один семестр.
+Естественно, пройти его за это время невозможно. Поэтому огромная часть материала просто выкидывается и на лекциях подаются только ключевые понятия, часто даже без доказательств.</p>
+<p>Мне понятны причины введения подобного подхода, но менее противным от этого он не становится.
+Я почти всю сознательную жизнь провел на домашнем обучении, пытаясь освоить матеирал в своем темпе, поэтому подобные скачки мне совсем не подходили.</p>
+<p>В результате, в ВУЗ регулярно я отходил где-то неделю или две.
+После этого стал проходить материал дома по учебникам.
+Обстановка более приятная и не надо тратить кучу времени на поездки.</p>
+<h2>Студенты</h2>
+<p>Расстроила и большая часть студентов.
+Каких-то общих глобальных планов у большей их части нет.
+Ну поступил и поступил. Почему именно на физику? Не знаю.</p>
+<p>90% учащихся приходят в университет как в продолжение школы без особых переспектив и мотивации.
+И только 10% ясно понимают, что они хотят, а также <strong>делают конкретные шаги</strong> в этом направлении.
+Впрочем, подобное распределение работает почти в любом коллективе.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Мой путь</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Первое время я был образцовым студентом.
+В первый же день проявил себя ответственным человеком и стал старостой группы.
+Было сложно, но я стойчески принимал все невзгоды.</p>
+<p>Проблемы по учебной части начались практически сразу.
+А дальше начался снежный ком проблем.
+Все новые и новые задания наваливались, а я не успевал даже усваивать новую информацию.
+Тут свою роль сыграло еще и то, что моя математическая подготовка оказалось не такой уж мощной.</p>
+<p>Если бы не помощь «Команды Мечты», о которой ниже, я бы наверное не продержался бы и пары месяцев в университете.
+Но ребята меня буквально спасли, и я удержался на плаву.</p>
+<p>Удержаться то я удержался, но кардинально изменился мой подход.
+Я все реже появлялся в университете и все больше времени проводил дома, в комфортной обстановке изучая материал по учебникам в своем темпе. Обязанности старости передал одногруппнице.</p>
+<p>Но это не помогло. День за днем я все больше и больше отставал от группы.
+Пытался проходить материал последовательно, осознать его, доказать все используемые теоремы.
+Накапливалось все большое долгов.</p>
+<p>Постепенно пришло осознание, что это не мой путь.
+Я хочу учиться, но не готов жертвовать материалой в угоду «плану».
+Группа перешла на второй курс, а я все закрывал долги по первому и планировал после этого уйти.</p>
+<p>Но красиво уйти не получилось.
+Когда мне оставалсь еще буквально неделя до сдачи последнего долга, заместитель декана просто сказал мне, что все, вот тебе бумага, подписывай.
+Я подписал и ушел.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Команда Мечты</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>В ВУЗе я встретил пару человек, которые буквально спасли меня.
+Люди, без которых я не продержался бы и пары месяцев.
+Люди, с которыми связано 99% процентов положительных эмоций от ВУЗа.
+Люди, с которыми хочется менять мир.</p>
+<p>Команда Мечты:</p>
+<h2>Светлана Пичкуренко</h2>
+<p>Оказывается, Свету, как и Колю я впервые увидел еще во время защиты работы по <a href="/projects/step-into-the-future" target="_blank">«Шагу в будущее»</a>, просто там я с ними не познакомился.</p>
+<p>Впервые я по-настоящему встретился с ней в первый учебный день в университете.
+Она попала со мной в одну группу и искала людей, которые помимо основной учебы хотят дополнительно заняться какой-нибудь научной работой. Вызвался только я.</p>
+<p>Так началась наша долгая, теплая и крепкая дружба.
+Мы сходились во взглядах по большинству вопросов, оба грезили стать великими учеными, выручали друг друга.
+Перечитывая нашу переписку понимаю, что она оказывала мне мощную психологическую поддержку в трудные моменты.
+Она стала моим первым в жизни близким другом, а других (помимо Коли) я еще не встречал.</p>
+<p>Ну и конечно же, Света помогала организовывать и принимала участие в самом крутом и незабываемом в моей жизни 18 дне рожденья!</p>
+<h2>Николай Нагибин</h2>
+<p>Когда я согласился взять дополнительную научную работу, Света познакомила меня с Колей, крутым физиком-математиком, победителем множества олимпиад, вечным студентом и нашим наставником.
+Если бы я знал, что встреча с одним человеком может настолько изменить жизнь…</p>
+<p>Множество раз мы собирались втроем или вдвоем для того, чтобы он объяснил какую-нибудь сложную тему или помог с домашним заданием. Также он вовлек нас во внеучебную деятельность: мы вместе ездили на олимпиады и даже принимали участие в соревнованиях по «Что? Где? Когда?», сражались против самого Вассермана!
+Втроем мы образовали щит, за которым укрывались от шквала сложных университетских будней.</p>
+<p>Для меня он всегда выступал идеалом ума.
+Я старался максимально мого общаться с ним, перенимать его подход к решению задач.
+Он научил меня учиться, понимать высшую математику и физику, дал мне пусть частичную, но все же базу, на основе которой я выстраивал новые знания.</p>
+<p>Общение, наставничество и совместная работа продолжились и после того, как меня исключили из ВУЗа.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Месяц математики</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Не могу не рассказать про офигенную аферу, которую мы втроем провернули в начале учебного кода.
+Мы со Светой достаточно быстро поняли, что с математикой идет как-то туго.
+И тогда кто-то из нас (то ли я, то ли она) выдвинул идею, что было бы круто на недельку или даже больше вдвоем под наставничеством Коли заниматься только математикой.
+Я же сказал, что живу в большом коттедже и там как раз есть свободные места для еще двух жильцов.</p>
+<p>К моему удивлению, Коля идею воспринял очень серьезно и буквально через пару дней мы все дружно «заболели», Коля и Света переехали ко мне домой и Команда Мечты начала Месяц Математики!</p>
+<p>О, это было самое офигенное мероприятие в моей жизни!
+Три крутых ума и одна великая цель.
+Каждый день от рассвета до заката мы безвылазно сидели в большой комнате и терзали математику.
+Исписали сотни A4 листов и десятки ручек.</p>
+<p>Парадоксально, но за этот месяц мы совсем немного продвинулись и естественно не догнали группу.
+Эксперимент можно было бы посчитать неудавшимся, но мы сделали главное.
+За этот месяц Коля подтянул нашу базу. Переставил наши мозги из школьного саней на более-менее университетские рельсы.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Интересные моменты</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Год в университете был очень насыщенным на события.
+Ниже рассказал про самые примечательные.</p>
+<h2>Помощь одногруппнице</h2>
+<p>В нашей группе оказалась одна ученица, которая попала на бюджет.
+Но ее уровень знаний был совсем низкий.
+Честно говоря, я даже не понимаю, как так вышло, что ее сначала послали именно на кафедру физики.
+Естественно, у нее в первый же день начались серьезнейшие проблемы.</p>
+<p>Но Команда Мечты никого не бросает в беде!
+Мы специально договорились и все втроем приехали к ней в общежитие утром, а потом полдня подтягивали ее знания по математике.
+Ей это не помогло и через месяц она перевелась на другое направление, но было интересно.
+Оставшуюся половину дня мы провели за начертательной геометрией.</p>
+<h2>Олимпиада в Ярославле</h2>
+<p>Собрались мы все вместе и Командой Мечты поехали в Ярославль на математическую олимпиаду.
+Было волнительно и очень интересно.
+Я был в своем стиле: решил всего полторы задачи, зато на нескольких листах с подробнейшими объяснениями.
+Света решила больше и даже заняла призовое место.
+Коля, как и всегда, сражался со своим другом за первое место.</p>
+<h2>Перестрелка ручками поздно вечером</h2>
+<p>Однажды мы втроем собрались поздно вечером после пар пройти некоторые темы по математике.
+Какое-то время мы действительно занимались.
+Но потом занятие постепенно перетекло в стихийное перебрасывание друг другу ручек и карандашей.</p>
+<p>Минут 10 мы носились словно слоны по аудитории и кидались друг в друга разными предметами, пока не пришла злая уборщица и не прогнала нас из университета.</p>
+<p>Почему-то эта сцена очень прочно засела мне в душу.
+Было здорово!</p>
+<h2>Группа олимпиадной математики</h2>
+<div data-pswp-gallery>    <a href="images/baumo-prep/logo.jpg" target="_blank" data-pswp-width="200" data-pswp-height="300"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/baumo-prep/logo.jpg" alt="">
+</a>    <a href="images/baumo-prep/logo-candidate.jpg" target="_blank" data-pswp-width="200" data-pswp-height="300"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/baumo-prep/logo-candidate.jpg" alt="Один из двух кандидатов в логотипы">
+</a>    <a href="images/baumo-prep/notes-1.jpg" target="_blank" data-pswp-width="1213" data-pswp-height="2160"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/baumo-prep/notes-1.jpg" alt="">
+</a>    <a href="images/baumo-prep/notes-2.jpg" target="_blank" data-pswp-width="1213" data-pswp-height="2160"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/baumo-prep/notes-2.jpg" alt="">
+</a></div>
+<p>Коля решил организовать занятия по высшей математике для подготовки студентов к олимпиадам.
+Я предложил свою кандидатуру в качестве первого ученика, а также администратора: создал группу ВКонтакте, придумал логотип, разместил первые конспекты.</p>
+<p>Достаточно быстро я понял, что занятия тоже слишком быстро идут вперед и со своими текущими долгами я просто не успеваю проходить олимпиадный материал.
+Поэтому я отошел от дел. Врочем, через некоторое время и Коля передал эти дела своему другу.</p>
+</div></div></div><div class="groupSepBottom"></div></div></main></div><!-- Yandex.Metrika counter -->
+<script async type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(86400654, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/86400654" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPLGTBHFF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPLGTBHFF4');
+</script></body></html>

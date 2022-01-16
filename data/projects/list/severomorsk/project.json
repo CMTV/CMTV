@@ -1,18 +1,47 @@
 {
-    "title":    "Жизнь на севере — Североморск",
-    "desc":     "",
+    "title":    "Североморск",
+    "desc":     "Первый опыт самостоятельной жизни и прорыв в понимании математики.",
     "type":     "in",
 
     "status":
     {
         "type":     "done",
-        "label":    "Выучился"
+        "label":    "Прокачался"
     },
 
     "start": "13.09.2019",
+    "end": "1.06.2020",
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-file-lines",
+            "text": "Отчеты в Мурманске",
+            "link": "files/murmansk-reports.docx"
+        },
+        {
+            "icon": "fa-solid fa-file-lines",
+            "text": "Отчеты в Североморске #1",
+            "link": "files/severomorsk-reports-1.docx"
+        },
+        {
+            "icon": "fa-solid fa-file-lines",
+            "text": "Отчеты в Североморске #2",
+            "link": "files/severomorsk-reports-2.docx"
+        }
+    ],
 
     "related":
     {
+        "tictactoe3d": "Вместе с Колей разработали крутую игру для Android.",
         "dodem": "Усиленное изучение математики привело к появлению сайта-решебника."
-    }
+    },
+
+    "tags":
+    [
+        "!изучение",
+        "программирование",
+        "математика",
+        "информатика"
+    ]
 }

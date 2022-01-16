@@ -1,0 +1,42 @@
+{
+    "title": "МГТУ им. Баумана",
+    "desc": "Очень сложный жизненный период с судьбоносными встречами и решениями.",
+    "type": "in",
+    
+    "status":
+    {
+        "type": "done",
+        "label": "Исключен"
+    },
+
+    "start": "01.09.2015",
+    "end": "14.01.2017",
+
+    "facts":
+    [
+        {
+            "id": "course",
+            "label": "Курс",
+            "data": "I"
+        },
+        {
+            "id": "department",
+            "label": "Кафедра",
+            "data": "ФН-4"
+        }
+    ],
+
+    "links":
+    [
+        {
+            "icon": "fa-solid fa-file-zipper",
+            "text": "Отчеты",
+            "link": "files/reports.zip"
+        }
+    ],
+
+    "tags":
+    [
+        "!изучение"
+    ]
+}

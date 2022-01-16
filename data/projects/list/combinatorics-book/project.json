@@ -5,8 +5,8 @@
 
     "status":
     {
-        "type": "do",
-        "label": "Изучаю"
+        "type": "pause",
+        "label": "Пауза"
     },
 
     "facts":

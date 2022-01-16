@@ -1,11 +1,28 @@
 {
     "title": "Alien: Isolation",
-    "desc": "",
+    "desc": "Идеальная игра про напряженные прятки от культового Чужого.",
     "type": "in",
 
     "status":
     {
-        "type": "do",
-        "label": "Играю"
-    }
+        "type": "done",
+        "label": "Пройдена"
+    },
+
+    "start": "6.01.2022",
+    "end": "12.01.2022",
+
+    "action":
+    {
+        "icon": "fa-brands fa-steam",
+        "text": "Steam",
+        "link": "https://store.steampowered.com/app/214490/Alien_Isolation/",
+        "colors": "steam"
+    },
+
+    "tags":
+    [
+        "!отдых",
+        "!игра"
+    ]
 }

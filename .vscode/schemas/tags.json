@@ -10,7 +10,7 @@
         "^[a-zА-я.]+$":
         {
             "description": "Уникальный идентификатор тега",
-            "type": "object",
+            "type": ["object", "null"],
             "properties":
             {
                 "title":    { "type": "string", "description": "Красивое название тега" },

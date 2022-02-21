@@ -176,17 +176,46 @@ block main
     //- Связанные проекты
     //-
 
-    if (related)
+    mixin relatedProject(project)
+        .relatedProject
+            a.icon(href= "/projects/" + project.id)
+                +icon(project.icon)
+            .title: a(href= "/projects/" + project.id)= project.title
+            .reason(title="Причина связи")= project.reason
+
+    if (related.hasAny())
         .related
             header
                 i.fa-solid.fa-code-compare
                 span Связанные проекты
-            each rProject in related
-                .relatedProject
-                    a.icon(href= "/projects/" + rProject.id)
-                        +icon(rProject.icon)
-                    .title: a(href= "/projects/" + rProject.id)= rProject.title
-                    .reason= rProject.reason
+            
+            if (!related.dependencies && !related.dependents)
+                each rProject in related.relations
+                    +relatedProject(rProject)
+            else
+                if (related.dependencies)
+                    section
+                        i.fa-solid.fa-turn-up
+                        span Зависит от
+                    each rProject in related.dependencies
+                        +relatedProject(rProject)
+
+                if (related.dependents)
+                    section
+                        i.fa-solid.fa-turn-down
+                        span Влияет на
+                    each rProject in related.dependents
+                        +relatedProject(rProject)
+                    
+                if (related.relations)
+                    section
+                        i.fa-solid.fa-right-long
+                        span Связан с
+                    each rProject in related.relations
+                        +relatedProject(rProject)
+                
+
+                    
 
     //-
     //- Блоки подробностей

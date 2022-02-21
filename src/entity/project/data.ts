@@ -1,8 +1,10 @@
 import glob from "glob";
+import YAML from "yaml";
 
 import { IO } from "src/util/IO";
 import { BUILD_CONFIG } from "src/BuildConfig";
 import { ProjectAction, ProjectExtra, ProjectFact, ProjectLink, ProjectStatus, ProjectType } from "./global";
+import { DataGoals } from "../goal/data";
 
 /**
  * Базовая файловая структура проекта.
@@ -35,13 +37,14 @@ export class DataProject
     action?:    ProjectAction;
     links?:     ProjectLink[];
     tags?:      string[];
-    related?:   DataProjectRelated[];
+    related?:   DataProjectRelation[];
     extra?:     ProjectExtra;
 }
 
-export class DataProjectRelated
+export class DataProjectRelation
 {
-    project:    string;
+    relatedId:  string;
+    type:       string;
     reason:     string;
 }
 
@@ -53,7 +56,7 @@ export class UtilDataProject
 {
     static getIds(): string[]
     {
-        let projectIds = glob.sync('data/projects/list/*/project.json').map(projectPath =>
+        let projectIds = glob.sync('data/projects/list/*/project.@(json|yml)').map(projectPath =>
         {
             let arr = projectPath.split('/');
             arr.pop(); // Пропускаем файл `project.json`
@@ -74,8 +77,8 @@ export class UtilDataProject
     static getFilesToMove(projectId: string): string[]
     {
         let ignorePatterns = [
-            'project.json',
-            'goals.json',
+            'project.@(json|yml)',
+            'goals.@(json|yml)',
             'main.md',
             'blocks.md'
         ];
@@ -98,6 +101,24 @@ export class UtilDataProject
 
     static getDataProject(projectId: string): DataProject
     {
-        return JSON.parse(IO.readFile(this.getPathTo(projectId, 'project.json')));
+        let projectPath = (extension: string) => this.getPathTo(projectId, 'project.' + extension);
+
+        if (IO.exists(projectPath('yml')))
+            return YAML.parse(IO.readFile(projectPath('yml')));
+        
+        return JSON.parse(IO.readFile(projectPath('json')));
+    }
+
+    static getDataGoals(projectId: string): DataGoals
+    {
+        let goalsPath = (extension: string) => this.getPathTo(projectId, 'goals.' + extension);
+
+        if (IO.exists(goalsPath('yml')))
+            return YAML.parse(IO.readFile(goalsPath('yml')));
+
+        if (IO.exists(goalsPath('json')))
+            return JSON.parse(IO.readFile(goalsPath('json')));
+
+        return null;
     }
 }

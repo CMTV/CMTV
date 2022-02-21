@@ -542,6 +542,15 @@ main > .related
 
     > header { @extend %blockPlainHeader; }
 
+    > section
+    {
+        @extend %blockSep;
+        border-top: 1px solid var(--c_border);
+        border-bottom: none;
+
+        i { margin-right: size.$gapSmall; }
+    }
+
     > .relatedProject
     {
         @extend %blockSection;
@@ -573,7 +582,7 @@ main > .related
             > a { @extend %underline; }
         }
 
-        > .reason { color: var(--c_text-shade-1); }
+        > .reason { cursor: help; color: var(--c_text-shade-1); }
 
         @include bp.max(mini)
         {

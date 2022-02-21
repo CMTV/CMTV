@@ -1,0 +1,19 @@
+writing:
+    title: Написание контента
+    status: do
+    start: 19.02.2022
+    tags:
+        - просвещение
+        - математика
+
+concept:
+    title: Постановка задачи
+    status: done
+    start: 17.01.2022
+    end: 23.01.2022
+
+sketch:
+    title: Проектировка дизайна
+    status: done
+    start: 25.01.2022
+    end: 14.02.2022

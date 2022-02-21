@@ -1,0 +1,13 @@
+github:
+    text: Исходный код
+    icon: fa-brands fa-github
+    colors:
+        - "#575757"
+        - "#848484"
+
+steam:
+    text: Steam
+    icon: fa-brands fa-steam
+    colors:
+        - "#47A5FF"
+        - "#2F7EDF"

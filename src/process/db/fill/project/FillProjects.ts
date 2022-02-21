@@ -5,7 +5,8 @@ import { UtilDate } from "src/util/Date";
 import { IO } from "src/util/IO";
 import { ProjectsProcess } from "./ProjectsProcess";
 import { DbProject } from "src/entity/project/db";
-import { ProjectBlock } from "src/entity/project/global";
+import { ProjectAction, ProjectBlock } from "src/entity/project/global";
+import { ACTION_PRESET } from "src/process/data/ActionPreset";
 
 export class FillProjects extends ProjectsProcess
 {
@@ -22,6 +23,7 @@ export class FillProjects extends ProjectsProcess
         this.projectIds.forEach(projectId =>
         {
             let dataProject = UtilDataProject.getDataProject(projectId);
+
             let project = new DbProject;
                 
                 project.projectId = projectId;
@@ -38,7 +40,17 @@ export class FillProjects extends ProjectsProcess
                     project.start = project.end = UtilDate.toStrDate(dataProject.date);
 
                 project.facts =     dataProject.facts;
-                project.action =    dataProject.action;
+
+                if (dataProject?.action?.preset)
+                {
+                    project.action = {
+                        ...ACTION_PRESET.presets[dataProject.action.preset],
+                        ...dataProject.action
+                    };
+                    delete project.action['preset'];
+                }
+                else project.action = dataProject.action;
+                
                 project.links =     dataProject.links;
 
                 project.main =      this.getMain(projectId);

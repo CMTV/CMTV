@@ -23,13 +23,11 @@ export class FillGoals extends ProjectsProcess
         let fragmentId = 1;
 
         this.projectIds.forEach(projectId =>
-        {
-            let pathToGoals = UtilDataProject.getPathTo(projectId, 'goals.json');
+        {    
+            let rawGoals = UtilDataProject.getDataGoals(projectId);
 
-            if (!IO.exists(pathToGoals))
+            if (!rawGoals)
                 return;
-            
-            let rawGoals = JSON.parse(IO.readFile(pathToGoals)) as DataGoals;
 
             Object.keys(rawGoals).forEach((goalName, i) =>
             {

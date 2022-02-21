@@ -30,6 +30,16 @@
         }
     ],
 
+    "yaml.schemas":
+    {
+        "./.vscode/schemas/project.json": "data/projects/list/*/project.yml",
+        "./.vscode/schemas/goals.json": "data/projects/list/*/goals.yml",
+
+        "./.vscode/schemas/tags.json": "data/tags/*",
+
+        "./.vscode/schemas/report.json": "data/life/*/report.yml"
+    },
+
     //
     // Addons
     //

@@ -10,6 +10,7 @@ import { ProjectsGroup } from "src/process/db/fill/project/ProjectsGroup";
 import { GoalsGroup } from "src/process/db/fill/goal/GoalsGroup";
 import { ReportGroup } from "src/process/db/fill/report/ReportsGroup";
 import { FillTagCategories } from "src/process/db/fill/tag/FillTagCategories";
+import { ACTION_PRESET } from "src/process/data/ActionPreset";
 
 export function filldb()
 {
@@ -18,6 +19,8 @@ export function filldb()
     (new CreateFromScheme).run();
 
     UtilDb.requestDb();
+
+    ACTION_PRESET.reset();
 
     (new FillTagCategories).run();
     (new FillTags).run();

@@ -80,6 +80,11 @@
             "type": "object",
             "properties":
             {
+                "preset":
+                {
+                    "description":  "Готовый набор стилевых свойств для кнопки",
+                    "type":         "string"
+                },
                 "icon":
                 {
                     "description":  "Font Awesome иконка перед текстом",
@@ -103,11 +108,14 @@
                 }
             },
             "additionalProperties": false,
-            "required":
+            "oneOf":
             [
-                "text",
-                "link",
-                "colors"
+                {
+                    "required": ["preset", "link"]
+                },
+                {
+                    "required": ["text", "link", "icon", "colors"]
+                }
             ]
         },
 
@@ -183,14 +191,37 @@
 
         "related":
         {
-            "description": "Связи с другими проектами. Для установки связи нужна серьезная причина!",
+            "description": "Связи с другими проектами.",
             "type": "object",
             "patternProperties":
             {
                 "^[a-z-]+$":
                 {
-                    "description": "Идентификатор связанного проекта и веская причина, по которой связка установлена.",
-                    "type": "string"
+                    "description": "Идентификатор связанного проекта.",
+                    "oneOf":
+                    [
+                        {
+                            "type": "string"
+                        },
+                        {
+                            "type": "object",
+                            "properties":
+                            {
+                                "type":
+                                {
+                                    "description": "Тип отношения между проектами.",
+                                    "type": "string",
+                                    "enum": ["dependent", "dependency", "relation", "relation-both"]
+                                },
+                                "reason":
+                                {
+                                    "description": "Причина, по которой проекты связаны.",
+                                    "type": "string"
+                                }
+                            },
+                            "required": ["type", "reason"]
+                        }
+                    ]
                 }
             }
         },

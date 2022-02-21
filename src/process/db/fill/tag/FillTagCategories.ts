@@ -1,7 +1,7 @@
 import { Process } from "@cmtv/processes";
 import { glob } from "glob";
-import { parse as jsoncParse } from "comment-json";
 import { Db } from "sqlean";
+import YAML from 'yaml';
 
 import { IO } from "src/util/IO";
 import { DataTagCategory } from "src/entity/tag/data";
@@ -18,9 +18,9 @@ export class FillTagCategories extends Process
 
         glob.sync('data/tags/other/*').forEach(categoryFile =>
         {
-            let dataCategory: DataTagCategory = jsoncParse(IO.readFile(categoryFile));
+            let dataCategory: DataTagCategory = YAML.parse(IO.readFile(categoryFile));
             
-            let filenameArr = categoryFile.split('/').pop().replace('.jsonc', '').split('-');
+            let filenameArr = categoryFile.split('/').pop().split('-');
             let displayOrder = +filenameArr.shift();
             let catId = filenameArr.shift();
 
@@ -33,8 +33,8 @@ export class FillTagCategories extends Process
 
             Object.keys(dataCategory.tags).forEach(tagId =>
             {
-                let dataTag = dataCategory.tags[tagId];
-
+                let dataTag = dataCategory.tags[tagId] ?? {};
+                
                 let dbTag = new DbTag;
                     dbTag.tagId =   tagId;
                     dbTag.type =    'other';

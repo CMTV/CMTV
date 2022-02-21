@@ -37,7 +37,7 @@ export class PageProject extends Page
     timeline:   ViewTimeline;
 
     tagChart:   ViewTimeChart;
-    related:    ViewProjectRelated[];
+    related:    ViewProjectRelated;
     blocks:     ProjectBlock[];
 
     dest = () => `projects/${this.id}/index.html`;

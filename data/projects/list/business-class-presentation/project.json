@@ -23,9 +23,21 @@
 
     "related":
     {
-        "webinar-neural-networks": "Презентация по нейросетям для вебинара.",
-        "step-into-the-future": "Презентация по защите научной работы.",
-        "presentations": "Другие презентации, не привязанные к конкретным проектам."
+        "webinar-neural-networks":
+        {
+            "type": "dependent",
+            "reason": "Презентация по нейросетям для вебинара."
+        },
+        "step-into-the-future":
+        {
+            "type": "dependent",
+            "reason": "Презентация по защите научной работы."
+        },
+        "presentations":
+        {
+            "type": "dependent",
+            "reason": "Другие презентации, не привязанные к конкретным проектам."
+        }
     },
 
     "tags":

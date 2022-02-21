@@ -1,0 +1,382 @@
+'1.01':
+    time:
+    -   project: radkopeter
+        goals: fill
+        duration: '1:30'
+    -   project: dragon-age-inquisition
+        goals: playthrough
+        duration: 6
+'2.01':
+    time:
+    -   project: radkopeter
+        goals: fill
+        duration: 5
+    -   project: dragon-age-inquisition
+        goals: playthrough
+        duration: 5
+'3.01':
+    time:
+    -   project: radkopeter
+        goals: fill
+        duration: 3
+'4.01':
+    time:
+    -   project: radkopeter
+        goals: fill
+        duration: 4
+    -   project: dragon-age-inquisition
+        goals: playthrough
+        duration: '5:20'
+    checks:
+    - 'divine-body : diet'
+    - 'divine-body : training'
+'5.01':
+    time:
+    -   project: radkopeter
+        goals: fill
+        duration: 4
+    -   project: dragon-age-inquisition
+        goals: playthrough
+        duration: '5:30'
+    counters:
+    -   counter: game
+        project: dragon-age-inquisition
+    checks:
+    - 'divine-body : diet'
+    - 'divine-body : training'
+'6.01':
+    time:
+    -   project: dragon-age-inquisition
+        goals: steam-review
+        duration: '0:30'
+    -   project: radkopeter
+        goals: fill
+        duration: 5
+    -   project: alien-isolation
+        goals: playthrough
+        duration: 4.6
+'7.01':
+    time:
+    -   project: radkopeter
+        goals: fill
+        duration: 4
+    -   project: alien-isolation
+        goals: playthrough
+        duration: '5:30'
+'8.01':
+    time:
+    -   project: radkopeter
+        goals: fill
+        duration: 5
+    -   project: alien-isolation
+        goals: playthrough
+        duration: 4
+'9.01':
+    time:
+    -   project: radkopeter
+        goals: fill
+        duration: 5
+    -   project: alien-isolation
+        goals: playthrough
+        duration: 4
+'10.01':
+    time:
+    -   project: combinatorics-book
+        goals: tasks
+        duration: 1
+    -   project: alien-isolation
+        goals: playthrough
+        duration: '0:40'
+    -   project: alien-isolation
+        goals: rest-achievements
+        duration: '2:20'
+    counters:
+    -   counter: game
+        project: alien-isolation
+'11.01':
+    time:
+    -   project: combinatorics-book
+        goals: tasks
+        duration: 1
+    -   project: alien-isolation
+        goals: rest-achievements
+        duration: '4:15'
+    checks:
+    - 'divine-body : training'
+'12.01':
+    time:
+    -   project: radkopeter
+        goals: fill
+        duration: 4
+    -   project: alien-isolation
+        goals: rest-achievements
+        duration: '3:50'
+    checks:
+    - 'divine-body : training'
+'13.01':
+    time:
+    -   project: alien-isolation
+        goals: steam-review
+        duration: '0:30'
+    -   project: radkopeter
+        goals: fill
+        duration: 4
+'14.01':
+    time:
+    -   project: radkopeter
+        goals: fill
+        duration: 5
+    checks:
+    - 'divine-body : diet'
+'15.01':
+    time:
+    -   project: radkopeter
+        goals: fill
+        duration: 5
+    checks:
+    - 'divine-body : diet'
+'16.01':
+    time:
+    -   project: radkopeter
+        goals: fill
+        duration: 5
+    checks:
+    - 'divine-body : diet'
+'17.01':
+    time:
+    -   project: omath
+        goals: concept
+        duration: 3
+'18.01':
+    time:
+    -   project: omath
+        goals: concept
+        duration: 5
+'19.01':
+    time:
+    -   project: omath
+        goals: concept
+        duration: 5
+'20.01':
+    time:
+    -   project: omath
+        goals: concept
+        duration: 5
+'21.01':
+    time:
+    -   project: omath
+        goals: concept
+        duration: 6
+'22.01':
+    time:
+    -   project: omath
+        goals: concept
+        duration: 4
+'23.01':
+    time:
+    -   project: omath
+        goals: concept
+        duration: 5
+'24.01':
+    checks:
+    - 'divine-body : diet'
+    - 'divine-body : training'
+'25.01':
+    time:
+    -   project: omath
+        goals: sketch
+        duration: 4
+    -   project: dota-2
+        goals: play
+        duration: '2:45'
+    checks:
+    - 'divine-body : diet'
+    - 'divine-body : training'
+'31.01':
+    time:
+    -   project: god-of-war
+        goals: playthrough
+        duration: 1.5
+    -   project: android-math
+        goals: development
+        duration: 3
+    -   project: omath
+        goals: sketch
+        duration: 3
+    checks:
+    - 'divine-body : training'
+'01.02':
+    time:
+    -   project: android-math
+        goals: development
+        duration: 3
+    -   project: omath
+        goals: sketch
+        duration: 3
+    -   project: god-of-war
+        goals: playthrough
+        duration: 4.4
+    checks:
+    - 'divine-body : training'
+'02.02':
+    time:
+    -   project: android-math
+        goals: development
+        duration: 3
+    -   project: omath
+        goals: sketch
+        duration: '1:30'
+    -   project: god-of-war
+        goals: playthrough
+        duration: 3.5
+'03.02':
+    time:
+    -   project: android-math
+        goals: development
+        duration: 3
+    -   project: omath
+        goals: sketch
+        duration: 2
+    -   project: god-of-war
+        goals: playthrough
+        duration: 4
+'04.02':
+    time:
+    -   project: android-math
+        goals: development
+        duration: 3
+    -   project: omath
+        goals: sketch
+        duration: 4
+    -   project: god-of-war
+        goals: playthrough
+        duration: 4.9
+'05.02':
+    time:
+    -   project: android-math
+        goals: development
+        duration: 3
+    -   project: omath
+        goals: sketch
+        duration: 4
+    -   project: god-of-war
+        goals: playthrough
+        duration: 3.3
+'06.02':
+    time:
+    -   project: android-math
+        goals: development
+        duration: 3
+    -   project: omath
+        goals: sketch
+        duration: 2.5
+    -   project: god-of-war
+        goals: playthrough
+        duration: 3.2
+    counters:
+    -   counter: game
+        project: god-of-war
+'07.02':
+    time:
+    -   project: android-math
+        goals: development
+        duration: 3
+    -   project: omath
+        goals: sketch
+        duration: 3
+    -   project: god-of-war
+        goals: all-achievements
+        duration: 4.1
+'08.02':
+    time:
+    -   project: android-math
+        goals: development
+        duration: 3
+    -   project: omath
+        goals: sketch
+        duration: 3
+    -   project: god-of-war
+        goals: all-achievements
+        duration: 3.7
+'09.02':
+    time:
+    -   project: android-math
+        goals: development
+        duration: 3
+    -   project: omath
+        goals: sketch
+        duration: 1.5
+    -   project: god-of-war
+        goals: all-achievements
+        duration: 3.9
+'10.02':
+    time:
+    -   project: radkopeter
+        goals: fill
+        duration: 1.5
+    -   project: god-of-war
+        goals: steam-review
+        duration: '0:30'
+'11.02':
+    time:
+    -   project: android-math
+        goals: development
+        duration: 3
+    -   project: omath
+        goals: sketch
+        duration: 3
+'14.02':
+    time:
+    -   project: android-math
+        goals: development
+        duration: 1
+    -   project: omath
+        goals: sketch
+        duration: 1
+'16.02':
+    time:
+    -   project: nkv
+        goals: development
+        duration: 2
+'17.02':
+    time:
+    -   project: nkv
+        goals: development
+        duration: 3
+'18.02':
+    time:
+    -   project: nkv
+        goals: development
+        duration: 3
+'19.02':
+    time:
+    -   project: nkv
+        goals: development
+        duration: 5
+    -   project: omath
+        goals: writing
+        duration: 1
+
+20.02:
+    time:
+        -   project: nkv
+            goals: development
+            duration: 5
+
+        -   project: omath
+            goals: writing
+            duration: 1
+
+21.02:
+    time:
+        -   project: radkopeter
+            goals: v2
+            duration: 6
+
+        -   project: radkopeter
+            goals: fill
+            duration: 1
+    
+    checks:
+        -   'divine-body : diet'
+        -   'divine-body : training'

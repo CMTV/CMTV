@@ -1,4 +1,5 @@
 import { Db } from "sqlean";
+import { AND, OR } from "sqlean/dist/query/Where";
 
 import { BUILD_CONFIG } from "src/BuildConfig";
 import { UtilDate } from "src/util/Date";
@@ -83,7 +84,7 @@ export class ViewProjectTags
 //
 //
 
-export class ViewProjectRelated
+class ViewProjectRelation
 {
     id:     string;
     title:  string;
@@ -98,19 +99,39 @@ export class ViewProjectRelated
         this.reason =   reason;
     }
     
-    static getAllFor(projectId: string)
+    static getAllFor(projectId: string, relationType: string)
     {
         let dbRelated = Db.Select.All({
             table:      'project_relation',
             columns:    ['relatedId', 'reason'],
-            where:      ['@projectId', '=', projectId]
-        });
+            where:      AND(['@projectId', '=', projectId], ['@type', '=', relationType]),
+            order:      { displayOrder: 'ASC' }
+        }); 
 
         if (!dbRelated) return null;
 
         dbRelated = dbRelated.filter(item => BUILD_CONFIG.projectAllowed(item.relatedId));
 
-        return dbRelated.map(dbItem => new ViewProjectRelated(dbItem.relatedId, dbItem.reason));
+        return dbRelated.map(dbItem => new ViewProjectRelation(dbItem.relatedId, dbItem.reason));
+    }
+}
+
+export class ViewProjectRelated
+{
+    dependencies: ViewProjectRelation[];
+    dependents: ViewProjectRelation[];
+    relations: ViewProjectRelation[];
+
+    constructor(projectId: string)
+    {
+        this.dependencies = ViewProjectRelation.getAllFor(projectId, 'dependency');
+        this.dependents = ViewProjectRelation.getAllFor(projectId, 'dependent');
+        this.relations = ViewProjectRelation.getAllFor(projectId, 'relation');
+    }
+
+    hasAny()
+    {
+        return this.dependencies || this.dependents || this.relations;
     }
 }
 

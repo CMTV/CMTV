@@ -26,6 +26,7 @@ export class ProjectFact
 
 export class ProjectAction
 {
+    preset: string;
     text:   string;
     link:   string;
     colors: string[];

@@ -1,4 +1,15 @@
 {
+    "play":
+    {
+        "title": "Игра",
+        "status": "pause",
+        "tags": ["отдых", "игра"],
+        "plan":
+        [
+            "25.01.2022"
+        ]
+    },
+
     "legion-commander-build":
     {
         "title": "Руководство на Legion Commander",

@@ -75,7 +75,13 @@ export class DbProjectRelation extends Entity
     relatedId: string;
 
     @Column
+    type: string;
+
+    @Column
     reason: string;
+
+    @Column
+    displayOrder: number;
 }
 
 //

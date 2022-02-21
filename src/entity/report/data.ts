@@ -1,3 +1,5 @@
+import YAML from 'yaml';
+
 import { IO } from "src/util/IO";
 import { UtilDate } from "src/util/Date";
 
@@ -56,10 +58,15 @@ export class UtilDataReport
 {
     static getYearReports(year: string)
     {
-        let pathToReports = `data/life/${year}/report.json`;
-        let rawReports = (IO.exists(pathToReports) ? JSON.parse(IO.readFile(pathToReports)) : null) as DataReports;
+        let reportPath = (extension: string) => `data/life/${year}/report.${extension}`;
+        let rawReports: DataReports;
 
-        if (!rawReports) return null;
+        if (IO.exists(reportPath('yml')))
+            rawReports = YAML.parse(IO.readFile(reportPath('yml')));
+        else if (IO.exists(reportPath('json')))
+            rawReports = JSON.parse(IO.readFile(reportPath('json')));
+        else
+            return null;
 
         let yearReports: { [date: string]: DataReport } = {};
 

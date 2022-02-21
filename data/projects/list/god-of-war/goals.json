@@ -1,0 +1,32 @@
+{
+    "playthrough":
+    {
+        "title": "Прохождение игры",
+        "status": "done",
+        "counted": false,
+        "start": "31.01.2022",
+        "end": "06.02.2022",
+        "plan": ["31.01.2022 - 06.02.2022"],
+        "tags": ["отдых", "игра"]
+    },
+
+    "all-achievements":
+    {
+        "title": "Все достижения",
+        "status": "done",
+        "counted": false,
+        "start": "07.02.2022",
+        "end": "10.02.2022",
+        "plan": ["07.02.2022 - 10.02.2022"],
+        "tags": ["отдых", "игра"]
+    },
+
+    "steam-review":
+    {
+        "counted": false,
+        "title": "Обзор в Steam",
+        "status": "done",
+        "date": "10.02.2022",
+        "plan": ["10.02.2022"]
+    }
+}

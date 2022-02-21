@@ -75,7 +75,7 @@ export class Page_Project extends Process
                 page.timeline = ViewTimeline.forProject(projectId);
 
                 page.tagChart = ViewTimeChart.forProject(projectId);
-                page.related =  ViewProjectRelated.getAllFor(projectId);
+                page.related =  new ViewProjectRelated(projectId);
 
                 page.blocks =   dbProject.blocks;
 

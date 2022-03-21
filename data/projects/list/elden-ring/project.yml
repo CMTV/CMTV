@@ -1,0 +1,17 @@
+title: Elden Ring
+desc: ""
+type: in
+
+status:
+    type: done
+    label: Играю
+
+start: 25.02.2022
+
+action:
+    preset: steam
+    link: https://store.steampowered.com/app/1245620/ELDEN_RING/
+
+tags:
+    - "!отдых"
+    - "!игра"

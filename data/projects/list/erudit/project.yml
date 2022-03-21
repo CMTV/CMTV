@@ -1,0 +1,28 @@
+title: Erudit
+desc: Статический генератор образовательных сайтов
+type: mix
+
+status:
+    type: do
+    label: В разработке
+
+start: 16.03.2022
+
+action:
+    preset: github
+    link: https://github.com/CMTV/erudit
+
+links:
+    -   icon: fa-brands fa-npm
+        text: Пакет на NPM
+        link: https://www.npmjs.com/package/erudit
+
+tags:
+    - "!информатика"
+    - "!программирование"
+    - "!библиотека"
+    - "ssg"
+    - "node.js"
+    - "pug"
+    - "scss"
+    - "ts"

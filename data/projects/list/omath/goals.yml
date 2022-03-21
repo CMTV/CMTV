@@ -1,3 +1,11 @@
+development:
+    title: Разработка
+    status: do
+    start: 22.02.2022
+    tags:
+        - программирование
+        - информатика
+
 writing:
     title: Написание контента
     status: do

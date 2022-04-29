@@ -709,7 +709,7 @@
 
         -   project: elden-ring
             goals: playthrough
-            duration: 3.7 # 73.7
+            duration: 3.7
 
 20.03:
     time:
@@ -723,4 +723,432 @@
 
         -   project: elden-ring
             goals: playthrough
-            duration: 4.3 # 78
+            duration: 4.3
+
+21.03:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 6
+
+        -   project: elden-ring
+            goals: playthrough
+            duration: 3
+        
+        -   project: elden-ring
+            goals: all-achievements
+            duration: 1
+
+    checks:
+        -   "divine-body : training"
+        -   "divine-body : diet"
+
+22.03:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 6
+
+        -   project: omath
+            goals: writing
+            duration: "0:40"
+
+        -   project: elden-ring
+            goals: all-achievements
+            duration: 2
+
+    counters:
+        -   counter: game
+            project: elden-ring
+
+23.03:
+    checks:
+        -   "divine-body : training"
+
+24.03:
+    time:
+        -   project: erudit # errors-lib
+            goals: development
+            duration: 4
+
+        -   project: mcmodding
+            goals: support
+            duration: 3
+
+    checks:
+        -   "divine-body : training"
+
+25.03:
+    time:
+        -   project: mcmodding
+            goals: support
+            duration: 7
+
+    checks:
+        -   "divine-body : training"
+
+26.03:
+    time:
+        -   project: mcmodding
+            goals: support
+            duration: "2:40"
+
+27.03:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 4
+
+28.03:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 6
+
+29.03:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 6
+        
+    checks:
+        -   "divine-body : training"
+
+30.03:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 6
+
+    checks:
+        -   "divine-body : training"
+
+31.03:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 1
+
+    checks:
+        -   "divine-body : training"
+
+01.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 5
+    
+    checks:
+        -   "divine-body : training"
+
+02.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 6
+
+03.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 6
+
+04.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 6
+        
+        -   project: omath
+            goals: writing
+            duration: "0:30"
+        
+        -   project: snowrunner
+            goals: playthrough
+            duration: 2.9
+    
+    checks:
+        -   "divine-body : training"
+
+05.04:
+    time:
+        -   project: blp
+            goals: development
+            duration: 6
+
+        -   project: omath
+            goals: writing
+            duration: 1
+        
+        -   project: snowrunner
+            goals: playthrough
+            duration: 2.7
+
+    checks:
+        -   "divine-body : training"
+
+06.04:
+    time:
+        -   project: blp
+            goals: development
+            duration: 4
+
+        -   project: omath
+            goals: writing
+            duration: "0:30"
+
+        -   project: snowrunner
+            goals: playthrough
+            duration: 3.4
+
+    checks:
+        -   "divine-body : training"
+        
+07.04:
+    time:
+        -   project: blp
+            goals: development
+            duration: 6
+
+        -   project: snowrunner
+            goals: writing
+            duration: 3.1 # 12.1
+
+    checks:
+        -   "divine-body : training"
+
+
+08.04:
+    time:
+        -   project: blp
+            goals: development
+            duration: 6
+    
+    checks:
+        -   "divine-body : training"
+
+09.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 4
+
+10.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 3
+
+11.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 6
+
+        -   project: omath
+            goals: writing
+            duration: 1
+
+        -   project: swtor
+            goals: playthrough
+            duration: 3
+
+    checks:
+        -   "divine-body : training"
+
+12.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 6
+        
+        -   project: omath
+            goals: writing
+            duration: 1
+
+        -   project: swtor
+            goals: playthrough
+            duration: 3.3
+    
+    checks:
+        -   "divine-body : training"
+
+13.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 3
+
+        -   project: swtor
+            goals: playthrough
+            duration: 3.2
+
+    checks:
+        -   "divine-body : training"
+
+14.04:
+    time:
+        -   project: nkv
+            goals: development
+            duration: 3
+
+        -   project: swtor
+            goals: playthrough
+            duration: 2.6 # 12.1
+
+    checks:
+        -   "divine-body : training"
+
+17.04:
+    time:
+        -   project: dota-2
+            goals: play
+            duration: 12
+
+18.04:
+    time:
+        -   project: dota-2
+            goals: play
+            duration: 10
+
+19.04:
+    time:
+        -   project: nkv
+            goals: development
+            duration: 1.5
+
+        -   project: erudit
+            goals: development
+            duration: 2
+
+        -   project: omath
+            goals: sketch
+            duration: 3
+
+        -   project: subnautica
+            goals: playthrough
+            duration: "2:05"
+
+    checks:
+        -   "divine-body : training"
+
+20.04:
+    time:
+        -   project: nkv
+            goals: development
+            duration: "0:30"
+
+        -   project: erudit
+            goals: development
+            duration: 4
+
+        -   project: subnautica
+            goals: playthrough
+            duration: 3
+
+    checks:
+        -   "divine-body : training"
+
+21.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 3
+
+        -   project: subnautica
+            goals: playthrough
+            duration: "3:31"
+
+22.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 3
+
+        -   project: subnautica
+            goals: playthrough
+            duration: "4:13"
+
+23.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 6
+
+        -   project: subnautica
+            goals: playthrough
+            duration: "2:11"
+
+24.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 5
+
+        -   project: subnautica
+            goals: playthrough
+            duration: 2
+
+25.04:
+    time:
+        -   project: mcmodding
+            goals: support
+            duration: 4
+
+        -   project: subnautica
+            goals: playthrough
+            duration: 2.8
+    
+    checks:
+        -   "divine-body : training"
+        -   "divine-body : diet"
+
+26.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 5
+
+        -   project: subnautica
+            goals: playthrough
+            duration: 2.7
+    checks:
+        -   "divine-body : training"
+        -   "divine-body : diet"
+
+27.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 4
+        
+        -   project: subnautica
+            goals: playthrough
+            duration: 3.8
+
+    checks:
+        -   "divine-body : diet"
+
+    events:
+        -   title: Удалили первый в жизни зуб в мудрости!
+
+28.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 5
+
+        -   project: subnautica
+            goals: playthrough
+            duration: 2.7
+
+    counters:
+        -   counter: games
+            project: subnautica
+
+    checks:
+        -   "divine-body : diet"
+
+    events:
+        -   title: Подарок на День Рожденья!
+            desc: Наконец привезли и собрали новое тканевое кресло. Очень удобно!

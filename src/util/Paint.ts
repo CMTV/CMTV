@@ -1,4 +1,4 @@
-import { createCanvas, loadImage, NodeCanvasRenderingContext2D, registerFont } from "canvas";
+import { createCanvas, loadImage, registerFont } from "canvas";
 import { IO } from "./IO";
 
 const W = 1200;
@@ -58,7 +58,7 @@ export function paintProject(iconPath: string, projectTitle: string, dest: strin
 //
 //
 
-function drawText(ctx: NodeCanvasRenderingContext2D, text: string, isProject: boolean)
+function drawText(ctx, text: string, isProject: boolean)
 {
     ctx.fillStyle = '#fff';
     ctx.textBaseline = 'top';
@@ -84,7 +84,7 @@ function drawText(ctx: NodeCanvasRenderingContext2D, text: string, isProject: bo
     return x - gap - iconRectSize;
 }
 
-function getFitTextData(ctx: NodeCanvasRenderingContext2D, lines: string[], maxWidth: number)
+function getFitTextData(ctx, lines: string[], maxWidth: number)
 {
     let text = lines.join('\n');
     let fontSize = fontMax;

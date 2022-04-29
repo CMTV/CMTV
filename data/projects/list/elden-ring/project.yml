@@ -4,9 +4,10 @@ type: in
 
 status:
     type: done
-    label: Играю
+    label: Пройдена
 
 start: 25.02.2022
+end: 23.03.2022
 
 action:
     preset: steam

@@ -1,0 +1,8 @@
+play:
+    title: Игра
+    status: pause
+    counted: false
+    start: 22.12.2018
+    tags:
+        - отдых
+        - игра

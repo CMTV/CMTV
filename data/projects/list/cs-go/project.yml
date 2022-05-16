@@ -1,0 +1,17 @@
+title: "Counter Strike: GO"
+desc: Бессмертный соревновательный шутер, в который можно играть бесконечно.
+type: in
+
+status:
+    type: pause
+    label: Не играю
+
+start: 22.12.2018
+
+action:
+    preset: steam
+    link: https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/
+
+tags:
+    - "!отдых"
+    - "!игра"

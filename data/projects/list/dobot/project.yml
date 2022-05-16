@@ -1,0 +1,39 @@
+title: Dobot
+desc: Менеджер процессов на TypeScript.
+type: mix
+
+status:
+    type: done
+    label: Разработал
+
+start: 10.05.2022
+end: 15.05.2022
+
+action:
+    preset: github
+    link: https://github.com/CMTV/dobot
+
+links:
+    -   icon: fa-brands fa-npm
+        text: Пакет на NPM
+        link: https://www.npmjs.com/package/dobot
+
+    -   icon: fa-brands fa-github
+        text: processes на GitHub
+        link: https://github.com/CMTV/processes
+
+    -   icon: fa-brands fa-npm
+        text: processes на NPM
+        link: https://www.npmjs.com/package/@cmtv/processes
+
+related:
+    erudit:
+        type: dependent
+        reason: Определяет очередность выполнения процессов сборки проекта.
+
+tags:
+    -   "!информатика"
+    -   "!программирование"
+    -   "!библиотека"
+    -   "ts"
+    -   "node.js"

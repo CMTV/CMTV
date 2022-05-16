@@ -1,4 +1,4 @@
-title: NKV — Nested Key Value
+title: Nested Key Value
 desc: Простой парсер древовидных структур типа ключ-значение.
 type: mix
 
@@ -19,7 +19,7 @@ links:
         link: https://www.npmjs.com/package/nkv
 
 related:
-    omath:
+    erudit:
         type: dependent
         reason: Парсинг оглавления учебников.
 

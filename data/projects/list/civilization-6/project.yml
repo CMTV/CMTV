@@ -1,0 +1,18 @@
+title: Civilization VI
+desc: Великая стратегическая игра про построение своей империи.
+type: in
+
+status:
+    type: fail
+    label: Не играю
+
+start: 4.05.2022
+end: 9.05.2022
+
+action:
+    preset: steam
+    link: https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/
+
+tags:
+    - "!отдых"
+    - "!игра"

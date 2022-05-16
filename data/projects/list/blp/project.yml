@@ -1,0 +1,31 @@
+title: Blank Line Parser
+desc: Конвертация любого текста в массив блоков.
+type: mix
+
+status:
+    type: done
+    label: Разработал
+
+start: 3.03.2022
+end: 29.04.2022
+
+action:
+    preset: github
+    link: https://github.com/CMTV/blp
+
+links:
+    -   icon: fa-brands fa-npm
+        text: Пакет на NPM
+        link: https://www.npmjs.com/package/blp
+
+related:
+    erudit:
+        type: dependent
+        reason: Парсинг файлов статей и разбивка их на блоки.
+
+tags:
+    -   "!информатика"
+    -   "!программирование"
+    -   "!библиотека"
+    -   "ts"
+    -   "node.js"

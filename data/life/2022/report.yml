@@ -504,7 +504,7 @@
 
 03.03:
     time:
-        -   project: omath # blp
+        -   project: blp
             goals: development
             duration: 7
 
@@ -523,7 +523,7 @@
 
 05.03:
     time:
-        -   project: omath # blp
+        -   project: blp
             goals: development
             duration: 7
 
@@ -537,7 +537,7 @@
 
 06.03:
     time:
-        -   project: omath # blp
+        -   project: blp
             goals: development
             duration: 7
 
@@ -551,7 +551,7 @@
 
 07.03:
     time:
-        -   project: omath # blp
+        -   project: blp
             goals: development
             duration: 7
 
@@ -565,7 +565,7 @@
 
 08.03:
     time:
-        -   project: omath # blp | Сделать настраеваемые блоки и инлайнеры
+        -   project: blp
             goals: development
             duration: 6
         
@@ -1152,3 +1152,197 @@
     events:
         -   title: Подарок на День Рожденья!
             desc: Наконец привезли и собрали новое тканевое кресло. Очень удобно!
+
+29.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 5
+
+30.04:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 1
+
+    checks:
+        -   "divine-body : training"
+
+    events:
+        -   title: Первый субботник в 2022
+            desc: Убрались у памятников и около своего дома!
+
+1.05:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 5
+
+2.05:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 5
+        
+3.05:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 5
+    
+    events:
+        -   title: Завершил 4 семестр университета
+
+4.05:
+    time:
+        -   project: 2tree
+            goals: development
+            duration: 5
+
+        -   project: civilization-6
+            goals: playthrough
+            duration: 5.1
+        
+    checks:
+        -   "divine-body : diet"
+
+5.05:
+    time:
+        -   project: 2tree
+            goals: development
+            duration: 5
+        
+        -   project: civilization-6
+            goals: playthrough
+            duration: 5.8
+
+6.05:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 8
+        
+        -   project: civilization-6
+            goals: playthrough
+            duration: 10.4
+
+7.05:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 8
+
+        -   project: civilization-6
+            goals: playthrough
+            duration: 5.5
+
+8.05:
+    time:
+        -   project: mcmodding
+            goals: support
+            duration: 4
+
+        -   project: erudit
+            goals: development
+            duration: 2
+        
+        -   project: civilization-6
+            goals: playthrough
+            duration: 7.3
+
+9.05:
+    time:
+        -   project: mcmodding
+            goals: support
+            duration: 2
+
+        -   project: erudit
+            goals: development
+            duration: 2
+        
+        -   project: civilization-6
+            goals: playthrough
+            duration: 3.9 # 38
+
+10.05:
+    time:
+        -   project: mcmodding
+            goals: support
+            duration: 4
+    
+        -   project: dobot
+            goals: development
+            duration: 2.5
+        
+        -   project: omath
+            goals: writing
+            duration: "0:40"
+
+        -   project: cs-go
+            goals: play
+            duration: 2.8
+
+11.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 5
+
+        -   project: cs-go
+            goals: play
+            duration: 3.8
+
+12.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 3
+
+        -   project: cs-go
+            goals: play
+            duration: 2.5
+        
+    checks:
+        -   "divine-body : training"
+
+13.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 6
+
+        -   project: cs-go
+            goals: play
+            duration: 2.9
+
+        -   project: omath
+            goals: writing
+            duration: "0:40"
+
+14.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 6
+
+        -   project: cs-go
+            goals: play
+            duration: 3.2
+
+15.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 3
+
+        -   project: erudit
+            goals: development
+            duration: 1
+
+        -   project: omath
+            goals: writing
+            duration: "0:40"
+
+        -   project: cs-go
+            goals: play
+            duration: 3.7 # 490.5

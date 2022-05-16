@@ -2,13 +2,16 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url><loc>https://radkopeter.ru/projects</loc></url>
+    <url><loc>https://radkopeter.ru/projects/2tree</loc></url>
     <url><loc>https://radkopeter.ru/projects/alien-isolation</loc></url>
     <url><loc>https://radkopeter.ru/projects/all-tasks</loc></url>
     <url><loc>https://radkopeter.ru/projects/android-math</loc></url>
     <url><loc>https://radkopeter.ru/projects/astroneer-club</loc></url>
+    <url><loc>https://radkopeter.ru/projects/blp</loc></url>
     <url><loc>https://radkopeter.ru/projects/bmstu</loc></url>
     <url><loc>https://radkopeter.ru/projects/business-class-presentation</loc></url>
     <url><loc>https://radkopeter.ru/projects/bydef</loc></url>
+    <url><loc>https://radkopeter.ru/projects/civilization-6</loc></url>
     <url><loc>https://radkopeter.ru/projects/cmtv-pro</loc></url>
     <url><loc>https://radkopeter.ru/projects/combinatorics-book</loc></url>
     <url><loc>https://radkopeter.ru/projects/craftmania</loc></url>
@@ -16,6 +19,7 @@
     <url><loc>https://radkopeter.ru/projects/deus-ex-hr</loc></url>
     <url><loc>https://radkopeter.ru/projects/divine-body</loc></url>
     <url><loc>https://radkopeter.ru/projects/dm-training-sand</loc></url>
+    <url><loc>https://radkopeter.ru/projects/dobot</loc></url>
     <url><loc>https://radkopeter.ru/projects/dodem</loc></url>
     <url><loc>https://radkopeter.ru/projects/dota-2</loc></url>
     <url><loc>https://radkopeter.ru/projects/dragon-age-inquisition</loc></url>

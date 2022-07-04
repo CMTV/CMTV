@@ -1,0 +1,98 @@
+<!DOCTYPE html><!--
+
+
+ ▄████▄   ███▄ ▄███▓▄▄▄█████▓ ██▒   █▓
+ ▒██▀ ▀█  ▓██▒▀█▀ ██▒▓  ██▒ ▓▒▓██░   █▒
+ ▒▓█    ▄ ▓██    ▓██░▒ ▓██░ ▒░ ▓██  █▒░
+ ▒▓▓▄ ▄██▒▒██    ▒██ ░ ▓██▓ ░   ▒██ █░░
+ ▒ ▓███▀ ░▒██▒   ░██▒  ▒██▒ ░    ▒▀█░  
+ ░ ░▒ ▒  ░░ ▒░   ░  ░  ▒ ░░      ░ ▐░  
+   ░  ▒   ░  ░      ░    ░       ░ ░░  
+ ░        ░      ░     ░           ░░  
+ ░ ░             ░                  ░  
+ ░                                 ░   
+
+
+--><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>The Quarry — Петр Радько</title><meta name="description" content="Почти Detoit в темном лесу."><link rel="canonical" href="https://radkopeter.ru/projects/the-quarry/"><meta name="keywords" content="Петр Радько, CMTV"><meta name="og:image" content="https://radkopeter.ru/site/graphics/og-images/project-the-quarry.jpeg"><meta name="generator" content="CMTV Static Site Generator"><meta name="build-time" content="1656925164428"><link rel="icon" href="https://radkopeter.ru/favicon.ico"><link rel="icon" type="image/png" href="https://radkopeter.ru/site/graphics/favicon/favicon.png"><link rel="preload" as="style" href="/site/vendor/font-awesome/css/all.min.css"><link rel="stylesheet" href="/site/vendor/font-awesome/css/all.min.css"><link href="/site/vendor/photoswipe/photoswipe.css" rel="stylesheet"><script type="module" src="/site/scripts/lightbox.js"></script><link href="/site/styles/global.css" rel="stylesheet"><link href="/site/styles/project.css" rel="stylesheet"><script src="/site/scripts/global.js" defer></script><script src="/site/scripts/project.js" defer></script></head><body class="project"><script>(() =>
+{
+    ['color-scheme', 'theme-color'].forEach(name =>
+    {
+        let tag = document.createElement('meta');
+            tag.setAttribute('name', name);
+            tag.setAttribute('content', '');
+        
+        document.head.appendChild(tag);
+    });
+
+    var preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+    var preferTheme = (preferDark ? 'dark' : 'light');
+    var theme = localStorage.getItem('theme');
+
+    if (theme === null || theme === 'null')
+        theme = preferTheme;
+
+    setTheme(theme);
+})();
+
+function setTheme(theme)
+{
+    document.body.classList.toggle('theme--dark', (theme === 'dark'));
+
+    var themeColors = { light: '#ffffff', dark: '#333333' };
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[theme]);
+    document.querySelector('meta[name="color-scheme"]').setAttribute('content', theme);
+
+    localStorage.setItem('theme', theme);
+}
+
+function toggleTheme()
+{
+    var theme = localStorage.getItem('theme');
+    setTheme((theme === 'dark' ? 'light' : 'dark'));
+}</script><div class="bg"><div class="activities"></div><div class="fog"></div></div><div class="contactBlock"><div class="modal"><header><h2>Связаться со мной</h2><i class="fa-solid fa-times closeBtn"></i></header><ul><li>Я предпочитаю общаться в текстовом формате</li><li>Ясно и понятно обозначайте тему переписки</li><li>Готов обсудить самые безумные и интересные идеи!</li></ul><div class="email"><a href="mailto:newpetya@inbox.ru">newpetya@inbox.ru</a></div></div></div><div class="site"><header><div class="gradient"><div></div></div><div class="headerContent"><a class="me" href="/"><div class="logo"><div class="gradient"><div></div></div><img src="/site/graphics/me.png"></div><h1>Петр <span>Радько</span></h1></a><nav><a class="navItem projects" href="/projects" title="Что я делаю?"><i class="fa-solid fa-clone"></i><span>Проекты</span></a><a class="navItem life" href="/life" title="Моя борьба"><i class="fa-solid fa-heart"></i><span>Жизнь</span></a><div class="navItem themeSwitcher" onclick="toggleTheme()" title="Переключить цветовую схему"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></div><div class="navItem contact" title="Связаться со мной"><i class="fa-solid fa-envelope-open-text"></i></div></nav></div></header><main><div class="mainBlock"><header><div class="icon"><img src="/projects/the-quarry/icon.jpg" loading="lazy"/></div><div class="title">The Quarry</div><div class="desc">Почти Detoit в темном лесу.</div></header><div class="mainBar"><div class="facts"><div class="fact status"><div class="label">Статус</div><div class="data"><div title="Проект завершен" class="statusCircle statusCircle--done"></div> <div >Пройдена</div></div></div><div class="fact time"><div class="label">Время</div><div class="data">1 д 16 ч</div></div></div><style>.actionBtn > .bg { background: linear-gradient(45deg, #47A5FF,#2F7EDF); }</style><div class="actionContainer"><a class="actionBtn" href="https://store.steampowered.com/app/1577120/The_Quarry/" target="_blank"><div class="bg"></div><div class="label"><i class="fa-brands fa-steam"></i><span>Steam</span></div></a></div></div><div class="mainContent"><p>Длинный и интерактивный хоррор-фильм — красивый, цепляющий, пугающий, интригующий.
+Он дал мне именно то, что я от него ждал — интригующую историю и множество интересных и определяемых только мной событий, которые переплетаются друг с другом в неожиданные комбинации.</p>
+<p>Игра стоит наравне со своим предшественником Until Dawn и немного недотягивает до изумительной Detroit: Become Human.
+Жаль, что большие игры в таком жанре выходят редко.</p>
+<p>Обзор на эту игру стал моим первом обзором на сайте DTF.</p>
+</div><div class="links"><a class="link" href="https://dtf.ru/games/1248516-pochti-detroyt-v-temnom-lesu-obzor-the-quarry" target="_blank"><i class="fa-fw fas fa-align-justify"></i><div>Обзор на DTF</div></a></div></div><div class="direction"><header><img class="type" src="/site/graphics/in.svg" title="Потребитель"><div class="mainTags"><div class="action"><i class="fa-fw fa-solid fa-hand-fist"></i><div class="label">Действие</div><div class="value">отдых</div></div><div class="form"><i class="fa-fw fa-solid fa-vector-square"></i><div class="label">Форма</div><div class="value">игра</div></div></div></header></div><div class="goalDateData"><header><div class="goalChart"><div class="total">3</div><div class="inner"></div><div class="fracs" style="background: conic-gradient( var(--c_goalChart-done) 0% 100% )"></div></div><div class="data"><div class="start"><i class="fa-solid fa-plus fa-fw"></i><div class="label">Начало</div><div class="value">26 июня 2022</div></div><div class="end"><i class="fa-solid fa-flag-checkered fa-fw"></i><div class="label">Конец</div><div class="value">3 июля 2022</div></div></div></header><div class="goals"><div class="goal goal--done"><div class="num">1</div><div class="info"><div class="title">Прохождение игры</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>26.06.2022 – 27.06.2022</span></div><div class="time" title="Затрачено времени на цель"><i class="fa-solid fa-clock"></i><span>10 ч 5 мин</span></div></div></div></div><div class="goal goal--done"><div class="num">2</div><div class="info"><div class="title">Все достижения</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>28.06.2022 – 03.07.2022</span></div><div class="time" title="Затрачено времени на цель"><i class="fa-solid fa-clock"></i><span>1 д 2 ч</span></div></div></div></div><div class="goal goal--done"><div class="num">3</div><div class="info"><div class="title">Обзор в Steam и на DTF</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-day"></i><span>28.06.2022</span></div><div class="time" title="Затрачено времени на цель"><i class="fa-solid fa-clock"></i><span>4 ч</span></div></div></div></div></div></div><div class="timelineBlock"><header><i class="fa-solid fa-bars-staggered"></i><span>Хронокарта</span></header><div class="timeline"><div class="inner"><div class="corner"></div><div class="monthLabels"><div class="label" style="flex-basis: 8.469945355191257%">янв</div><div class="label" style="flex-basis: 7.923497267759563%">фев</div><div class="label" style="flex-basis: 8.469945355191257%">мар</div><div class="label" style="flex-basis: 8.19672131147541%">апр</div><div class="label" style="flex-basis: 8.469945355191257%">май</div><div class="label" style="flex-basis: 8.19672131147541%">июн</div><div class="label" style="flex-basis: 8.469945355191257%">июл</div><div class="label" style="flex-basis: 8.469945355191257%">авг</div><div class="label" style="flex-basis: 8.19672131147541%">сен</div><div class="label" style="flex-basis: 8.469945355191257%">окт</div><div class="label" style="flex-basis: 8.19672131147541%">ноя</div><div class="label" style="flex-basis: 8.469945355191257%">дек</div></div><div class="dataLabels"><div class="labelContainer"><div class="label label--year">2022</div><div class="extraRow"></div><div class="extraRow"></div></div></div><div class="data"><div class="monthGuides"><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 7.923497267759563%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div></div><div class="rows"><div class="row"><div class="fragment plan done  goal-1" style="left: 48.36065573770492%; width: 0.5464480874316919%;"><div class="marker" title="26.06.2022 - 27.06.2022&#13;Прохождение игры">1</div><div class="rect" title="26.06.2022 - 27.06.2022&#13;Прохождение игры"></div></div><div class="fragment report done  goal-1" style="left: 48.36065573770492%; width: 0.5464480874316919%;"><div class="rect" title="26.06.2022 - 27.06.2022&#13;Прохождение игры"></div></div></div><div class="row"><div class="fragment plan done  goal-2" style="left: 48.90710382513661%; width: 1.639344262295083%;"><div class="marker" title="28.06.2022 - 03.07.2022&#13;Все достижения">2</div><div class="rect" title="28.06.2022 - 03.07.2022&#13;Все достижения"></div></div><div class="fragment report done  goal-2" style="left: 48.90710382513661%; width: 1.639344262295083%;"><div class="rect" title="28.06.2022 - 03.07.2022&#13;Все достижения"></div></div></div><div class="row"><div class="fragment plan done single goal-3" style="left: 48.90710382513661%; "><div class="marker" title="28.06.2022&#13;Обзор в Steam и на DTF">3</div><div class="rect" title="28.06.2022&#13;Обзор в Steam и на DTF"></div></div><div class="fragment report done single goal-3" style="left: 48.90710382513661%; "><div class="rect" title="28.06.2022&#13;Обзор в Steam и на DTF"></div></div></div></div></div></div></div></div><div class="tagChart"><header><i class="fa-solid fa-clock"></i><span>Время</span><div class="time" title="Время, принимаемое за 100%">1 д 16 ч</div></header><div class="action"><header>Действие</header><div class="chartPart"><div class="bar"><div class="frac frac--отдых" style="width: 100%"></div></div><div class="labels"><div class="label"><div class="color color--отдых"></div><div class="title">отдых</div><div class="percent" title="1 д 12 ч">100</div></div></div></div></div><div class="action"><header>Форма</header><div class="chartPart"><div class="bar"><div class="frac frac--игра" style="width: 100%"></div></div><div class="labels"><div class="label"><div class="color color--игра"></div><div class="title">игра</div><div class="percent" title="1 д 12 ч">100</div></div></div></div></div></div><div class="blocks"><div class="groupSepTop"></div><div class="block"><header><div class="info"><div class="scope">28 июня 2022</div><div class="title">Обзор в Steam и на DTF</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Тезисный, бесконечно объективный и в той же степени неподкупный обзор игры <strong>The Quarry</strong>. В доказательство скажу, что, к моему глубочайшему сожалению, эта игра — не Mass Effect 2. Без спойлеров.</p>
+<p>Это не игра, а длинный интерактивный хоррор-фильм — красивый, цепляющий, пугающий, интригующий.</p>
+<p>Она даёт именно то, чего вы от нее ждете — интригующую историю и множество интересных и определяемых только вами событий, которые переплетаются друг с другом в неожиданные комбинации.</p>
+<p>Поиграть рекомендую всем. Ни одной копейки (то есть тенге) не жалко. Любителям интерактивного кино и в особенности фанатам Until Dawn к прохождению обязательно.</p>
+<h2>Плюсы</h2>
+<p><strong>+</strong> Отлично рассказанная история. Она не поразит вас своей глубиной, да и пофилософствовать особо не выйдет. Но подается она просто шедеврально. Пугает, удивляет, интригует — все как в отличном кино. Только кино это идет 10 часов.</p>
+<p><strong>+</strong> Многие принятые решения, действия и совершенные ошибки прямо или косвенно влияют на будущие ситуации (даже на сильно отдаленные). Не на общий сюжет и локации конечно, а именно на обстановку, количество событий и вариантов развязок. Причем всевозможных комбинаций событий и действий реально много.</p>
+<p><strong>+</strong> Наличие «сложных» выборов. То есть таких, в которых вы буквально не знаете что выбрать, можете даже растеряться и сильно накосячить.</p>
+<p><strong>+</strong> Персонажи. Их много, все они разные. По поведению, разговорам и действиям хорошо читаются их характеры. Не могу сказать даже, что они прямо реально тупые. По большей части их поведение вполне естественное в рамках тех ситуаций, в которых они оказываются.</p>
+<p><strong>+</strong> Графика. Даже на средних настройках игра смотрится очень красиво. Но порой она выдает такие сцены и ракурсы, что челюсть отвисает, словно настоящее кино смотришь, от реальности не отличишь. Это очень сильно виляет на погружение. С жестокостью тоже полный порядок, рейтинг 18+ здесь не для галочки. Жаль, что обнаженку не завезли, она бы тут очень к месту пришлась.</p>
+<p><strong>+</strong> Отличная русская озвучка. Персонажи очень правдоподобно орут матом, шепчут, молят в слезах, хамят, угрожают и все в таком духе. Кринжа в озвучке не заметил. Эффекты на голос (аля «за стеной» или «голос призрака») тоже на месте. Да и в целом игра очень недурно звучит: от страшных звуков до классных мелодий.</p>
+<h2>Минусы</h2>
+<p><strong>—</strong> QTE идиотски простые. Пожалуй, это главный минус игры. Их просто невозможно запороть (справится даже ваша бабуля) и это, к сожалению, очень сильно бьет по напряжению. Вы знаете, что их не проиграете, хотя все равно стремно, но основной страх в игре накатывает не во время сложных QTE, а когда вас в критической ситуации заставляют быстро принимать решения.</p>
+<p><strong>—</strong> Местами визуал подводит: бедное наполнение некоторых локаций, странное освещение, нереалистичные анимации как лиц, так и тел. Повторюсь, местами. В целом, графика очень впечатляет.</p>
+<p><strong>—</strong> Местами несоответствие (в моем понимании) эмоций у персонажей с окружающей их ситуацией. Речь не про тупое поведение, с этим то все понятно, а именно про реакцию на некоторые события.</p>
+<p><strong>—</strong> На мой взгляд ужасно реализована механика с рассказчиком в перерывах между главами. Можно было поинтереснее обставить. Больше интерактива и связи с происходящим. Особенно по сравнению с Until Dawn, где эти вставки вообще свой подсюжет образовывали, который напрямую связан с основной историей.</p>
+<hr>
+<p>Описал свои ощущения и размышления по поводу игры. Сам ее прошел запоем за два вчера. Завершил в середине ночи. Последний раз меня так было только с Detroit: Become Human. Проходить буду на платину (как и детройт).</p>
+<p>Надеюсь, мои мысли помогут вам определиться, стоит ли пробовать игру (стоит). А если нет, мы всегда можем подискутировать или посраться в комментариях.</p>
+<p>Приятно вам поиграть, дорогие геймеры!</p>
+</div></div></div><div class="groupSepBottom"></div></div></main></div><!-- Yandex.Metrika counter -->
+<script async type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(86400654, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/86400654" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPLGTBHFF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPLGTBHFF4');
+</script></body></html>

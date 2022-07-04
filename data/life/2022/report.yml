@@ -1143,7 +1143,7 @@
             duration: 2.7
 
     counters:
-        -   counter: games
+        -   counter: game
             project: subnautica
 
     checks:
@@ -1345,4 +1345,425 @@
 
         -   project: cs-go
             goals: play
-            duration: 3.7 # 490.5
+            duration: 3.7
+
+16.05:
+    time:
+        -   project: radkopeter
+            goals: fill
+            duration: "1:30"
+
+        -   project: erudit
+            goals: development
+            duration: 2.5
+
+        -   project: omath
+            goals: writing
+            duration: "0:30"
+        
+        -   project: cs-go
+            goals: play
+            duration: 4.5
+
+17.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 1
+
+        -   project: erudit
+            goals: development
+            duration: 5
+
+        -   project: omath
+            goals: writing
+            duration: "0:40"
+        
+        -   project: cs-go
+            goals: play
+            duration: 2.6
+
+18.05:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 6
+        
+        -   project: cs-go
+            goals: play
+            duration: 3.4
+
+19.05:
+    time:
+        -   project: erudit
+            goals: development
+            duration: "5:30" # до обеда
+
+        -   project: cs-go
+            goals: play
+            duration: 2.6
+
+    checks:
+        -   "divine-body : training"
+
+20.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 3
+
+        -   project: cs-go
+            goals: play
+            duration: 1.8
+
+    checks:
+        -   "divine-body : training"
+
+21.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 3
+
+    checks:
+        -   "divine-body : training"
+
+22.05:
+    checks:
+        -   "divine-body : training"
+
+23.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 2
+
+        -   project: omath
+            goals: writing
+            duration: "0:30"
+
+        -   project: cs-go
+            goals: play
+            duration: 2.6
+
+    checks:
+        -   "divine-body : training"
+
+24.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 3
+
+        -   project: omath
+            goals: writing
+            duration: "0:30"
+
+        -   project: cs-go
+            goals: play
+            duration: 3.2
+
+25.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 5
+
+        -   project: cs-go
+            goals: play
+            duration: 2
+
+26.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 6
+
+        -   project: cs-go
+            goals: play
+            duration: 3.3
+
+27.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 3
+
+        -   project: cs-go
+            goals: play
+            duration: 3.4 # 520.9
+
+28.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 7
+
+        -   project: lego-star-wars
+            goals: playthrough
+            duration: 2.6
+        
+    events:
+        -   title: Стал казахом в Steam!
+            desc: Добрый человек с DTF помог сменить регион моего Steam аккаунта на казахстанский.
+
+29.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 7
+        
+        -   project: radkopeter
+            goals: fill
+            duration: 1.5
+
+        -   project: lego-star-wars
+            goals: playthrough
+            duration: 2.8
+
+    events:
+        -   title: Провел математическую раздачу!
+            desc: Делился на DTF ключами к играм серии Star Wars за решение задач по математике.
+
+30.05:
+    time:
+        -   project: dobot
+            goals: development
+            duration: 2
+
+        -   project: erudit
+            goals: development
+            duration: 4
+
+        -   project: lego-star-wars
+            goals: playthrough
+            duration: 1.4
+
+    checks:
+        -   "divine-body : training"
+
+31.05:
+    time:
+        -   project: mcmodding
+            goals: support
+            duration: 2
+
+        -   project: lego-star-wars
+            goals: playthrough
+            duration: 2.9
+
+    checks:
+        -   "divine-body : training"
+
+01.06:
+    time:
+        -   project: omath
+            goals: development
+            duration: 6
+    
+        -   project: lego-star-wars
+            goals: playthrough
+            duration: 3.1
+
+    checks:
+        -   "divine-body : training"
+
+02.06:
+    time:
+        -   project: dota-2
+            goals: play
+            duration: 4
+
+    checks:
+        -   "divine-body : training"
+
+03.06:
+    checks:
+        -   "divine-body : training"
+
+04.06:
+    time:
+        -   project: lego-star-wars
+            goals: playthrough
+            duration: 2.1
+
+    checks:
+        -   "divine-body : training"
+
+05.06:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 5
+
+        -   project: lego-star-wars
+            goals: playthrough
+            duration: 3.5
+
+06.06:
+    time:
+        -   project: lego-star-wars
+            goals: playthrough
+            duration: 3.2
+
+    counters:
+        -   counter: game
+            project: lego-star-wars
+
+07.06:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 5
+
+        -   project: lego-star-wars
+            goals: all-achievements
+            duration: 4.2
+
+08.06:
+    time:
+        -   project: lego-star-wars
+            goals: all-achievements
+            duration: 3.9
+
+09.06:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 3
+
+        -   project: lego-star-wars
+            goals: all-achievements
+            duration: 3.6 # 33.3
+
+10.06:
+    time:
+        -   project: dota-2
+            goals: play
+            duration: 10
+
+11.06:
+    time:
+        -   project: dota-2
+            goals: play
+            duration: 10
+
+12.06:
+    time:
+        -   project: dota-2
+            goals: play
+            duration: 10
+
+13.06:
+    time:
+        -   project: dota-2
+            goals: play
+            duration: 10
+
+14.06:
+    time:
+        -   project: dota-2
+            goals: play
+            duration: 10
+
+    events:
+        -   title: Умер Персик (Дюна, Пустынник)
+            desc: Лучший друг, который делал мою жизнь счастливой. Сбит и раскатан у шоссе.
+
+15.06:
+    time:
+        -   project: dota-2
+            goals: play
+            duration: 10
+
+16.06:
+    time:
+        -   project: dota-2
+            goals: play
+            duration: 10
+
+17.06:
+    time:
+        -   project: dota-2
+            goals: play
+            duration: 10
+
+18.06:
+    time:
+        -   project: dota-2
+            goals: play
+            duration: 10
+
+19.06:
+    time:
+        -   project: dota-2
+            goals: play
+            duration: 10
+
+26.06:
+    time:
+        -   project: the-quarry
+            goals: playthrough
+            duration: 2.6
+        
+27.06:
+    time:
+        -   project: the-quarry
+            goals: playthrough
+            duration: 7.5
+
+    counters:
+        -   counter: game
+            project: the-quarry
+
+28.06:
+    time:
+        -   project: the-quarry
+            goals: all-achievements
+            duration: 4.6
+
+        -   project: the-quarry
+            goals: review
+            duration: 4
+
+    events:
+        -   title: Первый обзор на DTF
+            desc: Написал свой первый обзор игры на сайте DTF. Игра — The Quarry.
+
+29.06:
+    time:
+        -   project: the-quarry
+            goals: all-achievements
+            duration: 4.8
+
+30.06:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 3
+
+        -   project: the-quarry
+            goals: all-achievements
+            duration: 3.9
+
+01.07:
+    time:
+        -   project: the-quarry
+            goals: all-achievements
+            duration: 4.2
+
+02.07:
+    time:
+        -   project: the-quarry
+            goals: all-achievements
+            duration: 5.1
+
+03.07:
+    time:
+        -   project: erudit
+            goals: development
+            duration: 7
+
+        -   project: the-quarry
+            goals: all-achievements
+            duration: 4.2

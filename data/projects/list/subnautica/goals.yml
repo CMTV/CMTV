@@ -1,6 +1,7 @@
 playthrough:
     title: Прохождение игры
     status: done
+    counted: false
     start: 19.04.2022
     end: 28.04.2022
     plan: ["19.04.2022 - 28.04.2022"]

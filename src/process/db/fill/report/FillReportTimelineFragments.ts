@@ -62,7 +62,12 @@ export class FillReportTimelineFragments extends Process
                 });
             });
 
-            Db.Transaction(() => projectFragments.forEach(fragment => fragment.save()));
+            Db.Transaction(() => projectFragments.forEach(fragment =>
+            {
+                //console.log(fragment.projectId);
+                //console.log(fragment.start);
+                fragment.save()
+            }));
         });
     }
 

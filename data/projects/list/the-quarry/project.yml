@@ -1,0 +1,23 @@
+title: The Quarry
+desc: Почти Detoit в темном лесу.
+type: in
+
+status:
+    type: done
+    label: Пройдена
+
+start: 26.06.2022
+end: 03.07.2022
+
+action:
+    preset: steam
+    link: https://store.steampowered.com/app/1577120/The_Quarry/
+
+links:
+    - icon: fas fa-align-justify
+      text: Обзор на DTF
+      link: https://dtf.ru/games/1248516-pochti-detroyt-v-temnom-lesu-obzor-the-quarry
+
+tags:
+    - "!отдых"
+    - "!игра"

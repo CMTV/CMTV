@@ -1,0 +1,27 @@
+playthrough:
+    title: Прохождение игры
+    status: done
+    counted: false
+    start: 26.06.2022
+    end: 27.06.2022
+    plan: ["26.06.2022 - 27.06.2022"]
+    tags:
+        - отдых
+        - игра
+    
+all-achievements:
+    title: Все достижения
+    status: done
+    counted: false
+    start: 28.06.2022
+    end: 03.07.2022
+    plan: ["28.06.2022 - 03.07.2022"]
+    tags:
+        - отдых
+        - игра
+
+review:
+    title: Обзор в Steam и на DTF
+    status: done
+    date: 28.06.2022
+    plan: ["28.06.2022"]

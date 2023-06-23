@@ -1,0 +1,13 @@
+preparation:
+    title: Подготовка
+    status: done
+    start: 4.06.2023
+    end: 7.06.2023
+    plan: ["4.06.2023 - 7.06.2023"]
+
+course:
+    title: Курс
+    status: done
+    start: 16.06.2023
+    end: 18.06.2023
+    plan: ["16.06.2023 - 18.06.2023"]

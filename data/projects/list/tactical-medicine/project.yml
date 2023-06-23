@@ -1,0 +1,25 @@
+title: Курс "Тактическая медицина"
+desc: Трехдневный курс по оказанию базовой медицинской помощи.
+type: in
+
+status:
+    type: done
+    label: Прошел
+
+facts:
+    - id: hours
+      label: Часы
+      data: 42
+
+links:
+    - icon: "fas fa-video"
+      text: Видео
+      link: videos.zip
+
+start: 16.06.2023
+end: 18.06.2023
+
+tags:
+    - "!я"
+    - "!мероприятие"
+    - "!изучение"

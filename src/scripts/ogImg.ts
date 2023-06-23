@@ -27,18 +27,17 @@ export async function paintOgImages()
         
         readline.cursorTo(process.stdout, 0);
         process.stdout.write(chalk.bgWhite.black(' Отрисовка Open Graph изображений ') + ' ' + `${i+1} / ${len}`);
+        //process.stdout.write(chalk.bgRed.white(' Отрисовка изображений невозможна! '));
 
         if (!imgData.text) continue;
 
-        await new Promise<void>(resolve => {
-            let dest = `dist/site/graphics/og-images/${imgData.id}.jpeg`;
+        let dest = `dist/site/graphics/og-images/${imgData.id}.jpeg`;
 
-            if (imgData.icon) paintProject(imgData.icon, imgData.text, dest);
-            else paint(imgData.text, dest);
-
-            if (i === len - 1) process.exit(0);
-
-            resolve();
-        });
+        if (imgData.icon)
+            await paintProject(imgData.icon, imgData.text, dest)
+        else
+            await paint(imgData.text, dest);
     }
+
+    process.exit(0);
 }

@@ -173,7 +173,7 @@ export class Fragment
             fragment.goalNum =  dbGoal ? '' + dbGoal.orderNumber : '?';
             fragment.status =   dbGoal ? dbGoal.status : JSON.parse(Db.Select.Get({ table: 'project', columns: ['status'], where: ['@projectId', '=', dbFragment.projectId], pluck: true })).type;
             fragment.type =     dbFragment.type;
-            fragment.label =    UtilDate.toStrDate(dbFragment.start, false) + (dbFragment.end ? ' - ' + UtilDate.toStrDate(dbFragment.end, false) : '') + '&#13;' + (dbGoal ? dbGoal.title : 'Неизвестно');
+            fragment.label =    UtilDate.toStrDate(dbFragment.start, false) + (dbFragment.end ? ' - ' + UtilDate.toStrDate(dbFragment.end, false) : '') + '&#13;' + (dbGoal ? dbGoal.title : 'Неизвестно').replace(/"/gm, '&quot;');
 
             fragment.setPosition(dbFragment.start, dbFragment.end);
         

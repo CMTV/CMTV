@@ -17,7 +17,7 @@ registerFont('site/fonts/OpenSans-Bold.ttf', { family: 'Open Sans' });
 //
 //
 
-export function paint(text: string, dest: string)
+export async function paint(text: string, dest: string)
 {
     let canvas = createCanvas(W, H);
     let ctx = canvas.getContext('2d');
@@ -32,7 +32,7 @@ export function paint(text: string, dest: string)
     });
 }
 
-export function paintProject(iconPath: string, projectTitle: string, dest: string)
+export async function paintProject(iconPath: string, projectTitle: string, dest: string)
 {
     let canvas = createCanvas(W, H);
     let ctx = canvas.getContext('2d');

@@ -1,0 +1,326 @@
+<!DOCTYPE html><!--
+
+
+ ▄████▄   ███▄ ▄███▓▄▄▄█████▓ ██▒   █▓
+ ▒██▀ ▀█  ▓██▒▀█▀ ██▒▓  ██▒ ▓▒▓██░   █▒
+ ▒▓█    ▄ ▓██    ▓██░▒ ▓██░ ▒░ ▓██  █▒░
+ ▒▓▓▄ ▄██▒▒██    ▒██ ░ ▓██▓ ░   ▒██ █░░
+ ▒ ▓███▀ ░▒██▒   ░██▒  ▒██▒ ░    ▒▀█░  
+ ░ ░▒ ▒  ░░ ▒░   ░  ░  ▒ ░░      ░ ▐░  
+   ░  ▒   ░  ░      ░    ░       ░ ░░  
+ ░        ░      ░     ░           ░░  
+ ░ ░             ░                  ░  
+ ░                                 ░   
+
+
+--><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Работа в «Юном Умнике» — Петр Радько</title><meta name="description" content="Первая в жизни работа. Репетитор в образовательном центре."><link rel="canonical" href="https://radkopeter.ru/projects/umnik/"><meta name="keywords" content="Петр Радько, CMTV"><meta name="og:image" content="https://radkopeter.ru/site/graphics/og-images/project-umnik.jpeg"><meta name="generator" content="CMTV Static Site Generator"><meta name="build-time" content="1687502001251"><link rel="icon" href="https://radkopeter.ru/favicon.ico"><link rel="icon" type="image/png" href="https://radkopeter.ru/site/graphics/favicon/favicon.png"><link rel="preload" as="style" href="/site/vendor/font-awesome/css/all.min.css"><link rel="stylesheet" href="/site/vendor/font-awesome/css/all.min.css"><link href="/site/vendor/photoswipe/photoswipe.css" rel="stylesheet"><script type="module" src="/site/scripts/lightbox.js"></script><link href="/site/styles/global.css" rel="stylesheet"><link href="/site/styles/project.css" rel="stylesheet"><script src="/site/scripts/global.js" defer></script><script src="/site/scripts/project.js" defer></script></head><body class="project"><script>(() =>
+{
+    ['color-scheme', 'theme-color'].forEach(name =>
+    {
+        let tag = document.createElement('meta');
+            tag.setAttribute('name', name);
+            tag.setAttribute('content', '');
+        
+        document.head.appendChild(tag);
+    });
+
+    var preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+    var preferTheme = (preferDark ? 'dark' : 'light');
+    var theme = localStorage.getItem('theme');
+
+    if (theme === null || theme === 'null')
+        theme = preferTheme;
+
+    setTheme(theme);
+})();
+
+function setTheme(theme)
+{
+    document.body.classList.toggle('theme--dark', (theme === 'dark'));
+
+    var themeColors = { light: '#ffffff', dark: '#333333' };
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[theme]);
+    document.querySelector('meta[name="color-scheme"]').setAttribute('content', theme);
+
+    localStorage.setItem('theme', theme);
+}
+
+function toggleTheme()
+{
+    var theme = localStorage.getItem('theme');
+    setTheme((theme === 'dark' ? 'light' : 'dark'));
+}</script><div class="bg"><div class="activities"></div><div class="fog"></div></div><div class="contactBlock"><div class="modal"><header><h2>Связаться со мной</h2><i class="fa-solid fa-times closeBtn"></i></header><ul><li>Я предпочитаю общаться в текстовом формате</li><li>Ясно и понятно обозначайте тему переписки</li><li>Готов обсудить самые безумные и интересные идеи!</li></ul><div class="email"><a href="mailto:newpetya@inbox.ru">newpetya@inbox.ru</a></div></div></div><div class="site"><header><div class="gradient"><div></div></div><div class="headerContent"><a class="me" href="/"><div class="logo"><div class="gradient"><div></div></div><img src="/site/graphics/me.png"></div><h1>Петр <span>Радько</span></h1></a><nav><a class="navItem projects" href="/projects" title="Что я делаю?"><i class="fa-solid fa-clone"></i><span>Проекты</span></a><a class="navItem life" href="/life" title="Моя борьба"><i class="fa-solid fa-heart"></i><span>Жизнь</span></a><div class="navItem themeSwitcher" onclick="toggleTheme()" title="Переключить цветовую схему"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></div><div class="navItem contact" title="Связаться со мной"><i class="fa-solid fa-envelope-open-text"></i></div></nav></div></header><main><div class="mainBlock"><header><div class="icon"><img src="/projects/umnik/icon.png" loading="lazy"/></div><div class="title">Работа в «Юном Умнике»</div><div class="desc">Первая в жизни работа. Репетитор в образовательном центре.</div><div class="featured status--done"><i class="fa-solid fa-star"></i><div class="hover" title="Важный проект"></div></div></header><div class="mainBar"><div class="facts"><div class="fact status"><div class="label">Статус</div><div class="data"><div title="Проект завершен" class="statusCircle statusCircle--done"></div> <div >Отработал</div></div></div><div class="fact time"><div class="label">Время</div><div class="data">1 уч. год</div></div><div class="fact students"><div class="label">Ученики</div><div class="data">15</div></div><div class="fact salary"><div class="label">Зарплата</div><div class="data">28 000</div></div></div></div><div class="mainContent"><div data-pswp-gallery>    <a href="showcase/classroom.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="813"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/classroom.jpg" alt="Основная аудитория для занятий">
+</a>    <a href="showcase/algo-group.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="813"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/algo-group.jpg" alt="Группа по &quot;Алгоритмике&quot;">
+</a>    <a href="showcase/algo-gifts.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="813"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/algo-gifts.jpg" alt="Подарки">
+</a>    <a href="showcase/chess-class.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="813"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/chess-class.jpg" alt="Шахматный класс">
+</a>    <a href="showcase/child-class.jpg" target="_blank" data-pswp-width="813" data-pswp-height="1080"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/child-class.jpg" alt="Игровая">
+</a>    <a href="showcase/kitchen.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="813"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/kitchen.jpg" alt="Кухня квартиры">
+</a>    <a href="showcase/first-chicken.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="813"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/first-chicken.jpg" alt="Первая в жизни курочка">
+</a>    <a href="showcase/going-to-pool.jpg" target="_blank" data-pswp-width="813" data-pswp-height="1080"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/going-to-pool.jpg" alt="Собрался в бассейн">
+</a>    <a href="showcase/main-street.jpg" target="_blank" data-pswp-width="813" data-pswp-height="1080"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/main-street.jpg" alt="Главная улица города">
+</a>    <a href="showcase/new-year-evening.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="813"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/new-year-evening.jpg" alt="Новый Год за окном">
+</a>    <a href="showcase/report.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="813"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/report.jpg" alt="Отчет по репетиторству за месяц">
+</a>    <a href="showcase/e-report.png" target="_blank" data-pswp-width="1044" data-pswp-height="366"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/e-report.png" alt="Электроный отчет за месяц">
+</a></div>
+<p>Проекты приносят мало денег, родители наседают.
+Ситуация тяжелая.
+Выход предложил Коля – вновь отправиться на далекий север для того, чтобы завершить <a href="/projects/omath" target="_blank">учебник</a>, а заодно и устроиться на свою первую работу в местный образовательный центр.</p>
+<p>Первая официальная работа, первый опыт в репетиторстве, первый опыт работы с группой, первый опыт проживания на собственные деньги.
+Это был уникальный учебный год, наполненный впечатлениями, новым опытом, радостями и страданиями.</p>
+</div></div><div class="direction"><header><img class="type" src="/site/graphics/mix.svg" title="Производитель и потребитель"><div class="mainTags"><div class="area"><i class="fa-fw fa-solid fa-signs-post"></i><div class="label">Область</div><div class="value" title="Царица всех наук.">математика</div></div><div class="action"><i class="fa-fw fa-solid fa-hand-fist"></i><div class="label">Действие</div><div class="value" title="Делюсь знаниями с другими людьми">просвещение</div></div><div class="form"><i class="fa-fw fa-solid fa-vector-square"></i><div class="label">Форма</div><div class="value">репетиторство</div></div></div></header><div class="tags"><div class="tag" title="Проекты, которые развивают меня как программиста.">информатика</div></div></div><div class="goalDateData"><header><div class="goalChart"><div class="total">7</div><div class="inner"></div><div class="fracs" style="background: conic-gradient( var(--c_goalChart-done) 0% 100% )"></div></div><div class="data"><div class="start"><i class="fa-solid fa-plus fa-fw"></i><div class="label">Начало</div><div class="value">10 августа 2022</div></div><div class="end"><i class="fa-solid fa-flag-checkered fa-fw"></i><div class="label">Конец</div><div class="value">1 июня 2023</div></div></div></header><div class="goals"><div class="goal goal--done"><div class="num">1</div><div class="info"><div class="title">Подготовка</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>10.08.2022 – 19.09.2022</span></div></div></div></div><div class="goal goal--done"><div class="num">2</div><div class="info"><div class="title">Мастер-класс по &quot;Геймдизайну&quot;</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-day"></i><span>25.09.2022</span></div></div></div></div><div class="goal goal--done"><div class="num">3</div><div class="info"><div class="title">Алгоритмика — &quot;Геймдизайн&quot;</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>02.10.2022 – 28.05.2023</span></div></div></div></div><div class="goal goal--done"><div class="num">4</div><div class="info"><div class="title">Репетиторство</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>03.10.2022 – 31.05.2023</span></div></div></div></div><div class="goal goal--done"><div class="num">5</div><div class="info"><div class="title">Занятие по &quot;Компьютерной грамотности&quot;</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-day"></i><span>08.10.2022</span></div></div></div></div><div class="goal goal--done"><div class="num">6</div><div class="info"><div class="title">Занятие по Python Start</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-day"></i><span>23.11.2022</span></div></div></div></div><div class="goal goal--done"><div class="num">7</div><div class="info"><div class="title">Домашнее задание от Николая</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-day"></i><span>28.04.2023</span></div></div></div></div></div></div><div class="timelineBlock"><header><i class="fa-solid fa-bars-staggered"></i><span>Хронокарта</span></header><div class="timeline"><div class="inner"><div class="corner"></div><div class="monthLabels"><div class="label" style="flex-basis: 8.469945355191257%">янв</div><div class="label" style="flex-basis: 7.923497267759563%">фев</div><div class="label" style="flex-basis: 8.469945355191257%">мар</div><div class="label" style="flex-basis: 8.19672131147541%">апр</div><div class="label" style="flex-basis: 8.469945355191257%">май</div><div class="label" style="flex-basis: 8.19672131147541%">июн</div><div class="label" style="flex-basis: 8.469945355191257%">июл</div><div class="label" style="flex-basis: 8.469945355191257%">авг</div><div class="label" style="flex-basis: 8.19672131147541%">сен</div><div class="label" style="flex-basis: 8.469945355191257%">окт</div><div class="label" style="flex-basis: 8.19672131147541%">ноя</div><div class="label" style="flex-basis: 8.469945355191257%">дек</div></div><div class="dataLabels"><div class="labelContainer"><div class="label label--year">2022</div><div class="extraRow"></div><div class="extraRow"></div><div class="extraRow"></div><div class="extraRow"></div></div><div class="sep"></div><div class="labelContainer"><div class="label label--year">2023</div><div class="extraRow"></div><div class="extraRow"></div></div></div><div class="data"><div class="monthGuides"><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 7.923497267759563%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div></div><div class="rows"><div class="row"><div class="fragment plan done  goal-1" style="left: 60.65573770491803%; width: 11.20218579234973%;"><div class="marker" title="10.08.2022 - 19.09.2022&#13;Подготовка">1</div><div class="rect" title="10.08.2022 - 19.09.2022&#13;Подготовка"></div></div><div class="fragment plan done single goal-2" style="left: 73.224043715847%; "><div class="marker" title="25.09.2022&#13;Мастер-класс по &quot;Геймдизайну&quot;">2</div><div class="rect" title="25.09.2022&#13;Мастер-класс по &quot;Геймдизайну&quot;"></div></div></div><div class="row"><div class="fragment plan done single goal-3" style="left: 75.13661202185791%; "><div class="marker" title="02.10.2022&#13;Алгоритмика — &quot;Геймдизайн&quot;">3</div><div class="rect" title="02.10.2022&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 77.04918032786885%; "><div class="rect" title="09.10.2022&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 80.87431693989072%; "><div class="rect" title="23.10.2022&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 82.78688524590164%; "><div class="rect" title="30.10.2022&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 84.69945355191257%; "><div class="rect" title="06.11.2022&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 86.6120218579235%; "><div class="rect" title="13.11.2022&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 88.52459016393442%; "><div class="rect" title="20.11.2022&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 90.43715846994536%; "><div class="rect" title="27.11.2022&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 92.34972677595628%; "><div class="rect" title="04.12.2022&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 94.26229508196722%; "><div class="rect" title="11.12.2022&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 96.17486338797814%; "><div class="rect" title="18.12.2022&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 98.08743169398907%; "><div class="rect" title="25.12.2022&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div></div><div class="row"><div class="fragment plan done  goal-4" style="left: 75.40983606557377%; width: 24.59016393442623%;"><div class="marker" title="03.10.2022 - 31.12.2022&#13;Репетиторство">4</div><div class="rect" title="03.10.2022 - 31.12.2022&#13;Репетиторство"></div></div></div><div class="row"><div class="fragment plan done single goal-5" style="left: 76.775956284153%; "><div class="marker" title="08.10.2022&#13;Занятие по &quot;Компьютерной грамотности&quot;">5</div><div class="rect" title="08.10.2022&#13;Занятие по &quot;Компьютерной грамотности&quot;"></div></div></div><div class="row"><div class="fragment plan done single goal-6" style="left: 89.34426229508196%; "><div class="marker" title="23.11.2022&#13;Занятие по Python Start">6</div><div class="rect" title="23.11.2022&#13;Занятие по Python Start"></div></div></div><div class="sep"></div><div class="row"><div class="fragment plan done  goal-4" style="left: 0%; width: 41.53005464480874%;"><div class="marker" title="01.01.2023 - 31.05.2023&#13;Репетиторство">4</div><div class="rect" title="01.01.2023 - 31.05.2023&#13;Репетиторство"></div></div></div><div class="row"><div class="fragment plan done single goal-3" style="left: 1.912568306010929%; "><div class="marker" title="08.01.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;">3</div><div class="rect" title="08.01.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 3.825136612021858%; "><div class="rect" title="15.01.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 5.737704918032787%; "><div class="rect" title="22.01.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 7.650273224043716%; "><div class="rect" title="29.01.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 9.562841530054644%; "><div class="rect" title="05.02.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 11.475409836065573%; "><div class="rect" title="12.02.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 13.387978142076504%; "><div class="rect" title="19.02.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 15.300546448087433%; "><div class="rect" title="26.02.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 17.48633879781421%; "><div class="rect" title="05.03.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 19.398907103825135%; "><div class="rect" title="12.03.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 21.311475409836063%; "><div class="rect" title="19.03.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 23.224043715846996%; "><div class="rect" title="26.03.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 25.136612021857925%; "><div class="rect" title="02.04.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 27.049180327868854%; "><div class="rect" title="09.04.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 28.96174863387978%; "><div class="rect" title="16.04.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 30.87431693989071%; "><div class="rect" title="23.04.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 32.78688524590164%; "><div class="rect" title="30.04.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 34.69945355191257%; "><div class="rect" title="07.05.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 36.6120218579235%; "><div class="rect" title="14.05.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 38.52459016393443%; "><div class="rect" title="21.05.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div><div class="fragment plan done single goal-3" style="left: 40.43715846994536%; "><div class="rect" title="28.05.2023&#13;Алгоритмика — &quot;Геймдизайн&quot;"></div></div></div><div class="row"><div class="fragment plan done single goal-7" style="left: 32.240437158469945%; "><div class="marker" title="28.04.2023&#13;Домашнее задание от Николая">7</div><div class="rect" title="28.04.2023&#13;Домашнее задание от Николая"></div></div></div></div></div></div></div></div><div class="blocks"><div class="groupSepTop"></div><div class="block"><header><div class="info"><div class="title">Предыстория</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Денег со своих проектов практически нет.
+Родители говорят, что пора бы уже начать нормально зарабатывать.
+Работа над <a href="/projects/omath" target="_blank">учебником</a> идет медленно.
+Такая непростая обстановка сложилась у меня в июне 2022 года.</p>
+<p>Примерно тогда же мне позвонил Коля и сделал интересное предложение.
+Я мог вернуться в Североморск, где он мог бы помогать мне с моим учебником.
+А чтобы не сосать деньги из родителей, он может дать рекомендацию в крупнейший образовательный центр «Юный Умник».</p>
+<p>Соглашаться не очень хотелось, но и не согласиться я не мог.
+Надо было хоть раз в жизни поработать на настоящей работе.
+Получить опыт в репетиторстве.
+В итоге я принял решение хотя бы попробовать.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="scope">10 августа - 19 сентября 2022</div><div class="title">Подготовка</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Когда я сообщил Коле о своем решении, он дал мне контакты директора центра.
+Она сообщила мне базовую информацию – я буду задействован в двух основных направлениях: репетиторство и Алгоритмика.</p>
+<p>Первое это обычная работа с учениками.
+Кого-то нужно подготовить к экзаменам, кому-то просто подтянуть знания по предмету.
+К такому типу работы я был более-менее готов.</p>
+<p>А вот второе меня довольно сильно удивило.
+Алгоритмика предоставляет готовые обучающие курсы вместе с личным кабинетом.
+Преподавателю нужно лишь ознакомитсья с заранее заготовленным планом урока и провести его.
+Ребята же выполняют задания прямо на сайте.</p>
+<p>Однако, чтобы стать преподавателем в Алгоритмике, нужно пройти подготовку.
+Так как я взял практически все возможные направления, тестов было много.
+Они не очень сложные, но гуглить приходилось много.
+Там же я узнал про замечательный визуальный язык программирования для детей под названием «Scratch».
+Короче, почерпнул много полезной информации.</p>
+<p>После прохождения тестирования пришлось записать небольшое видео, в котором я как-бы начинаю мастер-класс для ребят и их родителей.
+Мы с отцом заморочились и даже подготовили небольшую презентацию специально для этого ролика.</p>
+<div class="youtube-wrapper"><iframe src="https://www.youtube.com/embed/GGFXPFu2Yok" frameborder="0" allowfullscreen></iframe></div>
+<p>По идее, я должен был еще принять участвие в онлайн вебинаре, где нас бы просили в небольших постановочных ситуациях отработать навыки и правила общения с детьми и их родителями.
+Я очень сильно волновался.
+Но что-то у них там не срослось, поэтому в момент, когда сам вебинар должен был начаться, ничего не произошло, а всем на почту пришло письмо с ссылкой на запись такого же вебинара, но прошлого года.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="scope">25 сентября 2022</div><div class="title">Мастер-класс по &quot;Геймдизайну&quot;</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><div data-pswp-gallery>    <a href="images/mc/mc-1.jpg" target="_blank" data-pswp-width="958" data-pswp-height="1280"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/mc/mc-1.jpg" alt="">
+</a>    <a href="images/mc/mc-2.jpg" target="_blank" data-pswp-width="1280" data-pswp-height="958"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/mc/mc-2.jpg" alt="">
+</a></div>
+<p>Один из самых волнительных моментов за весь период моей работы в центре.
+7 ребят с родителями придут на мастер-класс, на котором я расскажу про себя и про курс.
+Ничего подобного я в своей жизни еще не делал.
+Очень волновался.</p>
+<p>Но все прошло великолепно!
+Дети и родители были довольны.
+Директор центра сначала дала довольно долгую вступительную речь, поэтому мой выход был воспринят ребятами как глоток свежего воздуха.
+Из 7 человек 6 записались на курс.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="scope">2 октября 2022 - 28 мая 2023</div><div class="title">Алгоритмика</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><div data-pswp-gallery>    <a href="images/gamedesign/certificates.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="539"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/gamedesign/certificates.jpg" alt="Ученики с сертификатами">
+</a>    <a href="images/gamedesign/group-work.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="813"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/gamedesign/group-work.jpg" alt="">
+</a>    <a href="images/gamedesign/group-work-behind.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="813"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/gamedesign/group-work-behind.jpg" alt="">
+</a></div>
+<p>Основная группа собралась на курс «Геймдизайн».
+Это дети в 6-7 классах.
+Всего было 6 человек, из которых до конца добрались 5.
+Я был немного разочарован, что мне не удалось вести курс по Python, который рассчитан уже на ребят из 9 класса.</p>
+<p>Сначала мне удавалось следовать плану занятий, который составила Алгоритмика.
+Но чем дальше, тем сложнее было это делать.
+Проблема заключалась в том, что начиная с середины курса методисты запихнули кучу скриптов в занятия, хотя курс называется «Геймдизайн», а не «Программирование в Roblox».
+Поэтому, чтобы не заставлять ребят заниматься скучной работой по копированию тонны непонятного кода, я либо искал уже готовые альтернативы в Toolbox или же вообще менял тему занятия на более творческую и креативную.</p>
+<p>Все это дошло до того, что в последних месяцах я самостоятельно придумывал идеи для игр, а также свои темы для занятий.
+Прямо приходил за пару часов в центр, садился в отдельном помещении, тестировал идеи и составлял план занятия.
+Пару раз я проводил что-то вроде масштабных контрольных работ длительностью в пару занятий, на которых ребята самостоятельно продумывали идею мира, его фишки, а потом неспеша все это реализовывали.</p>
+<div data-pswp-gallery>    <a href="images/gamedesign/sketch-1.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="813"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/gamedesign/sketch-1.jpg" alt="">
+</a>    <a href="images/gamedesign/sketch-2.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="813"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/gamedesign/sketch-2.jpg" alt="">
+</a>    <a href="images/gamedesign/sketch-3.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="813"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/gamedesign/sketch-3.jpg" alt="">
+</a></div>
+<p>Подобный «уход» от прописаного Алгоритмикой плана заставлял меня сильно тревожиться.
+Если бы кто-то взглянул на статистику ребят через сайт Алгоритмики, то ужаснулся бы, словно мы вместо занятий все время сидим и чем-то другим занимаемся.
+К счастью, директор заверила меня, что именно я оцениваю результаты ребят, а потому решения о выдаче сертификатов и прочего зависят от меня и нашего центра, а не указа «сверху».</p>
+<p>К завершающему занятию надо было распечатать сертификаты на особой фотобумаге.
+Пришлось научиться определять правильную сторону для печати.
+Кстати, плотная бумага быстро закончилась и нам с администратором пришлось брать еще одну пачку за свои деньги.
+Скинулись пополам.</p>
+<p>После завершения курса каждому родителю я выслал небольшой отчет о проделанной работе (впечатления о ученике и его сильных сторонах, какие миры он создал за время курса, их скриншоты), а также рекомендации, на какие следующие курсы записаться.
+Все родители были очень благодарны и довольны результатами.</p>
+<h2>Такие разные ребята</h2>
+<p>Это был мой первый опыт работы с группой ребят.
+У каждого свой характер и к каждому нужен свой ключик, свой подход.</p>
+<p>Один быстро схватывает и прогрессирует, имеет творческую жилку.
+Но при этом часто отвлекается и бесконечными разговорами может отвлекать других.</p>
+<p>Второй, напротив, усваивает материал медленно.
+Причем постепенно он «проваливается в себя» и если его не одергивать и не направлять, он просто начинает играть в своем мире, вместо того, чтобы его дальше развивать.</p>
+<p>Третий тоже учится довольно быстро и может мыслить креативно, но сильно избалован и не может заставить себя собраться и создать (и уж тем более закончить) что-нибудь прекрасное.</p>
+<p>Особого командного духа у нас не возникло.
+Но я и не считаю, что он необходим.
+Больше всего наши занятия походили на кружок по рисованию: дети приходят, работают над своими навыками и воплощают идеи в жизнь.</p>
+<h2>Занятие по Python Start</h2>
+<p>С курсом «Python Start 2035» произошла интересная история.
+Вроде как вести его должен был я, но почему-то в качестве преподавателя поставили другую женщину.
+Но занималась она из-под моего аккаунта.</p>
+<p>И вот однажды из Алгоритмики пришло указание заснять одно из занятий, чтобы убедиться, что оно проходит в соответствии с правилами и нормами.
+А так как «на бумаге» этот курс вел я, то и занятие на камеру провести тоже сказали мне.</p>
+<p>Господи, как же я кайфанул!
+Дисциплину и порядок поддерживать не надо, ученики более-менее взрослые, тянутся к знаниям, с ними интересно общаться.
+Очень жаль, что мне не досталось подобной группы на постоянной основе.</p>
+<div class="youtube-wrapper"><iframe src="https://www.youtube.com/embed/vWcpITaTMYI" frameborder="0" allowfullscreen></iframe></div>
+<h2>Занятие по «Комьютерной грамотности»</h2>
+<p>Буквально в первый месяц работы перподаватель курса «Компьютерная грамотность» заболела и меня попросили ее подменить.
+Пришлось согласился, хотя понимал, что будет очень тяжело.
+Полтора часа пытаться обучить чему-то 10 детей 6-7 лет…</p>
+<p>Занятие прошло неплохо, но от напряжения я аж вспотел.
+Объясняешь что-то одним, другие начинают ерзать, общаться, а некоторые и носиться.
+И так по кругу.
+В итоге как уж на сковородке скачешь по аудитории.
+Встречающие детей мамы смотрели на меня с сочувственной улыбкой.</p>
+<p>После этого я попросил больше не давать мне группы с такими маленькими детьми.
+Не могу я продуктивно с ними работать.
+Да и не хочу.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="scope">3 октября - 31 мая 2023</div><div class="title">Репетиторство</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Всего за учебный год мне довелось поработать с 10 учениками, из которых до конца прозанимались 7.
+Изначально я не хотел брать на себя математику 11 класса, но пришлось.
+Впрочем, постепенно пришлось заниматься и физикой тоже.</p>
+<h2>Смена парадигмы обучения</h2>
+<p>До Нового Года я всех учеников пытался обучать «фундаментально».
+Подробное объяснение темы, вывод правил и свойств, погружение в детали.
+Такой подход работал с учениками, у которых на носу не было экзаменов.</p>
+<p>Однако за пару месяцев стало понятно, что для 9- и 11-классников такой подход неприменим.
+Им не нравится математика.
+Им нужно просто как-то ее сдать, без вникания в подробности.
+Движемся слишком медленно.</p>
+<p>Неудовлетворительные результаты меня очень угнетали.
+Пик негатива пришелся на Новый Год, когда одна ученица из 11 класса ушла к другому репетитору.
+Расстались мы на позитиве, конечно же, но внутри я понимал, что одна из причин ухода – медленное продвижение вперед.</p>
+<p>В отчаянии и смятении я обратился с советом к Коле.
+Он помог мне перейти от «фундаментального» обучения к «алгоритмическому».
+Помог принять мысль, что таким ученикам математика не нужна, им нужны быстрые и понятные алгоритмы, как решать задачи на экзамене.
+Более того, мы совместно составили примерный план подготовки для каждого из учеников.</p>
+<p>После такой совместной работы я успокоился в душе.
+Появилась уверенность, что все более-менее получится.
+Он спас меня в тот день.
+И за это я ему очень благодарен.</p>
+<h2>Впечатления от учеников</h2>
+<p>Ученики были самыми разными, полный спектр.
+Именно опыт взаимодействия с разными учениками я считаю одним из самых ценных результатов этой поездки на север.</p>
+<p>Были способные, замотивированные.
+С такими работать одно удовольствие, потому что им не только алгоритмы даешь, но и подробно все объясняешь.
+Плюс, можно делиться всякими фишками.
+Задачи с ними решаешь более трудные, потому и сам что-то новое узнаешь.</p>
+<p>Но были и полные противоположности.
+Невероятно ленивые, вечно невыспавшиеся, никогда не делающие домашнее задание.
+Ты им даешь знания, а они прямо на глазах вываливаются у них из головы.
+Иногда хочется взять и что-нибудь раздолбать от ощущения бессилия перед ленью.
+Пару раз даже приходилось повышать голос и жестко настраивать на работу, хотя я и не люблю конфронтации.</p>
+<p>Причем при работе с «плохими» учениками ты понимаешь, что им насрать на экзамен, на результат.
+Не насрать только мне и родителям.
+И вот так мы совместными усилиями пытаемся вытащить бегемота из болота.</p>
+<h2>Не все зависит от тебя</h2>
+<p>Очень много стресса добавлял фактор ответственности.
+Ведь это мой ученик, и только от меня зависит, сколько баллов он получит на экзамене.
+Дополнительно стресс подкреплялся синдромом самозванца, так как это был мой первый опыт работы в качестве репетитора.</p>
+<p>К счастью, мне удалось частично справиться с этой проблемой под конец учебного года.
+А получилось это потому что у меня появились ученики, которые начали получать неплохие, а иногда и отличные результаты.</p>
+<p>Пришло понимание, что не все зависит от тебя.
+Хоть ты в лепешку расшибись, но для продуктивной работы и хорошего результата нужна работа как со стороны репетитора, так и со стороны ученика.</p>
+<h2>Обновление знаний</h2>
+<p>За этот учебный год я очень сильно качнул школьную математику.
+Я полностью отработал ОГЭ и практически полностью профильное ЕГЭ, за исключением некоторых задач из второй части.</p>
+<p>Очень классно, что я наконец освоил основы геометрии, потому что в ней я сильно плавал.
+Ну и полезно было вспомнить физику 7 класса: силу Архимеда, рычаги, блоки и энергию.
+С системами блоков возникли трудности, поэтому даже пришлось подключать Колю.
+Он тоже объяснил не очень понятно и довольно скоро при самостоятельных попытках все осмыслить ко мне пришло реально клевое объяснение всех этих законов.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="scope">28 апреля 2023</div><div class="title">Домашнее задание от Николая</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Связалась со мной адмнистратор и сообщила, что есть возможность быстро подзаработать – решить 15 задач по физике 9 класса.
+Я хотел сначала отказаться, но потом пересилил себя и согласился.
+Да и денег под конец месяца не было.</p>
+<p>Через пару дней позвонила мама ученицы и сообщила, что им хотелось бы получить 4 по физике в году.
+А для этого нужно хорошо сделать большое домашнее задание, которое учитель выдает сразу на триместр вперед.</p>
+<p>Она прислала мне задачи, я на них мельком глянул и сдуру назвал цену в 800 рублей, да еще и сказал, что сделаю все за вечер.
+Это были самые тяжелые 800 рублей в моей жизни…</p>
+<p>Некоторые задачи были довольно простые, но проблема заключалась в том, что я эти темы совершенно не помнил.
+Поэтому в срочном порядке пришлось вспоминать оптику, волны и ядерную физику.
+Но были и довольно хитрые задачи, которые очень плохо гуглились.</p>
+<p>Короче, начал я их решать в 19:10, а завершил в 23:43.
+Почти 5 часов напряженной работы.
+За 800 рублей.</p>
+<p>Уже после отправки работы я решил на всякий случай проконсультироваться по паре вопросов у Коли.
+И какого же было мое удивление, когда он мне сообщил, что он и есть тот самый школьный учитель, который выдал это ДЗ!
+Вот уж действительно мир тесен!
+В угоду спортивному интересу он отказался помогать мне с задачами до выставления финальной оценки.</p>
+<p><a href="images/homework-fail.png" target="_blank" data-pswp-single data-pswp-width="736" data-pswp-height="805"><img loading="lazy" src="images/homework-fail.png" alt="Момент истины" class="w5">
+</a></p>
+<p>Уже после выставления оценком мы с ним встретились, чтобы обсудить результаты.
+Я получил 5/5/4.
+Причем, если бы не совершенные мной ошибки, ученица уже автоматом получила бы 4.
+Дальше на протяжении полутора часов я как лев сражался, пытаясь выбить хотя бы по полбалла из каждой ошибки.
+Это было прекрасно.
+Спорили, как в <a href="/projects/severomorsk" target="_blank">старые добрые</a>.</p>
+<p>Свою четверку ученика все же получила, вроде.
+Но это неточно.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Общие впечатления</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Впервые в жизни я работаю по строгому графику, взаимодействую с коллегами, согласовываю расписание, поддерживаю контакт с родителями, проверяю и выдаю домашние задания.</p>
+<p>Это очень ценный опыт.
+Были как негативные моменты, так и положительные.
+Последних гораздо больше.
+Вообще, мне очень сильно повезло.
+Коллеги дружелюбные, готовы помочь, скандалов никаких не было.
+Идеальный опыт первой работы.</p>
+<p>Однако, как и в случае с университетом, под конец учебного года приходит понимание, что надо срочно развивать свои проекты, чтобы каждый год не ходить кругами и не повторять одно и то же.</p>
+<p>Все мое пребывание на севере можно разбить на 4 больших этапа: знакомство, угасание, возрождение, завершение.
+Все они сильно отличаются друг от друга по общему состоянию.</p>
+<h2>Знакомство</h2>
+<p>Очень волнительный период.
+Я полон сил, энергичен, все в новинку.
+Ходил в бассейн, обустраивался в квартире, привыкал к работе в центре, знакомился с учениками.
+Постепенно эффект новизны пропадал и я стал костенеть, угасать.</p>
+<h2>Угасание</h2>
+<p>Время шло, приближался Новый Год.
+Забросил ходить в бассейн.
+Опять начал играть в доту.
+А я все не мог заставить себя хотя бы начать работать над <a href="/projects/omath" target="_blank">учебником</a>.</p>
+<p>Чем дальше, тем хуже мне становилось.
+Накапливался стресс от ощущения, что я не могу хорошо подготовить учеников, что мы не успеем.
+Сам на себя злился, из-за того, что не работал над учебником.</p>
+<p>У меня настолько не было внутренних сил что-то делать, что я начал целыми сутками смотреть страшные истории на YouTube.
+Были среди них и простенькие, а были и настоящие шедевры, после которых страшно было засыпать.</p>
+<p>Легко догадаться, что десятки страшных и депрессивных историй еще сильнее угнетают психику.
+Кульминацией стал момент, когда я чуть с ума не сошел, боялся по квартире ходить, в подъезд выходить.
+Короче, я опустился на самое донное дно.</p>
+<h2>Возрождение</h2>
+<p>За неделю до Нового Года мне все же удалось собраться и взяться за дело.
+К Новому Году выложил первую рабочую версию учебника, весь январь переносил статьи из старых учебников, писал новые, исправлял баги, вновь записался в бассейн.
+Это был самый продуктивный месяц за весь учебный год.
+Я был страшно доволен собой.</p>
+<h2>Завершение</h2>
+<p>Январь кончился, а вместе с ним кончился и заряд «супер-продуктивности».
+Постепенно начинался нервный и неспокойный предэкзаменный период.
+Количество занятий в центре увеличилось.
+В итоге после работы у меня просто не оставалось внутренних сил делать хоть что-то еще.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Конпенсация общения</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Я всегда считал себя человеком довольно нелюдимым, избегающим общения.
+Так и есть, но вот сутками сидеть в пустой квартире тоже тяжело.
+Спасение пришло с неожиданной стороны – недостаток общения и внимания я восполнял, участвуя в бесконечных дискуссиях на DTF.</p>
+<p>Никогда бы не подумал, что мне проще будет сидеть и общаться в комментах, чем играть в какую-нибудь игру…
+Возможно, именно DTF помог мне окончательно не сойти с ума в период «Угасания».</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Плотоядные голуби</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>У меня под окном с внешней стороны в стене есть отверстие.
+И там жили голуби.
+Зимой из-за холода они пытались проклевать себе путь ближе к моей квартире.
+Все это довольно жутко и громко звучало, будило по ночам.</p>
+<p>В какие-то моменты мне казалось, что еще чуть-чуть и они прогрызутся внутрь.
+К счастью, в стене, видимо, была какая-то перегородка, через которую они не могли пробиться.</p>
+<p>Чего я только не слышал: рождение птенцов, прилеты и отлеты их родителей, трапезы.
+Один раз судя по звукам там вообще кого-то сожрали (может, ворона прилетела).</p>
+<p>В конце концов я настолько привык к этим звукам, что перестал их замечать.
+А ближе к лету на улице стало сильно теплее и звуки заметно поубавились.</p>
+</div></div></div><div class="groupSepBottom"></div></div></main></div><!-- Yandex.Metrika counter -->
+<script async type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(86400654, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/86400654" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPLGTBHFF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPLGTBHFF4');
+</script></body></html>

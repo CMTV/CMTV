@@ -12,7 +12,7 @@ facts:
       data: 42
 
 links:
-    - icon: "fas fa-video"
+    - icon: "fa-solid fa-video"
       text: Видео
       link: videos
 

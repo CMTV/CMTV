@@ -19,6 +19,20 @@ facts:
         label: Зарплата
         data: "28 000"
 
+links:
+    -   icon: fa-solid fa-file-zipper
+        text: Работы учеников по "Геймдизайну"
+        link: algo-worlds.7z
+
+    -   icon: fa-solid fa-video
+        text: Первые большие проекты ребят
+        link: https://www.youtube.com/watch?v=ZXeUbuI4MTU
+
+    -   icon: fa-solid fa-video
+        text: Моя видео-визитка
+        link: https://www.youtube.com/watch?v=eHPEfhaLR4U
+
+
 start: 10.08.2022
 end: 1.06.2023
 

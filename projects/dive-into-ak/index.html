@@ -1,0 +1,298 @@
+<!DOCTYPE html><!--
+
+
+ ▄████▄   ███▄ ▄███▓▄▄▄█████▓ ██▒   █▓
+ ▒██▀ ▀█  ▓██▒▀█▀ ██▒▓  ██▒ ▓▒▓██░   █▒
+ ▒▓█    ▄ ▓██    ▓██░▒ ▓██░ ▒░ ▓██  █▒░
+ ▒▓▓▄ ▄██▒▒██    ▒██ ░ ▓██▓ ░   ▒██ █░░
+ ▒ ▓███▀ ░▒██▒   ░██▒  ▒██▒ ░    ▒▀█░  
+ ░ ░▒ ▒  ░░ ▒░   ░  ░  ▒ ░░      ░ ▐░  
+   ░  ▒   ░  ░      ░    ░       ░ ░░  
+ ░        ░      ░     ░           ░░  
+ ░ ░             ░                  ░  
+ ░                                 ░   
+
+
+--><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Курс «Погружение в АК» — Петр Радько</title><meta name="description" content="Четырехдневный курс по использованию и обслуживанию АК."><link rel="canonical" href="https://radkopeter.ru/projects/dive-into-ak/"><meta name="keywords" content="Петр Радько, CMTV"><meta name="og:image" content="https://radkopeter.ru/site/graphics/og-images/project-dive-into-ak.jpeg"><meta name="generator" content="CMTV Static Site Generator"><meta name="build-time" content="1688048784768"><link rel="icon" href="https://radkopeter.ru/favicon.ico"><link rel="icon" type="image/png" href="https://radkopeter.ru/site/graphics/favicon/favicon.png"><link rel="preload" as="style" href="/site/vendor/font-awesome/css/all.min.css"><link rel="stylesheet" href="/site/vendor/font-awesome/css/all.min.css"><link href="/site/vendor/photoswipe/photoswipe.css" rel="stylesheet"><script type="module" src="/site/scripts/lightbox.js"></script><link href="/site/styles/global.css" rel="stylesheet"><link href="/site/styles/project.css" rel="stylesheet"><script src="/site/scripts/global.js" defer></script><script src="/site/scripts/project.js" defer></script></head><body class="project"><script>(() =>
+{
+    ['color-scheme', 'theme-color'].forEach(name =>
+    {
+        let tag = document.createElement('meta');
+            tag.setAttribute('name', name);
+            tag.setAttribute('content', '');
+        
+        document.head.appendChild(tag);
+    });
+
+    var preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+    var preferTheme = (preferDark ? 'dark' : 'light');
+    var theme = localStorage.getItem('theme');
+
+    if (theme === null || theme === 'null')
+        theme = preferTheme;
+
+    setTheme(theme);
+})();
+
+function setTheme(theme)
+{
+    document.body.classList.toggle('theme--dark', (theme === 'dark'));
+
+    var themeColors = { light: '#ffffff', dark: '#333333' };
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[theme]);
+    document.querySelector('meta[name="color-scheme"]').setAttribute('content', theme);
+
+    localStorage.setItem('theme', theme);
+}
+
+function toggleTheme()
+{
+    var theme = localStorage.getItem('theme');
+    setTheme((theme === 'dark' ? 'light' : 'dark'));
+}</script><div class="bg"><div class="activities"></div><div class="fog"></div></div><div class="contactBlock"><div class="modal"><header><h2>Связаться со мной</h2><i class="fa-solid fa-times closeBtn"></i></header><ul><li>Я предпочитаю общаться в текстовом формате</li><li>Ясно и понятно обозначайте тему переписки</li><li>Готов обсудить самые безумные и интересные идеи!</li></ul><div class="email"><a href="mailto:newpetya@inbox.ru">newpetya@inbox.ru</a></div></div></div><div class="site"><header><div class="gradient"><div></div></div><div class="headerContent"><a class="me" href="/"><div class="logo"><div class="gradient"><div></div></div><img src="/site/graphics/me.png"></div><h1>Петр <span>Радько</span></h1></a><nav><a class="navItem projects" href="/projects" title="Что я делаю?"><i class="fa-solid fa-clone"></i><span>Проекты</span></a><a class="navItem life" href="/life" title="Моя борьба"><i class="fa-solid fa-heart"></i><span>Жизнь</span></a><div class="navItem themeSwitcher" onclick="toggleTheme()" title="Переключить цветовую схему"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></div><div class="navItem contact" title="Связаться со мной"><i class="fa-solid fa-envelope-open-text"></i></div></nav></div></header><main><div class="mainBlock"><header><div class="icon"><img src="/projects/dive-into-ak/icon.png" loading="lazy"/></div><div class="title">Курс «Погружение в АК»</div><div class="desc">Четырехдневный курс по использованию и обслуживанию АК.</div><div class="featured status--done"><i class="fa-solid fa-star"></i><div class="hover" title="Важный проект"></div></div></header><div class="mainBar"><div class="facts"><div class="fact status"><div class="label">Статус</div><div class="data"><div title="Проект завершен" class="statusCircle statusCircle--done"></div> <div >Прошел</div></div></div><div class="fact disassembly"><div class="label">Разборка</div><div class="data">9 сек.</div></div><div class="fact assembly"><div class="label">Сборка</div><div class="data">27 сек.</div></div><div class="fact shots"><div class="label">Выстрелы</div><div class="data">160+</div></div></div></div><div class="mainContent"><div data-pswp-gallery>    <a href="showcase/together.jpg" target="_blank" data-pswp-width="1280" data-pswp-height="960"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/together.jpg" alt="Совместное фото в конце курса">
+</a>    <a href="showcase/shooting-range.jpg" target="_blank" data-pswp-width="810" data-pswp-height="1080"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/shooting-range.jpg" alt="На стрельбище">
+</a>    <a href="showcase/BRDM.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="810"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/BRDM.jpg" alt="Верхом на БРДМ">
+</a>    <a href="showcase/barracks-entrance.jpg" target="_blank" data-pswp-width="810" data-pswp-height="1080"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/barracks-entrance.jpg" alt="У входа в казарму">
+</a>    <a href="showcase/barracks.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="810"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/barracks.jpg" alt="Казарма">
+</a>    <a href="showcase/last-day.jpg" target="_blank" data-pswp-width="810" data-pswp-height="1080"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/last-day.jpg" alt="Последний день">
+</a></div>
+<p>После прохождения <a href="/projects/tactical-medicine" target="_blank">тактической медицины</a>, мы решили, что надо научиться обращаться с оружием.
+Тем более как раз подвернулсь очень выгодное предложение: 4 дня, посвященные АК в Московской области с 150+ выстрелами и всего за 30 000 рублей.</p>
+<p>В предвкушении, мы с отцом отправились в очередное приключение за важными знаниями.
+Знания мы получили и очень хорошо их закрепили, но какой ценой…
+Я и не подозревал, насколько тяжело это будет.
+Но после двух дней тяжелейших физических испытаний мы были награждены двумя днями стрельбы настоящими патронами из настоящих автоматов.</p>
+<p>Этот курс довел меня до предела моих физических и ментальных возможностей.
+И сделал меня сильнее.</p>
+</div></div><div class="direction"><header><img class="type" src="/site/graphics/in.svg" title="Потребитель"><div class="mainTags"><div class="area"><i class="fa-fw fa-solid fa-signs-post"></i><div class="label">Область</div><div class="value" title="Проекты, в которых я являюсь объектом, над которым ведется работа.">я</div></div><div class="action"><i class="fa-fw fa-solid fa-hand-fist"></i><div class="label">Действие</div><div class="value">изучение</div></div><div class="form"><i class="fa-fw fa-solid fa-vector-square"></i><div class="label">Форма</div><div class="value">мероприятие</div></div></div></header></div><div class="goalDateData"><header><div class="goalChart"><div class="total">1</div><div class="inner"></div><div class="fracs" style="background: conic-gradient( var(--c_goalChart-done) 0% 100% )"></div></div><div class="data"><div class="start"><i class="fa-solid fa-plus fa-fw"></i><div class="label">Начало</div><div class="value">24 июня 2023</div></div><div class="end"><i class="fa-solid fa-flag-checkered fa-fw"></i><div class="label">Конец</div><div class="value">27 июня 2023</div></div></div></header><div class="goals"><div class="goal goal--done"><div class="num">1</div><div class="info"><div class="title">Курс</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>24.06.2023 – 27.06.2023</span></div></div></div></div></div></div><div class="timelineBlock"><header><i class="fa-solid fa-bars-staggered"></i><span>Хронокарта</span></header><div class="timeline"><div class="inner"><div class="corner"></div><div class="monthLabels"><div class="label" style="flex-basis: 8.469945355191257%">янв</div><div class="label" style="flex-basis: 7.923497267759563%">фев</div><div class="label" style="flex-basis: 8.469945355191257%">мар</div><div class="label" style="flex-basis: 8.19672131147541%">апр</div><div class="label" style="flex-basis: 8.469945355191257%">май</div><div class="label" style="flex-basis: 8.19672131147541%">июн</div><div class="label" style="flex-basis: 8.469945355191257%">июл</div><div class="label" style="flex-basis: 8.469945355191257%">авг</div><div class="label" style="flex-basis: 8.19672131147541%">сен</div><div class="label" style="flex-basis: 8.469945355191257%">окт</div><div class="label" style="flex-basis: 8.19672131147541%">ноя</div><div class="label" style="flex-basis: 8.469945355191257%">дек</div></div><div class="dataLabels"><div class="labelContainer"><div class="label label--year">2023</div></div></div><div class="data"><div class="monthGuides"><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 7.923497267759563%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div></div><div class="rows"><div class="row"><div class="fragment plan done  goal-1" style="left: 47.81420765027322%; width: 1.092896174863391%;"><div class="marker" title="24.06.2023 - 27.06.2023&#13;Курс">1</div><div class="rect" title="24.06.2023 - 27.06.2023&#13;Курс"></div></div></div></div></div></div></div></div><div class="blocks"><div class="groupSepTop"></div><div class="block"><header><div class="info"><div class="title">Хронология</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>В нужную деревню мы прибыли вечером 23 числа.
+И сразу же начались проблемы.
+Координаты оказались не совсем верными, поэтому мы еще где-то час ходили туда-сюда в поисках нужного места.
+В конце концов, нам подсказали нужный поворот, а сам ведущий курса вышел на дорогу нас встречать.
+Отвел он нас на базу.</p>
+<p>Увидев ее, я сразу выдохнул.
+Срать в лесу и спать в обнимку с комарами не придется.
+Три огромных палатки, одна из которых отведена под казармы.
+Рядом небольшой домик, в котором распологается столовая, туалеты и душ.
+Райские условия.</p>
+<p>Инструктор кратенько объяснил, где и что на базе находится, сказал, что начало курса завтра в 9:00 и послал обустраиваться в казармы.
+В этот день прибыла еще пара человек.</p>
+<h2>День 1</h2>
+<p>Утром я проснулся замерзший.
+Немного болело горло.
+В 9:00 появился инструктор, сел на лавочку, начал неспеша курить.
+Все стояли и ждали.</p>
+<p>Тогда мне показалось, что он как-будто время растягивает, или может тормознутый.
+Потом пошли в палатку.
+Там мы подписали анкеты о том, что в возможных травмах и даже смерти центр ответственности нести не будет.</p>
+<p>Затем пошел рассказ об автоматах Калашникова и принципах его работы.
+Тоже очень неспеша, с заминками и прочим.
+Короче, от начала первого дня остались смешанные впечатления.</p>
+<p>Ну а потом нам выдали автоматы.
+Причем дальше чем на два метра от них отходить было нельзя, потому что инструктора всегда будут искать возможность их украсть.
+Все были очень довольны и в приподнятом настроении.</p>
+<p>А потом начался <strong>АД</strong> и имя этому аду – огневая подготовка.
+Тебе показывают простое движение: стойка и снятие предохранителя.
+А потом под счет ты должен это действие повторять.
+Десятки раз подряд.</p>
+<p>После этого тебе показывают либо новую стойку, либо новый способ в нее перейти, либо добавляют новое действие.
+И снова ты десятки раз под счет это повторяешь.
+Под палящим солнцем и кусающими тебя во все места комарами и слепнями.</p>
+<p>Никогда в жизни я так сильно не ждал перерывов, как в первые два дня.
+Я молился, чтобы инструктор решил выкурить еще одну сигарету, потому что это означает еще пару минут драгоценного отдыха.
+Это была пытка.
+За палец на курке и другие нарушения правил обращения с оружием отжимались все.
+Я быстро устал отжиматься, поэтому все последующие дни приседал.</p>
+<p>Вроде действия все простые, но правильно их выполнять было тяжело.
+У меня появились проблемы с плечами (левое плечо все время выходило вперед), ноги ставил слишком далеко, наклоняться было тяжело и непривычно.</p>
+<p>Ну а в конце нас решили добить окончательно и перед ужином устроили «статику».
+Это когда ты вскидываешь автомат, становишься в стойку, да так в ней и стоишь полторы минуты.
+Что-то вроде планки, но с дополнительной нагрузкой в виде автомата на вытянутых руках.
+Я чуть на ней не умер.</p>
+<p>Поздним вечером в отдельной палатке можно было потренироваться разбирать и собирать автомат.
+Каждый из нас должен был разобрать автомать за 17 секунд, а потом без вермени собрать его, называя все детали.
+Всего две попытки.
+Кто их провалил – на стрельбище не едет.</p>
+<p>Ну и за полтора часа я так навострился автомат разбирать, что с начального времени разоборки в ~30 секунд на зачете поставил рекорд – 9 секунд.
+Был очень горд собой.</p>
+<p>Ну а ночью нас ждал караул.
+Ходишь туда-сюда, спрашиваешь у инструкторов пароль.
+Шарахаешься на каждый подозрительный звук из леса.
+А звуков там очень много разных.
+Очень необычные ощущения.</p>
+<h2>День 2</h2>
+<p>Я опять замерз, хоть уже и не так сильно, как в первый день.
+Первые мысли, когда я открыл утром глаза – зачем я проснулся?!
+Лучше бы я вообще не просыпался!
+Было невероятно тяжело: все тело ныло, мышцы болели, было понимание, что сегодня будет еще хуже.
+Однако после зарядки стало сильно легче.</p>
+<p>Впрочем, легче стало не всем.
+Первые два человека покинули нас сразу после зарядки.
+У одного проблемы с коленями, у другого с сердцем.
+Нас осталось 8.</p>
+<p>Ну а дальше в 9:00 по расписанию начался ад – огневая подготовка.
+В этот раз к изученым стойкам стали добавляться более сложные действия: разные способы перезарядки, обработка задержек и проблем.
+Что примечательно, никто больше ни разу не отжался за палец на курке.
+Все еще по 150 отжиманиям в первый день запомнили, что так делать не надо.</p>
+<p>Потихоньку, повторение за повторением, я начал замечать, что ноги уже сам собой становятся правильно, что корпус наклоняется вперед, что почти сразу получается свести мушку с целиком.
+То есть десятки повторений и отжиманий за нарушения все же потихоньку дают результаты.</p>
+<p>В середине дня курс покинул еще один участник.
+У него тоже были проблемы с коленями.
+Он даже ездил в местную клинику, где ему вкололи обезболивающее.
+Но его эффект закончился, боль вернулась и он решил уехать.
+Нас осталось 7.</p>
+<p>Ближе к вечеру мы пошли в поле рядом с базой отрабатывать падение и работу с автоматом лежа.
+Было очень интересно, выучил несколько разных способов упасть так, чтобы автомат смотрел в нужном направлении.
+Проблема было только в том, что с каждым подъемом обратно на ноги я прямо ощущал, как скачет давление в голове.</p>
+<p>Все это физическое напряжение, плюс подступающая мигрень привели к тому, что перед ужином я попросил освободить меня от выполнения статики в левосторонней стойке.
+Пошел в столовую, сел, уткнул лицо в руки и чуть не расплакался.
+Нервы были на пределе, тело было на пределе, хотелось схавтить автомат и раздоблать его за всю ту боль, что он мне причиняет.
+Тогда я был на грани того, чтобы сдаться и уехать домой.</p>
+<p>Но я справился.
+Что-то в тот день изменилось внутри.
+Стал сильнее.
+Выдержал.</p>
+<p>Правда, от мигрени меня это не спасло.
+Когда меня в 0:20 разбудили, боль была в самом разгаре.
+Пришлось принимать таблетку и в полубредовом состоянии заступать в караул.</p>
+<h2>День 3</h2>
+<p>В этот раз я не раздевался после караула, а потому за ночь не замерз.
+Все по старому – зарядка в 6 утра, огневая подготовка в 9.
+На ней мы отрабатывали движения, которые будем выполнять на стрельбище.</p>
+<p>Потом мы вновь пошли в поле.
+К счастью, никаких физически сложных упражнений нам не дали.
+Мы просто легли и отрабатывали прицеливание вместе со спуском.</p>
+<p>Ну а потом случилось то, чего все так долго ждали – мы поехали на стрельбище.
+Правда, стрельбище это сильно сказано.
+Просто небольшая подстриженная полянка с высокими насыпями со всех сторон.</p>
+<p>Все очень волновались.
+На первых упражениях с холостыми патронами многие от стресса путались и делали не те действия.
+У меня в этом плане проблем почти не возникло.</p>
+<p>А вот где они возникли, так это в стрельбе на точность.
+Первое, что меня удивило – как ты не целься, пуля все равно полетит куда-то не туда.
+Второе – отдача сбивает тебе прицел и каждый раз приходится заново наводиться.
+Короче говоря, попасть куда-то на 100 метров, а уж тем более на 200 это очень <strong>непростая</strong> задача, которая под силу только регулярно тренирующемуся человеку.</p>
+<p>Меня также сильно расстроило, что из 10 выстрелов по гонгам я ни разу не попал.
+К счастью, потом мне все же удалось их три раза поразить, включая один маленький на 200 метров.</p>
+<p>Стреляли мы из двух разных автоматов. Один был под патрон 5.56, другой под 7.62.
+И если более маленький калибр давал довольно незначительную отдачу, то 7.62 ощутимо лягался в плечо.
+Настолько, что под конец дня я даже отказался достреливать из него, потому что уже не мог терпеть боль после выстрела.</p>
+<p>Вечером учились чистить автоматы.
+Как оказалось, это довольно серьезный и времязатратный процесс.
+Провозились мы с ними до полуночи.</p>
+<h2>День 4</h2>
+<p>Последний день был еще проче, чем предыдущий.
+Мы с самого утра отправились сдавать автоматы, потом послушали лекцию про поправки на ветер, высоту и движение мишени.
+Ну а затем мы отправились на стрельбище.</p>
+<p>Признаться честно, утром я побаивался автомата с калибром 7.62.
+Думал, он опять будет делать мне очень больно.
+Но все обошлось, и никакой боли в этот раз не наблюдалось.</p>
+<p>В этот раз у нас были более сложные упражнения с упором на скорость.
+Стрельба с колена, с колена из-за укрытия, стоя, стоя из-за укрытия, быстрые выстрелы по два и так далее.
+Было классно, но точность сильно страдала.</p>
+<p>Освободились мы довольно рано.
+Все довольные и настрелявшиеся.
+Казалось бы, осталось только почистить два автомата и можно уезжать.</p>
+<p>Вот только в этот раз мне досталось чистить ствол.
+И это был кошмар.
+Все уже завершили, а я все чистил его и чистил.
+Шомпол постоянно в нем застревал.</p>
+<p>Под конец из-за напряжения я умудрился забить ствол автомата: стальной цилиндрик с тканью отсоединились от шомпола в середине ствола и остались в нем.
+Честно говоря, я думал, что сломал автомат.
+Но все обошлось, и ударами дощечки застрявшие внутри детали удалось выбить.</p>
+<p>Записали видео-отзывы, сделали совместое фото и поехали домой.
+Интересно, что возвращясь обратно, я смотрел на знакомые места уже каким-то немного другим взглядом.
+Словно обратно вернулся другой человек.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Общие впечатления</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Я думал, на последнем дне «Тактической медицины» было невероятно тяжело.
+Так вот на этом курсе первые два дня были в несколько раз тяжелее.</p>
+<p>Если говорить общими словами – то этот курс состоит из двух дней адских физических нагрузок и двух дней кайфа от стрельбы на стрельбище.
+Причем ты понимаешь, что одного без другого невозможно.
+Нельзя без десятков монотонных повторений и закреплений действий и стоек просто приехать и пострелять.
+Равно как и бессмысленно все это повторять, если в итоге ты это не опробуешь в реальной стрельбе.</p>
+<h2>Концепция «отсева»</h2>
+<p>Под конец курса пришла идея, что такие тяжелые физические нагрузки, помимо выработки навыка, служат своебразным отсевом «слабых».
+Выдержит ли твое тело и психика.
+Достаточно ли ты адекватный, чтобы получить в руки настоящее оружие с настоящими патронами.</p>
+<h2>Инструкторы</h2>
+<p>Несмотря на некоторые подозрения относительно «слабого» начала курса, под конец понимаешь, что все прошло идеально.</p>
+<p>Есть основной «начальник» – спокойный, никуда не спешит, не душит.
+Есть хороший полицейский – тоже спокойный, если что подойдет объяснит, как лучше делать и прочее.
+А есть плохой полицейский – заставляет отжиматься, следить за недочетами, топит за то, чтобы все побольше страдали.</p>
+<p>Но самое главное – никто тебя не прессует до срыва.
+Проблемы с плечами – подсказывают и показывают как их исправить.
+Но даже если сразу не выходит, они на тебя не давят.
+Все равно рано или поздно плечи потихоньку сами выправляются.</p>
+<p>Лучшей тройки инструкторов для подобных занятий и не найти.</p>
+<h2>Прицельный огонь</h2>
+<p>Очень удивился, что даже на 100 метрах пуля летит не туда, куда ты целишься.
+А попасть куда-то на 200 метрах вообще можно только случайно.</p>
+<p>Я всегда думал, что если уж ты совместил мушку с целиком, более-менее получил заветную букву «Ш», то пуля непременно туда и полетит.
+А вот нифига.
+От напряжения ты постоянно автоматом немного кривишь.
+Когда давишь на спусковой крючок, тоже чуть-чуть прицел сбиваешь.</p>
+<p>Короче, стрелять точно это целая наука, которая требует большой практики.</p>
+<h2>Еда</h2>
+<p>Отдельного упоминания стоит еда.
+Ее было много.
+По три блюда на обед и ужин: суп, второе и салат.
+Каждый раз еда была разной.
+Кто-то не мог все съесть, поэтому у нас образовался довольно большой запас, который потихонькую подъедали по утрам.</p>
+</div></div></div><div class="block"><header><div class="info"><div class="title">Интересные ситуации</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><h2>Инцидент с новым паролем</h2>
+<p>Очень интересная ситуация произошла на вторую ночь под конец моего караула, где-то в 1:00.
+В голове вата из-за принятой обезболивающей таблетки, все мышцы болят.
+И тут из темноты выходит один из инструкторов.</p>
+<p>Я вскидываю автомат, требую пароль и называю первое число: «4».
+Он мне отвечает «6», хотя должен был ответить «3», чтобы в сумме получилось 7!
+Потом я называю другое число «3». Он мне «7».
+С щелчком я снимаю предохранитель и думаю, что же мне делать.</p>
+<p>Мы молча смотрим друг на друга пару секунд.
+Со стороны эта заминка наверняка была похоже на знаменитую немую сцену из «Ревизора» Гоголя.
+Наконец он говорит, что стрелять холостыми не стоит, есть и другие способы тревогу поднять.
+В итоге он пояснил, что пароль сменился.</p>
+<p>Я вспомнил, что наш командир говорил про смену пароля, но в конце он пошутил.
+И пошутил он так, что я подумал, что шуткой является как раз сам факт смены пароля!
+<strong>Важный вывод</strong>: в очень серезных темах всегда убеждаться, что информация (например, о новом пароле) доведена до каждого и каждый ее понял.
+Без шуток и приколов.</p>
+<h2>Засада для инструкторов</h2>
+<div data-pswp-gallery>    <a href="images/ambush-1.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="810"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/ambush-1.jpg" alt="">
+</a>    <a href="images/ambush-2.jpg" target="_blank" data-pswp-width="810" data-pswp-height="1080"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/ambush-2.jpg" alt="">
+</a>    <a href="images/ambush-3.jpg" target="_blank" data-pswp-width="1080" data-pswp-height="810"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="images/ambush-3.jpg" alt="">
+</a></div>
+<p>На третью ночь я решил основательно подготовиться к ночному визиту инструкторов.
+Задний выход из палатки закрыл на молнию (она была наполовину расстегнута).
+Перекрыл его фанерой, чтобы при попытке проникнуть в палатку она с грохотом упала.</p>
+<p>Убедившись, что задний вход заблокирован, я попросил у одного из курсантов туристический коврик, и устроил огневую точку на крыше БРДМ.
+Позиция была идеальной.
+Правда, через полчаса я понял, что все это время наблюдал не за той палаткой.</p>
+<p>Пришлось менять позицию и расположиться на земле в кустах в углу участка.
+Там же свой караул провел папа и еще один курсант.
+Лежишь себе, укрывшись камуфляжными панамкой и курткой.
+Место было идеальное.</p>
+<p>К сожалению, инструктора так и не пришли в эту ночь.
+По их словам, они дважы проверяли камеры и не видели караульного.
+Подумали, что им устроили засаду и решили не приходить.</p>
+<p>А жаль, потому что второй инструктор сказал, что именно в эту, третью ночь, они хотели устроить прямо атаку на казармы.
+Но, видимо, заленились.
+А жаль.
+Было бы интересно переиграть и поймать их.</p>
+</div></div></div><div class="groupSepBottom"></div></div></main></div><!-- Yandex.Metrika counter -->
+<script async type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(86400654, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/86400654" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPLGTBHFF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPLGTBHFF4');
+</script></body></html>

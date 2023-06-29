@@ -1,0 +1,29 @@
+title: Курс "Погружение в АК"
+desc: Четырехдневный курс по использованию и обслуживанию АК.
+type: in
+
+status:
+    type: done
+    label: Прошел
+
+facts:
+  - id: disassembly
+    label: Разборка
+    data: 9 сек.
+
+  - id: assembly
+    label: Сборка
+    data: 27 сек.
+
+  - id: shots
+    label: Выстрелы
+    data: 160+
+
+
+start: 24.06.2023
+end: 27.06.2023
+
+tags:
+  - "!я"
+  - "!мероприятие"
+  - "!изучение"

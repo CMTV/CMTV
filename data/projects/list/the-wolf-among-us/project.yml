@@ -1,0 +1,23 @@
+title: The Wolf Among Us
+desc: Изумительный детектив про сказочных существ, попавших в наше время.
+type: in
+
+status:
+    type: done
+    label: Пройдена
+
+start: 7.07.2023
+end: 8.07.2023
+
+action:
+    preset: steam
+    link: https://store.steampowered.com/app/250320/The_Wolf_Among_Us/
+
+facts:
+  - id: time
+    label: Время
+    data: 9.3 ч
+
+tags:
+    - "!отдых"
+    - "!игра"

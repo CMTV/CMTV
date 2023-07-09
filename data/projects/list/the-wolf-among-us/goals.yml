@@ -1,0 +1,14 @@
+playthrough:
+    title: Прохождение игры
+    status: done
+    counted: false
+    start: 7.07.2023
+    end: 8.07.2023
+    plan: ["07.07.2023 - 08.07.2023"]
+
+all-achievements:
+    title: Все достижения
+    status: done
+    counted: false
+    date: 8.07.2023
+    plan: ["08.07.2023"]

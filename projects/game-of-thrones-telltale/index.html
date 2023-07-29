@@ -1,0 +1,95 @@
+<!DOCTYPE html><!--
+
+
+ ▄████▄   ███▄ ▄███▓▄▄▄█████▓ ██▒   █▓
+ ▒██▀ ▀█  ▓██▒▀█▀ ██▒▓  ██▒ ▓▒▓██░   █▒
+ ▒▓█    ▄ ▓██    ▓██░▒ ▓██░ ▒░ ▓██  █▒░
+ ▒▓▓▄ ▄██▒▒██    ▒██ ░ ▓██▓ ░   ▒██ █░░
+ ▒ ▓███▀ ░▒██▒   ░██▒  ▒██▒ ░    ▒▀█░  
+ ░ ░▒ ▒  ░░ ▒░   ░  ░  ▒ ░░      ░ ▐░  
+   ░  ▒   ░  ░      ░    ░       ░ ░░  
+ ░        ░      ░     ░           ░░  
+ ░ ░             ░                  ░  
+ ░                                 ░   
+
+
+--><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Игра Престолов от Telltale — Петр Радько</title><meta name="description" content="Попытался играть так, чтобы все были в плюсе — заплатил за это головой."><link rel="canonical" href="https://radkopeter.ru/projects/game-of-thrones-telltale/"><meta name="keywords" content="Петр Радько, CMTV"><meta name="og:image" content="https://radkopeter.ru/site/graphics/og-images/project-game-of-thrones-telltale.jpeg"><meta name="generator" content="CMTV Static Site Generator"><meta name="build-time" content="1690649198563"><link rel="icon" href="https://radkopeter.ru/favicon.ico"><link rel="icon" type="image/png" href="https://radkopeter.ru/site/graphics/favicon/favicon.png"><link rel="preload" as="style" href="/site/vendor/font-awesome/css/all.min.css"><link rel="stylesheet" href="/site/vendor/font-awesome/css/all.min.css"><link href="/site/vendor/photoswipe/photoswipe.css" rel="stylesheet"><script type="module" src="/site/scripts/lightbox.js"></script><link href="/site/styles/global.css" rel="stylesheet"><link href="/site/styles/project.css" rel="stylesheet"><script src="/site/scripts/global.js" defer></script><script src="/site/scripts/project.js" defer></script></head><body class="project"><script>(() =>
+{
+    ['color-scheme', 'theme-color'].forEach(name =>
+    {
+        let tag = document.createElement('meta');
+            tag.setAttribute('name', name);
+            tag.setAttribute('content', '');
+        
+        document.head.appendChild(tag);
+    });
+
+    var preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+    var preferTheme = (preferDark ? 'dark' : 'light');
+    var theme = localStorage.getItem('theme');
+
+    if (theme === null || theme === 'null')
+        theme = preferTheme;
+
+    setTheme(theme);
+})();
+
+function setTheme(theme)
+{
+    document.body.classList.toggle('theme--dark', (theme === 'dark'));
+
+    var themeColors = { light: '#ffffff', dark: '#333333' };
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', themeColors[theme]);
+    document.querySelector('meta[name="color-scheme"]').setAttribute('content', theme);
+
+    localStorage.setItem('theme', theme);
+}
+
+function toggleTheme()
+{
+    var theme = localStorage.getItem('theme');
+    setTheme((theme === 'dark' ? 'light' : 'dark'));
+}</script><div class="bg"><div class="activities"></div><div class="fog"></div></div><div class="contactBlock"><div class="modal"><header><h2>Связаться со мной</h2><i class="fa-solid fa-times closeBtn"></i></header><ul><li>Я предпочитаю общаться в текстовом формате</li><li>Ясно и понятно обозначайте тему переписки</li><li>Готов обсудить самые безумные и интересные идеи!</li></ul><div class="email"><a href="mailto:newpetya@inbox.ru">newpetya@inbox.ru</a></div></div></div><div class="site"><header><div class="gradient"><div></div></div><div class="headerContent"><a class="me" href="/"><div class="logo"><div class="gradient"><div></div></div><img src="/site/graphics/me.png"></div><h1>Петр <span>Радько</span></h1></a><nav><a class="navItem projects" href="/projects" title="Что я делаю?"><i class="fa-solid fa-clone"></i><span>Проекты</span></a><a class="navItem life" href="/life" title="Моя борьба"><i class="fa-solid fa-heart"></i><span>Жизнь</span></a><div class="navItem themeSwitcher" onclick="toggleTheme()" title="Переключить цветовую схему"><i class="fa-solid fa-sun"></i><i class="fa-solid fa-moon"></i></div><div class="navItem contact" title="Связаться со мной"><i class="fa-solid fa-envelope-open-text"></i></div></nav></div></header><main><div class="mainBlock"><header><div class="icon"><img class="invertible" src="/projects/game-of-thrones-telltale/icon.i.svg" loading="lazy"/></div><div class="title">Игра Престолов от Telltale</div><div class="desc">Попытался играть так, чтобы все были в плюсе — заплатил за это головой.</div></header><div class="mainBar"><div class="facts"><div class="fact status"><div class="label">Статус</div><div class="data"><div title="Проект завершен" class="statusCircle statusCircle--done"></div> <div >Пройдена</div></div></div><div class="fact time"><div class="label">Время</div><div class="data">10 ч</div></div><div class="fact episodes"><div class="label">Эпизодов</div><div class="data">6</div></div></div><style>.actionBtn > .bg { background: linear-gradient(45deg, #47A5FF,#2F7EDF); }</style><div class="actionContainer"><a class="actionBtn" href="https://store.steampowered.com/app/330840/Game_of_Thrones__A_Telltale_Games_Series/" target="_blank"><div class="bg"></div><div class="label"><i class="fa-brands fa-steam"></i><span>Steam</span></div></a></div></div><div class="mainContent"><div data-pswp-gallery>    <a href="showcase/got-1.jpg" target="_blank" data-pswp-width="1918" data-pswp-height="755"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/got-1.jpg" alt="">
+</a>    <a href="showcase/got-2.jpg" target="_blank" data-pswp-width="1920" data-pswp-height="756"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/got-2.jpg" alt="">
+</a>    <a href="showcase/got-3.jpg" target="_blank" data-pswp-width="1920" data-pswp-height="756"><div class="hoverOverlay"><i class="fa-solid fa-eye"></i></div><img loading="lazy" src="showcase/got-3.jpg" alt="">
+</a></div>
+<p>На волне прохождений игр от Telltale дошли мои руки и до их проекта по великому сериалу «Игра Престолов».
+Игра нигде не продается, так что пришлось пиратить.
+Первый раз в жизни искал в интернете, как открыть экран настроек в главном меню.</p>
+<p>Игра отличная. Любимые (и ненавидимые) персонажи из сериала, неожиданные повороты, интриги, эпик и жестокость.
+В ней есть все то, за что я полюбил сериал. И при этом это все вращается вокруг игрока.
+Жаль только, что концовка вышла очень печальной.</p>
+<p>Эта игра отлично иллюстрирует, что в мире не работает принцип «хорошие люди не умирают, потому что они хорошие». Мира навсегда в сердечке.</p>
+</div><div class="links"><a class="link" href="https://dtf.ru/games/1991015-oshchuti-igru-prestolov-na-svoey-shkure" target="_blank"><i class="fa-fw fa-solid fa-newspaper"></i><div>Пост на DTF</div></a></div></div><div class="direction"><header><img class="type" src="/site/graphics/in.svg" title="Потребитель"><div class="mainTags"><div class="action"><i class="fa-fw fa-solid fa-hand-fist"></i><div class="label">Действие</div><div class="value">отдых</div></div><div class="form"><i class="fa-fw fa-solid fa-vector-square"></i><div class="label">Форма</div><div class="value">игра</div></div></div></header></div><div class="goalDateData"><header><div class="goalChart"><div class="total">2</div><div class="inner"></div><div class="fracs" style="background: conic-gradient( var(--c_goalChart-done) 0% 100% )"></div></div><div class="data"><div class="start"><i class="fa-solid fa-plus fa-fw"></i><div class="label">Начало</div><div class="value">24 июля 2023</div></div><div class="end"><i class="fa-solid fa-flag-checkered fa-fw"></i><div class="label">Конец</div><div class="value">27 июля 2023</div></div></div></header><div class="goals"><div class="goal goal--done"><div class="num">1</div><div class="info"><div class="title">Прохождение игры</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-days"></i><span>24.07.2023 – 27.07.2023</span></div></div></div></div><div class="goal goal--done"><div class="num">2</div><div class="info"><div class="title">Пост на DTF</div><div class="facts"><div class="date"><i class="fa-solid fa-calendar-day"></i><span>28.07.2023</span></div></div></div></div></div></div><div class="timelineBlock"><header><i class="fa-solid fa-bars-staggered"></i><span>Хронокарта</span></header><div class="timeline"><div class="inner"><div class="corner"></div><div class="monthLabels"><div class="label" style="flex-basis: 8.469945355191257%">янв</div><div class="label" style="flex-basis: 7.923497267759563%">фев</div><div class="label" style="flex-basis: 8.469945355191257%">мар</div><div class="label" style="flex-basis: 8.19672131147541%">апр</div><div class="label" style="flex-basis: 8.469945355191257%">май</div><div class="label" style="flex-basis: 8.19672131147541%">июн</div><div class="label" style="flex-basis: 8.469945355191257%">июл</div><div class="label" style="flex-basis: 8.469945355191257%">авг</div><div class="label" style="flex-basis: 8.19672131147541%">сен</div><div class="label" style="flex-basis: 8.469945355191257%">окт</div><div class="label" style="flex-basis: 8.19672131147541%">ноя</div><div class="label" style="flex-basis: 8.469945355191257%">дек</div></div><div class="dataLabels"><div class="labelContainer"><div class="label label--year">2023</div><div class="extraRow"></div></div></div><div class="data"><div class="monthGuides"><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 7.923497267759563%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div><div class="guide" style="flex-basis: 8.19672131147541%"></div><div class="guide" style="flex-basis: 8.469945355191257%"></div></div><div class="rows"><div class="row"><div class="fragment plan done  goal-1" style="left: 56.01092896174863%; width: 1.0928961748633839%;"><div class="marker" title="24.07.2023 - 27.07.2023&#13;Прохождение игры">1</div><div class="rect" title="24.07.2023 - 27.07.2023&#13;Прохождение игры"></div></div></div><div class="row"><div class="fragment plan done single goal-2" style="left: 57.103825136612016%; "><div class="marker" title="28.07.2023&#13;Пост на DTF">2</div><div class="rect" title="28.07.2023&#13;Пост на DTF"></div></div></div></div></div></div></div></div><div class="blocks"><div class="groupSepTop"></div><div class="block"><header><div class="info"><div class="title">Мысли</div></div><div class="showBtn" title="Раскрыть подробности"><i class="fa-solid fa-eye"></i></div></header><div class="contentContainer"><div class="content"><p>Конечно, это не бессмертная троица шедевров: The Walking Dead, The Wolf Among Us и Tales from the Borderlands, но тоже очень добротный проект.
+По общему настрою игра напоминает Ходячих, где основную жесть творят не зомби, а люди. Игра эмоционально тяжелая и оставляет такой же тяжелый осадок.</p>
+<p>Невероятно жаль было Миру.
+Я крутился как мог, пытался реализовать принцип «помочь себе, помочь друзьям, не навредить никому».
+Но в таком змеином клубке трехэтажных интриг и обмана такой подход просто не работает.
+В итоге вся ее история в моем случае повторила путь старины Неда Старка.
+В сцене казни аж глаза слезиться стали.</p>
+<p>Вообще, у игры очень тяжелая концовка.
+Но за это мы все и любим Игру Престолов.
+Жаль только, что продолжения никогда не будет.
+От этого очень печально смотреть на множество интересных «удочек», которые разработчики забросили на второй сезон.</p>
+</div></div></div><div class="groupSepBottom"></div></div></main></div><!-- Yandex.Metrika counter -->
+<script async type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(86400654, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/86400654" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter --><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QPLGTBHFF4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QPLGTBHFF4');
+</script></body></html>

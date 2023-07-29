@@ -1,0 +1,32 @@
+title: Игра Престолов от Telltale
+desc: Попытался играть так, чтобы все были в плюсе — заплатил за это головой.
+type: in
+
+status:
+    type: done
+    label: Пройдена
+
+start: 24.07.2023
+end: 27.07.2023
+
+action:
+    preset: steam
+    link: https://store.steampowered.com/app/330840/Game_of_Thrones__A_Telltale_Games_Series/
+
+links:
+    -   icon: fa-solid fa-newspaper
+        text: Пост на DTF
+        link: https://dtf.ru/games/1991015-oshchuti-igru-prestolov-na-svoey-shkure
+
+facts:
+    -   id: time
+        label: Время
+        data: 10 ч
+    
+    -   id: episodes
+        label: Эпизодов
+        data: 6
+
+tags: 
+    - "!отдых"
+    - "!игра"

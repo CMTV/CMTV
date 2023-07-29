@@ -12,3 +12,8 @@
     counters:
       - counter: movie
         project: dnd-film
+
+'29.07':
+    counters:
+      - counter: game
+        project: game-of-thrones-telltale

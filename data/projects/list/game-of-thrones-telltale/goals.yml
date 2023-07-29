@@ -1,0 +1,14 @@
+playthrough:
+    title: Прохождение игры
+    status: done
+    counted: false
+    start: 24.07.2023
+    end: 27.07.2023
+    plan: ["24.07.2023 - 27.07.2023"]
+
+dtf-post:
+    title: Пост на DTF
+    status: done
+    counted: false
+    date: 28.07.2023
+    plan: ["28.07.2023"]

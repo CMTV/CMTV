@@ -1,0 +1,28 @@
+title: Cyberpunk 2077
+desc: Самый красивый и иммерсивный путеводитель по киберпанку.
+type: in
+
+status:
+    type: done
+    label: Пройдена
+
+start: 26.09.2023
+end: 20.11.2023
+
+action:
+    preset: steam
+    link: https://store.steampowered.com/app/1091500/Cyberpunk_2077/
+
+facts:
+    -   id:     time
+        label:  Время
+        data:   207.4 ч
+
+links:
+    -   icon: fa-solid fa-newspaper
+        text: Обзор на DTF
+        link: https://dtf.ru/games/2245832-apofeoz-kiberpanka
+
+tags:
+    - "!отдых"
+    - "!игра"

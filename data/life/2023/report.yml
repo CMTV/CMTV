@@ -17,3 +17,8 @@
     counters:
       - counter: game
         project: game-of-thrones-telltale
+
+'20.11':
+  counters:
+    - counter: game
+      project: cyberpunk

@@ -1,0 +1,23 @@
+playthrough:
+    title:      Прохождение игры
+    status:     done
+    counted:    false
+    start:      26.09.2023
+    end:        18.11.2023
+    plan:       ["10.12.2020 - 20.12.2020", "26.09.2023 - 20.11.2023"]
+
+all-achievements:
+    title:      Все достижения
+    status:     done
+    counted:    false
+    start:      19.11.2023
+    end:        20.11.2023
+    plan:       ["19.11.2023 - 20.11.2023"]
+
+dtf-post:
+    title:      Обзор на DTF
+    status:     done
+    counted:    true
+    start:      18.11.2023
+    end:        22.11.2023
+    plan:       ["18.11.2023 - 22.11.2023"]

@@ -45,7 +45,8 @@ export class DataProjectRelation
 {
     relatedId:  string;
     type:       string;
-    reason:     string;
+    reason?:    string;
+    inverse?:   boolean;
 }
 
 //

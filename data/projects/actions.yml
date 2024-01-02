@@ -11,3 +11,10 @@ steam:
     colors:
         - "#47A5FF"
         - "#2F7EDF"
+
+book:
+    text: Учебник
+    icon: fa-solid fa-book
+    colors:
+        - "#0aa1f3"
+        - "#1977d8"

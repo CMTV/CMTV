@@ -181,7 +181,7 @@ block main
             a.icon(href= "/projects/" + project.id)
                 +icon(project.icon)
             .title: a(href= "/projects/" + project.id)= project.title
-            .reason(title="Причина связи")= project.reason
+            .reason= project.reason
 
     if (related.hasAny())
         .related

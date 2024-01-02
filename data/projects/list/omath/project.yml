@@ -1,8 +1,8 @@
-title: OMath
-desc: ""
+title: Открытая математика
+desc: Теория + конспект + задачник в одном флаконе!
 status:
     type: do
-    label: В разработке
+    label: Наполнение
 type: mix
 
 tags:

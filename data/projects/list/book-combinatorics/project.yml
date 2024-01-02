@@ -1,0 +1,33 @@
+title: Учебник по комбинаторике
+desc: Ультимативный ответ на все вопросы по типу "Сколькими способами..."
+status:
+    type: do
+    label: Наполнение
+
+type: mix
+
+facts:
+    -   id: topics
+        label: Темы
+        data: 6
+    
+    -   id: tasks
+        label: Задачи
+        data: 100+
+
+action:
+    preset: book
+    text: Учебник
+    link: https://omath.ru/book/combinatorics/
+
+tags:
+    - "!математика"
+    - "!просвещение"
+    - "!учебник"
+
+start: 31.01.2023
+
+related:
+    omath:
+        type: dependency
+        inverse: true

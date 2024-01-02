@@ -35,7 +35,7 @@ export class ViewProjectType
     {
         this.type =     type;
         this.label =    UtilProject.getProjectTypeLabel(type);
-        this.icon =     UtilProject.getProjectTypeIcon(type);       
+        this.icon =     UtilProject.getProjectTypeIcon(type);
     }
 }
 
@@ -96,7 +96,7 @@ class ViewProjectRelation
         this.id =       relatedId;
         this.title =    DbProject.getById(relatedId, ['title']).title;
         this.icon =     new ProjectIcon(relatedId);
-        this.reason =   reason;
+        this.reason =   reason ?? DbProject.getById(relatedId, ['desc']).desc;
     }
     
     static getAllFor(projectId: string, relationType: string)

@@ -211,15 +211,20 @@
                                 {
                                     "description": "Тип отношения между проектами.",
                                     "type": "string",
-                                    "enum": ["dependent", "dependency", "relation", "relation-both"]
+                                    "enum": ["dependent", "dependency", "relation"]
                                 },
                                 "reason":
                                 {
                                     "description": "Причина, по которой проекты связаны.",
                                     "type": "string"
+                                },
+                                "inverse":
+                                {
+                                    "description": "Создать обратную связь в связанном проекте.",
+                                    "type": "boolean"
                                 }
                             },
-                            "required": ["type", "reason"]
+                            "required": ["type"]
                         }
                     ]
                 }

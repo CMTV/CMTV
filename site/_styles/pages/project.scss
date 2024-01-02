@@ -582,7 +582,7 @@ main > .related
             > a { @extend %underline; }
         }
 
-        > .reason { cursor: help; color: var(--c_text-shade-1); }
+        > .reason { color: var(--c_text-shade-1); }
 
         @include bp.max(mini)
         {

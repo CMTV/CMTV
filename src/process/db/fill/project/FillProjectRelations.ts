@@ -37,44 +37,34 @@ export class FillProjectRelations extends ProjectsProcess
                 }
 
                 let dataRelation: DataProjectRelation = config.related[relatedId];
+                    dataRelation.relatedId = relatedId;
+                    dataRelation.type = dataRelation.type ?? 'relation';
 
-                switch (dataRelation.type)
+                relations.push(this.createDbRelation(projectId, i, dataRelation));
+
+                if (dataRelation.inverse)
                 {
-                    case 'dependent':
-                    case 'dependency':
-                    case 'relation-both':
-                        let directRelation = new DbProjectRelation;
-                        let inverseRelation = new DbProjectRelation;
+                    let inverseDataRelation = {...dataRelation};
+                        inverseDataRelation.relatedId = projectId;
+                        inverseDataRelation.type = inverseDataRelation.type !== 'relation' ? inverseDataRelation.type === 'dependency' ? 'dependent' : 'dependency' : inverseDataRelation.type;
 
-                        directRelation.projectId = projectId;
-                        inverseRelation.projectId = relatedId;
-
-                        directRelation.relatedId = relatedId;
-                        inverseRelation.relatedId = projectId;
-
-                        directRelation.reason = inverseRelation.reason = dataRelation.reason;
-                        directRelation.displayOrder = inverseRelation.displayOrder = i;
-
-                        directRelation.type = dataRelation.type === 'relation-both' ? 'relation' : dataRelation.type;
-                        inverseRelation.type = dataRelation.type === 'relation-both' ? 'relation' : dataRelation.type === 'dependent' ? 'dependency' : 'dependent';
-                        
-                        relations.push(directRelation);
-                        relations.push(inverseRelation);
-                        break;
-                    
-                    case 'relation':
-                        let relation = new DbProjectRelation;
-                            relation.projectId =    projectId;
-                            relation.relatedId =    relatedId;
-                            relation.type =         dataRelation.type;
-                            relation.reason =       dataRelation.reason;
-
-                        relations.push(relation);
-                        break;
+                    relations.push(this.createDbRelation(relatedId, 1000, inverseDataRelation));
                 }
             });
         });
 
         Db.Transaction(() => relations.forEach(relation => relation.save()));
+    }
+
+    createDbRelation(projectId: string, order: number, dataRelation: DataProjectRelation)
+    {
+        let dbRelation = new DbProjectRelation;
+            dbRelation.projectId =      projectId;
+            dbRelation.relatedId =      dataRelation.relatedId;
+            dbRelation.reason =         dataRelation.reason;
+            dbRelation.displayOrder =   order;
+            dbRelation.type =           dataRelation.type;
+
+        return dbRelation;
     }
 }

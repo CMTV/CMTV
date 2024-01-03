@@ -1,0 +1,32 @@
+title: Baldur's Gate III
+desc: Новая эра и эталон RPG, а также одна из самых любимых игр в моей жизни.
+status:
+    type: done
+    label: Прошел
+
+type: in
+
+action:
+    preset: steam
+    link: https://store.steampowered.com/app/1086940/Baldurs_Gate_3/
+
+facts:
+    -   id: time
+        label: Время
+        data: 166 ч
+
+links:
+    -   icon: fa-solid fa-file-lines
+        text: Все, что вам нужно знать о Baldur's Gate 3
+        link: https://dtf.ru/games/1982857-vse-chto-vam-nuzhno-znat-o-baldur-s-gate-3
+
+    -   icon: fa-solid fa-file-lines
+        text: Чем поражает Baldur's Gate 3
+        link: https://dtf.ru/games/2017862-chem-porazhaet-baldur-s-gate-3
+
+start: 6.10.2020
+end: 15.08.2023
+
+tags:
+    - "!отдых"
+    - "!игра"

@@ -81,9 +81,6 @@
         duration: 4
 '10.01':
     time:
-    -   project: combinatorics-book
-        goals: tasks
-        duration: 1
     -   project: alien-isolation
         goals: playthrough
         duration: '0:40'
@@ -95,9 +92,6 @@
         project: alien-isolation
 '11.01':
     time:
-    -   project: combinatorics-book
-        goals: tasks
-        duration: 1
     -   project: alien-isolation
         goals: rest-achievements
         duration: '4:15'

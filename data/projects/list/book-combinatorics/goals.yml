@@ -1,3 +1,10 @@
+learning:
+    title: Изучение комбинаторики
+    status: done
+    start: 25.10.2021
+    end: 11.01.2022
+    plan: ["25.10.2021 - 11.01.2022"]
+
 writing:
     title: Написание учебника
     status: do

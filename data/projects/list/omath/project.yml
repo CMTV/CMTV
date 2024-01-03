@@ -5,9 +5,18 @@ status:
     label: Наполнение
 type: mix
 
+action:
+    text: Сайт
+    icon: fa-solid fa-globe
+    link: https://omath.ru
+    colors:
+        - "#0aa1f3"
+        - "#1977d8"
+
 tags:
     - "!математика"
     - "!просвещение"
+    - "!сайт"
     - информатика
     - программирование
 

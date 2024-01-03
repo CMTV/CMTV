@@ -1,0 +1,19 @@
+early-access:
+    title: Игра в ранний доступ
+    status: done
+    start: 6.10.2020
+    end: 14.10.2020
+    plan: ["06.10.2020 - 14.10.2020"]
+
+forum-letter:
+    title: Предложение улучшить форум
+    status: done
+    date: 14.10.2020
+    plan: ["14.10.2020"]
+
+release-playthrough:
+    title: Прохождение на релизе
+    status: done
+    start: 03.08.2023
+    end: 15.08.2023
+    plan: ["03.08.2023 - 15.08.2023"]

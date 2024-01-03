@@ -70,12 +70,6 @@
                 "project":  "radkopeter",
                 "goals":    ["fill"],
                 "duration": 1
-            },
-
-            {
-                "duration": 1,
-                "project":  "combinatorics-book",
-                "goals":    ["notes"]
             }
         ],
 
@@ -95,12 +89,6 @@
             {
                 "project": "radkopeter",
                 "goals": ["fill"],
-                "duration": 1.5
-            },
-
-            {
-                "project": "combinatorics-book",
-                "goals": ["notes"],
                 "duration": 1.5
             },
 
@@ -129,11 +117,6 @@
                 "duration": 1.15
             },
             {
-                "project":  "combinatorics-book",
-                "goals":    ["notes"],
-                "duration": 1
-            },
-            {
                 "project":  "the-walking-dead",
                 "goals":    ["playthrough"],
                 "duration": 2.5
@@ -150,11 +133,6 @@
                 "project":  "radkopeter",
                 "goals":    ["v2"],
                 "duration": 7.5
-            },
-            {
-                "project":  "combinatorics-book",
-                "goals":    ["notes"],
-                "duration": 1
             },
             {
                 "project":  "the-walking-dead",
@@ -175,11 +153,6 @@
                 "duration": 6
             },
             {
-                "project":  "combinatorics-book",
-                "goals":    ["notes"],
-                "duration": 1
-            },
-            {
                 "project":  "the-walking-dead",
                 "goals":    ["playthrough"],
                 "duration": 5
@@ -196,11 +169,6 @@
                 "project":  "radkopeter",
                 "goals":    ["v2"],
                 "duration": "6:30"
-            },
-            {
-                "project":  "combinatorics-book",
-                "goals":    ["notes"],
-                "duration": "0:40"
             },
             {
                 "project":  "the-walking-dead",
@@ -224,11 +192,6 @@
                 "project":  "radkopeter",
                 "goals":    ["fill"],
                 "duration": 1
-            },
-            {
-                "project":  "combinatorics-book",
-                "goals":    ["notes"],
-                "duration": "0:20"
             },
             {
                 "project":  "the-walking-dead",
@@ -390,11 +353,6 @@
                 "project": "radkopeter",
                 "goals": ["v2"],
                 "duration": 5
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": ["tasks"],
-                "duration": "0:40"
             }
         ],
         "checks": ["divine-body : diet"]
@@ -408,11 +366,6 @@
                 "project": "radkopeter",
                 "goals": ["v2"],
                 "duration": 5
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": ["tasks"],
-                "duration": "0:30"
             },
             {
                 "project": "cs-go",
@@ -431,11 +384,6 @@
                 "project": "radkopeter",
                 "goals": ["v2"],
                 "duration": 5
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": ["tasks"],
-                "duration": "0:40"
             },
             {
                 "project": "cs-go",
@@ -531,11 +479,6 @@
                 "project": "radkopeter",
                 "goals": ["fill"],
                 "duration": 5
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": ["tasks"],
-                "duration": 1
             }
         ],
         "checks":
@@ -553,11 +496,6 @@
                 "project": "radkopeter",
                 "goals": ["fill"],
                 "duration": 7
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": ["tasks"],
-                "duration": 1
             },
             {
                 "project": "deus-ex-hr",
@@ -582,11 +520,6 @@
                 "duration": 6
             },
             {
-                "project": "combinatorics-book",
-                "goals": ["notes"],
-                "duration": "0:30"
-            },
-            {
                 "project": "deus-ex-hr",
                 "goals": ["playthrough"],
                 "duration": 3.1
@@ -607,11 +540,6 @@
                 "project": "radkopeter",
                 "goals": ["v2"],
                 "duration": 4
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": ["tasks"],
-                "duration": "0:40"
             },
             {
                 "project": "deus-ex-hr",
@@ -689,11 +617,6 @@
                 "duration": 5  
             },
             {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": 1
-            },
-            {
                 "project": "deus-ex-hr",
                 "goals": "playthrough",
                 "duration": 3.6
@@ -755,11 +678,6 @@
                 "duration": 6
             },
             {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": 1
-            },
-            {
                 "project": "deus-ex-hr",
                 "goals": "playthrough",
                 "duration": 2.4
@@ -782,11 +700,6 @@
                 "duration": 6
             },
             {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": "1:15"  
-            },
-            {
                 "project": "deus-ex-hr",
                 "goals": "playthrough",
                 "duration": 3.2
@@ -807,11 +720,6 @@
                 "project": "radkopeter",
                 "goals": "v2",
                 "duration": 3
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": "1:15"
             },
             {
                 "project": "deus-ex-hr",
@@ -878,11 +786,6 @@
                 "duration": 1
             },
             {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": "0:40"
-            },
-            {
                 "project": "deus-ex-hr",
                 "goals": "rest-achievements",
                 "duration": "1:30"
@@ -926,11 +829,6 @@
                 "project": "radkopeter",
                 "goals": "fill",
                 "duration": 3
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": 1
             }
         ],
         "checks":
@@ -948,11 +846,6 @@
                 "project": "radkopeter",
                 "goals": "fill",
                 "duration": 4
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": 1.63
             }
         ],
         "checks":
@@ -970,11 +863,6 @@
                 "project": "radkopeter",
                 "goals": "fill",
                 "duration": 5
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": "1:30"
             },
             {
                 "project": "xcom-2",
@@ -1047,11 +935,6 @@
                 "duration": 6
             },
             {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": 1
-            },
-            {
                 "project": "xcom-2",
                 "goals": "playthrough",
                 "duration": 4.6
@@ -1071,11 +954,6 @@
                 "project": "radkopeter",
                 "goals": "fill",
                 "duration": 5
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": 1
             },
             {
                 "project": "xcom-2",
@@ -1098,11 +976,6 @@
                 "project": "radkopeter",
                 "goals": "fill",
                 "duration": 4
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": "1:15"
             },
             {
                 "project": "xcom-2",
@@ -1152,11 +1025,6 @@
                 "project": "xcom-2",
                 "goals": "playthrough",
                 "duration": 2.7
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": 1
             }
         ],
         "checks":
@@ -1298,11 +1166,6 @@
                 "duration": 5
             },
             {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": "0:45"
-            },
-            {
                 "project": "dragon-age-inquisition",
                 "goals": "playthrough",
                 "duration": 3.7
@@ -1323,11 +1186,6 @@
                 "project": "radkopeter",
                 "goals": "fill",
                 "duration": 5
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": 1
             },
             {
                 "project": "dragon-age-inquisition",
@@ -1482,11 +1340,6 @@
                 "duration": 4
             },
             {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": 1
-            },
-            {
                 "project": "dragon-age-inquisition",
                 "goals": "playthrough",
                 "duration": 4
@@ -1509,11 +1362,6 @@
                 "duration": 3
             },
             {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": 1
-            },
-            {
                 "project": "dragon-age-inquisition",
                 "goals": "playthrough",
                 "duration": "3:30"
@@ -1533,11 +1381,6 @@
                 "project": "radkopeter",
                 "goals": "v2",
                 "duration": 5
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": 1
             },
             {
                 "project": "dragon-age-inquisition",
@@ -1598,11 +1441,6 @@
                 "duration": "1:30"
             },
             {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": "1:30"
-            },
-            {
                 "project": "dragon-age-inquisition",
                 "goals": "playthrough",
                 "duration": 3
@@ -1619,11 +1457,6 @@
                 "project": "radkopeter",
                 "goals": "fill",
                 "duration": 5
-            },
-            {
-                "project": "combinatorics-book",
-                "goals": "tasks",
-                "duration": "1:30"
             },
             {
                 "project": "dragon-age-inquisition",

@@ -1,0 +1,28 @@
+title: "Warhammer 40k: Rogue Trader"
+desc: Увлекательная, но недоделанная RPG в суровом и беспощадном сеттинге.
+status:
+    type: do
+    label: Прошел
+
+type: in
+
+action:
+    preset: steam
+    link: https://store.steampowered.com/app/2186680/Warhammer_40000_Rogue_Trader/
+
+facts:
+    -   id: time
+        label: Время
+        data: 91 ч
+
+links:
+    -   icon: fa-solid fa-newspaper
+        text: Обзор на DTF
+        link: https://dtf.ru/games/2334947-rogue-trader-luchshaya-rpg-po-vahe-kotoruyu-zabyli-dodelat
+
+start: 7.12.2023
+end: 27.12.2023
+
+tags:
+    - "!отдых"
+    - "!игра"

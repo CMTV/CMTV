@@ -1,0 +1,12 @@
+release-playthrough:
+    title: Прохождение на релизе
+    status: fail
+    start: 7.12.2023
+    end: 27.12.2023
+    plan: ["07.12.2023 - 27.12.2023"]
+
+dtf-review:
+    title: Обзор на DTF
+    status: done
+    date: 28.12.2023
+    plan: ["28.12.2023"]

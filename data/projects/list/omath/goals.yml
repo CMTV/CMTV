@@ -26,12 +26,16 @@ sketch:
     start: 25.01.2022
     end: 14.02.2022
 
-combinatorics:
-    title: Учебник по комбинаторике
-    status: do
-    start: 1.07.2023
-
 editor:
-    title: Онлайн-редактор тем
-    status: do
+    title: Статический редактор тем
+    status: done
     start: 13.07.2023
+    end: 17.09.2023
+    plan: ["13.07.2023 - 17.09.2023"]
+
+dynamic-editor:
+    title: Динамический редактор тем
+    status: done
+    start: 30.11.2023
+    end: 20.12.2023
+    plan: ["30.11.2023 - 20.12.2023"]

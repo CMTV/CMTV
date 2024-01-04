@@ -28,7 +28,6 @@ main > .yearResults
 
     > .results
     {
-        max-height: 400px;
         @extend %scrollbar;
 
         > .result

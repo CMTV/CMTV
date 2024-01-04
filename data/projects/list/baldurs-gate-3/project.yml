@@ -16,11 +16,11 @@ facts:
         data: 166 ч
 
 links:
-    -   icon: fa-solid fa-file-lines
+    -   icon: fa-solid fa-newspaper
         text: Все, что вам нужно знать о Baldur's Gate 3
         link: https://dtf.ru/games/1982857-vse-chto-vam-nuzhno-znat-o-baldur-s-gate-3
 
-    -   icon: fa-solid fa-file-lines
+    -   icon: fa-solid fa-newspaper
         text: Чем поражает Baldur's Gate 3
         link: https://dtf.ru/games/2017862-chem-porazhaet-baldur-s-gate-3
 

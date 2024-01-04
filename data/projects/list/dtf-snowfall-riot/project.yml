@@ -1,0 +1,43 @@
+title: Новогодние протесты на DTF
+desc: История о том, как я написал один из самых популярных постов на DTF.
+status:
+    type: done
+    label: Участвовал
+
+facts:
+  - id: time
+    label: Длительность
+    data: Около недели
+
+  - id: result
+    label: Результат
+    data: Никакой
+
+links:
+  - icon: fa-solid fa-newspaper
+    text: Мы за открытый DTF
+    link: https://dtf.ru/ideas/1507174-my-za-otkrytyy-dtf
+
+  - icon: fa-solid fa-newspaper
+    text: Достучимся до Комитета!
+    link: https://dtf.ru/u/136492-petr-radko/1508989-dostuchimsya-do-komiteta
+
+  - icon: fa-solid fa-newspaper
+    text: Конструктивный фидбек
+    link: https://dtf.ru/ideas/1509102-konstruktivnyy-fidbek
+
+  - icon: fa-solid fa-newspaper
+    text: Поговорил с Комитетом
+    link: https://dtf.ru/ideas/1511568-pogovoril-s-komitetom
+
+  - icon: fa-solid fa-newspaper
+    text: Токсичность, эмоции и дизлайк
+    link: https://dtf.ru/ideas/1515637-toksichnost-emocii-i-dizlayk
+
+type: out
+
+tags:
+    - "!мероприятие"
+
+start: 15.12.2022
+end: 19.12.2022

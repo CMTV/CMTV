@@ -18,7 +18,17 @@
       - counter: game
         project: game-of-thrones-telltale
 
+'15.08':
+    counters:
+      - counter: game
+        project: baldurs-gate-3
+
 '20.11':
-  counters:
-    - counter: game
-      project: cyberpunk
+    counters:
+      - counter: game
+        project: cyberpunk
+
+'27.12':
+    counters:
+      - counter: game
+        project: rogue-trader

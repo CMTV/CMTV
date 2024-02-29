@@ -1,19 +1,19 @@
 title: Учебник по комбинаторике
 desc: Ультимативный ответ на все вопросы по типу "Сколькими способами..."
 status:
-    type: do
-    label: Наполнение
+    type: done
+    label: Написан
 
 type: mix
 
 facts:
     -   id: topics
         label: Темы
-        data: 6
+        data: 10+
     
     -   id: tasks
         label: Задачи
-        data: 100+
+        data: 200+
 
 action:
     preset: book
@@ -29,6 +29,7 @@ tags:
     - книга
 
 start: 31.01.2023
+end: 29.02.2024
 
 related:
     omath:

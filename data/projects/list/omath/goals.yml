@@ -39,3 +39,8 @@ dynamic-editor:
     start: 30.11.2023
     end: 20.12.2023
     plan: ["30.11.2023 - 20.12.2023"]
+
+full-dynamic:
+    title: Полный переход на Nuxt
+    status: do
+    start: 05.03.2023

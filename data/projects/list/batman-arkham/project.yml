@@ -1,0 +1,40 @@
+title: Batman Arkham Collection
+desc: Полностью прошел одну из самых известных супергероийских игровых серий.
+status:
+    type: done
+    label: Прошел
+
+type: in
+
+action:
+    preset: steam
+    link: https://store.steampowered.com/sub/320795/
+
+facts:
+    -   id: time
+        label: Время
+        data: 151 ч
+
+    -   id: riddles
+        label: Загадки
+        data: 923
+
+links:
+    -   icon: fa-solid fa-newspaper
+        text: Обзор Asylum
+        link: https://dtf.ru/games/2516205-proshel-arkham-asylum
+
+    -   icon: fa-solid fa-newspaper
+        text: Обзор City
+        link: https://dtf.ru/games/2572079-proshel-arkham-city
+
+    -   icon: fa-solid fa-newspaper
+        text: Обзор Knight
+        link: https://dtf.ru/games/2603313-proshel-akrham-knight
+
+start: 20.02.2024
+end: 08.04.2024
+
+tags:
+    - "!отдых"
+    - "!игра"

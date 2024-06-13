@@ -1,0 +1,37 @@
+title: Стартап как диплом
+desc: Участвую во всероссийском конкурсе.
+status:
+    type: do
+    label: Участвую
+
+type: mix
+
+action:
+    preset: github
+    icon: fa-solid fa-file-pdf
+    text: Презентация
+    link: assets/presentation.pdf
+
+links:
+    -   icon: fa-brands fa-youtube
+        text: Видео-презентация
+        link: https://youtu.be/E2KHQYrvKTA
+
+    -   icon: fa-solid fa-file-powerpoint
+        text: Презентация PowerPoint
+        link: assets/presentation.7z
+
+    -   icon: fa-solid fa-file-powerpoint
+        text: Первая версия презентации от отца
+        link: assets/old-presentation-from-father.pptx
+
+related:
+    omath:
+        type: dependency
+
+start: 15.05.2024
+
+tags:
+    -   "!информатика"
+    -   "!просвещение"
+    -   "!мероприятие"

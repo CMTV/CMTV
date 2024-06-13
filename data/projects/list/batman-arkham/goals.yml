@@ -1,4 +1,5 @@
 asylum:
+    counted: false
     title: Прохождение Asylum
     status: done
     start: 20.02.2024
@@ -6,6 +7,7 @@ asylum:
     plan: ["20.02.2024 - 25.02.2024"]
 
 city:
+    counted: false
     title: Прохождение City
     status: done
     start: 26.02.2024
@@ -13,6 +15,7 @@ city:
     plan: ["26.02.2024 - 07.03.2024", "15.03.2024 - 22.03.2024"]
 
 knight:
+    counted: false
     title: Прохождение Knight
     status: done
     start: 23.03.2024
